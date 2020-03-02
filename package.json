@@ -1,0 +1,58 @@
+{
+    "name": "openseadragontargetmap",
+    "version": "0.0.1",
+    "description": "Draws overlay over a targetscan, and shows calibration info",
+    "main": "dist/openSeadragonTargetMap.js",
+    "module": "module/openSeadragonTargetMap.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "prebuild": "clear-folder dist module && prettier './{src,test}/*.js' --write",
+        "build": "rollup --config",
+        "coverage": "clear-folder coverage && jest --coverage",
+        "once": "npm run test && npm run build",
+        "pretest": "eslint {src,test}/*.js",
+        "test": "jest",
+        "watch": "onchange --initial \"{src,test}/*.js\" -- npm run once --silent"
+    },
+    "keywords": [
+        "openseadragon",
+        "plugin",
+        "overlay",
+        "patch",
+        "target"
+    ],
+    "author": "Onno van der Zee",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/picturae/OpenSeadragonTargetMap.git"
+    },
+    "bugs": {
+        "url": "https://github.com/picturae/OpenSeadragonTargetMap/issues"
+    },
+    "homepage": "https://github.com/picturae/OpenSeadragonTargetMap#readme",
+    "peerDependencies": {
+        "openseadragon": "^2.1.0"
+    },
+    "dependencies": {
+        "openseadragon": "^2.1.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
+        "clear-folder": "^1.1.2",
+        "coveralls": "^3.0.8",
+        "eslint": "^6.5.1",
+        "eslint-plugin-jasmine": "^2.10.1",
+        "eslint-plugin-jest": "^22.20.0",
+        "jest": "^24.9.0",
+        "onchange": "^6.1.0",
+        "prettier": "^1.18.2",
+        "rollup": "^1.25.1",
+        "rollup-plugin-babel": "^4.3.3",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-terser": "^5.1.3"
+    }
+}
