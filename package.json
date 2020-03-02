@@ -27,12 +27,12 @@
     "license": "ISC",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/picturae/OpenSeadragonTargetMap.git"
+        "url": "git+https://github.com/picturae/openseadragontargetmap.git"
     },
     "bugs": {
-        "url": "https://github.com/picturae/OpenSeadragonTargetMap/issues"
+        "url": "https://github.com/picturae/openseadragontargetmap/issues"
     },
-    "homepage": "https://github.com/picturae/OpenSeadragonTargetMap#readme",
+    "homepage": "https://github.com/picturae/openseadragontargetmap#readme",
     "peerDependencies": {
         "openseadragon": "^2.1.0"
     },
