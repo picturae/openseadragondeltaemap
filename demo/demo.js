@@ -2,20 +2,30 @@
 window.onload = function() {
 
     const tileSource = {
-        "@context":"http://iiif.io/api/image/2/context.json",
-        "@id":"https://mmc-rkd-api.memorix.nl/api/images/RKD_FOLDER_63959_0007_V/preview",
-        "protocol":"http://iiif.io/api/image",
-        "width":3442,
-        "height":2426,
-        "sizes":[{"width":215,"height":151},{"width":430,"height":303},{"width":860,"height":606},{"width":1721,"height":1213}],
-        "tiles":[{"width":256,"height":256,"scaleFactors":[1,2,4,8,16]}],
-        "profile":[
-            "http://iiif.io/api/image/2/level1.json",
-            {
-                "formats":["jpg"],
-                "qualities":["native","color","gray"],
-                "supports":["regionByPct","regionSquare","sizeByForcedWh","sizeByWh","sizeAboveFull","rotationBy90s","mirroring"]
-            }
+        "@context" : "http://iiif.io/api/image/2/context.json",
+        "@id" : "https://pixel-test.picturae.com:3000/iiif/b/1/5e42abd23145fe003641f41b/7/4/5e5e6b3bbbdd9f0036947247",
+        "protocol" : "http://iiif.io/api/image",
+        "width" : 8688,
+        "height" : 5792,
+        "sizes" : [
+             { "width" : 135, "height" : 90 },
+             { "width" : 271, "height" : 181 },
+             { "width" : 543, "height" : 362 },
+             { "width" : 1086, "height" : 724 },
+             { "width" : 2172, "height" : 1448 },
+             { "width" : 4344, "height" : 2896 }
+        ],
+        "tiles" : [
+             { "width" : 256, "height" : 256, "scaleFactors" : [ 1, 2, 4, 8, 16, 32, 64 ] }
+        ],
+        "profile" : [
+             "http://iiif.io/api/image/2/level1.json",
+             { "formats" : [ "jpg" ],
+                 "qualities" : [ "native","color","gray","bitonal" ],
+                 "supports" : ["regionByPct","regionSquare","sizeByForcedWh","sizeByWh","sizeAboveFull","rotationBy90s","mirroring"],
+                 "maxWidth" : 5000,
+                 "maxHeight" : 5000
+             }
         ]
     }
 
@@ -47,5 +57,9 @@ window.onload = function() {
     window.addEventListener('resize', function() {
         targetMap.resize();
     });
+
+    if (location.search === '?demo') {
+        document.body.classList.add('demo');
+    }
 
 };

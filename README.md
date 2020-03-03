@@ -10,4 +10,6 @@ which can be layed over the targetsetscan.
 
 ## Demo
 
-In the demo folder.
+.../openseadragontargetmap/demo/demo.html
+for the unconnected:
+.../openseadragontargetmap/demo/demo.html?demo

@@ -7,6 +7,15 @@ body,
     margin: 0;
 }
 
+body.demo targetmap {
+    background: url('./demo.jpg');
+    background-size: cover;
+}
+
+body.red targetmap {
+    background: red;
+}
+
 .openseadragon-canvas + div > div {
     opacity: 1 !important;
 }
