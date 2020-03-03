@@ -6,3 +6,18 @@ body,
     height: 100%;
     margin: 0;
 }
+
+.openseadragon-canvas + div > div {
+    opacity: 1 !important;
+}
+
+input[type="file"] {
+    position: absolute;
+    left: 5px; top: 40px;
+}
+
+input[type="file"]:after {
+    content: 'choose validation json';
+    display: block;
+    padding: 0 2px;
+}

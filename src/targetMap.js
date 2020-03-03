@@ -1,4 +1,5 @@
 import { isUsableNumber, roundAt } from './functions'
+import { TargetChart } from './targetChart'
 
 const TargetMap = function(viewer) {
     this.name = 'TargetMap'
@@ -9,9 +10,9 @@ const TargetMap = function(viewer) {
     viewer.canvas.appendChild(this.element)
 
     this.resize = () => {
-        const tiledImage = viewer.world.getItemAt(0)
-        if (!tiledImage) return
-        const imageBounds = tiledImage.getBounds()
+        this.tiledImage = viewer.world.getItemAt(0)
+        if (!this.tiledImage) return
+        const imageBounds = this.tiledImage.getBounds()
 
         const leftTop = viewer.viewport.pixelFromPoint(imageBounds.getTopLeft())
         const rightBottom = viewer.viewport.pixelFromPoint(
@@ -21,15 +22,18 @@ const TargetMap = function(viewer) {
         if (!isUsableNumber(leftTop.x, leftTop.y, rightBottom.x, rightBottom.y))
             return
 
-        const left = roundAt(leftTop.x, 3)
-        const top = roundAt(leftTop.y, 3)
-        const right = roundAt(rightBottom.x, 3)
-        const bottom = roundAt(rightBottom.y, 3)
+        const precision = 4
+        const box = {
+            left: roundAt(leftTop.x, precision),
+            top: roundAt(leftTop.y, precision),
+            width: roundAt(rightBottom.x - leftTop.x, precision),
+            height: roundAt(rightBottom.y - leftTop.y, precision),
+        }
 
-        this.element.style.left = `${left}px`
-        this.element.style.top = `${top}px`
-        this.element.style.width = `${right - left}px`
-        this.element.style.height = `${bottom - top}px`
+        this.element.style.left = `${box.left}px`
+        this.element.style.top = `${box.top}px`
+        this.element.style.width = `${box.width}px`
+        this.element.style.height = `${box.height}px`
     }
 
     viewer.addHandler('animation', () => {
@@ -46,6 +50,15 @@ const TargetMap = function(viewer) {
     })
 
     this.resize()
+
+    this.charts = []
+    this.render = json => {
+        json.forEach(result => {
+            this.charts.push(
+                new TargetChart(result, this.element, this.tiledImage),
+            )
+        })
+    }
 }
 
 export { TargetMap }

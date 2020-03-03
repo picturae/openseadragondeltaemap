@@ -37,6 +37,13 @@ window.onload = function() {
 
     const targetMap = this.viewer.targetMap();
 
+    const fileInput = document.querySelector('input[type=file]')
+
+    fileInput.addEventListener('input', function() {
+        loadLocalJSON( this, targetMap.render )
+        this.value = ''
+    });
+
     window.addEventListener('resize', function() {
         targetMap.resize();
     });
