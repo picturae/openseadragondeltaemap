@@ -1,3 +1,7 @@
+const contentSize = {
+    x: 1000,
+    y: 707.107,
+}
 const tiledImage = {
     getBounds: () => {
         return {
@@ -15,10 +19,7 @@ const tiledImage = {
         }
     },
     getContentSize: () => {
-        return {
-            x: 1000,
-            y: 707.107,
-        }
+        return contentSize
     },
 }
 const viewer = {
@@ -44,7 +45,21 @@ const viewer = {
 const targetData = [
     {
         location: { x: 3210, y: 25, w: 2354, h: 253 },
+        colorPatches: [
+            {
+                name: 'C1',
+                location: { x: 105, y: 90, w: 36, h: 36 },
+                R: 185.11,
+                G: 62.99,
+                B: 53.05,
+                L: 48.41,
+                a: 61.83,
+                b: 46.98,
+                mean: 98.53,
+                stddev: 1.4,
+            },
+        ],
     },
 ]
 
-export { tiledImage, viewer, targetData }
+export { contentSize, tiledImage, viewer, targetData }

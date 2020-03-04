@@ -53,9 +53,13 @@ const TargetMap = function(viewer) {
 
     this.charts = []
     this.render = json => {
-        json.forEach(result => {
+        json.forEach(chartData => {
             this.charts.push(
-                new TargetChart(result, this.element, this.tiledImage),
+                new TargetChart(
+                    chartData,
+                    this.element,
+                    this.tiledImage.getContentSize(),
+                ),
             )
         })
     }

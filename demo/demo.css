@@ -12,10 +12,6 @@ body.demo targetmap {
     background-size: cover;
 }
 
-body.red targetmap {
-    background: red;
-}
-
 .openseadragon-canvas + div > div {
     opacity: 1 !important;
 }
