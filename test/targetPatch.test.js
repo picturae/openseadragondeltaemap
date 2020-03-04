@@ -1,7 +1,7 @@
 import { TargetPatch } from '../src/targetPatch.js'
 import { contentSize, targetData } from './_mocks.js'
 
-let patchData = targetData[0].colorPatches[0]
+let patchData = targetData.targets[0].colorPatches[0]
 let htmlElement = document.body
 
 test('targetPatch sets the position in a relative fashion', () => {

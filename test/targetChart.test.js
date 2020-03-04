@@ -1,7 +1,7 @@
 import { TargetChart } from '../src/targetChart.js'
 import { contentSize, targetData } from './_mocks.js'
 
-let chartData = targetData[0]
+let chartData = targetData.targets[0]
 let htmlElement = document.body
 
 test('targetChart sets the position in a relative fashion', () => {

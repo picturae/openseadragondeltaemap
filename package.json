@@ -8,13 +8,13 @@
         "test": "test"
     },
     "scripts": {
-        "prebuild": "clear-folder dist module && prettier './{src,test}/*.js' --write",
+        "prebuild": "clear-folder dist module && prettier '{./{src,test}/*.js,./demo/*.{js,json}}' --write",
         "build": "rollup --config",
         "coverage": "clear-folder coverage && jest --coverage",
         "once": "npm run test && npm run build",
         "pretest": "eslint {src,test}/*.js",
         "test": "jest",
-        "watch": "onchange --initial \"{src,test}/*.js\" -- npm run once --silent"
+        "watch": "onchange --initial \"./{src,test}/*.js\" \"./demo/*.{js,json}\" -- npm run once --silent"
     },
     "keywords": [
         "openseadragon",
