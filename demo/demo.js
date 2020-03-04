@@ -1,4 +1,19 @@
 window.onload = function() {
+    var osdTileSource = {
+        Image: {
+            xmlns: 'http://schemas.microsoft.com/deepzoom/2008',
+            Url:
+                'http://openseadragon.github.io/example-images/highsmith/highsmith_files/',
+            Format: 'jpg',
+            Overlap: '2',
+            TileSize: '256',
+            Size: {
+                Height: '9221',
+                Width: '7026',
+            },
+        },
+    }
+
     const tileSource = {
         '@context': 'http://iiif.io/api/image/2/context.json',
         '@id':

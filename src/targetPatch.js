@@ -1,3 +1,5 @@
+import { isPrimitive } from './functions'
+
 const TargetPatch = function(patchData, parentNode, containerSize) {
     this.name = 'TargetPatch'
     this.element = document.createElement('targetPatch')
@@ -14,6 +16,16 @@ const TargetPatch = function(patchData, parentNode, containerSize) {
 
     this.element.style.boxShadow = 'inset 0 0 2px 2px orange'
     parentNode.appendChild(this.element)
+
+    let userData = {}
+    for (let [key, value] of Object.entries(patchData)) {
+        if (isPrimitive(value)) {
+            userData[key] = value
+        }
+    }
+    patchData.reference ? (userData.reference = patchData.reference) : null
+    patchData.validity ? (userData.validity = patchData.validity) : null
+    this.element.dataset.picturaeTargetmapDisplay = JSON.stringify(userData)
 }
 
 export { TargetPatch }

@@ -1,4 +1,9 @@
-import { isUsableNumber, roundAt } from '../src/functions.js'
+import {
+        isAttachedToDom,
+        isPrimitive,
+        isUsableNumber,
+        roundAt
+    } from '../../src/functions.js'
 
 test('roundAt rounds 1.005 to 1.01', () => {
     expect(roundAt(1.005, 2)).toBe(1.01)
@@ -48,4 +53,48 @@ test('isUsableNumber tests zero or more values', () => {
     expect(isUsableNumber(1, 2, 3)).toBe(true)
     expect(isUsableNumber(5, 'x')).toBe(false)
     expect(isUsableNumber(undefined, NaN)).toBe(false)
+})
+
+test('isPrimitive tests an object-member being a primitive', () => {
+    let testObject = {
+      aBoolean: true,
+      aString: 'yep',
+      aNaN: NaN,
+      aNull: null,
+      aNumber: 3.14,
+      anUndefined: undefined,
+      anArray: [1,2,3],
+      anObject: {a: 1, b: 'b'},
+      aFunction: () => {},
+      aDate: new Date(),
+      aDateString: Date(),
+      aSyombol: Symbol('alpha')
+    }
+
+    expect(isPrimitive(testObject.aBoolean)).toBe(true)
+    expect(isPrimitive(testObject.aString)).toBe(true)
+    expect(isPrimitive(testObject.aNaN)).toBe(true)
+    expect(isPrimitive(testObject.aNull)).toBe(false)
+    expect(isPrimitive(testObject.aNumber)).toBe(true)
+    expect(isPrimitive(testObject.anUndefined)).toBe(false)
+    expect(isPrimitive(testObject.anArray)).toBe(false)
+    expect(isPrimitive(testObject.anObject)).toBe(false)
+    expect(isPrimitive(testObject.aFunction)).toBe(false)
+    expect(isPrimitive(testObject.aDate)).toBe(false)
+    expect(isPrimitive(testObject.aDateString)).toBe(true)
+    expect(isPrimitive(testObject.aSyombol)).toBe(false)
+})
+
+test('isAttachedToDom tests an html-element being inside the DOM', () => {
+    // beware, the ShadowRoot has been mocked
+    let newElement = document.createElement('div')
+    expect(isAttachedToDom(newElement)).toBe(false)
+
+    document.body.appendChild(newElement)
+
+    expect(isAttachedToDom(newElement)).toBe(true)
+
+    document.body.removeChild(newElement)
+
+    expect(isAttachedToDom(newElement)).toBe(false)
 })

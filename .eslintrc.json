@@ -21,6 +21,7 @@
         "jest"
     ],
     "rules": {
+        "no-empty": "warn",
         "no-extra-semi": "warn",
         "no-unused-vars": ["warn"]
     }

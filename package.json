@@ -12,9 +12,9 @@
         "build": "rollup --config",
         "coverage": "clear-folder coverage && jest --coverage",
         "once": "npm run test && npm run build",
-        "pretest": "eslint {src,test}/*.js",
+        "pretest": "eslint {src,test/**}/*.js",
         "test": "jest",
-        "watch": "onchange --initial \"./{src,test}/*.js\" \"./demo/*.{js,json}\" -- npm run once --silent"
+        "watch": "onchange --initial \"./{src,test/**}/*.js\" \"./demo/*.{js,json}\" -- npm run once --silent"
     },
     "keywords": [
         "openseadragon",

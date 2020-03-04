@@ -1,5 +1,5 @@
-import { TargetMap } from '../src/targetMap.js'
 import { viewer } from './_mocks.js'
+import { TargetMap } from '../../src/targetMap.js'
 
 test('targetMap has public methods', () => {
     const targetMapInstance = new TargetMap(viewer)

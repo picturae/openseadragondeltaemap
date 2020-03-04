@@ -1,5 +1,5 @@
-import { TargetPatch } from '../src/targetPatch.js'
 import { contentSize, targetData } from './_mocks.js'
+import { TargetPatch } from '../../src/targetPatch.js'
 
 let patchData = targetData.targets[0].colorPatches[0]
 let htmlElement = document.body
