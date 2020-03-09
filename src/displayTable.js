@@ -1,4 +1,4 @@
-import { isAttachedToDom, isPrimitive } from './functions'
+import { camelCaseToTitle, isAttachedToDom, isPrimitive } from './functions.js'
 
 const DisplayTable = function(targetImage) {
     this.name = 'TargetPatch'
@@ -26,7 +26,14 @@ const DisplayTable = function(targetImage) {
             for (let [key, value] of Object.entries(validationData)) {
                 let row = ''
                 if (isPrimitive(value) && key !== 'name') {
-                    row = `<tr><th>${key}</th><td>${value}</td></tr>`
+                    row = `<tr><th>${camelCaseToTitle(key, {
+                        replace: {
+                            deltaE: '&Delta;E',
+                            DeltaE: '&Delta;E',
+                            deltaL: '&Delta;L',
+                            DeltaL: '&Delta;L',
+                        },
+                    })}</th><td>${value}</td></tr>`
                 }
                 if (row) table.innerHTML += row
             }

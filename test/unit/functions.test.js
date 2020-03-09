@@ -1,4 +1,5 @@
 import {
+        camelCaseToTitle,
         isAttachedToDom,
         isPrimitive,
         isUsableNumber,
@@ -97,4 +98,15 @@ test('isAttachedToDom tests an html-element being inside the DOM', () => {
     document.body.removeChild(newElement)
 
     expect(isAttachedToDom(newElement)).toBe(false)
+})
+
+test('camelCaseToTitle splits a camel string in human readable text', () => {
+    expect(camelCaseToTitle('hallo')).toBe('Hallo')
+    expect(camelCaseToTitle('HelloIMustBeGoing')).toBe('Hello IMust Be Going')
+    expect(camelCaseToTitle('innerHTML')).toBe('Inner HTML')
+    expect(camelCaseToTitle('meineÜbung')).toBe('Meine Übung')
+    expect(camelCaseToTitle('meanDeltaECMC')).toBe('Mean Delta ECMC')
+    expect(camelCaseToTitle('meanDeltaECMC', {preserve: ['DeltaE']})).toBe('Mean DeltaE CMC')
+    expect(camelCaseToTitle('meanDeltaECMC', {preserve: ['DeltaE', 'CMC']})).toBe('Mean DeltaE CMC')
+    expect(camelCaseToTitle('meanDeltaECMC', {replace: {'DeltaE': '∆E'}})).toBe('Mean ∆E CMC')
 })
