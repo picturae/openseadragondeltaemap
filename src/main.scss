@@ -1,0 +1,61 @@
+$tblSpace: 0.5em;
+$tblBkgr: rgba(204, 204, 204, 0.8); /* #cccc; */
+$tblText: black;
+
+/*
+Exaxt target-image overlay
+left, top, width, height will be set inline
+*/
+targetmap {
+    position: absolute;
+    box-shadow: inset 0 0 2px 2px blue;
+}
+
+/*
+Chart projection
+left, top, width, height will be set inline
+*/
+targetchart {
+    position: absolute;
+    box-shadow: inset 0 0 2px 2px darkviolet;
+}
+
+/*
+Patch projection
+left, top, width, height will be set inline
+*/
+targetpatch {
+    position: absolute;
+    box-shadow: inset 0 0 2px 2px orange;
+}
+
+/*
+Mousetrailing display for
+left, top, right, bottom will be set inline
+*/
+.picturae-targetmap-display {
+    font: caption;
+    position: fixed;
+    background: $tblBkgr;
+    border-radius: 0 0 $tblSpace $tblSpace;
+    color: $tblText;
+    padding: $tblSpace;
+
+    caption {
+        background: $tblBkgr;
+        border-radius: $tblSpace $tblSpace 0 0;
+        padding: $tblSpace;
+        font-weight: bold;
+    }
+}
+
+/*
+Inline color display
+background will be set inline
+*/
+targetcolor {
+    display: inline-block;
+    box-shadow: 2px 2px 1px 0 #3339;
+    width: 0.8em;
+    height: 0.8em;
+}

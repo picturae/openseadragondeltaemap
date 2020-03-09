@@ -6,14 +6,6 @@ const DisplayTable = function(targetImage) {
     const table = document.createElement('table')
     this.element = table
     table.className = 'picturae-targetmap-display'
-    table.style.font = 'caption'
-    table.style.position = 'fixed'
-    table.style.background = '#cccc'
-    table.style.borderRadius = '0 0 .5em .5em'
-    table.style.color = '#000'
-    table.style.padding = '.5em'
-    table.style.bottom = '.5em'
-    table.style.right = '.5em'
 
     const targetEnter = function(event) {
         const targetValidation = event.target.dataset.picturaeTargetmapDisplay
@@ -26,13 +18,9 @@ const DisplayTable = function(targetImage) {
                 validationData.patchType === 'color'
             ) {
                 let color = `rgb(${validationData.R}, ${validationData.G}, ${validationData.B})`
-                colorSquare = `<targetColor style="display: inline-block;
-                    background: ${color}; box-shadow: 2px 2px 1px 0 #3339;
-                    width: .8em; height: .8em"/>`
+                colorSquare = `<targetColor style="background: ${color};"/>`
             }
-            table.innerHTML += `<caption
-                style="background: #cccc; border-radius: 0.5em 0.5em 0 0; padding: 0.5em; font-weight: bold;"
-            >
+            table.innerHTML += `<caption>
                 ${validationData.name} ${colorSquare}
             </caption>`
             for (let [key, value] of Object.entries(validationData)) {

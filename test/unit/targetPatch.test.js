@@ -10,6 +10,7 @@ test('targetPatch sets the position in a relative fashion', () => {
         htmlElement,
         contentSize,
     )
+
     const styleObject = targetPatchInstance.element.style
 
     expect(styleObject.left).toMatch(/%$/)

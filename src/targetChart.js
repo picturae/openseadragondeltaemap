@@ -5,7 +5,6 @@ const TargetChart = function(chartData, parentNode, containerSize) {
     this.name = 'TargetChart'
     this.element = document.createElement('targetChart')
 
-    this.element.style.position = 'absolute'
     this.element.style.left = `${(chartData.location.x * 100) /
         containerSize.x}%`
     this.element.style.top = `${(chartData.location.y * 100) /
@@ -21,7 +20,6 @@ const TargetChart = function(chartData, parentNode, containerSize) {
             this.element.style.transform = rotate //+ ' ' + translate
         }
     }
-    this.element.style.boxShadow = 'inset 0 0 2px 2px darkviolet'
     parentNode.appendChild(this.element)
 
     let userData = {}

@@ -5,8 +5,6 @@ import { DisplayTable } from './displayTable'
 const TargetMap = function(viewer) {
     this.name = 'TargetMap'
     this.element = document.createElement('targetmap')
-    this.element.style.position = 'absolute'
-    this.element.style.boxShadow = 'inset 0 0 2px 2px blue'
 
     viewer.canvas.appendChild(this.element)
 

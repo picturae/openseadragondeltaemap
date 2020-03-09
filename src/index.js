@@ -1,4 +1,5 @@
 import { TargetMap } from './targetMap'
+import './main.scss'
 
 var index = (function() {
     var $ = window.OpenSeadragon
