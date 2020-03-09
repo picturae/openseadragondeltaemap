@@ -1,5 +1,6 @@
 import { isUsableNumber, roundAt } from './functions'
 import { TargetChart } from './targetChart'
+import { DisplayTable } from './displayTable'
 
 const TargetMap = function(viewer) {
     this.name = 'TargetMap'
@@ -63,6 +64,7 @@ const TargetMap = function(viewer) {
             )
         })
     }
+    new DisplayTable(this.element)
 }
 
 export { TargetMap }

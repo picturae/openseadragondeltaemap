@@ -40,6 +40,7 @@ const TargetChart = function(chartData, parentNode, containerSize) {
     }
     if (chartData.colorPatches) {
         chartData.colorPatches.forEach(patchData => {
+            patchData.patchType = 'color'
             this.patches.push(
                 new TargetPatch(patchData, this.element, contentSize),
             )
@@ -47,6 +48,7 @@ const TargetChart = function(chartData, parentNode, containerSize) {
     }
     if (chartData.edgePatches) {
         chartData.edgePatches.forEach(patchData => {
+            patchData.patchType = 'edge'
             this.patches.push(
                 new TargetPatch(patchData, this.element, contentSize),
             )
