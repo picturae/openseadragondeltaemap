@@ -7,15 +7,15 @@ $boxLine: 4px;
 $cyan: #3ff;
 $blue: #5af;
 $violet: #a5f;
+$red: #f00;
+$green: #0c0;
 
 /*
 Exact target-image overlay
 left, top, width, height will be set inline
 */
 targetmap {
-    position: absolute;
     box-shadow: inset 0 0 $boxBlur $boxLine $violet;
-    border-radius: $boxBow;
 }
 
 /*
@@ -23,9 +23,7 @@ Chart projection
 left, top, width, height will be set inline
 */
 targetchart {
-    position: absolute;
     box-shadow: inset 0 0 $boxBlur $boxLine $blue;
-    border-radius: $boxBow;
 }
 
 /*
@@ -33,9 +31,20 @@ Patch projection
 left, top, width, height will be set inline
 */
 targetpatch {
-    position: absolute;
     box-shadow: inset 0 0 $boxBlur $boxLine $cyan;
+}
+
+targetmap,
+targetchart,
+targetpatch {
+    position: absolute;
     border-radius: $boxBow;
+    &.valid {
+        box-shadow: inset 0 0 $boxBlur $boxLine $green;
+    }
+    &.invalid {
+        box-shadow: inset 0 0 $boxBlur $boxLine $red;
+    }
 }
 
 /*
@@ -49,6 +58,7 @@ left, top, right, bottom will be set inline
     border-radius: 0 0 $tblSpace $tblSpace;
     color: $tblText;
     padding: $tblSpace;
+    max-width: 75vw;
 
     caption {
         background: $tblBkgr;

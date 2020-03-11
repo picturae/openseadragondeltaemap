@@ -1,4 +1,4 @@
-import { isUsableNumber, roundAt } from './functions'
+import { isUsableNumber, hasOwnProperty, roundAt } from './functions'
 import { TargetChart } from './targetChart'
 import { DisplayTable } from './displayTable'
 
@@ -52,6 +52,19 @@ const TargetMap = function(viewer) {
 
     this.charts = []
     this.render = json => {
+        let userData = {}
+        for (let [key, value] of Object.entries(json)) {
+            if (!(key === 'targets')) {
+                userData[key] = value
+            }
+        }
+        this.element.dataset.picturaeTargetmapDisplay = JSON.stringify(userData)
+
+        if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
+            const isValid = userData.validity.valid
+            this.element.classList.add(isValid ? 'valid' : 'invalid')
+        }
+
         json.targets.forEach(chartData => {
             this.charts.push(
                 new TargetChart(
@@ -62,7 +75,7 @@ const TargetMap = function(viewer) {
             )
         })
     }
-    new DisplayTable(this.element)
+    new DisplayTable(document.body)
 }
 
 export { TargetMap }

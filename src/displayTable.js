@@ -7,36 +7,59 @@ const DisplayTable = function(targetImage) {
     this.element = table
     table.className = 'picturae-targetmap-display'
 
+    const readableValue = value => {
+        if (isPrimitive(value)) return value
+        if (value instanceof Array) return JSON.stringify(value)
+        if (typeof value === 'object') return JSON.stringify(value)
+    }
+
+    const dataBody = groupData => {
+        let body = '<tbody>'
+        for (let [key, value] of Object.entries(groupData)) {
+            let row = ''
+            //            if (isPrimitive(value) && key !== 'name') {
+            row = `<tr><th>${camelCaseToTitle(key, {
+                replace: {
+                    deltaE: '&Delta;E',
+                    DeltaE: '&Delta;E',
+                    deltaL: '&Delta;L',
+                    DeltaL: '&Delta;L',
+                },
+            })}</th><td>${readableValue(value)}</td></tr>`
+            //            }
+            if (row) body += row
+        }
+        body += '</tbody>'
+        return body
+    }
+
     const targetEnter = function(event) {
-        const targetValidation = event.target.dataset.picturaeTargetmapDisplay
-        if (targetValidation) {
+        const targetData = event.target.dataset.picturaeTargetmapDisplay
+        if (targetData) {
             table.innerHTML = ''
-            const validationData = JSON.parse(targetValidation)
+            const userData = JSON.parse(targetData)
             let colorSquare = ''
-            if (
-                validationData.patchType &&
-                validationData.patchType === 'color'
-            ) {
-                let color = `rgb(${validationData.R}, ${validationData.G}, ${validationData.B})`
+            if (userData.patchType && userData.patchType === 'color') {
+                let color = `rgb(${userData.observed.RGB.join()})`
                 colorSquare = `<targetColor style="background: ${color};"/>`
             }
             table.innerHTML += `<caption>
-                ${validationData.name} ${colorSquare}
+                ${userData.name} ${colorSquare}
             </caption>`
-            for (let [key, value] of Object.entries(validationData)) {
-                let row = ''
-                if (isPrimitive(value) && key !== 'name') {
-                    row = `<tr><th>${camelCaseToTitle(key, {
-                        replace: {
-                            deltaE: '&Delta;E',
-                            DeltaE: '&Delta;E',
-                            deltaL: '&Delta;L',
-                            DeltaL: '&Delta;L',
-                        },
-                    })}</th><td>${value}</td></tr>`
-                }
-                if (row) table.innerHTML += row
+
+            if (userData.assessed) {
+                table.innerHTML += dataBody(userData.assessed)
             }
+            if (userData.observed) {
+                table.innerHTML += dataBody(userData.observed)
+            }
+            if (userData.reference) {
+                table.innerHTML += dataBody(userData.reference)
+            }
+            if (userData.validity) {
+                table.innerHTML += dataBody(userData.validity)
+            }
+
             if (!isAttachedToDom(table)) root.appendChild(table)
         }
     }
@@ -47,7 +70,11 @@ const DisplayTable = function(targetImage) {
 
     targetImage.addEventListener('mouseover', function(event) {
         const enter = event.target.tagName ? event.target.tagName || '' : ''
-        if (enter === 'TARGETCHART' || enter === 'TARGETPATCH') {
+        if (
+            enter === 'TARGETMAP' ||
+            enter === 'TARGETCHART' ||
+            enter === 'TARGETPATCH'
+        ) {
             targetEnter(event)
         } else {
             targetLeave(event)

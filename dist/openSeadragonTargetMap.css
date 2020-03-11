@@ -4,8 +4,7 @@ Exact target-image overlay
 left, top, width, height will be set inline
 */
 targetmap {
-  position: absolute;
-  box-shadow: inset 0 0 2px 2px blue;
+  box-shadow: inset 0 0 0 4px #a5f;
 }
 
 /*
@@ -13,8 +12,7 @@ Chart projection
 left, top, width, height will be set inline
 */
 targetchart {
-  position: absolute;
-  box-shadow: inset 0 0 2px 2px darkviolet;
+  box-shadow: inset 0 0 0 4px #5af;
 }
 
 /*
@@ -22,8 +20,24 @@ Patch projection
 left, top, width, height will be set inline
 */
 targetpatch {
+  box-shadow: inset 0 0 0 4px #3ff;
+}
+
+targetmap,
+targetchart,
+targetpatch {
   position: absolute;
-  box-shadow: inset 0 0 2px 2px orange;
+  border-radius: 6px;
+}
+targetmap.valid,
+targetchart.valid,
+targetpatch.valid {
+  box-shadow: inset 0 0 0 4px #0c0;
+}
+targetmap.invalid,
+targetchart.invalid,
+targetpatch.invalid {
+  box-shadow: inset 0 0 0 4px #f00;
 }
 
 /*
@@ -37,6 +51,7 @@ left, top, right, bottom will be set inline
   border-radius: 0 0 0.5em 0.5em;
   color: black;
   padding: 0.5em;
+  max-width: 75vw;
 }
 .picturae-targetmap-display caption {
   background: rgba(204, 204, 204, 0.8);

@@ -1,4 +1,4 @@
-import { isPrimitive } from './functions'
+import { hasOwnProperty } from './functions'
 
 const TargetPatch = function(patchData, parentNode, containerSize) {
     this.name = 'TargetPatch'
@@ -16,13 +16,16 @@ const TargetPatch = function(patchData, parentNode, containerSize) {
 
     let userData = {}
     for (let [key, value] of Object.entries(patchData)) {
-        if (isPrimitive(value)) {
+        if (!(key === 'location')) {
             userData[key] = value
         }
     }
-    patchData.reference ? (userData.reference = patchData.reference) : null
-    patchData.validity ? (userData.validity = patchData.validity) : null
     this.element.dataset.picturaeTargetmapDisplay = JSON.stringify(userData)
+
+    if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
+        const isValid = userData.validity.valid
+        this.element.classList.add(isValid ? 'valid' : 'invalid')
+    }
 }
 
 export { TargetPatch }

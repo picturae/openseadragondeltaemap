@@ -1,4 +1,4 @@
-import { isPrimitive } from './functions'
+import { hasOwnProperty } from './functions'
 import { TargetPatch } from '../src/targetPatch.js'
 
 const TargetChart = function(chartData, parentNode, containerSize) {
@@ -24,12 +24,22 @@ const TargetChart = function(chartData, parentNode, containerSize) {
 
     let userData = {}
     for (let [key, value] of Object.entries(chartData)) {
-        if (isPrimitive(value)) {
+        if (
+            !(
+                key === 'location' ||
+                key === 'colorPatches' ||
+                key === 'edgePatches'
+            )
+        ) {
             userData[key] = value
         }
     }
-    chartData.validity ? (userData.validity = chartData.validity) : null
     this.element.dataset.picturaeTargetmapDisplay = JSON.stringify(userData)
+
+    if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
+        const isValid = userData.validity.valid
+        this.element.classList.add(isValid ? 'valid' : 'invalid')
+    }
 
     this.patches = []
     const contentSize = {
@@ -44,14 +54,14 @@ const TargetChart = function(chartData, parentNode, containerSize) {
             )
         })
     }
-    if (chartData.edgePatches) {
-        chartData.edgePatches.forEach(patchData => {
-            patchData.patchType = 'edge'
-            this.patches.push(
-                new TargetPatch(patchData, this.element, contentSize),
-            )
-        })
-    }
+    // if (chartData.edgePatches) {
+    //     chartData.edgePatches.forEach(patchData => {
+    //         patchData.patchType = 'edge'
+    //         this.patches.push(
+    //             new TargetPatch(patchData, this.element, contentSize),
+    //         )
+    //     })
+    // }
 }
 
 export { TargetChart }

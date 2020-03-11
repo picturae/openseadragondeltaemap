@@ -142,10 +142,23 @@ const camelCaseToTitle = function(camel, options = {}) {
     return titleWords.join(options.seperator)
 }
 
+/**
+ * Check for existence of property in object
+ * @private
+ * @param {Object} object
+ * @param {String} prop
+ * @returns {Boolean} hasIt - object has that own property
+ */
+const hasOwnProperty = function(object, prop) {
+    const hasIt = Object.prototype.hasOwnProperty.call(object, prop)
+    return hasIt
+}
+
 export {
     isUsableNumber,
     roundAt,
     isPrimitive,
     isAttachedToDom,
     camelCaseToTitle,
+    hasOwnProperty,
 }
