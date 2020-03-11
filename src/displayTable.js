@@ -1,7 +1,7 @@
 import { camelCaseToTitle, isAttachedToDom, isPrimitive } from './functions.js'
 
 const DisplayTable = function(targetImage) {
-    this.name = 'TargetPatch'
+    this.name = 'DisplayTable'
     const root = document.body
     const table = document.createElement('table')
     this.element = table

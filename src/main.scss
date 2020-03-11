@@ -1,6 +1,12 @@
 $tblSpace: 0.5em;
 $tblBkgr: rgba(204, 204, 204, 0.8); /* #cccc; */
 $tblText: black;
+$boxBow: 6px;
+$boxBlur: 0;
+$boxLine: 4px;
+$cyan: #3ff;
+$blue: #5af;
+$violet: #a5f;
 
 /*
 Exact target-image overlay
@@ -8,7 +14,8 @@ left, top, width, height will be set inline
 */
 targetmap {
     position: absolute;
-    box-shadow: inset 0 0 2px 2px blue;
+    box-shadow: inset 0 0 $boxBlur $boxLine $violet;
+    border-radius: $boxBow;
 }
 
 /*
@@ -17,7 +24,8 @@ left, top, width, height will be set inline
 */
 targetchart {
     position: absolute;
-    box-shadow: inset 0 0 2px 2px darkviolet;
+    box-shadow: inset 0 0 $boxBlur $boxLine $blue;
+    border-radius: $boxBow;
 }
 
 /*
@@ -26,7 +34,8 @@ left, top, width, height will be set inline
 */
 targetpatch {
     position: absolute;
-    box-shadow: inset 0 0 2px 2px orange;
+    box-shadow: inset 0 0 $boxBlur $boxLine $cyan;
+    border-radius: $boxBow;
 }
 
 /*
