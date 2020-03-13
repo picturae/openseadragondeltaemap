@@ -1,14 +1,16 @@
 $tblSpace: 0.5em;
-$tblBkgr: rgba(204, 204, 204, 0.8); /* #cccc; */
+$tblBkgr: rgba(204, 204, 204, 0.93); /* #ccce; */
 $tblText: black;
 $boxBow: 6px;
 $boxBlur: 0;
 $boxLine: 4px;
-$cyan: #3ff;
-$blue: #5af;
+$cyan: #0cc;
+$blue: #69f;
 $violet: #a5f;
-$red: #f00;
-$green: #0c0;
+$red: #c00;
+$green: #0b0;
+$textRed: #b00;
+$textGreen: #080;
 
 /*
 Exact target-image overlay
@@ -58,13 +60,37 @@ left, top, right, bottom will be set inline
     border-radius: 0 0 $tblSpace $tblSpace;
     color: $tblText;
     padding: $tblSpace;
-    max-width: 75vw;
+    max-width: 48vw; // safe 50% - 16px when 100% is 800px
 
     caption {
         background: $tblBkgr;
         border-radius: $tblSpace $tblSpace 0 0;
         padding: $tblSpace;
+        font-size: 16px;
         font-weight: bold;
+        &:after {
+            content: '';
+            display: block;
+            position: relative;
+            top: $tblSpace;
+        }
+    }
+    &.valid caption:after {
+        border-bottom: $boxLine solid $green;
+    }
+    &.invalid caption:after {
+        border-bottom: $boxLine solid $red;
+    }
+
+    tbody:before {
+        content: attr(name);
+        display: table-row-group;
+        font: small-caption;
+    }
+
+    th,
+    td {
+        vertical-align: top;
     }
 }
 
@@ -75,6 +101,24 @@ background will be set inline
 targetcolor {
     display: inline-block;
     box-shadow: 2px 2px 1px 0 #3339;
-    width: 0.8em;
-    height: 0.8em;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: bottom;
+}
+
+/*
+Inline boolean display
+color set according to boolean state
+*/
+targetboolean {
+    display: inline-block;
+    font-weight: bold;
+    &.valid:before {
+        content: '\2713';
+        color: $textGreen;
+    }
+    &.invalid:before {
+        content: '\2717';
+        color: $textRed;
+    }
 }

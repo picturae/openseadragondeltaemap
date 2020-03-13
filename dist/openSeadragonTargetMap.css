@@ -1,4 +1,5 @@
-/* #cccc; */
+@charset "UTF-8";
+/* #ccce; */
 /*
 Exact target-image overlay
 left, top, width, height will be set inline
@@ -12,7 +13,7 @@ Chart projection
 left, top, width, height will be set inline
 */
 targetchart {
-  box-shadow: inset 0 0 0 4px #5af;
+  box-shadow: inset 0 0 0 4px #69f;
 }
 
 /*
@@ -20,7 +21,7 @@ Patch projection
 left, top, width, height will be set inline
 */
 targetpatch {
-  box-shadow: inset 0 0 0 4px #3ff;
+  box-shadow: inset 0 0 0 4px #0cc;
 }
 
 targetmap,
@@ -32,12 +33,12 @@ targetpatch {
 targetmap.valid,
 targetchart.valid,
 targetpatch.valid {
-  box-shadow: inset 0 0 0 4px #0c0;
+  box-shadow: inset 0 0 0 4px #0b0;
 }
 targetmap.invalid,
 targetchart.invalid,
 targetpatch.invalid {
-  box-shadow: inset 0 0 0 4px #f00;
+  box-shadow: inset 0 0 0 4px #c00;
 }
 
 /*
@@ -47,17 +48,39 @@ left, top, right, bottom will be set inline
 .picturae-targetmap-display {
   font: caption;
   position: fixed;
-  background: rgba(204, 204, 204, 0.8);
+  background: rgba(204, 204, 204, 0.93);
   border-radius: 0 0 0.5em 0.5em;
   color: black;
   padding: 0.5em;
-  max-width: 75vw;
+  max-width: 48vw;
 }
 .picturae-targetmap-display caption {
-  background: rgba(204, 204, 204, 0.8);
+  background: rgba(204, 204, 204, 0.93);
   border-radius: 0.5em 0.5em 0 0;
   padding: 0.5em;
+  font-size: 16px;
   font-weight: bold;
+}
+.picturae-targetmap-display caption:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.5em;
+}
+.picturae-targetmap-display.valid caption:after {
+  border-bottom: 4px solid #0b0;
+}
+.picturae-targetmap-display.invalid caption:after {
+  border-bottom: 4px solid #c00;
+}
+.picturae-targetmap-display tbody:before {
+  content: attr(name);
+  display: table-row-group;
+  font: small-caption;
+}
+.picturae-targetmap-display th,
+.picturae-targetmap-display td {
+  vertical-align: top;
 }
 
 /*
@@ -67,6 +90,24 @@ background will be set inline
 targetcolor {
   display: inline-block;
   box-shadow: 2px 2px 1px 0 #3339;
-  width: 0.8em;
-  height: 0.8em;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: bottom;
+}
+
+/*
+Inline boolean display
+color set according to boolean state
+*/
+targetboolean {
+  display: inline-block;
+  font-weight: bold;
+}
+targetboolean.valid:before {
+  content: "✓";
+  color: #080;
+}
+targetboolean.invalid:before {
+  content: "✗";
+  color: #b00;
 }

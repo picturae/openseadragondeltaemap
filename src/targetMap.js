@@ -52,6 +52,9 @@ const TargetMap = function(viewer) {
 
     this.charts = []
     this.render = json => {
+        this.element.innerHTML = ''
+        if (!json.name) json.name = 'Target Scan'
+
         let userData = {}
         for (let [key, value] of Object.entries(json)) {
             if (!(key === 'targets')) {

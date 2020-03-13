@@ -1,6 +1,11 @@
-import { camelCaseToTitle, isAttachedToDom, isPrimitive } from './functions.js'
+import {
+    camelCaseToTitle,
+    isAttachedToDom,
+    isPrimitive,
+    hasOwnProperty,
+} from './functions.js'
 
-const DisplayTable = function(targetImage) {
+const DisplayTable = function(eventRoot) {
     this.name = 'DisplayTable'
     const root = document.body
     const table = document.createElement('table')
@@ -8,16 +13,49 @@ const DisplayTable = function(targetImage) {
     table.className = 'picturae-targetmap-display'
 
     const readableValue = value => {
+        if (value === null) {
+            return '--'
+        }
+        if (typeof value === 'boolean') {
+            let bool = `<targetBoolean class="${
+                value ? 'valid' : 'invalid'
+            }"></targetBoolean>`
+            return bool
+        }
         if (isPrimitive(value)) return value
-        if (value instanceof Array) return JSON.stringify(value)
-        if (typeof value === 'object') return JSON.stringify(value)
+        if (value instanceof Array && value.length) {
+            if (isPrimitive(value[0])) return value.join(', ')
+            if (typeof value[0] === 'object') {
+                let fragment = ''
+                for (let i = 0; i < value.length; i++) {
+                    fragment += readableValue(value[i])
+                }
+                return fragment
+            }
+        }
+        if (typeof value === 'object' && !(value instanceof Array)) {
+            let fragment = ''
+            for (let [property, content] of Object.entries(value)) {
+                let line = ''
+                if (typeof content === 'boolean') {
+                    line = `${readableValue(content)} ${camelCaseToTitle(
+                        property,
+                    )}<br/>`
+                } else {
+                    line = `${camelCaseToTitle(property)}: ${readableValue(
+                        content,
+                    )}<br/>`
+                }
+                if (line) fragment += line
+            }
+            return fragment + ''
+        }
     }
 
-    const dataBody = groupData => {
-        let body = '<tbody>'
+    const dataBody = (groupName, groupData) => {
+        let body = `<tbody name="${groupName}">`
         for (let [key, value] of Object.entries(groupData)) {
             let row = ''
-            //            if (isPrimitive(value) && key !== 'name') {
             row = `<tr><th>${camelCaseToTitle(key, {
                 replace: {
                     deltaE: '&Delta;E',
@@ -26,7 +64,6 @@ const DisplayTable = function(targetImage) {
                     DeltaL: '&Delta;L',
                 },
             })}</th><td>${readableValue(value)}</td></tr>`
-            //            }
             if (row) body += row
         }
         body += '</tbody>'
@@ -41,23 +78,28 @@ const DisplayTable = function(targetImage) {
             let colorSquare = ''
             if (userData.patchType && userData.patchType === 'color') {
                 let color = `rgb(${userData.observed.RGB.join()})`
-                colorSquare = `<targetColor style="background: ${color};"/>`
+                colorSquare = `<targetColor style="background: ${color};"></targetColor>`
             }
             table.innerHTML += `<caption>
                 ${userData.name} ${colorSquare}
             </caption>`
 
             if (userData.assessed) {
-                table.innerHTML += dataBody(userData.assessed)
+                table.innerHTML += dataBody('assessed', userData.assessed)
             }
             if (userData.observed) {
-                table.innerHTML += dataBody(userData.observed)
+                table.innerHTML += dataBody('observed', userData.observed)
             }
             if (userData.reference) {
-                table.innerHTML += dataBody(userData.reference)
+                table.innerHTML += dataBody('reference', userData.reference)
             }
             if (userData.validity) {
-                table.innerHTML += dataBody(userData.validity)
+                if (hasOwnProperty(userData.validity, 'valid')) {
+                    const isValid = userData.validity.valid
+                    table.classList.remove('valid', 'invalid')
+                    table.classList.add(isValid ? 'valid' : 'invalid')
+                }
+                table.innerHTML += dataBody('validity', userData.validity)
             }
 
             if (!isAttachedToDom(table)) root.appendChild(table)
@@ -68,39 +110,46 @@ const DisplayTable = function(targetImage) {
         if (isAttachedToDom(table)) root.removeChild(table)
     }
 
-    targetImage.addEventListener('mouseover', function(event) {
-        const enter = event.target.tagName ? event.target.tagName || '' : ''
+    eventRoot.addEventListener('mouseover', function(event) {
+        const enter = event.target
         if (
-            enter === 'TARGETMAP' ||
-            enter === 'TARGETCHART' ||
-            enter === 'TARGETPATCH'
+            enter.tagName === 'TARGETMAP' ||
+            enter.tagName === 'TARGETCHART' ||
+            enter.tagName === 'TARGETPATCH'
         ) {
             targetEnter(event)
-        } else {
+        } else if (!table.contains(enter)) {
             targetLeave(event)
         }
         event.stopPropagation()
     })
 
-    targetImage.addEventListener('mousemove', function(event) {
+    eventRoot.addEventListener('mousemove', function(event) {
+        const offPointer = 16
+
         if (event.clientX / root.clientWidth < 0.5) {
-            table.style.left = `${event.clientX + 16}px`
+            table.style.left = `${event.clientX + offPointer}px`
             table.style.right = 'auto'
         } else {
             table.style.left = 'auto'
-            table.style.right = `${root.clientWidth - event.clientX + 16}px`
+            table.style.right = `${root.clientWidth -
+                event.clientX +
+                offPointer}px`
         }
-        const yFraction = event.clientY / root.clientHeight
-        if (yFraction < 0.333) {
-            table.style.top = `${event.clientY + 16}px`
+
+        const ySpace = (root.clientHeight - table.clientHeight) / 2
+
+        if (event.clientY < ySpace - offPointer) {
+            table.style.top = `${event.clientY + offPointer}px`
             table.style.bottom = 'auto'
-        } else if (yFraction < 0.666) {
-            table.style.top = `${(root.clientHeight - table.clientHeight) /
-                2}px`
+        } else if (event.clientY < ySpace + offPointer + table.clientHeight) {
+            table.style.top = `${ySpace}px`
             table.style.bottom = 'auto'
         } else {
             table.style.top = 'auto'
-            table.style.bottom = `${root.clientHeight - event.clientY + 16}px`
+            table.style.bottom = `${root.clientHeight -
+                event.clientY +
+                offPointer}px`
         }
         event.stopPropagation()
     })

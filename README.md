@@ -22,5 +22,6 @@ and a es-module (module folder):
 ## Demo
 
 .../openseadragontargetmap/demo/demo.html
+
 for the unconnected:
 .../openseadragontargetmap/demo/demo.html?demo
