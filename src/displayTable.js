@@ -1,9 +1,5 @@
-import {
-    camelCaseToTitle,
-    isAttachedToDom,
-    isPrimitive,
-    hasOwnProperty,
-} from './functions'
+import { isAttachedToDom, isPrimitive, hasOwnProperty } from './functions'
+import transformCase from 'transform-case'
 
 const DisplayTable = function(eventRoot) {
     this.name = 'DisplayTable'
@@ -38,13 +34,13 @@ const DisplayTable = function(eventRoot) {
             for (let [property, content] of Object.entries(value)) {
                 let line = ''
                 if (typeof content === 'boolean') {
-                    line = `${readableValue(content)} ${camelCaseToTitle(
+                    line = `${readableValue(content)} ${transformCase(
                         property,
-                    )}<br/>`
+                    ).humanTitle()}<br/>`
                 } else {
-                    line = `${camelCaseToTitle(property)}: ${readableValue(
-                        content,
-                    )}<br/>`
+                    line = `${transformCase(
+                        property,
+                    ).humanTitle()}: ${readableValue(content)}<br/>`
                 }
                 if (line) fragment += line
             }
@@ -56,14 +52,14 @@ const DisplayTable = function(eventRoot) {
         let body = `<tbody name="${groupName}">`
         for (let [key, value] of Object.entries(groupData)) {
             let row = ''
-            row = `<tr><th>${camelCaseToTitle(key, {
+            row = `<tr><th>${transformCase(key, {
                 replace: {
                     deltaE: '&Delta;E',
                     DeltaE: '&Delta;E',
                     deltaL: '&Delta;L',
                     DeltaL: '&Delta;L',
                 },
-            })}</th><td>${readableValue(value)}</td></tr>`
+            }).humanTitle()}</th><td>${readableValue(value)}</td></tr>`
             if (row) body += row
         }
         body += '</tbody>'

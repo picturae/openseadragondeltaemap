@@ -2,6 +2,7 @@
 import commonjs from '@rollup/plugin-commonjs'
 import { terser } from 'rollup-plugin-terser'
 import sass from 'rollup-plugin-sass'
+import resolve from '@rollup/plugin-node-resolve'
 
 const name = 'openSeadragonTargetMap'
 
@@ -22,6 +23,7 @@ export default {
     },
   ],
   plugins: [
+    resolve(),
     sass({
       output: true,
     }),

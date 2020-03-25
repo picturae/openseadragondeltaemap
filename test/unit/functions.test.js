@@ -1,5 +1,4 @@
 import {
-    camelCaseToTitle,
     isAttachedToDom,
     isPrimitive,
     isUsableNumber,
