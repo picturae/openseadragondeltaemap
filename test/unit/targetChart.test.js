@@ -1,5 +1,5 @@
-import { contentSize, targetData } from './_mocks.js'
-import { TargetChart } from '../../src/targetChart.js'
+import { contentSize, targetData } from './_mocks'
+import { TargetChart } from '../../src/targetChart'
 
 let chartData = targetData.targets[0]
 let htmlElement = document.body

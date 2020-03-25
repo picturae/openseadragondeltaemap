@@ -3,7 +3,7 @@ import {
     isAttachedToDom,
     isPrimitive,
     hasOwnProperty,
-} from './functions.js'
+} from './functions'
 
 const DisplayTable = function(eventRoot) {
     this.name = 'DisplayTable'

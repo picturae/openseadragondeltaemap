@@ -1,4 +1,4 @@
-import { DisplayTable } from '../../src/displayTable.js'
+import { DisplayTable } from '../../src/displayTable'
 
 let htmlElement = document.body
 

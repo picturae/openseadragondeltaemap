@@ -1,17 +1,11 @@
 {
-    "validity": {
-        "valid": false,
-        "message": ["Target(s) did not pass all guidelines"],
-        "hasInvalidPatch": false
-    },
+    "validity": { "valid": true, "message": "", "hasInvalidPatch": false },
     "targets": [
         {
             "name": "Scan Reference Chart (Standard)",
             "type": "SCAN_REFERENCE_CHART_STANDARD",
             "location": { "x": 3210, "y": 25, "w": 2354, "h": 253, "r": 180 },
-            "observed": {
-                "ppi": 300.9598793988782
-            },
+            "observed": { "ppi": 300.9598793988782 },
             "colorPatches": [
                 {
                     "name": "C1",
@@ -31,12 +25,11 @@
                         "deltaECMC": 6.19,
                         "deltaL": 2.41
                     },
-                    "reference": {
-                        "Lab": [46, 64, 34]
-                    },
+                    "reference": { "Lab": [46, 64, 34] },
                     "validity": {
                         "valid": false,
-                        "message": ["∆E2000 (6.97) is above 5.0"]
+                        "message": ["∆E1976 13.38 above 10"],
+                        "invalidPatch": true
                     }
                 },
                 {
@@ -57,9 +50,7 @@
                         "deltaECMC": 1.38,
                         "deltaL": 2.06
                     },
-                    "reference": {
-                        "Lab": [53, -45, 38]
-                    },
+                    "reference": { "Lab": [53, -45, 38] },
                     "validity": { "valid": true }
                 },
                 {
@@ -80,9 +71,7 @@
                         "deltaECMC": 3.85,
                         "deltaL": 3.62
                     },
-                    "reference": {
-                        "Lab": [18, 24, -61]
-                    },
+                    "reference": { "Lab": [18, 24, -61] },
                     "validity": { "valid": true }
                 },
                 {
@@ -103,9 +92,7 @@
                         "deltaECMC": 0.75,
                         "deltaL": 1.03
                     },
-                    "reference": {
-                        "Lab": [48, -34, -31]
-                    },
+                    "reference": { "Lab": [48, -34, -31] },
                     "validity": { "valid": true }
                 },
                 {
@@ -126,9 +113,7 @@
                         "deltaECMC": 1.26,
                         "deltaL": 1.83
                     },
-                    "reference": {
-                        "Lab": [49, 56, -14]
-                    },
+                    "reference": { "Lab": [49, 56, -14] },
                     "validity": { "valid": true }
                 },
                 {
@@ -149,9 +134,7 @@
                         "deltaECMC": 0.82,
                         "deltaL": 1.33
                     },
-                    "reference": {
-                        "Lab": [82, 3, 90]
-                    },
+                    "reference": { "Lab": [82, 3, 90] },
                     "validity": { "valid": true }
                 },
                 {
@@ -172,9 +155,7 @@
                         "deltaECMC": 2.62,
                         "deltaL": 0.15
                     },
-                    "reference": {
-                        "Lab": [64, 20, 19]
-                    },
+                    "reference": { "Lab": [64, 20, 19] },
                     "validity": { "valid": true }
                 },
                 {
@@ -195,9 +176,7 @@
                         "deltaECMC": 3.66,
                         "deltaL": 2.73
                     },
-                    "reference": {
-                        "Lab": [32, 24, 32]
-                    },
+                    "reference": { "Lab": [32, 24, 32] },
                     "validity": { "valid": true }
                 },
                 {
@@ -218,9 +197,7 @@
                         "deltaECMC": null,
                         "deltaL": -0.43
                     },
-                    "reference": {
-                        "Lab": [5, 0, 0]
-                    },
+                    "reference": { "Lab": [5, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -241,9 +218,7 @@
                         "deltaECMC": 1.09,
                         "deltaL": 1.11
                     },
-                    "reference": {
-                        "Lab": [10, 0, 0]
-                    },
+                    "reference": { "Lab": [10, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -264,9 +239,7 @@
                         "deltaECMC": 2.4,
                         "deltaL": 1.82
                     },
-                    "reference": {
-                        "Lab": [15, 0, 0]
-                    },
+                    "reference": { "Lab": [15, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -287,9 +260,7 @@
                         "deltaECMC": 3.36,
                         "deltaL": 2.86
                     },
-                    "reference": {
-                        "Lab": [20, 0, 0]
-                    },
+                    "reference": { "Lab": [20, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -310,9 +281,7 @@
                         "deltaECMC": null,
                         "deltaL": 2.44
                     },
-                    "reference": {
-                        "Lab": [45, 0, 0]
-                    },
+                    "reference": { "Lab": [45, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -333,9 +302,7 @@
                         "deltaECMC": 1.03,
                         "deltaL": 2.17
                     },
-                    "reference": {
-                        "Lab": [50, 0, 0]
-                    },
+                    "reference": { "Lab": [50, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -356,9 +323,7 @@
                         "deltaECMC": 1.24,
                         "deltaL": 2.11
                     },
-                    "reference": {
-                        "Lab": [55, 0, 0]
-                    },
+                    "reference": { "Lab": [55, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -379,9 +344,7 @@
                         "deltaECMC": 0.61,
                         "deltaL": 1.71
                     },
-                    "reference": {
-                        "Lab": [85, 0, 0]
-                    },
+                    "reference": { "Lab": [85, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -402,9 +365,7 @@
                         "deltaECMC": 1.69,
                         "deltaL": 1.31
                     },
-                    "reference": {
-                        "Lab": [90, 0, 0]
-                    },
+                    "reference": { "Lab": [90, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -425,9 +386,7 @@
                         "deltaECMC": 1.65,
                         "deltaL": -0.71
                     },
-                    "reference": {
-                        "Lab": [95, 0, 0]
-                    },
+                    "reference": { "Lab": [95, 0, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -448,9 +407,7 @@
                         "deltaECMC": 2.86,
                         "deltaL": 0.8
                     },
-                    "reference": {
-                        "Lab": [86, -19, -1]
-                    },
+                    "reference": { "Lab": [86, -19, -1] },
                     "validity": { "valid": true }
                 },
                 {
@@ -471,9 +428,7 @@
                         "deltaECMC": 3.91,
                         "deltaL": 0.16
                     },
-                    "reference": {
-                        "Lab": [85, 13, 0]
-                    },
+                    "reference": { "Lab": [85, 13, 0] },
                     "validity": { "valid": true }
                 },
                 {
@@ -494,9 +449,7 @@
                         "deltaECMC": 4.09,
                         "deltaL": 1.58
                     },
-                    "reference": {
-                        "Lab": [85, -2, -9]
-                    },
+                    "reference": { "Lab": [85, -2, -9] },
                     "validity": { "valid": true }
                 },
                 {
@@ -517,9 +470,7 @@
                         "deltaECMC": 1.95,
                         "deltaL": -0.82
                     },
-                    "reference": {
-                        "Lab": [87, 10, 18]
-                    },
+                    "reference": { "Lab": [87, 10, 18] },
                     "validity": { "valid": true }
                 },
                 {
@@ -540,9 +491,7 @@
                         "deltaECMC": 1.1,
                         "deltaL": 1.79
                     },
-                    "reference": {
-                        "Lab": [85, -11, 26]
-                    },
+                    "reference": { "Lab": [85, -11, 26] },
                     "validity": { "valid": true }
                 },
                 {
@@ -563,9 +512,7 @@
                         "deltaECMC": 1.49,
                         "deltaL": -1.29
                     },
-                    "reference": {
-                        "Lab": [86, 13, 7]
-                    },
+                    "reference": { "Lab": [86, 13, 7] },
                     "validity": { "valid": true }
                 },
                 {
@@ -586,9 +533,7 @@
                         "deltaECMC": 2.84,
                         "deltaL": 0.62
                     },
-                    "reference": {
-                        "Lab": [85, -14, -9]
-                    },
+                    "reference": { "Lab": [85, -14, -9] },
                     "validity": { "valid": true }
                 },
                 {
@@ -609,21 +554,17 @@
                         "deltaECMC": 3.67,
                         "deltaL": 2.33
                     },
-                    "reference": {
-                        "Lab": [85, 4, -6]
-                    },
+                    "reference": { "Lab": [85, 4, -6] },
                     "validity": { "valid": true }
                 }
             ],
             "edgePatches": [
                 {
                     "name": "Vertical",
+                    "R": { "MTF10": 0.004677294, "MTF50": 0.001606982 },
+                    "G": { "MTF10": 0.0050534, "MTF50": 0.00161023 },
+                    "B": { "MTF10": 0.005197569, "MTF50": 0.001608163 },
                     "observed": {
-                        "R": { "MTF10": 0.004677294, "MTF50": 0.001606982 },
-                        "G": { "MTF10": 0.0050534, "MTF50": 0.00161023 },
-                        "B": { "MTF10": 0.005197569, "MTF50": 0.001608163 }
-                    },
-                    "assessed": {
                         "SEFF": 88,
                         "MTF10": 0.24,
                         "MTF50": 0.44,
@@ -634,10 +575,7 @@
                 }
             ],
             "targetType": "SCAN_REFERENCE_CHART_STANDARD",
-            "validity": {
-                "valid": false,
-                "message": ["Contains unsharp features"]
-            },
+            "validity": { "valid": true },
             "assessed": {
                 "meanDeltaE76": 3.46,
                 "meanDeltaE94T": 2.48,
@@ -652,9 +590,7 @@
             "name": "ColorChecker Digital SG",
             "type": "COLORCHECKER_DIGITAL_SG",
             "location": { "x": 2602, "y": 1839, "w": 3397, "h": 2361, "r": 0 },
-            "observed": {
-                "ppi": 300.51957243956286
-            },
+            "observed": { "ppi": 300.51957243956286 },
             "colorPatches": [
                 {
                     "name": "A1",
@@ -674,9 +610,7 @@
                         "deltaECMC": 2.27,
                         "deltaL": -0.03
                     },
-                    "reference": {
-                        "Lab": [96.55, -0.91, 0.57]
-                    },
+                    "reference": { "Lab": [96.55, -0.91, 0.57] },
                     "validity": { "valid": true }
                 },
                 {
@@ -697,13 +631,8 @@
                         "deltaECMC": 8.27,
                         "deltaL": 6.37
                     },
-                    "reference": {
-                        "Lab": [6.43, -0.06, -0.41]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (6.13) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.43, -0.06, -0.41] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "A3",
@@ -723,9 +652,7 @@
                         "deltaECMC": 1.76,
                         "deltaL": 0.51
                     },
-                    "reference": {
-                        "Lab": [49.7, -0.18, 0.03]
-                    },
+                    "reference": { "Lab": [49.7, -0.18, 0.03] },
                     "validity": { "valid": true }
                 },
                 {
@@ -746,9 +673,7 @@
                         "deltaECMC": 2.46,
                         "deltaL": -0.27
                     },
-                    "reference": {
-                        "Lab": [96.5, -0.89, 0.59]
-                    },
+                    "reference": { "Lab": [96.5, -0.89, 0.59] },
                     "validity": { "valid": true }
                 },
                 {
@@ -769,9 +694,7 @@
                         "deltaECMC": 6.35,
                         "deltaL": 4.97
                     },
-                    "reference": {
-                        "Lab": [6.5, -0.06, -0.44]
-                    },
+                    "reference": { "Lab": [6.5, -0.06, -0.44] },
                     "validity": { "valid": true }
                 },
                 {
@@ -792,9 +715,7 @@
                         "deltaECMC": 1.73,
                         "deltaL": 0.2
                     },
-                    "reference": {
-                        "Lab": [49.66, -0.2, 0.01]
-                    },
+                    "reference": { "Lab": [49.66, -0.2, 0.01] },
                     "validity": { "valid": true }
                 },
                 {
@@ -815,9 +736,7 @@
                         "deltaECMC": 3.22,
                         "deltaL": -0.11
                     },
-                    "reference": {
-                        "Lab": [96.52, -0.91, 0.58]
-                    },
+                    "reference": { "Lab": [96.52, -0.91, 0.58] },
                     "validity": { "valid": true }
                 },
                 {
@@ -838,13 +757,8 @@
                         "deltaECMC": 7.57,
                         "deltaL": 5.36
                     },
-                    "reference": {
-                        "Lab": [6.49, -0.02, -0.28]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.77) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.49, -0.02, -0.28] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "A9",
@@ -864,9 +778,7 @@
                         "deltaECMC": 1.77,
                         "deltaL": 0.51
                     },
-                    "reference": {
-                        "Lab": [49.72, -0.2, 0.04]
-                    },
+                    "reference": { "Lab": [49.72, -0.2, 0.04] },
                     "validity": { "valid": true }
                 },
                 {
@@ -887,9 +799,7 @@
                         "deltaECMC": 4.03,
                         "deltaL": 0.48
                     },
-                    "reference": {
-                        "Lab": [96.43, -0.91, 0.67]
-                    },
+                    "reference": { "Lab": [96.43, -0.91, 0.67] },
                     "validity": { "valid": true }
                 },
                 {
@@ -910,9 +820,7 @@
                         "deltaECMC": 1.75,
                         "deltaL": 0.53
                     },
-                    "reference": {
-                        "Lab": [49.72, -0.19, 0.02]
-                    },
+                    "reference": { "Lab": [49.72, -0.19, 0.02] },
                     "validity": { "valid": true }
                 },
                 {
@@ -933,9 +841,7 @@
                         "deltaECMC": 1.32,
                         "deltaL": 0.33
                     },
-                    "reference": {
-                        "Lab": [32.6, 51.58, -10.85]
-                    },
+                    "reference": { "Lab": [32.6, 51.58, -10.85] },
                     "validity": { "valid": true }
                 },
                 {
@@ -956,9 +862,7 @@
                         "deltaECMC": 0.77,
                         "deltaL": 0.46
                     },
-                    "reference": {
-                        "Lab": [60.75, 26.22, -18.69]
-                    },
+                    "reference": { "Lab": [60.75, 26.22, -18.69] },
                     "validity": { "valid": true }
                 },
                 {
@@ -979,9 +883,7 @@
                         "deltaECMC": 1.77,
                         "deltaL": 2.1
                     },
-                    "reference": {
-                        "Lab": [28.69, 48.28, -39]
-                    },
+                    "reference": { "Lab": [28.69, 48.28, -39] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1002,9 +904,7 @@
                         "deltaECMC": 2.03,
                         "deltaL": 0.37
                     },
-                    "reference": {
-                        "Lab": [49.38, -15.43, -48.48]
-                    },
+                    "reference": { "Lab": [49.38, -15.43, -48.48] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1025,9 +925,7 @@
                         "deltaECMC": 1.58,
                         "deltaL": -0.15
                     },
-                    "reference": {
-                        "Lab": [60.63, -30.77, -26.23]
-                    },
+                    "reference": { "Lab": [60.63, -30.77, -26.23] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1048,9 +946,7 @@
                         "deltaECMC": 2.63,
                         "deltaL": 2.7
                     },
-                    "reference": {
-                        "Lab": [19.29, -26.37, -6.15]
-                    },
+                    "reference": { "Lab": [19.29, -26.37, -6.15] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1071,9 +967,7 @@
                         "deltaECMC": 1.77,
                         "deltaL": -0.29
                     },
-                    "reference": {
-                        "Lab": [60.15, -41.77, -12.6]
-                    },
+                    "reference": { "Lab": [60.15, -41.77, -12.6] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1094,9 +988,7 @@
                         "deltaECMC": 2.4,
                         "deltaL": -1.54
                     },
-                    "reference": {
-                        "Lab": [21.42, 1.67, 8.79]
-                    },
+                    "reference": { "Lab": [21.42, 1.67, 8.79] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1117,9 +1009,7 @@
                         "deltaECMC": 1.76,
                         "deltaL": 0.57
                     },
-                    "reference": {
-                        "Lab": [49.69, -0.2, 0.01]
-                    },
+                    "reference": { "Lab": [49.69, -0.2, 0.01] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1140,13 +1030,8 @@
                         "deltaECMC": 7.25,
                         "deltaL": 5.51
                     },
-                    "reference": {
-                        "Lab": [6.5, -0.03, -0.67]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.36) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.5, -0.03, -0.67] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "C2",
@@ -1166,9 +1051,7 @@
                         "deltaECMC": 1.53,
                         "deltaL": 0.33
                     },
-                    "reference": {
-                        "Lab": [21.82, 17.33, -18.35]
-                    },
+                    "reference": { "Lab": [21.82, 17.33, -18.35] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1189,9 +1072,7 @@
                         "deltaECMC": 0.73,
                         "deltaL": 0.59
                     },
-                    "reference": {
-                        "Lab": [41.53, 18.48, -37.26]
-                    },
+                    "reference": { "Lab": [41.53, 18.48, -37.26] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1212,9 +1093,7 @@
                         "deltaECMC": 2,
                         "deltaL": -0.55
                     },
-                    "reference": {
-                        "Lab": [19.99, -0.16, -36.29]
-                    },
+                    "reference": { "Lab": [19.99, -0.16, -36.29] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1235,9 +1114,7 @@
                         "deltaECMC": 1.81,
                         "deltaL": 0.05
                     },
-                    "reference": {
-                        "Lab": [60.16, -18.45, -31.42]
-                    },
+                    "reference": { "Lab": [60.16, -18.45, -31.42] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1258,9 +1135,7 @@
                         "deltaECMC": 4.24,
                         "deltaL": 0.95
                     },
-                    "reference": {
-                        "Lab": [19.94, -17.92, -20.96]
-                    },
+                    "reference": { "Lab": [19.94, -17.92, -20.96] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1281,9 +1156,7 @@
                         "deltaECMC": 1.31,
                         "deltaL": -0.08
                     },
-                    "reference": {
-                        "Lab": [60.68, -6.05, -32.81]
-                    },
+                    "reference": { "Lab": [60.68, -6.05, -32.81] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1304,9 +1177,7 @@
                         "deltaECMC": 3.39,
                         "deltaL": 0.81
                     },
-                    "reference": {
-                        "Lab": [50.81, -49.8, -9.63]
-                    },
+                    "reference": { "Lab": [50.81, -49.8, -9.63] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1327,9 +1198,7 @@
                         "deltaECMC": 0.86,
                         "deltaL": -0.16
                     },
-                    "reference": {
-                        "Lab": [60.65, -39.77, 20.76]
-                    },
+                    "reference": { "Lab": [60.65, -39.77, 20.76] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1350,9 +1219,7 @@
                         "deltaECMC": 6.84,
                         "deltaL": 6.01
                     },
-                    "reference": {
-                        "Lab": [6.53, -0.03, -0.43]
-                    },
+                    "reference": { "Lab": [6.53, -0.03, -0.43] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1373,9 +1240,7 @@
                         "deltaECMC": 2.25,
                         "deltaL": -0.05
                     },
-                    "reference": {
-                        "Lab": [96.56, -0.91, 0.59]
-                    },
+                    "reference": { "Lab": [96.56, -0.91, 0.59] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1396,9 +1261,7 @@
                         "deltaECMC": 3.09,
                         "deltaL": -0.48
                     },
-                    "reference": {
-                        "Lab": [84.19, -1.95, -8.23]
-                    },
+                    "reference": { "Lab": [84.19, -1.95, -8.23] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1419,9 +1282,7 @@
                         "deltaECMC": 1.28,
                         "deltaL": 0.58
                     },
-                    "reference": {
-                        "Lab": [84.75, 14.55, 0.23]
-                    },
+                    "reference": { "Lab": [84.75, 14.55, 0.23] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1442,9 +1303,7 @@
                         "deltaECMC": 2.15,
                         "deltaL": -0.34
                     },
-                    "reference": {
-                        "Lab": [84.87, -19.07, -0.82]
-                    },
+                    "reference": { "Lab": [84.87, -19.07, -0.82] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1465,9 +1324,7 @@
                         "deltaECMC": 3.36,
                         "deltaL": -0.42
                     },
-                    "reference": {
-                        "Lab": [85.15, 13.48, 6.82]
-                    },
+                    "reference": { "Lab": [85.15, 13.48, 6.82] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1488,9 +1345,7 @@
                         "deltaECMC": 0.51,
                         "deltaL": -0.19
                     },
-                    "reference": {
-                        "Lab": [84.17, -10.45, 26.78]
-                    },
+                    "reference": { "Lab": [84.17, -10.45, 26.78] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1511,9 +1366,7 @@
                         "deltaECMC": 0.78,
                         "deltaL": 1.18
                     },
-                    "reference": {
-                        "Lab": [61.74, 31.06, 36.42]
-                    },
+                    "reference": { "Lab": [61.74, 31.06, 36.42] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1534,9 +1387,7 @@
                         "deltaECMC": 1.79,
                         "deltaL": 0.7
                     },
-                    "reference": {
-                        "Lab": [64.37, 20.82, 18.92]
-                    },
+                    "reference": { "Lab": [64.37, 20.82, 18.92] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1557,9 +1408,7 @@
                         "deltaECMC": 1.65,
                         "deltaL": 0.86
                     },
-                    "reference": {
-                        "Lab": [50.4, -53.22, 14.62]
-                    },
+                    "reference": { "Lab": [50.4, -53.22, 14.62] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1580,9 +1429,7 @@
                         "deltaECMC": 2.66,
                         "deltaL": 0.18
                     },
-                    "reference": {
-                        "Lab": [96.51, -0.89, 0.65]
-                    },
+                    "reference": { "Lab": [96.51, -0.89, 0.65] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1603,9 +1450,7 @@
                         "deltaECMC": 1.76,
                         "deltaL": 0.52
                     },
-                    "reference": {
-                        "Lab": [49.74, -0.19, 0.03]
-                    },
+                    "reference": { "Lab": [49.74, -0.19, 0.03] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1626,9 +1471,7 @@
                         "deltaECMC": 1.32,
                         "deltaL": 1.71
                     },
-                    "reference": {
-                        "Lab": [31.91, 18.62, 21.99]
-                    },
+                    "reference": { "Lab": [31.91, 18.62, 21.99] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1649,9 +1492,7 @@
                         "deltaECMC": 1.09,
                         "deltaL": 1.87
                     },
-                    "reference": {
-                        "Lab": [60.74, 38.66, 70.97]
-                    },
+                    "reference": { "Lab": [60.74, 38.66, 70.97] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1672,9 +1513,7 @@
                         "deltaECMC": 1.64,
                         "deltaL": 1.65
                     },
-                    "reference": {
-                        "Lab": [19.35, 22.23, -58.86]
-                    },
+                    "reference": { "Lab": [19.35, 22.23, -58.86] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1695,9 +1534,7 @@
                         "deltaECMC": 2.06,
                         "deltaL": -0.1
                     },
-                    "reference": {
-                        "Lab": [96.52, -0.91, 0.62]
-                    },
+                    "reference": { "Lab": [96.52, -0.91, 0.62] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1718,9 +1555,7 @@
                         "deltaECMC": 6.29,
                         "deltaL": 4.82
                     },
-                    "reference": {
-                        "Lab": [6.66, 0, -0.3]
-                    },
+                    "reference": { "Lab": [6.66, 0, -0.3] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1741,9 +1576,7 @@
                         "deltaECMC": 0.33,
                         "deltaL": -0.17
                     },
-                    "reference": {
-                        "Lab": [76.51, 20.81, 22.72]
-                    },
+                    "reference": { "Lab": [76.51, 20.81, 22.72] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1764,9 +1597,7 @@
                         "deltaECMC": 0.69,
                         "deltaL": 1.27
                     },
-                    "reference": {
-                        "Lab": [72.79, 29.15, 24.18]
-                    },
+                    "reference": { "Lab": [72.79, 29.15, 24.18] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1787,9 +1618,7 @@
                         "deltaECMC": 2.14,
                         "deltaL": -2.07
                     },
-                    "reference": {
-                        "Lab": [22.33, -20.7, 5.75]
-                    },
+                    "reference": { "Lab": [22.33, -20.7, 5.75] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1810,9 +1639,7 @@
                         "deltaECMC": 0.68,
                         "deltaL": 0.13
                     },
-                    "reference": {
-                        "Lab": [49.7, -0.19, 0.01]
-                    },
+                    "reference": { "Lab": [49.7, -0.19, 0.01] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1833,13 +1660,8 @@
                         "deltaECMC": 7.73,
                         "deltaL": 5.79
                     },
-                    "reference": {
-                        "Lab": [6.53, -0.05, -0.61]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.80) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.53, -0.05, -0.61] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "F2",
@@ -1859,9 +1681,7 @@
                         "deltaECMC": 0.65,
                         "deltaL": 1.35
                     },
-                    "reference": {
-                        "Lab": [63.42, 20.19, 19.22]
-                    },
+                    "reference": { "Lab": [63.42, 20.19, 19.22] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1882,9 +1702,7 @@
                         "deltaECMC": 1.11,
                         "deltaL": -0.08
                     },
-                    "reference": {
-                        "Lab": [34.94, 11.64, -50.7]
-                    },
+                    "reference": { "Lab": [34.94, 11.64, -50.7] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1905,9 +1723,7 @@
                         "deltaECMC": 0.97,
                         "deltaL": 0.23
                     },
-                    "reference": {
-                        "Lab": [52.03, -44.15, 39.04]
-                    },
+                    "reference": { "Lab": [52.03, -44.15, 39.04] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1928,9 +1744,7 @@
                         "deltaECMC": 1.41,
                         "deltaL": -0.29
                     },
-                    "reference": {
-                        "Lab": [79.43, 0.29, -0.17]
-                    },
+                    "reference": { "Lab": [79.43, 0.29, -0.17] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1951,9 +1765,7 @@
                         "deltaECMC": 2.1,
                         "deltaL": 0.38
                     },
-                    "reference": {
-                        "Lab": [30.67, -0.14, -0.53]
-                    },
+                    "reference": { "Lab": [30.67, -0.14, -0.53] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1974,9 +1786,7 @@
                         "deltaECMC": 0.82,
                         "deltaL": 0.61
                     },
-                    "reference": {
-                        "Lab": [63.6, 14.44, 26.07]
-                    },
+                    "reference": { "Lab": [63.6, 14.44, 26.07] },
                     "validity": { "valid": true }
                 },
                 {
@@ -1997,9 +1807,7 @@
                         "deltaECMC": 1.58,
                         "deltaL": 0.74
                     },
-                    "reference": {
-                        "Lab": [64.37, 14.5, 17.05]
-                    },
+                    "reference": { "Lab": [64.37, 14.5, 17.05] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2020,9 +1828,7 @@
                         "deltaECMC": 3.21,
                         "deltaL": -1.4
                     },
-                    "reference": {
-                        "Lab": [60.01, -44.33, 8.49]
-                    },
+                    "reference": { "Lab": [60.01, -44.33, 8.49] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2043,9 +1849,7 @@
                         "deltaECMC": 6.53,
                         "deltaL": 5.91
                     },
-                    "reference": {
-                        "Lab": [6.63, -0.01, -0.47]
-                    },
+                    "reference": { "Lab": [6.63, -0.01, -0.47] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2066,9 +1870,7 @@
                         "deltaECMC": 2.37,
                         "deltaL": 0.05
                     },
-                    "reference": {
-                        "Lab": [96.56, -0.93, 0.59]
-                    },
+                    "reference": { "Lab": [96.56, -0.93, 0.59] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2089,9 +1891,7 @@
                         "deltaECMC": 3.5,
                         "deltaL": 0.06
                     },
-                    "reference": {
-                        "Lab": [46.37, -5.09, -24.46]
-                    },
+                    "reference": { "Lab": [46.37, -5.09, -24.46] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2112,9 +1912,7 @@
                         "deltaECMC": 0.92,
                         "deltaL": 0.83
                     },
-                    "reference": {
-                        "Lab": [47.08, 52.97, 20.49]
-                    },
+                    "reference": { "Lab": [47.08, 52.97, 20.49] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2135,9 +1933,7 @@
                         "deltaECMC": 1.93,
                         "deltaL": 3.36
                     },
-                    "reference": {
-                        "Lab": [36.04, 64.92, 38.51]
-                    },
+                    "reference": { "Lab": [36.04, 64.92, 38.51] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2158,9 +1954,7 @@
                         "deltaECMC": 2.19,
                         "deltaL": -0.25
                     },
-                    "reference": {
-                        "Lab": [65.05, 0, -0.32]
-                    },
+                    "reference": { "Lab": [65.05, 0, -0.32] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2181,9 +1975,7 @@
                         "deltaECMC": 2.11,
                         "deltaL": 0.13
                     },
-                    "reference": {
-                        "Lab": [40.14, -0.19, -0.38]
-                    },
+                    "reference": { "Lab": [40.14, -0.19, -0.38] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2204,9 +1996,7 @@
                         "deltaECMC": 1.39,
                         "deltaL": 1.18
                     },
-                    "reference": {
-                        "Lab": [43.77, 16.46, 27.12]
-                    },
+                    "reference": { "Lab": [43.77, 16.46, 27.12] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2227,9 +2017,7 @@
                         "deltaECMC": 1.53,
                         "deltaL": 0.51
                     },
-                    "reference": {
-                        "Lab": [64.39, 17, 16.59]
-                    },
+                    "reference": { "Lab": [64.39, 17, 16.59] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2250,9 +2038,7 @@
                         "deltaECMC": 1.04,
                         "deltaL": 0.1
                     },
-                    "reference": {
-                        "Lab": [60.79, -29.74, 41.5]
-                    },
+                    "reference": { "Lab": [60.79, -29.74, 41.5] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2273,9 +2059,7 @@
                         "deltaECMC": 2.49,
                         "deltaL": -0.22
                     },
-                    "reference": {
-                        "Lab": [96.48, -0.89, 0.64]
-                    },
+                    "reference": { "Lab": [96.48, -0.89, 0.64] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2296,9 +2080,7 @@
                         "deltaECMC": 1.75,
                         "deltaL": 0.51
                     },
-                    "reference": {
-                        "Lab": [49.75, -0.21, 0.01]
-                    },
+                    "reference": { "Lab": [49.75, -0.21, 0.01] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2319,9 +2101,7 @@
                         "deltaECMC": 2.17,
                         "deltaL": 0.97
                     },
-                    "reference": {
-                        "Lab": [38.18, -16.99, 30.87]
-                    },
+                    "reference": { "Lab": [38.18, -16.99, 30.87] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2342,9 +2122,7 @@
                         "deltaECMC": 2.47,
                         "deltaL": 0.75
                     },
-                    "reference": {
-                        "Lab": [21.31, 29.14, -27.51]
-                    },
+                    "reference": { "Lab": [21.31, 29.14, -27.51] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2365,9 +2143,7 @@
                         "deltaECMC": 1.12,
                         "deltaL": 1.42
                     },
-                    "reference": {
-                        "Lab": [80.57, 3.85, 89.61]
-                    },
+                    "reference": { "Lab": [80.57, 3.85, 89.61] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2388,9 +2164,7 @@
                         "deltaECMC": 0.99,
                         "deltaL": 0.42
                     },
-                    "reference": {
-                        "Lab": [49.71, -0.2, 0.03]
-                    },
+                    "reference": { "Lab": [49.71, -0.2, 0.03] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2411,9 +2185,7 @@
                         "deltaECMC": 2.06,
                         "deltaL": -0.71
                     },
-                    "reference": {
-                        "Lab": [60.27, 0.08, -0.41]
-                    },
+                    "reference": { "Lab": [60.27, 0.08, -0.41] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2434,9 +2206,7 @@
                         "deltaECMC": 2.27,
                         "deltaL": 0.21
                     },
-                    "reference": {
-                        "Lab": [67.34, 14.45, 16.9]
-                    },
+                    "reference": { "Lab": [67.34, 14.45, 16.9] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2457,9 +2227,7 @@
                         "deltaECMC": 1.66,
                         "deltaL": 1.04
                     },
-                    "reference": {
-                        "Lab": [64.69, 16.95, 18.57]
-                    },
+                    "reference": { "Lab": [64.69, 16.95, 18.57] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2480,9 +2248,7 @@
                         "deltaECMC": 1.25,
                         "deltaL": -1.15
                     },
-                    "reference": {
-                        "Lab": [51.12, -49.31, 44.41]
-                    },
+                    "reference": { "Lab": [51.12, -49.31, 44.41] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2503,9 +2269,7 @@
                         "deltaECMC": 0.48,
                         "deltaL": -0.01
                     },
-                    "reference": {
-                        "Lab": [49.7, -0.2, 0.02]
-                    },
+                    "reference": { "Lab": [49.7, -0.2, 0.02] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2526,13 +2290,8 @@
                         "deltaECMC": 7.42,
                         "deltaL": 5.51
                     },
-                    "reference": {
-                        "Lab": [6.67, -0.05, -0.64]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.56) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.67, -0.05, -0.64] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "I2",
@@ -2552,9 +2311,7 @@
                         "deltaECMC": 1.32,
                         "deltaL": 0.82
                     },
-                    "reference": {
-                        "Lab": [51.56, 9.16, -26.88]
-                    },
+                    "reference": { "Lab": [51.56, 9.16, -26.88] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2575,9 +2332,7 @@
                         "deltaECMC": 1.51,
                         "deltaL": 0.57
                     },
-                    "reference": {
-                        "Lab": [70.83, -24.26, 64.77]
-                    },
+                    "reference": { "Lab": [70.83, -24.26, 64.77] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2598,9 +2353,7 @@
                         "deltaECMC": 1.33,
                         "deltaL": 0.76
                     },
-                    "reference": {
-                        "Lab": [48.06, 55.33, -15.61]
-                    },
+                    "reference": { "Lab": [48.06, 55.33, -15.61] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2621,9 +2374,7 @@
                         "deltaECMC": 1.95,
                         "deltaL": -0.08
                     },
-                    "reference": {
-                        "Lab": [35.26, -0.09, -0.24]
-                    },
+                    "reference": { "Lab": [35.26, -0.09, -0.24] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2644,9 +2395,7 @@
                         "deltaECMC": 2.11,
                         "deltaL": -0.33
                     },
-                    "reference": {
-                        "Lab": [75.16, 0.25, -0.2]
-                    },
+                    "reference": { "Lab": [75.16, 0.25, -0.2] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2667,9 +2416,7 @@
                         "deltaECMC": 1.52,
                         "deltaL": 0.89
                     },
-                    "reference": {
-                        "Lab": [44.54, 26.27, 38.93]
-                    },
+                    "reference": { "Lab": [44.54, 26.27, 38.93] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2690,9 +2437,7 @@
                         "deltaECMC": 0.88,
                         "deltaL": 0.83
                     },
-                    "reference": {
-                        "Lab": [35.91, 16.59, 26.46]
-                    },
+                    "reference": { "Lab": [35.91, 16.59, 26.46] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2713,9 +2458,7 @@
                         "deltaECMC": 0.85,
                         "deltaL": -0.26
                     },
-                    "reference": {
-                        "Lab": [61.49, -52.73, 47.3]
-                    },
+                    "reference": { "Lab": [61.49, -52.73, 47.3] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2736,9 +2479,7 @@
                         "deltaECMC": 6.04,
                         "deltaL": 4.88
                     },
-                    "reference": {
-                        "Lab": [6.59, -0.05, -0.5]
-                    },
+                    "reference": { "Lab": [6.59, -0.05, -0.5] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2759,9 +2500,7 @@
                         "deltaECMC": 2.81,
                         "deltaL": 0.07
                     },
-                    "reference": {
-                        "Lab": [96.58, -0.9, 0.61]
-                    },
+                    "reference": { "Lab": [96.58, -0.9, 0.61] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2782,9 +2521,7 @@
                         "deltaECMC": 1.42,
                         "deltaL": 0.2
                     },
-                    "reference": {
-                        "Lab": [68.93, -34.58, -0.34]
-                    },
+                    "reference": { "Lab": [68.93, -34.58, -0.34] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2805,9 +2542,7 @@
                         "deltaECMC": 0.76,
                         "deltaL": 1.46
                     },
-                    "reference": {
-                        "Lab": [69.65, 20.09, 78.57]
-                    },
+                    "reference": { "Lab": [69.65, 20.09, 78.57] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2828,9 +2563,7 @@
                         "deltaECMC": 3.61,
                         "deltaL": -0.32
                     },
-                    "reference": {
-                        "Lab": [47.79, -33.18, -30.21]
-                    },
+                    "reference": { "Lab": [47.79, -33.18, -30.21] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2851,9 +2584,7 @@
                         "deltaECMC": 2.06,
                         "deltaL": 1.25
                     },
-                    "reference": {
-                        "Lab": [15.94, -0.42, -1.2]
-                    },
+                    "reference": { "Lab": [15.94, -0.42, -1.2] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2874,9 +2605,7 @@
                         "deltaECMC": 2.38,
                         "deltaL": -0.12
                     },
-                    "reference": {
-                        "Lab": [89.02, -0.36, -0.48]
-                    },
+                    "reference": { "Lab": [89.02, -0.36, -0.48] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2897,9 +2626,7 @@
                         "deltaECMC": 1.23,
                         "deltaL": 0.2
                     },
-                    "reference": {
-                        "Lab": [63.43, 25.44, 26.25]
-                    },
+                    "reference": { "Lab": [63.43, 25.44, 26.25] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2920,9 +2647,7 @@
                         "deltaECMC": 1.39,
                         "deltaL": 0.57
                     },
-                    "reference": {
-                        "Lab": [65.75, 22.06, 27.82]
-                    },
+                    "reference": { "Lab": [65.75, 22.06, 27.82] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2943,9 +2668,7 @@
                         "deltaECMC": 0.35,
                         "deltaL": 0.3
                     },
-                    "reference": {
-                        "Lab": [61.47, 17.1, 50.72]
-                    },
+                    "reference": { "Lab": [61.47, 17.1, 50.72] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2966,9 +2689,7 @@
                         "deltaECMC": 3.6,
                         "deltaL": -0.05
                     },
-                    "reference": {
-                        "Lab": [96.53, -0.89, 0.66]
-                    },
+                    "reference": { "Lab": [96.53, -0.89, 0.66] },
                     "validity": { "valid": true }
                 },
                 {
@@ -2989,9 +2710,7 @@
                         "deltaECMC": 1.85,
                         "deltaL": 0.48
                     },
-                    "reference": {
-                        "Lab": [49.79, -0.2, 0.03]
-                    },
+                    "reference": { "Lab": [49.79, -0.2, 0.03] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3012,9 +2731,7 @@
                         "deltaECMC": 1.77,
                         "deltaL": 0.04
                     },
-                    "reference": {
-                        "Lab": [85.17, 10.89, 17.26]
-                    },
+                    "reference": { "Lab": [85.17, 10.89, 17.26] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3035,9 +2752,7 @@
                         "deltaECMC": 1.83,
                         "deltaL": -0.13
                     },
-                    "reference": {
-                        "Lab": [89.74, -16.52, 6.19]
-                    },
+                    "reference": { "Lab": [89.74, -16.52, 6.19] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3058,9 +2773,7 @@
                         "deltaECMC": 1.29,
                         "deltaL": 0.05
                     },
-                    "reference": {
-                        "Lab": [84.55, 5.07, -6.12]
-                    },
+                    "reference": { "Lab": [84.55, 5.07, -6.12] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3081,9 +2794,7 @@
                         "deltaECMC": 3.61,
                         "deltaL": -0.23
                     },
-                    "reference": {
-                        "Lab": [84.02, -13.87, -8.72]
-                    },
+                    "reference": { "Lab": [84.02, -13.87, -8.72] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3104,9 +2815,7 @@
                         "deltaECMC": 2.24,
                         "deltaL": 0.11
                     },
-                    "reference": {
-                        "Lab": [70.76, 0.07, -0.35]
-                    },
+                    "reference": { "Lab": [70.76, 0.07, -0.35] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3127,9 +2836,7 @@
                         "deltaECMC": 1.95,
                         "deltaL": 0.18
                     },
-                    "reference": {
-                        "Lab": [45.59, -0.05, 0.23]
-                    },
+                    "reference": { "Lab": [45.59, -0.05, 0.23] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3150,9 +2857,7 @@
                         "deltaECMC": 2.18,
                         "deltaL": 0.43
                     },
-                    "reference": {
-                        "Lab": [20.3, 0.07, -0.32]
-                    },
+                    "reference": { "Lab": [20.3, 0.07, -0.32] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3173,9 +2878,7 @@
                         "deltaECMC": 0.63,
                         "deltaL": 0.93
                     },
-                    "reference": {
-                        "Lab": [61.79, -13.41, 55.42]
-                    },
+                    "reference": { "Lab": [61.79, -13.41, 55.42] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3196,9 +2899,7 @@
                         "deltaECMC": 1.36,
                         "deltaL": 0.16
                     },
-                    "reference": {
-                        "Lab": [49.72, -0.19, 0.02]
-                    },
+                    "reference": { "Lab": [49.72, -0.19, 0.02] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3219,13 +2920,8 @@
                         "deltaECMC": 7.37,
                         "deltaL": 5.06
                     },
-                    "reference": {
-                        "Lab": [6.77, -0.05, -0.44]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.69) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.77, -0.05, -0.44] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "L2",
@@ -3245,9 +2941,7 @@
                         "deltaECMC": 1.64,
                         "deltaL": 0.5
                     },
-                    "reference": {
-                        "Lab": [21.85, 34.37, 7.83]
-                    },
+                    "reference": { "Lab": [21.85, 34.37, 7.83] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3268,9 +2962,7 @@
                         "deltaECMC": 1.09,
                         "deltaL": 2.1
                     },
-                    "reference": {
-                        "Lab": [42.66, 67.43, 48.42]
-                    },
+                    "reference": { "Lab": [42.66, 67.43, 48.42] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3291,9 +2983,7 @@
                         "deltaECMC": 0.99,
                         "deltaL": 1.28
                     },
-                    "reference": {
-                        "Lab": [60.33, 36.56, 3.56]
-                    },
+                    "reference": { "Lab": [60.33, 36.56, 3.56] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3314,9 +3004,7 @@
                         "deltaECMC": 1.17,
                         "deltaL": 1.94
                     },
-                    "reference": {
-                        "Lab": [61.22, 36.61, 17.32]
-                    },
+                    "reference": { "Lab": [61.22, 36.61, 17.32] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3337,9 +3025,7 @@
                         "deltaECMC": 1.09,
                         "deltaL": 2.22
                     },
-                    "reference": {
-                        "Lab": [62.07, 52.8, 77.14]
-                    },
+                    "reference": { "Lab": [62.07, 52.8, 77.14] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3360,9 +3046,7 @@
                         "deltaECMC": 3.02,
                         "deltaL": 0.63
                     },
-                    "reference": {
-                        "Lab": [72.42, -9.82, 89.66]
-                    },
+                    "reference": { "Lab": [72.42, -9.82, 89.66] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3383,9 +3067,7 @@
                         "deltaECMC": 0.77,
                         "deltaL": 0.45
                     },
-                    "reference": {
-                        "Lab": [62.03, 3.53, 57.01]
-                    },
+                    "reference": { "Lab": [62.03, 3.53, 57.01] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3406,9 +3088,7 @@
                         "deltaECMC": 0.51,
                         "deltaL": 0.41
                     },
-                    "reference": {
-                        "Lab": [71.95, -27.34, 73.69]
-                    },
+                    "reference": { "Lab": [71.95, -27.34, 73.69] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3429,13 +3109,8 @@
                         "deltaECMC": 7.39,
                         "deltaL": 5.25
                     },
-                    "reference": {
-                        "Lab": [6.59, -0.04, -0.45]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.63) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.59, -0.04, -0.45] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "M1",
@@ -3455,9 +3130,7 @@
                         "deltaECMC": 2.51,
                         "deltaL": 0.51
                     },
-                    "reference": {
-                        "Lab": [49.77, -0.19, 0.04]
-                    },
+                    "reference": { "Lab": [49.77, -0.19, 0.04] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3478,9 +3151,7 @@
                         "deltaECMC": 1.35,
                         "deltaL": 1.45
                     },
-                    "reference": {
-                        "Lab": [41.84, 62.05, 10.01]
-                    },
+                    "reference": { "Lab": [41.84, 62.05, 10.01] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3501,9 +3172,7 @@
                         "deltaECMC": 3.31,
                         "deltaL": -0.54
                     },
-                    "reference": {
-                        "Lab": [19.78, 29.16, -7.85]
-                    },
+                    "reference": { "Lab": [19.78, 29.16, -7.85] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3524,9 +3193,7 @@
                         "deltaECMC": 2.33,
                         "deltaL": 2.24
                     },
-                    "reference": {
-                        "Lab": [39.56, 65.98, 33.71]
-                    },
+                    "reference": { "Lab": [39.56, 65.98, 33.71] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3547,9 +3214,7 @@
                         "deltaECMC": 1.62,
                         "deltaL": 1.83
                     },
-                    "reference": {
-                        "Lab": [52.39, 68.33, 47.84]
-                    },
+                    "reference": { "Lab": [52.39, 68.33, 47.84] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3570,9 +3235,7 @@
                         "deltaECMC": 0.72,
                         "deltaL": 0.65
                     },
-                    "reference": {
-                        "Lab": [81.23, 24.12, 87.51]
-                    },
+                    "reference": { "Lab": [81.23, 24.12, 87.51] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3593,9 +3256,7 @@
                         "deltaECMC": 1.44,
                         "deltaL": 0.78
                     },
-                    "reference": {
-                        "Lab": [81.8, 6.78, 95.75]
-                    },
+                    "reference": { "Lab": [81.8, 6.78, 95.75] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3616,9 +3277,7 @@
                         "deltaECMC": 0.48,
                         "deltaL": 1.05
                     },
-                    "reference": {
-                        "Lab": [71.72, -16.23, 76.28]
-                    },
+                    "reference": { "Lab": [71.72, -16.23, 76.28] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3639,9 +3298,7 @@
                         "deltaECMC": 1.39,
                         "deltaL": 1.72
                     },
-                    "reference": {
-                        "Lab": [20.31, 14.45, 16.74]
-                    },
+                    "reference": { "Lab": [20.31, 14.45, 16.74] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3662,9 +3319,7 @@
                         "deltaECMC": 2.16,
                         "deltaL": 0.22
                     },
-                    "reference": {
-                        "Lab": [49.68, -0.19, 0.05]
-                    },
+                    "reference": { "Lab": [49.68, -0.19, 0.05] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3685,9 +3340,7 @@
                         "deltaECMC": 3.37,
                         "deltaL": 0.34
                     },
-                    "reference": {
-                        "Lab": [96.48, -0.88, 0.68]
-                    },
+                    "reference": { "Lab": [96.48, -0.88, 0.68] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3708,9 +3361,7 @@
                         "deltaECMC": 2.68,
                         "deltaL": 0.47
                     },
-                    "reference": {
-                        "Lab": [49.69, -0.18, 0.03]
-                    },
+                    "reference": { "Lab": [49.69, -0.18, 0.03] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3731,13 +3382,8 @@
                         "deltaECMC": 7.82,
                         "deltaL": 5.64
                     },
-                    "reference": {
-                        "Lab": [6.39, -0.04, -0.33]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.95) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.39, -0.04, -0.33] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "N4",
@@ -3757,9 +3403,7 @@
                         "deltaECMC": 2.32,
                         "deltaL": 0.02
                     },
-                    "reference": {
-                        "Lab": [96.54, -0.9, 0.67]
-                    },
+                    "reference": { "Lab": [96.54, -0.9, 0.67] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3780,9 +3424,7 @@
                         "deltaECMC": 2.54,
                         "deltaL": 0.42
                     },
-                    "reference": {
-                        "Lab": [49.72, -0.18, 0.05]
-                    },
+                    "reference": { "Lab": [49.72, -0.18, 0.05] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3803,9 +3445,7 @@
                         "deltaECMC": 6.47,
                         "deltaL": 5.75
                     },
-                    "reference": {
-                        "Lab": [6.49, -0.03, -0.41]
-                    },
+                    "reference": { "Lab": [6.49, -0.03, -0.41] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3826,9 +3466,7 @@
                         "deltaECMC": 3.65,
                         "deltaL": 0.31
                     },
-                    "reference": {
-                        "Lab": [96.51, -0.9, 0.69]
-                    },
+                    "reference": { "Lab": [96.51, -0.9, 0.69] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3849,9 +3487,7 @@
                         "deltaECMC": 2.49,
                         "deltaL": 0.43
                     },
-                    "reference": {
-                        "Lab": [49.7, -0.19, 0.07]
-                    },
+                    "reference": { "Lab": [49.7, -0.19, 0.07] },
                     "validity": { "valid": true }
                 },
                 {
@@ -3872,13 +3508,8 @@
                         "deltaECMC": 7.39,
                         "deltaL": 5.21
                     },
-                    "reference": {
-                        "Lab": [6.47, 0, -0.38]
-                    },
-                    "validity": {
-                        "valid": false,
-                        "message": ["∆E2000 (5.63) is above 5.0"]
-                    }
+                    "reference": { "Lab": [6.47, 0, -0.38] },
+                    "validity": { "valid": true }
                 },
                 {
                     "name": "N10",
@@ -3898,9 +3529,7 @@
                         "deltaECMC": 3.04,
                         "deltaL": 0.22
                     },
-                    "reference": {
-                        "Lab": [96.46, -0.89, 0.71]
-                    },
+                    "reference": { "Lab": [96.46, -0.89, 0.71] },
                     "validity": { "valid": true }
                 }
             ],
@@ -3918,30 +3547,27 @@
             }
         }
     ],
-    "meanDeltaE76": 3.21,
-    "meanDeltaE94T": 2.33,
-    "meanDeltaE94G": 2.33,
-    "meanDeltaE2000": 2.21,
-    "meanDeltaECMC": 2.34,
-    "meanDeltaL": 1.17,
-    "meanStdDev": 0.82,
-    "SEFF": 88,
-    "MTF10": 0.24,
-    "MTF50": 0.44,
-    "MTFMAX": 1,
-    "MTFHSF": 1,
-    "CMR": 0.08,
+    "observed": {
+        "ppi": 300.51957243956286,
+        "SEFF": 88,
+        "MTF10": 0.24,
+        "MTF50": 0.44,
+        "MTFMAX": 1,
+        "MTFHSF": 1,
+        "CMR": 0.08
+    },
     "assessed": {
-        "colorAccuracy": [
-            { "name": "Color Encoding Error (∆E1976)", "valid": true },
-            { "name": "Total Noise", "valid": true },
-            { "name": "Illuminance Uniformity", "valid": true }
-        ],
-        "spatialAccuracy": [
-            { "name": "SFR High Frequency", "valid": true },
-            { "name": "SFR Mid Frequency", "valid": true },
-            { "name": "Oversharpening", "valid": true },
-            { "name": "Color Channel Misregistration", "valid": true }
-        ]
+        "colorAccuracy": {
+            "Color Encoding Error (∆E1976)": true,
+            "Individual Patch Error (∆E1976)": true,
+            "Total Noise": true,
+            "Illuminance Uniformity": true
+        },
+        "spatialAccuracy": {
+            "SFR High Frequency": true,
+            "SFR Mid Frequency": true,
+            "Oversharpening": true,
+            "Color Channel Misregistration": true
+        }
     }
 }

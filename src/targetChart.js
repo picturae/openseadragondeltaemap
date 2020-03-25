@@ -1,5 +1,5 @@
 import { hasOwnProperty } from './functions'
-import { TargetPatch } from '../src/targetPatch.js'
+import { TargetPatch } from '../src/targetPatch'
 
 const TargetChart = function(chartData, parentNode, containerSize) {
     this.name = 'TargetChart'
