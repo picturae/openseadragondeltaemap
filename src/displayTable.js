@@ -56,10 +56,10 @@ const DisplayTable = function(mainElement) {
             let row = ''
             row = `<tr><th>${transformCase(key, {
                 replace: {
-                    deltaE: '&Delta;E',
-                    DeltaE: '&Delta;E',
-                    deltaL: '&Delta;L',
-                    DeltaL: '&Delta;L',
+                    deltaE: ' &Delta;E ',
+                    DeltaE: ' &Delta;E ',
+                    deltaL: ' &Delta;L ',
+                    DeltaL: ' &Delta;L ',
                 },
             }).humanTitle()}</th><td>${readableValue(value)}</td></tr>`
             if (row) body += row

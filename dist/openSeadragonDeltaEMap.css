@@ -75,7 +75,7 @@ left, top, right, bottom will be set inline
 }
 .picturae-deltaemap-display tbody:before {
   content: attr(name);
-  display: table-row-group;
+  display: block;
   font: small-caption;
 }
 .picturae-deltaemap-display th,

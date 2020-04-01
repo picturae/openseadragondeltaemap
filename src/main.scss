@@ -84,7 +84,7 @@ left, top, right, bottom will be set inline
 
     tbody:before {
         content: attr(name);
-        display: table-row-group;
+        display: block;
         font: small-caption;
     }
 

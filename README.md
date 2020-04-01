@@ -1,12 +1,11 @@
 # OpenSeadragonDeltaEMap
 
-This plugin helps evaluating a targetscan.
-The input is a JSON holding
+This plugin helps evaluating a targetscan using DeltaE criteria.
+For input it takes a DeltaE-compliant JSON holding
 the target coordinates, size,
 expected and measured colour data
-and such.
-The output is an HTML-fragment
-which can be layed over the targetsetscan.
+etcetera.
+The plugin lays an interactive HTML-fragment over the targetscan.
 
 ## Install
 
