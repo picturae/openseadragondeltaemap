@@ -1,17 +1,17 @@
 import { contentSize, targetData } from './_mocks'
-import { TargetPatch } from '../../src/targetPatch'
+import { Patch } from '../../src/patch'
 
 let patchData = targetData.targets[0].colorPatches[0]
 let htmlElement = document.body
 
-test('targetPatch sets the position in a relative fashion', () => {
-    const targetPatchInstance = new TargetPatch(
+test('Patch sets the position in a relative fashion', () => {
+    const patchInstance = new Patch(
         patchData,
         htmlElement,
         contentSize,
     )
 
-    const styleObject = targetPatchInstance.element.style
+    const styleObject = patchInstance.element.style
 
     expect(styleObject.left).toMatch(/%$/)
     expect(styleObject.top).toMatch(/%$/)
@@ -19,13 +19,13 @@ test('targetPatch sets the position in a relative fashion', () => {
     expect(styleObject.height).toMatch(/%$/)
 })
 
-test('targetPatch is appended to the targetChart', () => {
+test('Patch.element is appended to the Chart.element', () => {
     const spyElementAppend = jest.spyOn(htmlElement, 'appendChild')
-    const targetPatchInstance = new TargetPatch(
+    const patchInstance = new Patch(
         patchData,
         htmlElement,
         contentSize,
     )
 
-    expect(spyElementAppend).toHaveBeenCalledWith(targetPatchInstance.element)
+    expect(spyElementAppend).toHaveBeenCalledWith(patchInstance.element)
 })

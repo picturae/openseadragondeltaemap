@@ -1,9 +1,9 @@
 import { hasOwnProperty } from './functions'
-import { TargetPatch } from '../src/targetPatch'
+import { Patch } from '../src/patch'
 
-const TargetChart = function(chartData, parentNode, containerSize) {
-    this.name = 'TargetChart'
-    this.element = document.createElement('targetChart')
+const Chart = function(chartData, parentNode, containerSize) {
+    this.name = 'Chart'
+    this.element = document.createElement('deltaechart')
 
     this.element.style.left = `${(chartData.location.x * 100) /
         containerSize.x}%`
@@ -34,7 +34,7 @@ const TargetChart = function(chartData, parentNode, containerSize) {
             userData[key] = value
         }
     }
-    this.element.dataset.picturaeTargetmapDisplay = JSON.stringify(userData)
+    this.element.dataset.picturaeDeltaemapDisplay = JSON.stringify(userData)
 
     if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
         const isValid = userData.validity.valid
@@ -49,19 +49,17 @@ const TargetChart = function(chartData, parentNode, containerSize) {
     if (chartData.colorPatches) {
         chartData.colorPatches.forEach(patchData => {
             patchData.patchType = 'color'
-            this.patches.push(
-                new TargetPatch(patchData, this.element, contentSize),
-            )
+            this.patches.push(new Patch(patchData, this.element, contentSize))
         })
     }
     // if (chartData.edgePatches) {
     //     chartData.edgePatches.forEach(patchData => {
     //         patchData.patchType = 'edge'
     //         this.patches.push(
-    //             new TargetPatch(patchData, this.element, contentSize),
+    //             new Patch(patchData, this.element, contentSize),
     //         )
     //     })
     // }
 }
 
-export { TargetChart }
+export { Chart }

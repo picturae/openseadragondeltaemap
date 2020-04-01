@@ -4,7 +4,7 @@ import { terser } from 'rollup-plugin-terser'
 import sass from 'rollup-plugin-sass'
 import resolve from '@rollup/plugin-node-resolve'
 
-const name = 'openSeadragonTargetMap'
+const name = 'openSeadragonDeltaEMap'
 
 export default {
   input: `src/index.js`,

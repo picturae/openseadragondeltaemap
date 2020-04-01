@@ -71,17 +71,17 @@ window.onload = function() {
     |*| http://jsbin.com/hikekaroxa/1/edit?html,js,output
     \*/
 
-    const targetMap = this.viewer.targetMap()
+    const deltaEMap = this.viewer.deltaEMap()
 
     const fileInput = document.querySelector('input[type=file]')
 
     fileInput.addEventListener('input', function() {
-        loadLocalJSON(this, targetMap.render)
+        loadLocalJSON(this, deltaEMap.render)
         this.value = ''
     })
 
     window.addEventListener('resize', function() {
-        targetMap.resize()
+        deltaEMap.resize()
     })
 
     if (location.search === '?demo') {

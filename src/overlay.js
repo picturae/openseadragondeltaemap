@@ -1,10 +1,10 @@
 import { isUsableNumber, hasOwnProperty, roundAt } from './functions'
-import { TargetChart } from './targetChart'
+import { Chart } from './chart'
 import { DisplayTable } from './displayTable'
 
-const TargetMap = function(viewer) {
-    this.name = 'TargetMap'
-    this.element = document.createElement('targetmap')
+const Overlay = function(viewer) {
+    this.name = 'Overlay'
+    this.element = document.createElement('deltaeoverlay')
 
     viewer.canvas.appendChild(this.element)
 
@@ -61,7 +61,7 @@ const TargetMap = function(viewer) {
                 userData[key] = value
             }
         }
-        this.element.dataset.picturaeTargetmapDisplay = JSON.stringify(userData)
+        this.element.dataset.picturaeDeltaemapDisplay = JSON.stringify(userData)
 
         if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
             const isValid = userData.validity.valid
@@ -70,7 +70,7 @@ const TargetMap = function(viewer) {
 
         json.targets.forEach(chartData => {
             this.charts.push(
-                new TargetChart(
+                new Chart(
                     chartData,
                     this.element,
                     this.tiledImage.getContentSize(),
@@ -81,4 +81,4 @@ const TargetMap = function(viewer) {
     new DisplayTable(this.element)
 }
 
-export { TargetMap }
+export { Overlay }

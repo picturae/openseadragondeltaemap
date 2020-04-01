@@ -1,4 +1,4 @@
-# OpenSeadragonTargetMap
+# OpenSeadragonDeltaEMap
 
 This plugin helps evaluating a targetscan.
 The input is a JSON holding
@@ -14,14 +14,14 @@ Install the package as npm package. Provided are
 a umd-formatted file (dist folder)
 and a es-module (module folder):
 
-    "dist/openSeadragonTargetMap.css",
-    "dist/openSeadragonTargetMap.js",
-    "module/openSeadragonTargetMap.css",
-    "module/openSeadragonTargetMap.js",
+    "dist/openSeadragonDeltaEMap.css",
+    "dist/openSeadragonDeltaEMap.js",
+    "module/openSeadragonDeltaEMap.css",
+    "module/openSeadragonDeltaEMap.js",
 
 ## Demo
 
-.../openseadragontargetmap/demo/demo.html
+.../openseadragondeltaemap/demo/demo.html
 
 for the unconnected:
-.../openseadragontargetmap/demo/demo.html?demo
+.../openseadragondeltaemap/demo/demo.html?demo

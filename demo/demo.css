@@ -7,7 +7,7 @@ body,
     margin: 0;
 }
 
-body.demo targetmap {
+body.demo deltaeoverlay {
     background: url('./demo.jpg');
     background-size: cover;
 }

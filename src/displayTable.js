@@ -8,16 +8,16 @@ const DisplayTable = function(mainElement) {
     const displayRoot = mainElement.parentNode
     const table = document.createElement('table')
     this.element = table
-    table.className = 'picturae-targetmap-display'
+    table.className = 'picturae-deltaemap-display'
 
     const readableValue = value => {
         if (value === null) {
             return '--'
         }
         if (typeof value === 'boolean') {
-            let bool = `<targetBoolean class="${
+            let bool = `<deltaeboolean class="${
                 value ? 'valid' : 'invalid'
-            }"></targetBoolean>`
+            }"></deltaeboolean>`
             return bool
         }
         if (isPrimitive(value)) return value
@@ -69,14 +69,14 @@ const DisplayTable = function(mainElement) {
     }
 
     const targetEnter = function(event) {
-        const targetData = event.target.dataset.picturaeTargetmapDisplay
+        const targetData = event.target.dataset.picturaeDeltaemapDisplay
         if (targetData) {
             table.innerHTML = ''
             const userData = JSON.parse(targetData)
             let colorSquare = ''
             if (userData.patchType && userData.patchType === 'color') {
                 let color = `rgb(${userData.observed.RGB.join()})`
-                colorSquare = `<targetColor style="background: ${color};"></targetColor>`
+                colorSquare = `<deltaecolor style="background: ${color};"></deltaecolor>`
             }
             table.innerHTML += `<caption>
                 ${userData.name} ${colorSquare}
@@ -111,9 +111,9 @@ const DisplayTable = function(mainElement) {
     eventRoot.addEventListener('mouseover', function(event) {
         const enter = event.target
         if (
-            enter.tagName === 'TARGETMAP' ||
-            enter.tagName === 'TARGETCHART' ||
-            enter.tagName === 'TARGETPATCH'
+            enter.tagName === 'DELTAEOVERLAY' ||
+            enter.tagName === 'DELTAECHART' ||
+            enter.tagName === 'DELTAEPATCH'
         ) {
             targetEnter(event)
         } else if (!table.contains(enter)) {

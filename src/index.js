@@ -1,4 +1,4 @@
-import { TargetMap } from './targetMap'
+import { Overlay } from './overlay'
 import './main.scss'
 
 var index = (function() {
@@ -11,12 +11,12 @@ var index = (function() {
         }
     }
 
-    $.Viewer.prototype.targetMap = function() {
-        if (!this._targetMap) {
-            this._targetMap = new TargetMap(this)
+    $.Viewer.prototype.deltaEMap = function() {
+        if (!this._deltaEMap) {
+            this._deltaEMap = new Overlay(this)
         }
 
-        return this._targetMap
+        return this._deltaEMap
     }
 })()
 

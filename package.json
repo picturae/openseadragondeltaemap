@@ -1,9 +1,9 @@
 {
-    "name": "openseadragontargetmap",
+    "name": "openseadragondeltaemap",
     "version": "0.0.1",
     "description": "Draws overlay over a targetscan, and shows calibration info",
-    "main": "dist/openSeadragonTargetMap.js",
-    "module": "module/openSeadragonTargetMap.js",
+    "main": "dist/openSeadragonDeltaEMap.js",
+    "module": "module/openSeadragonDeltaEMap.js",
     "directories": {
         "test": "test"
     },
@@ -18,23 +18,24 @@
     },
     "keywords": [
         "openseadragon",
+        "deltae",
+        "map",
         "plugin",
         "overlay",
         "patch",
         "target",
-        "deltae",
         "front-end"
     ],
     "author": "Onno van der Zee",
     "license": "ISC",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/picturae/openseadragontargetmap.git"
+        "url": "git+https://github.com/picturae/openseadragondeltaemap.git"
     },
     "bugs": {
-        "url": "https://github.com/picturae/openseadragontargetmap/issues"
+        "url": "https://github.com/picturae/openseadragondeltaemap/issues"
     },
-    "homepage": "https://github.com/picturae/openseadragontargetmap#readme",
+    "homepage": "https://github.com/picturae/openseadragondeltaemap#readme",
     "peerDependencies": {
         "openseadragon": "^2.1.0"
     },

@@ -1,8 +1,8 @@
 import { hasOwnProperty } from './functions'
 
-const TargetPatch = function(patchData, parentNode, containerSize) {
-    this.name = 'TargetPatch'
-    this.element = document.createElement('targetPatch')
+const Patch = function(patchData, parentNode, containerSize) {
+    this.name = 'Patch'
+    this.element = document.createElement('deltaepatch')
 
     this.element.style.left = `${(patchData.location.x * 100) /
         containerSize.x}%`
@@ -20,7 +20,7 @@ const TargetPatch = function(patchData, parentNode, containerSize) {
             userData[key] = value
         }
     }
-    this.element.dataset.picturaeTargetmapDisplay = JSON.stringify(userData)
+    this.element.dataset.picturaeDeltaemapDisplay = JSON.stringify(userData)
 
     if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
         const isValid = userData.validity.valid
@@ -28,4 +28,4 @@ const TargetPatch = function(patchData, parentNode, containerSize) {
     }
 }
 
-export { TargetPatch }
+export { Patch }

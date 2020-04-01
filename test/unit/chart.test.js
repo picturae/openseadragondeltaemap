@@ -1,16 +1,16 @@
 import { contentSize, targetData } from './_mocks'
-import { TargetChart } from '../../src/targetChart'
+import { Chart } from '../../src/chart'
 
 let chartData = targetData.targets[0]
 let htmlElement = document.body
 
-test('targetChart sets the position in a relative fashion', () => {
-    const targetChartInstance = new TargetChart(
+test('Chart sets the position in a relative fashion', () => {
+    const chartInstance = new Chart(
         chartData,
         htmlElement,
         contentSize,
     )
-    const styleObject = targetChartInstance.element.style
+    const styleObject = chartInstance.element.style
 
     expect(styleObject.left).toMatch(/%$/)
     expect(styleObject.top).toMatch(/%$/)
@@ -18,13 +18,13 @@ test('targetChart sets the position in a relative fashion', () => {
     expect(styleObject.height).toMatch(/%$/)
 })
 
-test('targetChart is appended to the targetMap', () => {
+test('Chart.element is appended to the Overlay.element', () => {
     const spyElementAppend = jest.spyOn(htmlElement, 'appendChild')
-    const targetChartInstance = new TargetChart(
+    const chartInstance = new Chart(
         chartData,
         htmlElement,
         contentSize,
     )
 
-    expect(spyElementAppend).toHaveBeenCalledWith(targetChartInstance.element)
+    expect(spyElementAppend).toHaveBeenCalledWith(chartInstance.element)
 })
