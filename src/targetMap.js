@@ -78,7 +78,7 @@ const TargetMap = function(viewer) {
             )
         })
     }
-    new DisplayTable(document.body)
+    new DisplayTable(this.element)
 }
 
 export { TargetMap }

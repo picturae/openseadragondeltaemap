@@ -1,9 +1,11 @@
 import { isAttachedToDom, isPrimitive, hasOwnProperty } from './functions'
 import transformCase from 'transform-case'
 
-const DisplayTable = function(eventRoot) {
+const DisplayTable = function(mainElement) {
     this.name = 'DisplayTable'
-    const root = document.body
+    const eventRoot = document.body
+    const docRoot = document.documentElement
+    const displayRoot = mainElement.parentNode
     const table = document.createElement('table')
     this.element = table
     table.className = 'picturae-targetmap-display'
@@ -98,12 +100,12 @@ const DisplayTable = function(eventRoot) {
                 table.innerHTML += dataBody('validity', userData.validity)
             }
 
-            if (!isAttachedToDom(table)) root.appendChild(table)
+            if (!isAttachedToDom(table)) displayRoot.appendChild(table)
         }
     }
 
     const targetLeave = function() {
-        if (isAttachedToDom(table)) root.removeChild(table)
+        if (isAttachedToDom(table)) displayRoot.removeChild(table)
     }
 
     eventRoot.addEventListener('mouseover', function(event) {
@@ -123,17 +125,17 @@ const DisplayTable = function(eventRoot) {
     eventRoot.addEventListener('mousemove', function(event) {
         const offPointer = 16
 
-        if (event.clientX / root.clientWidth < 0.5) {
+        if (event.clientX / docRoot.clientWidth < 0.5) {
             table.style.left = `${event.clientX + offPointer}px`
             table.style.right = 'auto'
         } else {
             table.style.left = 'auto'
-            table.style.right = `${root.clientWidth -
+            table.style.right = `${docRoot.clientWidth -
                 event.clientX +
                 offPointer}px`
         }
 
-        const ySpace = (root.clientHeight - table.clientHeight) / 2
+        const ySpace = (docRoot.clientHeight - table.clientHeight) / 2
 
         if (event.clientY < ySpace - offPointer) {
             table.style.top = `${event.clientY + offPointer}px`
@@ -143,7 +145,7 @@ const DisplayTable = function(eventRoot) {
             table.style.bottom = 'auto'
         } else {
             table.style.top = 'auto'
-            table.style.bottom = `${root.clientHeight -
+            table.style.bottom = `${docRoot.clientHeight -
                 event.clientY +
                 offPointer}px`
         }
