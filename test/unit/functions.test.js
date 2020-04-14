@@ -7,6 +7,13 @@ import {
 
 test('roundAt rounds 1.005 to 1.01', () => {
     expect(roundAt(1.005, 2)).toBe(1.01)
+    expect(roundAt(-1.005, 2)).toBe(-1.00)
+})
+
+test(`roundAt defaults to zero when the absolute number
+        is smaller than the required precision`, () => {
+    expect(roundAt(1.2e-34, 2)).toBe(0)
+    expect(roundAt(-1.2e-34, 2)).toBe(0)
 })
 
 test('isUsableNumber tests for numbers', () => {

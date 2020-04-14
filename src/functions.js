@@ -21,6 +21,9 @@ const isUsableNumber = function() {
  * @returns {number} the rounded number
  */
 const roundAt = function(number, decimals) {
+    if (number < 1 + 'e-' + decimals && number > -1 + 'e-' + decimals) {
+        return 0
+    }
     // https://www.jacklmoore.com/notes/rounding-in-javascript/
     return Number(Math.round(number + 'e' + decimals) + 'e-' + decimals)
 }
