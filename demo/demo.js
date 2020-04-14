@@ -64,7 +64,8 @@ window.onload = function() {
         gestureSettingsMouse: {
             flickEnabled: true,
         },
-        zoomPerScroll: 1.5,
+        animationTime: 0,
+        springStiffness: 100,
     })
     /*\ viewsettings, see:
     |*| https://github.com/openseadragon/openseadragon/issues/1078
