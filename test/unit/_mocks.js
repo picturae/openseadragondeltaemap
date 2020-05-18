@@ -74,8 +74,10 @@ const targetData = {
                         validity: { valid: true },
                     },
                 ],
+                validity: {},
             },
       ],
+      validity: {},
   },
 }
 

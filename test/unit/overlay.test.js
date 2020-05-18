@@ -25,3 +25,38 @@ test('Overlay.element is appended to the html', () => {
 
     expect(spyElementAppend).toHaveBeenCalledWith(overlayInstance.element)
 })
+
+test('Overlay renders a dataset with a default name when there is none', () => {
+    const overlayInstance = new Overlay(viewer)
+    delete targetData.data.name
+    overlayInstance.render(targetData)
+    const ourDataset = overlayInstance.element.dataset.picturaeDeltaemapDisplay
+
+    expect(JSON.parse(ourDataset).name).toBe('Target Scan');
+})
+
+test('Overlay renders a className "valid" when the validity flag is positive', () => {
+    const overlayInstance = new Overlay(viewer)
+    targetData.data.validity.valid = true
+    overlayInstance.render(targetData)
+    const classList = overlayInstance.element.classList
+
+    expect(classList).toContain('valid');
+})
+
+test('Overlay renders a className "invalid" when the validity flag is negative', () => {
+    const overlayInstance = new Overlay(viewer)
+    targetData.data.validity.valid = false
+    overlayInstance.render(targetData)
+    const classList = overlayInstance.element.classList
+
+    expect(classList).toContain('invalid');
+})
+
+test('Overlay renders at least one new target chart', () => {
+    const overlayInstance = new Overlay(viewer)
+    const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
+    overlayInstance.render(targetData)
+
+    expect(spyElementAppend).toHaveBeenCalled()
+})

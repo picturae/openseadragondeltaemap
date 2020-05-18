@@ -29,3 +29,37 @@ test('Patch.element is appended to the Chart.element', () => {
 
     expect(spyElementAppend).toHaveBeenCalledWith(patchInstance.element)
 })
+
+test('Patch renders a dataset', () => {
+    const patchInstance = new Patch(
+        patchData,
+        htmlElement,
+        contentSize,
+    )
+    const ourDataset = patchInstance.element.dataset
+
+    expect(ourDataset).toHaveProperty('picturaeDeltaemapDisplay');
+})
+
+test('Patch renders a className "valid" when the validity flag is positive', () => {
+    const patchValidData = patchData
+    patchValidData.validity.valid = true
+    const patchInstance = new Patch(
+        patchValidData,
+        htmlElement,
+        contentSize,
+    )
+    expect(patchInstance.element.classList).toContain('valid');
+})
+
+test('Patch renders a className "invalid" when the validity flag is negative', () => {
+    const patchInvalidData = patchData
+    patchInvalidData.validity.valid = false
+    const patchInstance = new Patch(
+        patchInvalidData,
+        htmlElement,
+        contentSize,
+    )
+
+    expect(patchInstance.element.classList).toContain('invalid');
+})
