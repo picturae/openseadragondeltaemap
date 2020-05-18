@@ -1,4 +1,4 @@
-import { viewer } from './_mocks'
+import { viewer , targetData} from './_mocks'
 import { Overlay } from '../../src/overlay'
 
 test('Overlay has public methods', () => {

@@ -2,6 +2,8 @@ const contentSize = {
     x: 1000,
     y: 707.107,
 }
+
+// openseadragon representation for the tiled Image
 const tiledImage = {
     getBounds: () => {
         return {
@@ -22,6 +24,8 @@ const tiledImage = {
         return contentSize
     },
 }
+
+// openseadragon viewer instance
 const viewer = {
     addHandler: () => {},
     canvas: {
@@ -42,33 +46,37 @@ const viewer = {
         },
     },
 }
+
+// the json received from the backend
 const targetData = {
-    targets: [
-        {
-            location: { x: 3210, y: 25, w: 2354, h: 253 },
-            colorPatches: [
-                {
-                    name: 'C1',
-                    location: { x: 105, y: 90, w: 36, h: 36 },
-                    R: 185.11,
-                    G: 62.99,
-                    B: 53.05,
-                    L: 48.41,
-                    a: 61.83,
-                    b: 46.98,
-                    mean: 98.53,
-                    stddev: 1.39,
-                    deltaE76: 13.38,
-                    deltaE94T: 6.19,
-                    deltaE94G: 6.19,
-                    deltaE2000: 6.97,
-                    deltaECMC: 6.19,
-                    deltaL: 2.41,
-                    validity: { valid: true },
-                },
-            ],
-        },
-    ],
+    data: {
+        targets: [
+            {
+                location: { x: 3210, y: 25, w: 2354, h: 253 },
+                colorPatches: [
+                    {
+                        name: 'C1',
+                        location: { x: 105, y: 90, w: 36, h: 36 },
+                        R: 185.11,
+                        G: 62.99,
+                        B: 53.05,
+                        L: 48.41,
+                        a: 61.83,
+                        b: 46.98,
+                        mean: 98.53,
+                        stddev: 1.39,
+                        deltaE76: 13.38,
+                        deltaE94T: 6.19,
+                        deltaE94G: 6.19,
+                        deltaE2000: 6.97,
+                        deltaECMC: 6.19,
+                        deltaL: 2.41,
+                        validity: { valid: true },
+                    },
+                ],
+            },
+      ],
+  },
 }
 
 export { contentSize, tiledImage, viewer, targetData }

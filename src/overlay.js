@@ -53,10 +53,16 @@ const Overlay = function(viewer) {
     this.charts = []
     this.render = json => {
         this.element.innerHTML = ''
-        if (!json.name) json.name = 'Target Scan'
+
+        const jsonData = json && json.data
+        if (!jsonData || !jsonData.targets) {
+            console.error('Bad DeltaE JSON')
+            return
+        }
+        if (!jsonData.name) jsonData.name = 'Target Scan'
 
         let userData = {}
-        for (let [key, value] of Object.entries(json)) {
+        for (let [key, value] of Object.entries(jsonData)) {
             if (!(key === 'targets')) {
                 userData[key] = value
             }
@@ -68,7 +74,7 @@ const Overlay = function(viewer) {
             this.element.classList.add(isValid ? 'valid' : 'invalid')
         }
 
-        json.targets.forEach(chartData => {
+        jsonData.targets.forEach(chartData => {
             this.charts.push(
                 new Chart(
                     chartData,
