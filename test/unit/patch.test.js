@@ -1,7 +1,8 @@
 import { contentSize, targetData } from './_mocks'
 import { Patch } from '../../src/patch'
 
-let patchData = targetData.data.targets[0].colorPatches[0]
+// target-patch part of jsonData
+let patchData = targetData.targets[0].colorPatches[0]
 let htmlElement = document.body
 
 test('Patch sets the position in a relative fashion', () => {

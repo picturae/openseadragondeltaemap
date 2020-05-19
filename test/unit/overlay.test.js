@@ -1,4 +1,4 @@
-import { viewer , targetData} from './_mocks'
+import { viewer, targetData } from './_mocks'
 import { Overlay } from '../../src/overlay'
 
 test('Overlay has public methods', () => {
@@ -28,7 +28,7 @@ test('Overlay.element is appended to the html', () => {
 
 test('Overlay renders a dataset with a default name when there is none', () => {
     const overlayInstance = new Overlay(viewer)
-    delete targetData.data.name
+    delete targetData.name
     overlayInstance.render(targetData)
     const ourDataset = overlayInstance.element.dataset.picturaeDeltaemapDisplay
 
@@ -37,7 +37,7 @@ test('Overlay renders a dataset with a default name when there is none', () => {
 
 test('Overlay renders a className "valid" when the validity flag is positive', () => {
     const overlayInstance = new Overlay(viewer)
-    targetData.data.validity.valid = true
+    targetData.validity.valid = true
     overlayInstance.render(targetData)
     const classList = overlayInstance.element.classList
 
@@ -46,7 +46,7 @@ test('Overlay renders a className "valid" when the validity flag is positive', (
 
 test('Overlay renders a className "invalid" when the validity flag is negative', () => {
     const overlayInstance = new Overlay(viewer)
-    targetData.data.validity.valid = false
+    targetData.validity.valid = false
     overlayInstance.render(targetData)
     const classList = overlayInstance.element.classList
 

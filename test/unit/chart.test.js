@@ -1,7 +1,8 @@
 import { contentSize, targetData } from './_mocks'
 import { Chart } from '../../src/chart'
 
-let chartData = targetData.data.targets[0]
+// target-chart part of jsonData
+let chartData = targetData.targets[0]
 let htmlElement = document.body
 
 test('Chart sets the position in a relative fashion', () => {
