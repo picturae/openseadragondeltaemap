@@ -1,7 +1,10 @@
+// example
 const contentSize = {
     x: 1000,
     y: 707.107,
 }
+
+// openseadragon representation for the tiled Image
 const tiledImage = {
     getBounds: () => {
         return {
@@ -22,6 +25,8 @@ const tiledImage = {
         return contentSize
     },
 }
+
+// openseadragon viewer instance
 const viewer = {
     addHandler: () => {},
     canvas: {
@@ -42,6 +47,8 @@ const viewer = {
         },
     },
 }
+
+// the json received from the backend
 const targetData = {
     targets: [
         {

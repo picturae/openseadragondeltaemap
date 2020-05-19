@@ -1,10 +1,20 @@
 {
-    "validity": { "valid": true, "message": "", "hasInvalidPatch": false },
+    "validity": {
+        "valid": false,
+        "message": ["Target(s) did not pass all guidelines"],
+        "hasInvalidPatch": true
+    },
     "targets": [
         {
             "name": "Scan Reference Chart (Standard)",
             "type": "SCAN_REFERENCE_CHART_STANDARD",
-            "location": { "x": 3210, "y": 25, "w": 2354, "h": 253, "r": 180 },
+            "location": {
+                "x": 3210,
+                "y": 25,
+                "w": 2354,
+                "h": 253,
+                "r": 180
+            },
             "observed": { "ppi": 300.9598793988782 },
             "colorPatches": [
                 {
@@ -198,7 +208,13 @@
                         "deltaL": -0.43
                     },
                     "reference": { "Lab": [5, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "Gain modulation 130.8 not in between 80% and 108%"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "18",
@@ -219,7 +235,13 @@
                         "deltaL": 1.11
                     },
                     "reference": { "Lab": [10, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "Gain modulation 114.2 not in between 80% and 108%"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "17",
@@ -240,7 +262,13 @@
                         "deltaL": 1.82
                     },
                     "reference": { "Lab": [15, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "Gain modulation 120.8 not in between 80% and 108%"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "16",
@@ -261,7 +289,14 @@
                         "deltaL": 2.86
                     },
                     "reference": { "Lab": [20, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "∆L 2.86 above 2.0",
+                            "∆E1976 3.47 above 2.83"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "11",
@@ -282,7 +317,11 @@
                         "deltaL": 2.44
                     },
                     "reference": { "Lab": [45, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": ["∆L 2.44 above 2.0"],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "10",
@@ -303,7 +342,11 @@
                         "deltaL": 2.17
                     },
                     "reference": { "Lab": [50, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": ["∆L 2.17 above 2.0"],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "09",
@@ -324,7 +367,11 @@
                         "deltaL": 2.11
                     },
                     "reference": { "Lab": [55, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": ["∆L 2.11 above 2.0"],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "03",
@@ -366,7 +413,13 @@
                         "deltaL": 1.31
                     },
                     "reference": { "Lab": [90, 0, 0] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "Gain modulation 59.6 not in between 80% and 108%"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "01",
@@ -565,17 +618,21 @@
                     "G": { "MTF10": 0.0050534, "MTF50": 0.00161023 },
                     "B": { "MTF10": 0.005197569, "MTF50": 0.001608163 },
                     "observed": {
-                        "SEFF": 88,
+                        "SEFF": 96,
                         "MTF10": 0.24,
-                        "MTF50": 0.44,
+                        "MTF50": 0.3,
                         "MTFMAX": 1,
-                        "MTFHSF": 1,
+                        "MTFHSF": 0.1,
                         "CMR": 0.08
                     }
                 }
             ],
             "targetType": "SCAN_REFERENCE_CHART_STANDARD",
-            "validity": { "valid": true },
+            "validity": {
+                "valid": false,
+                "message": ["Color reproduction errors."],
+                "invalidPatch": 1
+            },
             "assessed": {
                 "meanDeltaE76": 3.46,
                 "meanDeltaE94T": 2.48,
@@ -589,7 +646,13 @@
         {
             "name": "ColorChecker Digital SG",
             "type": "COLORCHECKER_DIGITAL_SG",
-            "location": { "x": 2602, "y": 1839, "w": 3397, "h": 2361, "r": 0 },
+            "location": {
+                "x": 2602,
+                "y": 1839,
+                "w": 3397,
+                "h": 2361,
+                "r": 0
+            },
             "observed": { "ppi": 300.51957243956286 },
             "colorPatches": [
                 {
@@ -1556,7 +1619,15 @@
                         "deltaL": 4.82
                     },
                     "reference": { "Lab": [6.66, 0, -0.3] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "∆C 3.63 above 2.0",
+                            "∆L 4.82 above 2.0",
+                            "∆E1976 6.04 above 2.83"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "E7",
@@ -1976,7 +2047,13 @@
                         "deltaL": 0.13
                     },
                     "reference": { "Lab": [40.14, -0.19, -0.38] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "Gain modulation 128.93 not in between 80% and 108%"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "G7",
@@ -2186,7 +2263,13 @@
                         "deltaL": -0.71
                     },
                     "reference": { "Lab": [60.27, 0.08, -0.41] },
-                    "validity": { "valid": true }
+                    "validity": {
+                        "valid": false,
+                        "message": [
+                            "Gain modulation 113.01 not in between 80% and 108%"
+                        ],
+                        "invalidPatch": false
+                    }
                 },
                 {
                     "name": "H7",
@@ -3535,7 +3618,11 @@
             ],
             "edgePatches": [],
             "targetType": "COLORCHECKER_DIGITAL_SG",
-            "validity": { "valid": true },
+            "validity": {
+                "valid": false,
+                "message": ["Color reproduction errors."],
+                "invalidPatch": 1
+            },
             "assessed": {
                 "meanDeltaE76": 2.95,
                 "meanDeltaE94T": 2.18,
@@ -3547,18 +3634,22 @@
             }
         }
     ],
-    "observed": {
-        "ppi": 300.51957243956286,
-        "SEFF": 88,
-        "MTF10": 0.24,
-        "MTF50": 0.44,
-        "MTFMAX": 1,
-        "MTFHSF": 1,
-        "CMR": 0.08
-    },
     "assessed": {
+        "SEFF": 96,
+        "MTF10": 0.24,
+        "MTF50": 0.3,
+        "MTFMAX": 1,
+        "MTFHSF": 0.1,
+        "CMR": 0.08,
+        "meanDeltaE76": 2.95,
+        "meanDeltaE94T": 2.18,
+        "meanDeltaE94G": 2.18,
+        "meanDeltaE2000": 2.18,
+        "meanDeltaECMC": 2.38,
+        "meanDeltaL": 0.99,
+        "meanStdDev": 0.61,
         "colorAccuracy": {
-            "Color Encoding Error (∆E1976)": true,
+            "Color Encoding Error (∆E1976)": false,
             "Individual Patch Error (∆E1976)": true,
             "Total Noise": true,
             "Illuminance Uniformity": true

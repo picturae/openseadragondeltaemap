@@ -1,6 +1,7 @@
 import { contentSize, targetData } from './_mocks'
 import { Patch } from '../../src/patch'
 
+// target-patch part of jsonData
 let patchData = targetData.targets[0].colorPatches[0]
 let htmlElement = document.body
 

@@ -1,6 +1,7 @@
 import { contentSize, targetData } from './_mocks'
 import { Chart } from '../../src/chart'
 
+// target-chart part of jsonData
 let chartData = targetData.targets[0]
 let htmlElement = document.body
 
