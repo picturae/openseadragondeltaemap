@@ -8,7 +8,7 @@
         "test": "test"
     },
     "scripts": {
-        "prebuild": "clear-folder dist module && prettier '{./{src,test}/*.{js,scss},./demo/*.{js,json}}' --write",
+        "prebuild": "clear-folder dist module && prettier '{./{src,test}/*.{js,scss},./demo/demo.js}' --write",
         "build": "rollup --config",
         "coverage": "clear-folder coverage && jest --coverage",
         "once": "npm run test && npm run build",
@@ -42,20 +42,20 @@
     },
     "dependencies": {
         "openseadragon": "^2.4.2",
-        "transform-case": "0.0.1"
+        "transform-case": "^0.1.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.9.0",
-        "@babel/preset-env": "^7.9.0",
-        "@rollup/plugin-commonjs": "^11.0.2",
-        "@rollup/plugin-node-resolve": "^7.1.1",
+        "@babel/core": "^7.9.6",
+        "@babel/preset-env": "^7.9.6",
+        "@rollup/plugin-commonjs": "^11.1.0",
+        "@rollup/plugin-node-resolve": "^7.1.3",
         "clear-folder": "^1.1.2",
-        "coveralls": "^3.0.11",
+        "coveralls": "^3.1.0",
         "eslint": "^6.5.1",
         "eslint-plugin-jasmine": "^2.10.1",
         "eslint-plugin-jest": "^22.20.0",
-        "jest": "^25.1.0",
-        "onchange": "^6.1.0",
+        "jest": "^25.5.4",
+        "onchange": "^6.1.1",
         "prettier": "^1.18.2",
         "rollup": "^1.32.1",
         "rollup-plugin-babel": "^4.4.0",

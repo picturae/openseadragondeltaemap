@@ -46,7 +46,7 @@ window.onload = function() {
     \*/
 
     const deltaEMap = this.viewer.deltaEMap(this.viewer)
-    viewer.addHandler('open', function () {
+    viewer.addHandler('open', function() {
         deltaEMap.render(targetData)
     })
 
