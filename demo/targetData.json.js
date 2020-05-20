@@ -1,4 +1,4 @@
-{
+const targetData = {
     "metadata": {
         "Exif.Image.ImageWidth": "11600",
         "Exif.Image.ImageLength": "8700",

@@ -46,9 +46,11 @@ window.onload = function() {
     \*/
 
     const deltaEMap = this.viewer.deltaEMap(this.viewer)
+    viewer.addHandler('open', function () {
+        deltaEMap.render(targetData)
+    })
 
     const fileInput = document.querySelector('input[type=file]')
-
     fileInput.addEventListener('input', function() {
         loadLocalJSON(this, deltaEMap.render)
         this.value = ''

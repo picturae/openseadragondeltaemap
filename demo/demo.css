@@ -14,10 +14,18 @@ body,
 input[type="file"] {
     position: absolute;
     left: 5px; top: 40px;
+    background: #cccccced;
+    border-radius: 6px;
+    padding: 2px;
+    opacity: 0.01;
 }
 
 input[type="file"]:after {
     content: 'choose validation json';
     display: block;
     padding: 0 2px;
+}
+
+input[type="file"]:hover {
+    opacity: 1;
 }
