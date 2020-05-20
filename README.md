@@ -57,6 +57,3 @@ Instantiate overlay:
 ## Demo
 
 .../openseadragondeltaemap/demo/demo.html
-
-for the unconnected:
-.../openseadragondeltaemap/demo/demo.html?demo

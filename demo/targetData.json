@@ -1,4 +1,25 @@
 {
+    "metadata": {
+        "Exif.Image.ImageWidth": "11600",
+        "Exif.Image.ImageLength": "8700",
+        "Exif.Image.Make": "Phase One A/S",
+        "Exif.Image.Model": "IQ3 100MP",
+        "Exif.Photo.ISOSpeedRatings": "100",
+        "Exif.Photo.ShutterSpeedValue": "-4837/12779",
+        "Exif.Photo.FocalLength": "",
+        "Xmp.photoshop.ICCProfile": "eciRGB v2"
+    },
+    "observed": {
+        "ppi": 299.77,
+        "bitdepth": 8,
+        "colorProfile": "eciRGB v2"
+    },
+    "location": {
+        "x": 0,
+        "y": 0,
+        "w": 11600,
+        "h": 8700
+    },
     "validity": {
         "valid": false,
         "message": ["Target(s) did not pass all guidelines"],

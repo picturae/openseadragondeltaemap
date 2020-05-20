@@ -7,11 +7,6 @@ body,
     margin: 0;
 }
 
-body.demo deltaeoverlay {
-    background: url('./demo.jpg');
-    background-size: cover;
-}
-
 .openseadragon-canvas + div > div {
     opacity: 1 !important;
 }
