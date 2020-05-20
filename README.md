@@ -5,18 +5,54 @@ For input it takes a DeltaE-compliant JSON holding
 the target coordinates, size,
 expected and measured colour data
 etcetera.
-The plugin lays an interactive HTML-fragment over the targetscan.
+The observed and assessed data are projected
+in an overlay tied to the mouse-postion.
 
 ## Install
 
 Install the package as npm package. Provided are
-a umd-formatted file (dist folder)
-and a es-module (module folder):
+a umd-formatted file in the dist folder to require or just read
+and an es-module in the module folder to import.
+In both folders there is a stylesheet.
 
-    "dist/openSeadragonDeltaEMap.css",
-    "dist/openSeadragonDeltaEMap.js",
-    "module/openSeadragonDeltaEMap.css",
-    "module/openSeadragonDeltaEMap.js",
+## Usage
+
+When installed as node module,
+and openSeadragon is opened,
+this plugin is available in the viewer as 'deltaEMap'.
+
+With the traditional view settings OpenSeadragon,
+on panning or resizing,
+the overlay and the image will not move in the same way.
+To have a coherent view
+resolute view settings are recommended
+as shown below.
+
+Recommended setup:
+
+    const viewer = OpenSeadragon({
+        id: ...,
+        prefixUrl: ...,
+        tileSources: [...],
+        gestureSettingsMouse: {
+            flickEnabled: true,
+        },
+        animationTime: 0,
+        springStiffness: 100,
+    })
+
+Instantiate overlay:
+
+    viewer.addHandler('open', function () {
+        $http.get(deltaEEndPoint + imageId)
+            .then(function(response) {
+                const deltaEMapping = viewer.deltaEMap(viewer);
+                deltaEMapping.render(response.data);
+            })
+            .catch(function() {
+                console.error('Error while fetching or processing DeltaE data.');
+            });
+    })
 
 ## Demo
 

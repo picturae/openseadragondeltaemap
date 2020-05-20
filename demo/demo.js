@@ -72,7 +72,7 @@ window.onload = function() {
     |*| http://jsbin.com/hikekaroxa/1/edit?html,js,output
     \*/
 
-    const deltaEMap = this.viewer.deltaEMap()
+    const deltaEMap = this.viewer.deltaEMap(this.viewer)
 
     const fileInput = document.querySelector('input[type=file]')
 

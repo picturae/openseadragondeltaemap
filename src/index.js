@@ -11,9 +11,9 @@ var index = (function() {
         }
     }
 
-    $.Viewer.prototype.deltaEMap = function() {
+    $.Viewer.prototype.deltaEMap = function(viewer) {
         if (!this._deltaEMap) {
-            this._deltaEMap = new Overlay(this)
+            this._deltaEMap = new Overlay(viewer)
         }
 
         return this._deltaEMap
