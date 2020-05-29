@@ -57,6 +57,7 @@ const Overlay = function(viewer) {
             !jsonData ||
             !jsonData.validity ||
             !jsonData.targets ||
+            !jsonData.observed ||
             !jsonData.assessed
         ) {
             console.error('Bad DeltaE JSON')

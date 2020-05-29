@@ -78,6 +78,7 @@ const targetData = {
             validity: {},
         },
     ],
+    observed: {},
     assessed: {},
 }
 

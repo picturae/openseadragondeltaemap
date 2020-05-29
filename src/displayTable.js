@@ -82,6 +82,7 @@ const DisplayTable = function(mainElement) {
                 ${userData.name} ${colorSquare}
             </caption>`
 
+            // display the following data in the following order
             if (userData.assessed) {
                 table.innerHTML += dataBody('assessed', userData.assessed)
             }
