@@ -1,4 +1,4 @@
-import { hasOwnProperty } from './functions'
+import { hasOwnProperty, setData } from './functions'
 
 const Patch = function(patchData, parentNode, containerSize) {
     this.name = 'Patch'
@@ -14,16 +14,10 @@ const Patch = function(patchData, parentNode, containerSize) {
         containerSize.h}%`
     parentNode.appendChild(this.element)
 
-    let userData = {}
-    for (let [key, value] of Object.entries(patchData)) {
-        if (!(key === 'location')) {
-            userData[key] = value
-        }
-    }
-    this.element.dataset.picturaeDeltaemapDisplay = JSON.stringify(userData)
+    this.element.dataset.picturaeDeltaemapDisplay = setData(patchData)
 
-    if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
-        const isValid = userData.validity.valid
+    if (patchData.validity && hasOwnProperty(patchData.validity, 'valid')) {
+        const isValid = patchData.validity.valid
         this.element.classList.add(isValid ? 'valid' : 'invalid')
     }
 }

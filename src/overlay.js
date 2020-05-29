@@ -1,4 +1,4 @@
-import { isUsableNumber, hasOwnProperty, roundAt } from './functions'
+import { isUsableNumber, hasOwnProperty, roundAt, setData } from './functions'
 import { Chart } from './chart'
 import { DisplayTable } from './displayTable'
 
@@ -65,16 +65,11 @@ const Overlay = function(viewer) {
         }
 
         if (!jsonData.name) jsonData.name = 'Target Scan'
-        let userData = {}
-        for (let [key, value] of Object.entries(jsonData)) {
-            if (!(key === 'targets')) {
-                userData[key] = value
-            }
-        }
-        this.element.dataset.picturaeDeltaemapDisplay = JSON.stringify(userData)
 
-        if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
-            const isValid = userData.validity.valid
+        this.element.dataset.picturaeDeltaemapDisplay = setData(jsonData)
+
+        if (jsonData.validity && hasOwnProperty(jsonData.validity, 'valid')) {
+            const isValid = jsonData.validity.valid
             this.element.classList.add(isValid ? 'valid' : 'invalid')
         }
 

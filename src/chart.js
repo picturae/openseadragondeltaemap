@@ -1,4 +1,4 @@
-import { hasOwnProperty } from './functions'
+import { hasOwnProperty, setData } from './functions'
 import { Patch } from '../src/patch'
 
 const Chart = function(chartData, parentNode, containerSize) {
@@ -22,22 +22,10 @@ const Chart = function(chartData, parentNode, containerSize) {
     }
     parentNode.appendChild(this.element)
 
-    let userData = {}
-    for (let [key, value] of Object.entries(chartData)) {
-        if (
-            !(
-                key === 'location' ||
-                key === 'colorPatches' ||
-                key === 'edgePatches'
-            )
-        ) {
-            userData[key] = value
-        }
-    }
-    this.element.dataset.picturaeDeltaemapDisplay = JSON.stringify(userData)
+    this.element.dataset.picturaeDeltaemapDisplay = setData(chartData)
 
-    if (userData.validity && hasOwnProperty(userData.validity, 'valid')) {
-        const isValid = userData.validity.valid
+    if (chartData.validity && hasOwnProperty(chartData.validity, 'valid')) {
+        const isValid = chartData.validity.valid
         this.element.classList.add(isValid ? 'valid' : 'invalid')
     }
 
