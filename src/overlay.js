@@ -54,6 +54,7 @@ const Overlay = function(viewer) {
         this.element.innerHTML = ''
         if (
             !jsonData ||
+            !jsonData.location ||
             !jsonData.validity ||
             !jsonData.targets ||
             !jsonData.observed ||
@@ -79,8 +80,8 @@ const Overlay = function(viewer) {
 
         // const contentSize = this.tiledImage.contentSize()
         // if (
-        //     contentSize.x !== userData.location.w ||
-        //     contentSize.y !== userData.location.h
+        //     contentSize.x !== jsonData.location.w ||
+        //     contentSize.y !== jsonData.location.h
         // ) {
         //     console.warn(
         //         'DeltaE Mapping: Size loaded image differs from report',
@@ -89,7 +90,7 @@ const Overlay = function(viewer) {
 
         jsonData.targets.forEach(chartData => {
             this.charts.push(
-                new Chart(chartData, this.element, userData.location),
+                new Chart(chartData, this.element, jsonData.location),
             )
         })
     }

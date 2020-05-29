@@ -52,14 +52,12 @@ const Chart = function(chartData, parentNode, containerSize) {
             this.patches.push(new Patch(patchData, this.element, contentSize))
         })
     }
-    // if (chartData.edgePatches) {
-    //     chartData.edgePatches.forEach(patchData => {
-    //         patchData.patchType = 'edge'
-    //         this.patches.push(
-    //             new Patch(patchData, this.element, contentSize),
-    //         )
-    //     })
-    // }
+    if (chartData.edgePatches) {
+        chartData.edgePatches.forEach(patchData => {
+            patchData.patchType = 'edge'
+            this.patches.push(new Patch(patchData, this.element, contentSize))
+        })
+    }
 }
 
 export { Chart }
