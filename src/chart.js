@@ -6,13 +6,13 @@ const Chart = function(chartData, parentNode, containerSize) {
     this.element = document.createElement('deltaechart')
 
     this.element.style.left = `${(chartData.location.x * 100) /
-        containerSize.x}%`
+        containerSize.w}%`
     this.element.style.top = `${(chartData.location.y * 100) /
-        containerSize.y}%`
+        containerSize.h}%`
     this.element.style.width = `${(chartData.location.w * 100) /
-        containerSize.x}%`
+        containerSize.w}%`
     this.element.style.height = `${(chartData.location.h * 100) /
-        containerSize.y}%`
+        containerSize.h}%`
     if (chartData.location.r) {
         if (chartData.location.r === 180) {
             this.element.style.transformOrigin = 'center center'
@@ -43,8 +43,8 @@ const Chart = function(chartData, parentNode, containerSize) {
 
     this.patches = []
     const contentSize = {
-        x: chartData.location.w,
-        y: chartData.location.h,
+        w: chartData.location.w,
+        h: chartData.location.h,
     }
     if (chartData.colorPatches) {
         chartData.colorPatches.forEach(patchData => {

@@ -12,7 +12,6 @@ const Overlay = function(viewer) {
         this.tiledImage = viewer.world.getItemAt(0)
         if (!this.tiledImage) return
         const imageBounds = this.tiledImage.getBounds()
-
         const leftTop = viewer.viewport.pixelFromPoint(imageBounds.getTopLeft())
         const rightBottom = viewer.viewport.pixelFromPoint(
             imageBounds.getBottomRight(),
@@ -78,13 +77,19 @@ const Overlay = function(viewer) {
             this.element.classList.add(isValid ? 'valid' : 'invalid')
         }
 
+        // const contentSize = this.tiledImage.contentSize()
+        // if (
+        //     contentSize.x !== userData.location.w ||
+        //     contentSize.y !== userData.location.h
+        // ) {
+        //     console.warn(
+        //         'DeltaE Mapping: Size loaded image differs from report',
+        //     )
+        // }
+
         jsonData.targets.forEach(chartData => {
             this.charts.push(
-                new Chart(
-                    chartData,
-                    this.element,
-                    this.tiledImage.getContentSize(),
-                ),
+                new Chart(chartData, this.element, userData.location),
             )
         })
     }

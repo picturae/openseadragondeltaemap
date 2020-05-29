@@ -13,6 +13,10 @@ test('Overlay.resize sets the position in an absolute fashion', () => {
     overlayInstance.resize()
     const styleObject = overlayInstance.element.style
 
+    expect(styleObject.left).toMatch(/^\d+/)
+    expect(styleObject.top).toMatch(/^\d+/)
+    expect(styleObject.width).toMatch(/^\d+/)
+    expect(styleObject.height).toMatch(/^\d+/)
     expect(styleObject.left).toMatch(/px$/)
     expect(styleObject.top).toMatch(/px$/)
     expect(styleObject.width).toMatch(/px$/)

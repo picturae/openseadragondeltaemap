@@ -17,8 +17,8 @@ const targetData = {
     "location": {
         "x": 0,
         "y": 0,
-        "w": 11600,
-        "h": 8700
+        "w": 8688,
+        "h": 5792
     },
     "validity": {
         "valid": false,

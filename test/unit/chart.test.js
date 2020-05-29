@@ -13,6 +13,10 @@ test('Chart sets the position in a relative fashion', () => {
     )
     const styleObject = chartInstance.element.style
 
+    expect(styleObject.left).toMatch(/^\d+/)
+    expect(styleObject.top).toMatch(/^\d+/)
+    expect(styleObject.width).toMatch(/^\d+/)
+    expect(styleObject.height).toMatch(/^\d+/)
     expect(styleObject.left).toMatch(/%$/)
     expect(styleObject.top).toMatch(/%$/)
     expect(styleObject.width).toMatch(/%$/)

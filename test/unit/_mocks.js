@@ -1,7 +1,7 @@
 // example (chart size)
 const contentSize = {
-    x: 1000,
-    y: 707.107,
+    w: 1000,
+    h: 707.107,
 }
 
 // openseadragon representation for the tiled Image
@@ -78,6 +78,7 @@ const targetData = {
             validity: {},
         },
     ],
+    location: { x: 0, y: 0, w: 6000, h: 4000 },
     observed: {},
     assessed: {},
 }

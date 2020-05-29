@@ -5,13 +5,13 @@ const Patch = function(patchData, parentNode, containerSize) {
     this.element = document.createElement('deltaepatch')
 
     this.element.style.left = `${(patchData.location.x * 100) /
-        containerSize.x}%`
+        containerSize.w}%`
     this.element.style.top = `${(patchData.location.y * 100) /
-        containerSize.y}%`
+        containerSize.h}%`
     this.element.style.width = `${(patchData.location.w * 100) /
-        containerSize.x}%`
+        containerSize.w}%`
     this.element.style.height = `${(patchData.location.h * 100) /
-        containerSize.y}%`
+        containerSize.h}%`
     parentNode.appendChild(this.element)
 
     let userData = {}
