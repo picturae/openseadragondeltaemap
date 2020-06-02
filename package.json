@@ -1,7 +1,7 @@
 {
     "name": "openseadragondeltaemap",
     "version": "1.0.0",
-    "description": "Draws overlay over a targetscan, and shows calibration info accordimng to deltaE standards",
+    "description": "Draws overlay over a targetscan, and shows calibration info according to deltaE standards",
     "main": "dist/openSeadragonDeltaEMap.js",
     "module": "module/openSeadragonDeltaEMap.js",
     "directories": {

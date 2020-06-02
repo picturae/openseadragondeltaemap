@@ -74,7 +74,7 @@ const DisplayTable = function(mainElement) {
             table.innerHTML = ''
             const userData = JSON.parse(targetData)
             let colorSquare = ''
-            if (userData.patchType && userData.patchType === 'color') {
+            if (userData.observed && userData.observed.RGB) {
                 let color = `rgb(${userData.observed.RGB.join()})`
                 colorSquare = `<deltaecolor style="background: ${color};"></deltaecolor>`
             }
