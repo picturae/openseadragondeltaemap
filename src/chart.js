@@ -1,4 +1,5 @@
-import { hasOwnProperty, setData } from './functions'
+import { hasOwnProperty } from 'my-lib'
+import { setData } from './functions'
 import { Patch } from '../src/patch'
 
 const Chart = function(chartData, parentNode, containerSize) {

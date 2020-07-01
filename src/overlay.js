@@ -1,4 +1,5 @@
-import { isUsableNumber, hasOwnProperty, roundAt, setData } from './functions'
+import { isUsableNumber, hasOwnProperty, roundAtDecimals } from 'my-lib'
+import { setData } from './functions'
 import { Chart } from './chart'
 import { DisplayTable } from './displayTable'
 
@@ -22,10 +23,10 @@ const Overlay = function(viewer) {
 
         const precision = 4
         const box = {
-            left: roundAt(leftTop.x, precision),
-            top: roundAt(leftTop.y, precision),
-            width: roundAt(rightBottom.x - leftTop.x, precision),
-            height: roundAt(rightBottom.y - leftTop.y, precision),
+            left: roundAtDecimals(leftTop.x, precision),
+            top: roundAtDecimals(leftTop.y, precision),
+            width: roundAtDecimals(rightBottom.x - leftTop.x, precision),
+            height: roundAtDecimals(rightBottom.y - leftTop.y, precision),
         }
 
         this.element.style.left = `${box.left}px`

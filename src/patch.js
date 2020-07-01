@@ -1,4 +1,5 @@
-import { hasOwnProperty, setData } from './functions'
+import { hasOwnProperty } from 'my-lib'
+import { setData } from './functions'
 
 const Patch = function(patchData, parentNode, containerSize) {
     this.name = 'Patch'

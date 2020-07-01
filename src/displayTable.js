@@ -1,4 +1,4 @@
-import { isAttachedToDom, isPrimitive, hasOwnProperty } from './functions'
+import { isAttachedToDom, isPrimitive, hasOwnProperty } from 'my-lib'
 import transformCase from 'transform-case'
 
 const DisplayTable = function(mainElement) {
