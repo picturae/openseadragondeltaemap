@@ -74,7 +74,7 @@ left, top, right, bottom will be set inline
   border-bottom: 4px solid #c00;
 }
 .picturae-deltaemap-display tbody:before {
-  content: attr(name);
+  content: attr(data-name);
   display: block;
   font: small-caption;
 }

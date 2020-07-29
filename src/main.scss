@@ -83,7 +83,7 @@ left, top, right, bottom will be set inline
     }
 
     tbody:before {
-        content: attr(name);
+        content: attr(data-name);
         display: block;
         font: small-caption;
     }

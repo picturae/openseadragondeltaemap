@@ -51,10 +51,11 @@ const DisplayTable = function(mainElement) {
     }
 
     const dataBody = (groupName, groupData) => {
-        let body = `<tbody name="${groupName}">`
+        let body = `<tbody class="deltaemap-${groupName}" data-name="${groupName}">`
         for (let [key, value] of Object.entries(groupData)) {
             let row = ''
-            row = `<tr><th>${transformCase(key, {
+            const className = transformCase(key).paramCase()
+            row = `<tr class="${className}"><th>${transformCase(key, {
                 replace: {
                     deltaE: ' &Delta;E ',
                     DeltaE: ' &Delta;E ',
@@ -72,6 +73,15 @@ const DisplayTable = function(mainElement) {
         const targetData = event.target.dataset.picturaeDeltaemapDisplay
         if (targetData) {
             table.innerHTML = ''
+            table.classList.remove(
+                'deltaemap-overlay',
+                'deltaemap-chart',
+                'deltaemap-patch',
+            )
+            const className = event.target.tagName
+                .toLowerCase()
+                .replace('deltae', 'deltaemap-')
+            table.classList.add(className)
             const userData = JSON.parse(targetData)
             let colorSquare = ''
             if (userData.observed && userData.observed.RGB) {
