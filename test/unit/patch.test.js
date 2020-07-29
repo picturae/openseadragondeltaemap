@@ -1,5 +1,8 @@
-import { contentSize, targetData } from './_mocks'
+import { contentSize, targetData, badPatchData } from './_mocks'
 import { Patch } from '../../src/patch'
+
+// suppress alarming error messages in output
+console.error = jest.fn()
 
 // target-patch part of jsonData
 let patchData = targetData.targets[0].colorPatches[0]
@@ -67,4 +70,17 @@ test('Patch renders a className "invalid" when the validity flag is negative', (
     )
 
     expect(patchInstance.element.classList).toContain('invalid');
+})
+
+test('Patch does not render when data are missing', () => {
+    const spyConsoleError = jest.spyOn(console, 'error')
+    const spyElementAppend = jest.spyOn(htmlElement, 'appendChild')
+    const patchInstance = new Patch(
+        badPatchData,
+        htmlElement,
+        contentSize,
+    )
+
+    expect(spyConsoleError).toHaveBeenCalled()
+    expect(spyElementAppend).not.toHaveBeenCalledWith(patchInstance.element)
 })

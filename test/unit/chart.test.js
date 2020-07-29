@@ -1,5 +1,8 @@
-import { contentSize, targetData } from './_mocks'
+import { contentSize, targetData, badChartData } from './_mocks'
 import { Chart } from '../../src/chart'
+
+// suppress alarming error messages in output
+console.error = jest.fn()
 
 // target-chart part of jsonData
 let chartData = targetData.targets[0]
@@ -77,4 +80,17 @@ test('Chart renders at least one new target patch', () => {
     const childNodes = chartInstance.element.childNodes
 
     expect(childNodes[0].tagName).toBe('DELTAEPATCH')
+})
+
+test('Patch does not render when data are missing', () => {
+    const spyConsoleError = jest.spyOn(console, 'error')
+    const spyElementAppend = jest.spyOn(htmlElement, 'appendChild')
+    const chartInstance = new Chart(
+        badChartData,
+        htmlElement,
+        contentSize,
+    )
+
+    expect(spyConsoleError).toHaveBeenCalled()
+    expect(spyElementAppend).not.toHaveBeenCalledWith(chartInstance.element)
 })

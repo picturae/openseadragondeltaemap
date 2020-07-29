@@ -1,5 +1,8 @@
-import { viewer, targetData } from './_mocks'
+import { viewer, targetData, badOverlayData } from './_mocks'
 import { Overlay } from '../../src/overlay'
+
+// suppress alarming error messages in output
+console.error = jest.fn()
 
 test('Overlay has public methods', () => {
     const overlayInstance = new Overlay(viewer)
@@ -63,4 +66,14 @@ test('Overlay renders at least one new target chart', () => {
     overlayInstance.render(targetData)
 
     expect(spyElementAppend).toHaveBeenCalled()
+})
+
+test('Overlay does not render when data are missing', () => {
+    const overlayInstance = new Overlay(viewer)
+    const spyConsoleError = jest.spyOn(console, 'error')
+    const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
+    overlayInstance.render(badOverlayData)
+
+    expect(spyConsoleError).toHaveBeenCalled()
+    expect(spyElementAppend).not.toHaveBeenCalled()
 })

@@ -53,6 +53,8 @@ const Overlay = function(viewer) {
     this.charts = []
     this.render = jsonData => {
         this.element.innerHTML = ''
+        if (!jsonData.name) jsonData.name = 'Target Scan'
+
         if (
             !jsonData ||
             !jsonData.location ||
@@ -61,11 +63,12 @@ const Overlay = function(viewer) {
             !jsonData.observed ||
             !jsonData.assessed
         ) {
-            console.error('Bad DeltaE JSON')
+            console.error(
+                `Bad DeltaE Targetscan data, for ${jsonData.name}`,
+                jsonData,
+            )
             return
         }
-
-        if (!jsonData.name) jsonData.name = 'Target Scan'
 
         this.element.dataset.picturaeDeltaemapDisplay = setData(jsonData)
 

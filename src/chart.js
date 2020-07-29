@@ -6,6 +6,21 @@ const Chart = function(chartData, parentNode, containerSize) {
     this.name = 'Chart'
     this.element = document.createElement('deltaechart')
 
+    if (!chartData.name) chartData.name = 'unnamed targetchart'
+    if (
+        !chartData ||
+        !chartData.location ||
+        !chartData.validity ||
+        !chartData.observed ||
+        !chartData.assessed
+    ) {
+        console.error(
+            `Bad DeltaE Targetchart data, for ${chartData.name}`,
+            chartData,
+        )
+        return
+    }
+
     this.element.style.left = `${(chartData.location.x * 100) /
         containerSize.w}%`
     this.element.style.top = `${(chartData.location.y * 100) /
