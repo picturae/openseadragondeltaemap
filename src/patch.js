@@ -14,7 +14,7 @@ const Patch = function(patchData, parentNode, containerSize) {
         !patchData.observed ||
         !patchData.assessed
     ) {
-        console.error(`Bad DeltaE Patch data, for ${patchData.name}`, patchData)
+        console.warn(`Bad DeltaE Patch data, for ${patchData.name}`, patchData)
         return
     }
 

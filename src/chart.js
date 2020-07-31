@@ -14,7 +14,7 @@ const Chart = function(chartData, parentNode, containerSize) {
         !chartData.observed ||
         !chartData.assessed
     ) {
-        console.error(
+        console.warn(
             `Bad DeltaE Targetchart data, for ${chartData.name}`,
             chartData,
         )

@@ -1,8 +1,8 @@
 import { contentSize, targetData, badChartData } from './_mocks'
 import { Chart } from '../../src/chart'
 
-// suppress alarming error messages in output
-console.error = jest.fn()
+// suppress alarming messages in output
+console.warn = jest.fn()
 
 // target-chart part of jsonData
 let chartData = targetData.targets[0]
@@ -83,7 +83,7 @@ test('Chart renders at least one new target patch', () => {
 })
 
 test('Patch does not render when data are missing', () => {
-    const spyConsoleError = jest.spyOn(console, 'error')
+    const spyConsoleWarn = jest.spyOn(console, 'warn')
     const spyElementAppend = jest.spyOn(htmlElement, 'appendChild')
     const chartInstance = new Chart(
         badChartData,
@@ -91,6 +91,6 @@ test('Patch does not render when data are missing', () => {
         contentSize,
     )
 
-    expect(spyConsoleError).toHaveBeenCalled()
+    expect(spyConsoleWarn).toHaveBeenCalled()
     expect(spyElementAppend).not.toHaveBeenCalledWith(chartInstance.element)
 })

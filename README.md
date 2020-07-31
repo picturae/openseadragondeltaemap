@@ -54,6 +54,9 @@ Instantiate overlay:
             });
     })
 
+When critical data are missing,
+the plugin will warn or error in the console.
+
 ## Demo
 
 .../openseadragondeltaemap/demo/demo.html
