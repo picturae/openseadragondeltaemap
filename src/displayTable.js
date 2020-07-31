@@ -10,6 +10,11 @@ const DisplayTable = function(mainElement) {
     this.element = table
     table.className = 'picturae-deltaemap-display'
 
+    /**
+     * Serialise the values
+     * @param {any} value
+     * @returns {string} (html) string
+     */
     const readableValue = value => {
         if (value === null) {
             return '--'
@@ -50,25 +55,34 @@ const DisplayTable = function(mainElement) {
         }
     }
 
+    /**
+     * Convert data into HTML string
+     * @param {string} groupName
+     * @param {object} groupData
+     * @returns {string} html string
+     */
     const dataBody = (groupName, groupData) => {
         let body = `<tbody class="deltaemap-${groupName}" data-name="${groupName}">`
         for (let [key, value] of Object.entries(groupData)) {
             let row = ''
+            // '\u0394' === '&Delta;'
+            const label = transformCase(key.replace(/(d|D)elta/, '\u0394'), {
+                delimit: [/(\u0394)\w{1}/],
+            }).humanTitle()
             const className = transformCase(key).paramCase()
-            row = `<tr class="${className}"><th>${transformCase(key, {
-                replace: {
-                    deltaE: ' &Delta;E ',
-                    DeltaE: ' &Delta;E ',
-                    deltaL: ' &Delta;L ',
-                    DeltaL: ' &Delta;L ',
-                },
-            }).humanTitle()}</th><td>${readableValue(value)}</td></tr>`
+            row = `<tr class="${className}"><th>${label}</th><td>${readableValue(
+                value,
+            )}</td></tr>`
             if (row) body += row
         }
         body += '</tbody>'
         return body
     }
 
+    /**
+     * Update the table with new data
+     * @param {object} event
+     */
     const targetEnter = function(event) {
         const targetData = event.target.dataset.picturaeDeltaemapDisplay
         if (targetData) {
@@ -115,6 +129,9 @@ const DisplayTable = function(mainElement) {
         }
     }
 
+    /**
+     * Remove table from DOM when needed
+     */
     const targetLeave = function() {
         if (isAttachedToDom(table)) displayRoot.removeChild(table)
     }
