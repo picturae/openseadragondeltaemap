@@ -1,11 +1,25 @@
 import { DisplayTable } from '../../src/displayTable'
 
-let htmlElement = document.body
+describe('displayTable events', function () {
+    let htmlElement
 
-test('displayTable listens to events', () => {
-    const spyEventListener = jest.spyOn(htmlElement, 'addEventListener')
-    new DisplayTable(htmlElement)
+    beforeEach(() => {
+        htmlElement = document.body
+    })
 
-    expect(spyEventListener).toHaveBeenCalledWith('mouseover', expect.any(Function))
-    expect(spyEventListener).toHaveBeenCalledWith('mousemove', expect.any(Function))
+    test('should listen to the mouse', () => {
+        const spyEventListener = jest.spyOn(htmlElement, 'addEventListener')
+        new DisplayTable(htmlElement)
+
+        expect(spyEventListener).toHaveBeenCalledWith('mouseover', expect.any(Function))
+        expect(spyEventListener).toHaveBeenCalledWith('mousemove', expect.any(Function))
+    })
+
+    test('should not break openseadragon interaction', () => {
+        const spyEventListener = jest.spyOn(htmlElement, 'addEventListener')
+        new DisplayTable(htmlElement)
+
+        expect(spyEventListener).not.toHaveBeenCalledWith('click', expect.any(Function))
+        expect(spyEventListener).not.toHaveBeenCalledWith('scroll', expect.any(Function))
+    })
 })
