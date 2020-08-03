@@ -191,4 +191,4 @@ const DisplayTable = function(mainElement) {
     })
 }
 
-export { DisplayTable }
+export { DisplayTable, renderData, dataBody }

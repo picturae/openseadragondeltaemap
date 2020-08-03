@@ -48,11 +48,18 @@ const viewer = {
     },
 }
 
-// the json received from the backend
+// useable json from the backend
 const targetData = {
-    validity: {},
+    validity: {
+        hasInvalidPatch: true,
+        message: ["Target(s) did not pass all guidelines"],
+        valid: false,
+        warning: [],
+    },
+    name: 'Test Target Scan',
     targets: [
         {
+            name: 'Scan Test Color Chart',
             location: { x: 3210, y: 25, w: 2354, h: 253 },
             observed: { ppi: 300 },
             colorPatches: [
@@ -83,12 +90,36 @@ const targetData = {
                 },
             ],
             assessed: {},
-            validity: {},
+            validity: {valid: true},
         },
     ],
     location: { x: 0, y: 0, w: 6000, h: 4000 },
-    observed: {},
-    assessed: {},
+    observed: {
+        ppi: 300,
+        bitdepth: 8,
+        colorProfile: "eciRGB v2",
+    },
+    assessed: {
+        meanDeltaE76: 8.06,
+        meanDeltaE94G: 6.13,
+        meanDeltaE94T: 6.13,
+        meanDeltaE2000: 5.14,
+        meanDeltaECMC: 4.09,
+        meanDeltaL: 5.53,
+        meanStdDev: 1.57,
+        colorAccuracy: {
+            "Color Encoding Error (∆E1976)": false,
+            "Illuminance Uniformity": true,
+            "Individual Patch Error (∆E1976)": false,
+            "Total Noise": true,
+        },
+        spatialAccuracy: {
+            "Color Channel Misregistration": null,
+            "Oversharpening": null,
+            "SFR High Frequency": null,
+            "SFR Mid Frequency": null,
+        },
+    },
 }
 
 const badOverlayData = {
