@@ -1,48 +1,62 @@
 import { isAttachedToDom, isPrimitive, hasOwnProperty } from 'my-lib'
 import transformCase from 'transform-case'
 
+const BREAK = '<br/>'
+const INAPT = content => ['', null, undefined].includes(content)
+
 /**
  * Serialise the values
  * @param {any} value
  * @returns {string} html string
  */
 const readableValue = value => {
-    if (value === null) {
-        return '--'
+    if (value === null || value === undefined) {
+        return value
     }
+
     if (typeof value === 'boolean') {
         let bool = `<deltaeboolean class="${
             value ? 'valid' : 'invalid'
         }"></deltaeboolean>`
         return bool
     }
-    if (isPrimitive(value)) return value
-    if (value instanceof Array && value.length) {
-        if (isPrimitive(value[0])) return value.join(', ')
-        if (typeof value[0] === 'object') {
-            let fragment = ''
-            for (let i = 0; i < value.length; i++) {
-                fragment += readableValue(value[i])
-            }
-            return fragment
-        }
+
+    if (isPrimitive(value)) {
+        // preserve zero's, NaN's but not empty strings
+        return String(value)
     }
-    if (typeof value === 'object' && !(value instanceof Array)) {
+
+    if (Array.isArray(value)) {
+        if (!value.length) return null
+
+        const areAllPrimitives = value.every(vitem => isPrimitive(vitem))
+        if (areAllPrimitives) return value.join(', ') + BREAK
+
+        let fragment = ''
+        value.forEach(vitem => {
+            const formattedValue = readableValue(vitem)
+            if (!INAPT(formattedValue)) {
+                const endBreak = formattedValue.endsWith(BREAK)
+                fragment += endBreak ? formattedValue : formattedValue + BREAK
+            }
+        })
+        return fragment
+    }
+
+    if (typeof value === 'object') {
         let fragment = ''
         for (let [property, content] of Object.entries(value)) {
             let line = ''
+            const readableCnt = readableValue(content)
+            const humanTitle = transformCase(property).humanTitle()
             if (typeof content === 'boolean') {
-                line = `${readableValue(content)} ${transformCase(
-                    property,
-                ).humanTitle()}<br/>`
-            } else {
-                line = `${transformCase(
-                    property,
-                ).humanTitle()}: ${readableValue(content)}<br/>`
+                line = `${readableCnt} ${humanTitle}${BREAK}`
+            } else if (!INAPT(readableCnt)) {
+                line = `${humanTitle}: ${readableCnt}${BREAK}`
             }
             if (line) fragment += line
         }
-        return fragment + ''
+        return fragment
     }
 }
 
@@ -61,9 +75,11 @@ const dataBody = (groupName, groupData) => {
             delimit: [/(\u0394)\w{1}/],
         }).humanTitle()
         const className = transformCase(key).paramCase()
-        row = `<tr class="${className}"><th>${label}</th><td>${readableValue(
-            value,
-        )}</td></tr>`
+        const formattedValue = readableValue(value)
+        if (!INAPT(formattedValue)) {
+            // leave out unapplicable properties
+            row = `<tr class="${className}"><th>${label}</th><td>${formattedValue}</td></tr>`
+        }
         if (row) body += row
     }
     body += '</tbody>'
@@ -78,6 +94,7 @@ const dataBody = (groupName, groupData) => {
  * @returns {string} html string
  */
 const renderData = (event, table, targetData) => {
+    // process element charatistics
     table.innerHTML = ''
     table.classList.remove(
         'deltaemap-overlay',
@@ -88,6 +105,8 @@ const renderData = (event, table, targetData) => {
         .toLowerCase()
         .replace('deltae', 'deltaemap-')
     table.classList.add(className)
+
+    // process element data
     const userData = JSON.parse(targetData)
     let colorSquare = ''
     if (userData.observed && userData.observed.RGB) {
@@ -191,4 +210,4 @@ const DisplayTable = function(mainElement) {
     })
 }
 
-export { DisplayTable, renderData, dataBody }
+export { DisplayTable, renderData, dataBody, readableValue, INAPT }

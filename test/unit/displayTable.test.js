@@ -1,5 +1,7 @@
 import { targetData } from './_mocks'
-import { DisplayTable, renderData, dataBody } from '../../src/displayTable'
+import { hasOwnProperty } from 'my-lib'
+import transformCase from 'transform-case'
+import { DisplayTable, renderData, dataBody, readableValue, INAPT } from '../../src/displayTable'
 
 describe('displayTable events', function () {
     let htmlElement
@@ -111,4 +113,78 @@ describe('dataBody function', function () {
         expect(groupHTMLString).toContain('Mean ΔE 2000')
     })
 
+    test('should not represent unapplicable data', () => {
+        // colorAccuracy shown:
+        expect(groupData).toHaveProperty('colorAccuracy')
+        expect(groupData.colorAccuracy).toHaveProperty('Total Noise')
+        expect(groupHTMLString).toContain('Color Accuracy')
+        // spatialAccuracy not shown; all values null:
+        expect(groupData).toHaveProperty('spatialAccuracy')
+        expect(groupData.spatialAccuracy).toHaveProperty('Oversharpening')
+        expect(groupHTMLString).not.toContain('Spatial Accuracy')
+    })
+
+})
+
+describe('readableValue function', function () {
+
+    const testObject = {
+        valueUndefined: undefined,
+        valueNull: null,
+        booleanFalse: false,
+        booleanTrue: true,
+        numericNaN: NaN,
+        numericInfinity: Infinity,
+        numericZero: 0,
+        numericDecimal: 3.14159,
+        stringNone: '',
+        stringLengthy: '\'O sole mio',
+        arrayEmpty: [],
+        arrayLengthy: [1, 2, 3],
+        objectEmpty: {},
+        objectTrivial: {
+            a: null,
+            b: undefined,
+        },
+        objectRelevant: {
+            a: 1,
+            b: 'b',
+        },
+    }
+    const testJson = JSON.stringify(testObject)
+    const parsedJson = JSON.parse(testJson)
+
+    /**
+     * Prevent false negatives
+     * Return true or false for a property with a html-break or not
+     * Return name string for property unknown to the testObject
+     * @param {string} property of testObject
+     * @returns {boolean | string}
+     */
+    const isBool4PassedOrNot = key => {
+        if ( !hasOwnProperty(parsedJson, key) ) return key
+        const dataHTML = readableValue(parsedJson[key])
+        return !INAPT(dataHTML)
+    }
+
+    test('should present applicable values in an html string', () => {
+        // typeof string: not treated
+        // false: not applicable
+        // true: applicable
+        expect(isBool4PassedOrNot('valueUndefined')).toBe('valueUndefined')
+        expect(isBool4PassedOrNot('valueNull')).toBe(false)
+        expect(isBool4PassedOrNot('booleanFalse')).toBe(true)
+        expect(isBool4PassedOrNot('booleanTrue')).toBe(true)
+        expect(isBool4PassedOrNot('numericNaN')).toBe(false)
+        expect(isBool4PassedOrNot('numericInfinity')).toBe(false)
+        expect(isBool4PassedOrNot('numericZero')).toBe(true)
+        expect(isBool4PassedOrNot('numericDecimal')).toBe(true)
+        expect(isBool4PassedOrNot('stringNone')).toBe(false)
+        expect(isBool4PassedOrNot('stringLengthy')).toBe(true)
+        expect(isBool4PassedOrNot('arrayEmpty')).toBe(false) // caught by dataBody
+        expect(isBool4PassedOrNot('arrayLengthy')).toBe(true)
+        expect(isBool4PassedOrNot('objectEmpty')).toBe(false) // caught by dataBody
+        expect(isBool4PassedOrNot('objectTrivial')).toBe(false) // caught by dataBody
+        expect(isBool4PassedOrNot('objectRelevant')).toBe(true)
+    })
 })
