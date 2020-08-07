@@ -12,6 +12,12 @@ $green: #0b0;
 $textRed: #b00;
 $textGreen: #080;
 
+$stdCellWidth: 8em;
+$cellSpace: 0.5em;
+$bigCellWidth: (2 * $stdCellWidth) + $cellSpace;
+$tbdMinWidth: (3 * $stdCellWidth) + (3 * $cellSpace);
+$tbdMaxWidth: (4 * $stdCellWidth) + (4 * $cellSpace);
+
 /*
 Exact target-image overlay
 left, top, width, height will be set inline
@@ -91,6 +97,60 @@ left, top, right, bottom will be set inline
     th,
     td {
         vertical-align: top;
+    }
+}
+
+/* voorbeeld tabel
+tabel: 391.50 px * 631.46 px = 241.344,09  px2
+flex3: 410.25 px * 616.46 px = 252.902,715 px2
+flex4: 546.50 px * 533.96 px = 291.809,14  px2
+*/
+
+.picturae-deltaemap-display {
+    font-size: 14px;
+    tbody {
+        padding-top: 1.5em;
+        display: flex;
+        flex-wrap: wrap;
+        min-width: $tbdMinWidth;
+        max-width: $tbdMaxWidth;
+        &:before {
+            position: absolute;
+            font-size: inherit;
+            margin-top: -1.333em;
+            width: 100%;
+        }
+    }
+    tr {
+        fl-ex: 0 1 10em;
+        margin: 0 $cellSpace 0 0;
+        width: $stdCellWidth;
+    }
+    tr.color-accuracy,
+    tr.spatial-accuracy,
+    tr.lab,
+    tr.message {
+        fl-ex: 1 1 16em;
+        width: $bigCellWidth;
+    }
+    tr > * {
+        display: block;
+    }
+    // exclusions
+    tr.rgb,
+    tr.valid {
+        display: none;
+    }
+    &.valid {
+        .deltaemap-validity {
+            display: none;
+        }
+    }
+    &.deltaemap-chart {
+        .deltaemap-observed {
+            // only contains ppi
+            display: none;
+        }
     }
 }
 

@@ -70,9 +70,15 @@ const dataBody = (groupName, groupData) => {
     let body = `<tbody class="deltaemap-${groupName}" data-name="${groupName}">`
     for (let [key, value] of Object.entries(groupData)) {
         let row = ''
-        // '\u0394' === '&Delta;'
-        const label = transformCase(key.replace(/(d|D)elta/, '\u0394'), {
-            delimit: [/(\u0394)\w{1}/],
+        // '\u0394' === '&Delta;' === '&#916;'
+        // '\u03bc' === '&mu;' === '&#956;'
+        key = key
+            .replace(/(m|M)eanDelta/, '\u03bc\u0394')
+            .replace(/^mean(?!$)/, '\u03bc')
+            .replace(/(d|D)elta/, '\u0394')
+        const label = transformCase(key, {
+            preserve: [/(\u03bc\u0394)\w{1}/g, /(\u03bc)/g, /(\u0394)\w{1}/g],
+            delimitNumberLetter: false,
         }).humanTitle()
         const className = transformCase(key).paramCase()
         const formattedValue = readableValue(value)

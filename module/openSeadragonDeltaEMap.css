@@ -83,6 +83,53 @@ left, top, right, bottom will be set inline
   vertical-align: top;
 }
 
+/* voorbeeld tabel
+tabel: 391.50 px * 631.46 px = 241.344,09  px2
+flex3: 410.25 px * 616.46 px = 252.902,715 px2
+flex4: 546.50 px * 533.96 px = 291.809,14  px2
+*/
+.picturae-deltaemap-display {
+  font-size: 14px;
+}
+.picturae-deltaemap-display tbody {
+  padding-top: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 25.5em;
+  max-width: 34em;
+}
+.picturae-deltaemap-display tbody:before {
+  position: absolute;
+  font-size: inherit;
+  margin-top: -1.333em;
+  width: 100%;
+}
+.picturae-deltaemap-display tr {
+  fl-ex: 0 1 10em;
+  margin: 0 0.5em 0 0;
+  width: 8em;
+}
+.picturae-deltaemap-display tr.color-accuracy,
+.picturae-deltaemap-display tr.spatial-accuracy,
+.picturae-deltaemap-display tr.lab,
+.picturae-deltaemap-display tr.message {
+  fl-ex: 1 1 16em;
+  width: 16.5em;
+}
+.picturae-deltaemap-display tr > * {
+  display: block;
+}
+.picturae-deltaemap-display tr.rgb,
+.picturae-deltaemap-display tr.valid {
+  display: none;
+}
+.picturae-deltaemap-display.valid .deltaemap-validity {
+  display: none;
+}
+.picturae-deltaemap-display.deltaemap-chart .deltaemap-observed {
+  display: none;
+}
+
 /*
 Inline color display
 background will be set inline
