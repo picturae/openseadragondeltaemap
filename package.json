@@ -41,6 +41,7 @@
         "openseadragon": "^2.1.0"
     },
     "dependencies": {
+        "d3": "^5.16.0",
         "my-lib": "^1.2.0",
         "openseadragon": "^2.4.2",
         "transform-case": "^0.2.0"
