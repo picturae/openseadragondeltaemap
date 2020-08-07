@@ -12,11 +12,12 @@ $green: #0b0;
 $textRed: #b00;
 $textGreen: #080;
 
-$stdCellWidth: 8em;
-$cellSpace: 0.5em;
-$bigCellWidth: (2 * $stdCellWidth) + $cellSpace;
-$tbdMinWidth: (3 * $stdCellWidth) + (3 * $cellSpace);
-$tbdMaxWidth: (4 * $stdCellWidth) + (4 * $cellSpace);
+$smallCellWidth: 5.333em;
+$cellSpace: 0.333em;
+$meanCellWidth: (2 * $smallCellWidth) + $cellSpace;
+$bigCellWidth: (3 * $smallCellWidth) + (2 * $cellSpace);
+$tbdMinWidth: $bigCellWidth + $cellSpace;
+$tbdMaxWidth: 7 * ($smallCellWidth + $cellSpace);
 
 /*
 Exact target-image overlay
@@ -66,7 +67,7 @@ left, top, right, bottom will be set inline
     border-radius: 0 0 $tblSpace $tblSpace;
     color: $tblText;
     padding: $tblSpace;
-    max-width: 48vw; // safe 50% - 16px when 100% is 800px
+    max-width: 42vw;
 
     caption {
         background: $tblBkgr;
@@ -122,15 +123,17 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
         }
     }
     tr {
-        fl-ex: 0 1 10em;
         margin: 0 $cellSpace 0 0;
-        width: $stdCellWidth;
+        width: $smallCellWidth;
+    }
+    tr.lab,
+    tr.color-profile,
+    tr.has-invalid-patch {
+        width: $meanCellWidth;
     }
     tr.color-accuracy,
     tr.spatial-accuracy,
-    tr.lab,
     tr.message {
-        fl-ex: 1 1 16em;
         width: $bigCellWidth;
     }
     tr > * {
