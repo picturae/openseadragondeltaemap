@@ -89,6 +89,64 @@ const targetData = {
                     }
                 },
             ],
+            edgePatches: [
+                {
+                    name: "Vertical",
+                    location: { x: 1153, y: 95, w: 48, h: 64 },
+                    observed: {
+                        R: {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        },
+                        G: {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        },
+                        B: {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        },
+                        "Lum" : {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        }
+                    },
+                    assessed: {},
+                    validity: {},
+                },
+                {
+                    name: "Horizontal",
+                    location: { x: 1145, y: 103, w: 64, h: 48 },
+                    observed: {
+                        R: {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        },
+                        G: {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        },
+                        B: {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        },
+                        "Lum" : {
+                            MTF10: 0,
+                            MTF50: 0,
+                            MTFMAX: 0
+                        }
+                    },
+                    assessed: {},
+                    validity: {},
+                }
+            ],
             assessed: {},
             validity: {valid: true},
         },
