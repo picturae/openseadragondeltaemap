@@ -52,6 +52,7 @@ left, top, right, bottom will be set inline
   border-radius: 0 0 0.5em 0.5em;
   color: black;
   padding: 0.5em;
+  margin: 0;
   max-width: 42vw;
 }
 .picturae-deltaemap-display caption {
@@ -77,9 +78,11 @@ left, top, right, bottom will be set inline
   content: attr(data-name);
   display: block;
   font: small-caption;
+  font-size: inherit;
 }
 .picturae-deltaemap-display th,
 .picturae-deltaemap-display td {
+  font-size: inherit;
   vertical-align: top;
 }
 
@@ -100,7 +103,6 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
 }
 .picturae-deltaemap-display tbody:before {
   position: absolute;
-  font-size: inherit;
   margin-top: -1.333em;
   width: 100%;
 }

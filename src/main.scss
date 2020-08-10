@@ -67,6 +67,7 @@ left, top, right, bottom will be set inline
     border-radius: 0 0 $tblSpace $tblSpace;
     color: $tblText;
     padding: $tblSpace;
+    margin: 0;
     max-width: 42vw;
 
     caption {
@@ -93,10 +94,12 @@ left, top, right, bottom will be set inline
         content: attr(data-name);
         display: block;
         font: small-caption;
+        font-size: inherit;
     }
 
     th,
     td {
+        font-size: inherit;
         vertical-align: top;
     }
 }
@@ -117,7 +120,6 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
         max-width: $tbdMaxWidth;
         &:before {
             position: absolute;
-            font-size: inherit;
             margin-top: -1.333em;
             width: 100%;
         }
