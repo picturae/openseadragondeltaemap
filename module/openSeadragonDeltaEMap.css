@@ -110,8 +110,13 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
   margin: 0 0.333em 0 0;
   width: 5.333em;
 }
+.picturae-deltaemap-display tr.r,
+.picturae-deltaemap-display tr.g,
+.picturae-deltaemap-display tr.b,
+.picturae-deltaemap-display tr.lum,
 .picturae-deltaemap-display tr.lab,
 .picturae-deltaemap-display tr.color-profile,
+.picturae-deltaemap-display tr.invalid-patch,
 .picturae-deltaemap-display tr.has-invalid-patch {
   width: 10.999em;
 }

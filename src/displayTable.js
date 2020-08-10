@@ -1,4 +1,9 @@
-import { isAttachedToDom, isPrimitive, hasOwnProperty } from 'my-lib'
+import {
+    isAttachedToDom,
+    isPrimitive,
+    hasOwnProperty,
+    roundAtDigits,
+} from 'my-lib'
 import transformCase from 'transform-case'
 
 const BREAK = '<br/>'
@@ -23,11 +28,15 @@ const readableValue = value => {
 
     if (isPrimitive(value)) {
         // preserve zero's, NaN's but not empty strings
+        if (value === 0) value = '0'
+        if (typeof value === 'number') {
+            value = roundAtDigits(value, 5)
+        }
         return String(value)
     }
 
     if (Array.isArray(value)) {
-        if (!value.length) return null
+        if (!value.length || value.length > 8) return null
 
         const areAllPrimitives = value.every(vitem => isPrimitive(vitem))
         if (areAllPrimitives) return value.join(', ') + BREAK
