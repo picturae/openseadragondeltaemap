@@ -81,11 +81,11 @@ const dataBody = (groupName, groupData) => {
         let row = ''
         // '\u0394' === '&Delta;' === '&#916;'
         // '\u03bc' === '&mu;' === '&#956;'
-        key = key
+        let label = key
             .replace(/(m|M)eanDelta/, '\u03bc\u0394')
             .replace(/^mean(?!$)/, '\u03bc')
             .replace(/(d|D)elta/, '\u0394')
-        const label = transformCase(key, {
+        label = transformCase(label, {
             preserve: [/(\u03bc\u0394)\w{1}/g, /(\u03bc)/g, /(\u0394)\w{1}/g],
             delimitNumberLetter: false,
         }).humanTitle()

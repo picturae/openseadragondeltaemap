@@ -1,6 +1,5 @@
 import { targetData } from './_mocks'
 import { hasOwnProperty } from 'my-lib'
-import transformCase from 'transform-case'
 import { DisplayTable, renderData, dataBody, readableValue, INAPT } from '../../src/displayTable'
 
 describe('displayTable events', function () {
