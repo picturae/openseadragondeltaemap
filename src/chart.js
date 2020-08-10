@@ -7,13 +7,7 @@ const Chart = function(chartData, parentNode, containerSize) {
     this.element = document.createElement('deltaechart')
 
     if (!chartData.name) chartData.name = 'unnamed targetchart'
-    if (
-        !chartData ||
-        !chartData.location ||
-        !chartData.validity ||
-        !chartData.observed ||
-        !chartData.assessed
-    ) {
+    if (!chartData || !chartData.location || !chartData.observed) {
         console.warn(
             `Bad DeltaE Targetchart data, for ${chartData.name}`,
             chartData,
@@ -52,11 +46,15 @@ const Chart = function(chartData, parentNode, containerSize) {
     }
     if (chartData.colorPatches) {
         chartData.colorPatches.forEach(patchData => {
+            patchData.patchType = 'colorPatch'
+            patchData.targetName = chartData.targetName
             this.patches.push(new Patch(patchData, this.element, contentSize))
         })
     }
     if (chartData.edgePatches) {
         chartData.edgePatches.forEach(patchData => {
+            patchData.patchType = 'edgePatch'
+            patchData.targetName = chartData.targetName
             this.patches.push(new Patch(patchData, this.element, contentSize))
         })
     }

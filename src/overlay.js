@@ -58,10 +58,8 @@ const Overlay = function(viewer) {
         if (
             !jsonData ||
             !jsonData.location ||
-            !jsonData.validity ||
             !jsonData.targets ||
-            !jsonData.observed ||
-            !jsonData.assessed
+            !jsonData.observed
         ) {
             console.error(
                 `Bad DeltaE Targetscan data, for ${jsonData.name}`,

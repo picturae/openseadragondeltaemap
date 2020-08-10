@@ -7,14 +7,11 @@ const Patch = function(patchData, parentNode, containerSize) {
 
     if (!patchData.name) patchData.name = 'unnamed patch'
 
-    if (
-        !patchData ||
-        !patchData.location ||
-        !patchData.validity ||
-        !patchData.observed ||
-        !patchData.assessed
-    ) {
-        console.warn(`Bad DeltaE Patch data, for ${patchData.name}`, patchData)
+    if (!patchData || !patchData.location || !patchData.observed) {
+        console.warn(
+            `Bad DeltaE Patch data, for ${patchData.name} of ${patchData.targetName}`,
+            patchData,
+        )
         return
     }
 
