@@ -1,5 +1,5 @@
 import { isUsableNumber, hasOwnProperty, roundAtDecimals } from 'my-lib'
-import { setData } from './functions'
+import { setData } from './storage'
 import { Chart } from './chart'
 import { DisplayTable } from './displayTable'
 
@@ -68,7 +68,7 @@ const Overlay = function(viewer) {
             return
         }
 
-        this.element.dataset.picturaeDeltaemapDisplay = setData(jsonData)
+        setData(this.element, jsonData)
 
         if (jsonData.validity && hasOwnProperty(jsonData.validity, 'valid')) {
             const isValid = jsonData.validity.valid

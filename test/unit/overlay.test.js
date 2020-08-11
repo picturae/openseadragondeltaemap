@@ -1,3 +1,4 @@
+import { getData } from '../../src/storage'
 import { viewer, targetData, badOverlayData } from './_mocks'
 import { Overlay } from '../../src/overlay'
 
@@ -37,9 +38,10 @@ test('Overlay renders a dataset with a default name when there is none', () => {
     const overlayInstance = new Overlay(viewer)
     delete targetData.name
     overlayInstance.render(targetData)
-    const ourDataset = overlayInstance.element.dataset.picturaeDeltaemapDisplay
+    const ourDataset = getData(overlayInstance.element)
 
-    expect(JSON.parse(ourDataset).name).toBe('Target Scan');
+    expect(ourDataset).toHaveProperty('location')
+    expect(ourDataset.name).toBe('Target Scan')
 })
 
 test('Overlay renders a className "valid" when the validity flag is positive', () => {

@@ -1,3 +1,4 @@
+import { getData } from '../../src/storage'
 import { contentSize, targetData, badPatchData } from './_mocks'
 import { Patch } from '../../src/patch'
 
@@ -44,9 +45,10 @@ test('Patch renders a dataset', () => {
         htmlElement,
         contentSize,
     )
-    const ourDataset = patchInstance.element.dataset
 
-    expect(ourDataset).toHaveProperty('picturaeDeltaemapDisplay');
+    const ourDataset = getData(patchInstance.element)
+
+    expect(ourDataset).toHaveProperty('location')
 })
 
 test('Patch renders a className "valid" when the validity flag is positive', () => {

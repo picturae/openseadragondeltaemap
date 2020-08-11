@@ -56,7 +56,7 @@ describe('renderData function', function () {
         const table = document.querySelector('table')
 
         const event = {target: deltaemap}
-        renderData(event, table, JSON.stringify(userData))
+        renderData(event, table, userData)
         // console.log('overlay', table.outerHTML)
 
         expect(table.classList).toContain('deltaemap-overlay')
@@ -70,7 +70,7 @@ describe('renderData function', function () {
         const table = document.querySelector('table')
 
         const event = {target: deltaemap}
-        renderData(event, table, JSON.stringify(userData))
+        renderData(event, table, userData)
         // console.log('chart', table.outerHTML)
 
         expect(table.classList).toContain('deltaemap-chart')
@@ -84,7 +84,7 @@ describe('renderData function', function () {
         const table = document.querySelector('table')
 
         const event = {target: deltaemap}
-        renderData(event, table, JSON.stringify(userData))
+        renderData(event, table, userData)
 
         expect(table.classList).toContain('deltaemap-patch')
         expect(table.classList).toContain('invalid')

@@ -1,3 +1,4 @@
+import { getData } from '../../src/storage'
 import { contentSize, targetData, badChartData } from './_mocks'
 import { Chart } from '../../src/chart'
 
@@ -37,15 +38,15 @@ test('Chart.element is appended to the Overlay.element', () => {
     expect(spyElementAppend).toHaveBeenCalledWith(chartInstance.element)
 })
 
-test('Chart renders a dataset', () => {
+test('Chart renders stored data', () => {
     const chartInstance = new Chart(
         chartData,
         htmlElement,
         contentSize,
     )
-    const ourDataset = chartInstance.element.dataset
+    const ourDataset = getData(chartInstance.element)
 
-    expect(ourDataset).toHaveProperty('picturaeDeltaemapDisplay');
+    expect(ourDataset).toHaveProperty('location')
 })
 
 test('Chart renders a className "valid" when the validity flag is positive', () => {

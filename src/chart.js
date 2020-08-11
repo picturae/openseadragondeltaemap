@@ -1,5 +1,5 @@
 import { hasOwnProperty } from 'my-lib'
-import { setData } from './functions'
+import { setData } from './storage'
 import { Patch } from '../src/patch'
 
 const Chart = function(chartData, parentNode, containerSize) {
@@ -32,7 +32,7 @@ const Chart = function(chartData, parentNode, containerSize) {
     }
     parentNode.appendChild(this.element)
 
-    this.element.dataset.picturaeDeltaemapDisplay = setData(chartData)
+    setData(this.element, chartData)
 
     if (chartData.validity && hasOwnProperty(chartData.validity, 'valid')) {
         const isValid = chartData.validity.valid

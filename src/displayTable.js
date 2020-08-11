@@ -5,6 +5,7 @@ import {
     roundAtDigits,
 } from 'my-lib'
 import transformCase from 'transform-case'
+import { getData } from './storage'
 
 const BREAK = '<br/>'
 const INAPT = content => ['', null, undefined].includes(content)
@@ -108,7 +109,7 @@ const dataBody = (groupName, groupData) => {
  * @param {string} targetData dataSet string
  * @returns {string} html string
  */
-const renderData = (event, table, targetData) => {
+const renderData = (event, table, userData) => {
     // process element charatistics
     table.innerHTML = ''
     table.classList.remove(
@@ -122,7 +123,6 @@ const renderData = (event, table, targetData) => {
     table.classList.add(className)
 
     // process element data
-    const userData = JSON.parse(targetData)
     let colorSquare = ''
     if (userData.observed && userData.observed.RGB) {
         let color = `rgb(${userData.observed.RGB.join()})`
@@ -166,7 +166,7 @@ const DisplayTable = function(mainElement) {
      * @param {object} event
      */
     const targetEnter = function(event) {
-        const targetData = event.target.dataset.picturaeDeltaemapDisplay
+        const targetData = getData(event.target)
         if (targetData) {
             renderData(event, table, targetData)
             if (!isAttachedToDom(table)) displayRoot.appendChild(table)
