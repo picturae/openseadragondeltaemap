@@ -60,3 +60,4 @@ the plugin will warn or error in the console.
 ## Demo
 
 .../openseadragondeltaemap/demo/demo.html
+JSON with SFR data available through fileselector hidden under navigations icons

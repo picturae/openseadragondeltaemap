@@ -8,7 +8,7 @@
         "test": "test"
     },
     "scripts": {
-        "prebuild": "cf dist module && prettier '{./{src,test}/*.{js,scss},./demo/demo.js}' --write",
+        "prebuild": "cf dist module && prettier '{./{src,test}/*.{js,scss},./demo/*.{json,js}}' --write",
         "build": "rollup --config",
         "coverage": "cf coverage && jest --coverage",
         "once": "npm run test && npm run build",
