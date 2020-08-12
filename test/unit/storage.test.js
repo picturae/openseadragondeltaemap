@@ -48,7 +48,7 @@ describe('storage keeps data with individual HTML-elements', () => {
 
         const after = getData (htmlElement)
 
-        expect(typeof before.location).toBe('undefined')
+        expect(typeof after.location).toBe('undefined')
 
     })
 
