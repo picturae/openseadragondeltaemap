@@ -6,7 +6,7 @@ import {
 } from 'my-lib'
 import transformCase from 'transform-case'
 import { getData } from './storage'
-import { plotCurve } from './plot'
+import { drawPlot } from './plot'
 
 const BREAK = '<br/>'
 const INAPT = content => ['', null, undefined].includes(content)
@@ -69,6 +69,27 @@ const readableValue = value => {
             if (line) fragment += line
         }
         return fragment
+    }
+}
+
+/**
+ * Attach plot of edgeData to observed data
+ * @param {object} edgeData - array of R,G,B,Lum objects
+ * @param {object} table - html elememt to attach plot to
+ */
+const edgePlot = (edgeData, table) => {
+    const tbodySelector = 'tbody.deltaemap-observed'
+    const tbody = table.querySelector(tbodySelector)
+    const subject = 'Spatial Frequency Response' // reflected in stylesheet
+    const rowClassName = transformCase(subject).paramCase()
+    const row = `<tr class="${rowClassName}"><th>${subject}</th><td></td></tr>`
+    tbody.innerHTML += row
+
+    const selector = `table.${DISPLAY_CLASSNAME} ${tbodySelector} tr.${rowClassName} td`
+    const drawDone = drawPlot(edgeData, selector, subject)
+    if (!drawDone) {
+        console.warn('no drawing')
+        tbody.removeChild(row)
     }
 }
 
@@ -152,16 +173,14 @@ const renderData = (event, table, userData) => {
         }
         table.innerHTML += dataBody('validity', userData.validity)
     }
-    if (userData.observed.Lum) {
-        const tbodySelector = 'tbody.deltaemap-observed'
-        const tbody = table.querySelector(tbodySelector)
-        const subject = 'Spatial Frequency Response'
-        const rowClassName = transformCase(subject).paramCase()
-        const row = `<tr class="${rowClassName}"><th>${subject}</th><td></td></tr>`
-        tbody.innerHTML += row
-
-        const selector = `table.${DISPLAY_CLASSNAME} ${tbodySelector} tr.${rowClassName} td`
-        plotCurve(userData.observed, selector, subject)
+    if (userData.edgePatches) {
+        // a targetChart - multiple patches
+        const observedEdges = userData.edgePatches.map(patch => patch.observed)
+        edgePlot(observedEdges, table)
+    }
+    if (userData.observed.Lum && userData.observed.Lum.MTF_Curve) {
+        // targetPatch - one patch
+        edgePlot([userData.observed], table)
     }
 }
 

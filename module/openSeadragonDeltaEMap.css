@@ -145,9 +145,6 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
 .picturae-deltaemap-display.valid .deltaemap-validity {
   display: none;
 }
-.picturae-deltaemap-display.deltaemap-chart .deltaemap-observed {
-  display: none;
-}
 
 /*
 Inline color display

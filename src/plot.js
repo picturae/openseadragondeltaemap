@@ -1,40 +1,51 @@
 import * as d3 from 'd3'
 
 /** Build SVG graph into DisplayTable
- * @param {object} colorsData - object with R, G, B and Lum properties
+ * @param {object} edgeList - array of objects with R, G, B and Lum properties
  * @param {string} parentQuery - css selector for parentNode
- * @param {string} title - heading
+ * @param {string} heading - heading
+ * @return {boolean} succes
  */
-const drawPlot = (colorsData, parentQuery, title) => {
+const drawPlot = (edgeList, parentQuery, heading) => {
     const body = d3.select(parentQuery)
-    const data = []
+    const sfrList = []
 
-    Object.keys(colorsData).forEach(color => {
-        const currentColor = {}
-        currentColor.name = color
-        switch (color) {
-            case 'R':
-                currentColor.color = 'Red'
-                break
-            case 'G':
-                currentColor.color = 'Green'
-                break
-            case 'B':
-                currentColor.color = 'Blue'
-                break
-            case 'Lum':
-                currentColor.color = 'Yellow'
-                break
-        }
-        currentColor.values = []
-        colorsData[color].MTF_Curve.forEach(plotPoint => {
-            currentColor.values.push({
-                x: plotPoint[0],
-                y: plotPoint[1],
+    edgeList.forEach(edgeData => {
+        Object.keys(edgeData).forEach(channel => {
+            const sfrChannel = {}
+            sfrChannel.name = channel
+            switch (channel) {
+                case 'R':
+                    sfrChannel.color = 'Red'
+                    break
+                case 'G':
+                    sfrChannel.color = 'Green'
+                    break
+                case 'B':
+                    sfrChannel.color = 'Blue'
+                    break
+                case 'Lum':
+                    sfrChannel.color = 'Yellow'
+                    break
+            }
+
+            if (!sfrChannel.color || !edgeData[channel].MTF_Curve) return
+
+            sfrChannel.values = []
+            edgeData[channel].MTF_Curve.forEach(plotPoint => {
+                sfrChannel.values.push({
+                    x: plotPoint[0],
+                    y: plotPoint[1],
+                })
             })
+
+            if (!sfrChannel.values.length) return
+
+            sfrList.push(sfrChannel)
         })
-        data.push(currentColor)
     })
+
+    if (!sfrList.length) return false
 
     const width = 300
     const height = 200
@@ -45,12 +56,12 @@ const drawPlot = (colorsData, parentQuery, title) => {
     /* Scale */
     const xScale = d3
         .scaleLinear()
-        .domain(d3.extent(data[0].values, d => d.x))
+        .domain(d3.extent(sfrList[0].values, d => d.x))
         .range([0, width - margin])
 
     const yScale = d3
         .scaleLinear()
-        .domain([0, d3.max(data[0].values, d => d.y)])
+        .domain([0, d3.max(sfrList[0].values, d => d.y)])
         .range([height - margin, 0])
 
     /* Add SVG */
@@ -67,7 +78,7 @@ const drawPlot = (colorsData, parentQuery, title) => {
         .attr('x', width * 0.05)
         .attr('y', height * 0.1 - margin)
         .attr('style', 'font: caption')
-        .text(title)
+        .text(heading)
 
     /* Add line into SVG */
     const line = d3
@@ -79,7 +90,7 @@ const drawPlot = (colorsData, parentQuery, title) => {
 
     lines
         .selectAll('.line-group')
-        .data(data)
+        .data(sfrList)
         .enter()
         .append('g')
         .attr('class', 'line-group')
@@ -110,10 +121,8 @@ const drawPlot = (colorsData, parentQuery, title) => {
         .attr('y', 15)
         .attr('transform', 'rotate(-90)')
         .attr('fill', '#000')
+
+    return true
 }
 
-const plotCurve = (edgePatch, parentQuery, heading) => {
-    drawPlot(edgePatch, parentQuery, heading)
-}
-
-export { plotCurve }
+export { drawPlot }
