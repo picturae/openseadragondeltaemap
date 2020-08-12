@@ -1,12 +1,12 @@
-import { JSDOM } from 'jsdom'
 import * as d3 from 'd3'
 
-const drawPlot = colorsData => {
-    const dom = new JSDOM(
-        `<!DOCTYPE html><body><div id="chart"></div></body></html>`,
-    )
-
-    const body = d3.select(dom.window.document.querySelector('#chart'))
+/** Build SVG graph into DisplayTable
+ * @param {object} colorsData - object with R, G, B and Lum properties
+ * @param {string} parentQuery - css selector for parentNode
+ * @param {string} title - heading
+ */
+const drawPlot = (colorsData, parentQuery, title) => {
+    const body = d3.select(parentQuery)
     const data = []
 
     Object.keys(colorsData).forEach(color => {
@@ -22,8 +22,9 @@ const drawPlot = colorsData => {
             case 'B':
                 currentColor.color = 'Blue'
                 break
-            default:
+            case 'Lum':
                 currentColor.color = 'Yellow'
+                break
         }
         currentColor.values = []
         colorsData[color].MTF_Curve.forEach(plotPoint => {
@@ -62,6 +63,12 @@ const drawPlot = colorsData => {
         .append('g')
         .attr('transform', `translate(${margin}, ${margin})`)
 
+    svg.append('text')
+        .attr('x', width * 0.05)
+        .attr('y', height * 0.1 - margin)
+        .attr('style', 'font: caption')
+        .text(title)
+
     /* Add line into SVG */
     const line = d3
         .line()
@@ -79,7 +86,7 @@ const drawPlot = colorsData => {
         .append('path')
         .attr('class', 'line')
         .attr('d', d => line(d.values))
-        .style('stroke', (d, i) => d.color)
+        .style('stroke', d => d.color)
         .style('stroke-width', 1.5)
         .attr('stroke-linejoin', 'round')
         .attr('stroke-linecap', 'round')
@@ -103,19 +110,10 @@ const drawPlot = colorsData => {
         .attr('y', 15)
         .attr('transform', 'rotate(-90)')
         .attr('fill', '#000')
-
-    return JSON.stringify(body.html())
 }
 
-const plot = edgePatches => {
-    const result = []
-    edgePatches.forEach(edgePatch => {
-        const edgePlot = {}
-        edgePlot.name = edgePatch.name.split('_')[1]
-        edgePlot.plot = drawPlot(edgePatch.observed)
-        result.push(edgePlot)
-    })
-    return result
+const plotCurve = (edgePatch, parentQuery, heading) => {
+    drawPlot(edgePatch, parentQuery, heading)
 }
 
-export default plot
+export { plotCurve }

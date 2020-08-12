@@ -6,9 +6,11 @@ import {
 } from 'my-lib'
 import transformCase from 'transform-case'
 import { getData } from './storage'
+import { plotCurve } from './plot'
 
 const BREAK = '<br/>'
 const INAPT = content => ['', null, undefined].includes(content)
+const DISPLAY_CLASSNAME = 'picturae-deltaemap-display'
 
 /**
  * Serialise the values
@@ -150,6 +152,17 @@ const renderData = (event, table, userData) => {
         }
         table.innerHTML += dataBody('validity', userData.validity)
     }
+    if (userData.observed.Lum) {
+        const tbodySelector = 'tbody.deltaemap-observed'
+        const tbody = table.querySelector(tbodySelector)
+        const subject = 'Spatial Frequency Response'
+        const rowClassName = transformCase(subject).paramCase()
+        const row = `<tr class="${rowClassName}"><th>${subject}</th><td></td></tr>`
+        tbody.innerHTML += row
+
+        const selector = `table.${DISPLAY_CLASSNAME} ${tbodySelector} tr.${rowClassName} td`
+        plotCurve(userData.observed, selector, subject)
+    }
 }
 
 const DisplayTable = function(mainElement) {
@@ -159,7 +172,7 @@ const DisplayTable = function(mainElement) {
     const displayRoot = mainElement.parentNode
     const table = document.createElement('table')
     this.element = table
-    table.className = 'picturae-deltaemap-display'
+    table.className = DISPLAY_CLASSNAME
 
     /**
      * Update the table with new data

@@ -143,6 +143,18 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
     tr.message {
         width: $bigCellWidth;
     }
+    tr.spatial-frequency-response {
+        width: 100%;
+        th {
+            font-size: 0;
+            color: transparent;
+        }
+        td {
+            text-align: center;
+        }
+        svg {
+        }
+    }
     tr > * {
         display: block;
     }
