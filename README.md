@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/ovanderzee/OpenSeadragonDeltaEMap.svg?branch=master)](https://travis-ci.com/ovanderzee/OpenSeadragonDeltaEMap)
-[![Coverage Status](https://coveralls.io/repos/github/picturae/OpenSeadragonDeltaEMap/badge.svg?branch=master)](https://coveralls.io/github/picturae/OpenSeadragonDeltaEMap?branch=master)
+[![Build Status](https://travis-ci.org/picturae/OpenSeadragonDeltaEMap.svg?branch=master)](https://travis-ci.org/picturae/OpenSeadragonDeltaEMap)
+[![Coverage Status](https://coveralls.io/repos/github/picturae/openseadragondeltaemap/badge.svg?branch=master)](https://coveralls.io/github/picturae/openseadragondeltaemap?branch=master)
 
 # OpenSeadragonDeltaEMap
 
