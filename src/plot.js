@@ -1,4 +1,36 @@
-import * as d3 from 'd3'
+import { extent, max, range } from 'd3-array'
+import { axisBottom, axisLeft } from 'd3-axis'
+import { select, selectAll } from 'd3-selection'
+import { scaleLinear } from 'd3-scale'
+import { line } from 'd3-shape'
+// 10 circular dependencies, module 63.079 bytes
+
+// import * as d3 from 'd3'
+// 19 circular dependencies, module 79.514 bytes
+
+// group methods in a code-compatible object
+const d3 = {
+    // d3-array
+    extent: extent,
+    max: max,
+    range: range,
+
+    // d3-array
+    axisBottom: axisBottom,
+    axisLeft: axisLeft,
+
+    // d3-selection
+    select: select,
+    selectAll: selectAll,
+    // ==> append, attr, domain, style, text, data, enter,
+
+    // d3-scale
+    scaleLinear: scaleLinear,
+
+    //d3-shape
+    line: line,
+    // ==> x, y,
+}
 
 /** Build SVG graph into DisplayTable
  * @param {object} edgeList - array of objects with R, G, B and Lum properties
