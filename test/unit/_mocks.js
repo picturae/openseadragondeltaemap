@@ -60,7 +60,7 @@ const targetData = {
     targets: [
         {
             name: 'Scan Test Color Chart',
-            location: { x: 3210, y: 25, w: 2354, h: 253 },
+            location: { x: 3210, y: 25, w: 2354, h: 253, r: 180 },
             observed: { ppi: 300 },
             colorPatches: [
                 {

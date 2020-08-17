@@ -83,7 +83,7 @@ test('Chart renders at least one new target patch', () => {
     expect(childNodes[0].tagName).toBe('DELTAEPATCH')
 })
 
-test('Patch does not render when data are missing', () => {
+test('Chart does not render when data are missing', () => {
     const spyConsoleWarn = jest.spyOn(console, 'warn')
     const spyElementAppend = jest.spyOn(htmlElement, 'appendChild')
     const chartInstance = new Chart(
@@ -94,4 +94,14 @@ test('Patch does not render when data are missing', () => {
 
     expect(spyConsoleWarn).toHaveBeenCalled()
     expect(spyElementAppend).not.toHaveBeenCalledWith(chartInstance.element)
+})
+
+test('Chart can be rotated 180 deg', () => {
+    const chartInstance = new Chart(
+        chartData,
+        htmlElement,
+        contentSize,
+    )
+
+    expect(chartInstance.element.style.transform).toBe('rotate(180deg)')
 })

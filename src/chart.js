@@ -1,4 +1,4 @@
-import { hasOwnProperty } from 'my-lib'
+import { hasOwnProperty, isUsableNumber } from 'my-lib'
 import { setData } from './storage'
 import { Patch } from '../src/patch'
 
@@ -23,12 +23,10 @@ const Chart = function(chartData, parentNode, containerSize) {
         containerSize.w}%`
     this.element.style.height = `${(chartData.location.h * 100) /
         containerSize.h}%`
-    if (chartData.location.r) {
-        if (chartData.location.r === 180) {
-            this.element.style.transformOrigin = 'center center'
-            const rotate = `rotate(${chartData.location.r}deg)`
-            this.element.style.transform = rotate //+ ' ' + translate
-        }
+    if (chartData.location.r && isUsableNumber(chartData.location.r)) {
+        this.element.style.transformOrigin = 'center center'
+        const rotate = `rotate(${chartData.location.r}deg)`
+        this.element.style.transform = rotate
     }
     parentNode.appendChild(this.element)
 
