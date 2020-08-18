@@ -1,3 +1,4 @@
+import { deepClone } from 'my-lib'
 import { getData } from '../../src/storage'
 import { viewer, targetData, badOverlayData } from './_mocks'
 import { Overlay } from '../../src/overlay'
@@ -5,77 +6,86 @@ import { Overlay } from '../../src/overlay'
 // suppress alarming error messages in output
 console.error = jest.fn()
 
-test('Overlay has public methods', () => {
-    const overlayInstance = new Overlay(viewer)
+describe('Overlay is the main object', function () {
+    let theViewer
 
-    expect(typeof overlayInstance.resize).toBe('function')
-    expect(typeof overlayInstance.render).toBe('function')
-})
+    beforeEach(() => {
+        // make viewer manipulable
+        theViewer = deepClone(viewer)
+    })
 
-test('Overlay.resize sets the position in an absolute fashion', () => {
-    const overlayInstance = new Overlay(viewer)
-    overlayInstance.resize()
-    const styleObject = overlayInstance.element.style
+    test('Overlay has public methods', () => {
+        const overlayInstance = new Overlay(theViewer)
 
-    expect(styleObject.left).toMatch(/^\d+/)
-    expect(styleObject.top).toMatch(/^\d+/)
-    expect(styleObject.width).toMatch(/^\d+/)
-    expect(styleObject.height).toMatch(/^\d+/)
-    expect(styleObject.left).toMatch(/px$/)
-    expect(styleObject.top).toMatch(/px$/)
-    expect(styleObject.width).toMatch(/px$/)
-    expect(styleObject.height).toMatch(/px$/)
-})
+        expect(typeof overlayInstance.resize).toBe('function')
+        expect(typeof overlayInstance.render).toBe('function')
+    })
 
-test('Overlay.element is appended to the html', () => {
-    const spyElementAppend = jest.spyOn(viewer.canvas, 'appendChild')
-    const overlayInstance = new Overlay(viewer)
+    test('Overlay.resize sets the position in an absolute fashion', () => {
+        const overlayInstance = new Overlay(theViewer)
+        overlayInstance.resize()
+        const styleObject = overlayInstance.element.style
 
-    expect(spyElementAppend).toHaveBeenCalledWith(overlayInstance.element)
-})
+        expect(styleObject.left).toMatch(/^\d+/)
+        expect(styleObject.top).toMatch(/^\d+/)
+        expect(styleObject.width).toMatch(/^\d+/)
+        expect(styleObject.height).toMatch(/^\d+/)
+        expect(styleObject.left).toMatch(/px$/)
+        expect(styleObject.top).toMatch(/px$/)
+        expect(styleObject.width).toMatch(/px$/)
+        expect(styleObject.height).toMatch(/px$/)
+    })
 
-test('Overlay renders a dataset with a default name when there is none', () => {
-    const overlayInstance = new Overlay(viewer)
-    delete targetData.name
-    overlayInstance.render(targetData)
-    const ourDataset = getData(overlayInstance.element)
+    test('Overlay.element is appended to the html', () => {
+        const spyElementAppend = jest.spyOn(theViewer.canvas, 'appendChild')
+        const overlayInstance = new Overlay(theViewer)
 
-    expect(ourDataset).toHaveProperty('location')
-    expect(ourDataset.name).toBe('Target Scan')
-})
+        expect(spyElementAppend).toHaveBeenCalledWith(overlayInstance.element)
+    })
 
-test('Overlay renders a className "valid" when the validity flag is positive', () => {
-    const overlayInstance = new Overlay(viewer)
-    targetData.validity.valid = true
-    overlayInstance.render(targetData)
-    const classList = overlayInstance.element.classList
+    test('Overlay renders a dataset with a default name when there is none', () => {
+        const overlayInstance = new Overlay(theViewer)
+        delete targetData.name
+        overlayInstance.render(targetData)
+        const ourDataset = getData(overlayInstance.element)
 
-    expect(classList).toContain('valid');
-})
+        expect(ourDataset).toHaveProperty('location')
+        expect(ourDataset.name).toBe('Target Scan')
+    })
 
-test('Overlay renders a className "invalid" when the validity flag is negative', () => {
-    const overlayInstance = new Overlay(viewer)
-    targetData.validity.valid = false
-    overlayInstance.render(targetData)
-    const classList = overlayInstance.element.classList
+    test('Overlay renders a className "valid" when the validity flag is positive', () => {
+        const overlayInstance = new Overlay(theViewer)
+        targetData.validity.valid = true
+        overlayInstance.render(targetData)
+        const classList = overlayInstance.element.classList
 
-    expect(classList).toContain('invalid');
-})
+        expect(classList).toContain('valid');
+    })
 
-test('Overlay renders at least one new target chart', () => {
-    const overlayInstance = new Overlay(viewer)
-    const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
-    overlayInstance.render(targetData)
+    test('Overlay renders a className "invalid" when the validity flag is negative', () => {
+        const overlayInstance = new Overlay(theViewer)
+        targetData.validity.valid = false
+        overlayInstance.render(targetData)
+        const classList = overlayInstance.element.classList
 
-    expect(spyElementAppend).toHaveBeenCalled()
-})
+        expect(classList).toContain('invalid');
+    })
 
-test('Overlay does not render when data are missing', () => {
-    const overlayInstance = new Overlay(viewer)
-    const spyConsoleError = jest.spyOn(console, 'error')
-    const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
-    overlayInstance.render(badOverlayData)
+    test('Overlay renders at least one new target chart', () => {
+        const overlayInstance = new Overlay(theViewer)
+        const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
+        overlayInstance.render(targetData)
 
-    expect(spyConsoleError).toHaveBeenCalled()
-    expect(spyElementAppend).not.toHaveBeenCalled()
+        expect(spyElementAppend).toHaveBeenCalled()
+    })
+
+    test('Overlay does not render when data are missing', () => {
+        const overlayInstance = new Overlay(theViewer)
+        const spyConsoleError = jest.spyOn(console, 'error')
+        const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
+        overlayInstance.render(badOverlayData)
+
+        expect(spyConsoleError).toHaveBeenCalled()
+        expect(spyElementAppend).not.toHaveBeenCalled()
+    })
 })
