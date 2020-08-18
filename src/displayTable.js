@@ -211,7 +211,7 @@ const DisplayTable = function(mainElement) {
         if (isAttachedToDom(table)) displayRoot.removeChild(table)
     }
 
-    eventRoot.addEventListener('mouseover', function(event) {
+    const targetChange = function(event) {
         const enter = event.target
         if (
             enter.tagName === 'DELTAEOVERLAY' ||
@@ -223,9 +223,9 @@ const DisplayTable = function(mainElement) {
             targetLeave(event)
         }
         event.stopPropagation()
-    })
+    }
 
-    eventRoot.addEventListener('mousemove', function(event) {
+    const targetHover = function(event) {
         const offPointer = 16
 
         if (event.clientX / docRoot.clientWidth < 0.5) {
@@ -249,7 +249,19 @@ const DisplayTable = function(mainElement) {
             table.style.bottom = 'auto'
         }
         event.stopPropagation()
+    }
+
+    let targetChangeTimeout
+    eventRoot.addEventListener('mouseover', function(event) {
+        if (targetChangeTimeout) {
+            clearTimeout(targetChangeTimeout)
+        }
+        targetChangeTimeout = setTimeout(function() {
+            targetChange(event)
+        }, 150)
     })
+
+    eventRoot.addEventListener('mousemove', targetHover)
 }
 
 export { DisplayTable, renderData, dataBody, readableValue, INAPT }
