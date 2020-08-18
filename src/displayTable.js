@@ -230,28 +230,24 @@ const DisplayTable = function(mainElement) {
         const offPointer = 16
 
         if (event.clientX / docRoot.clientWidth < 0.5) {
-            table.style.left = `${event.clientX + offPointer}px`
-            table.style.right = 'auto'
-        } else {
             table.style.left = 'auto'
-            table.style.right = `${docRoot.clientWidth -
-                event.clientX +
-                offPointer}px`
+            table.style.right = `${offPointer}px`
+        } else {
+            table.style.left = `${offPointer}px`
+            table.style.right = 'auto'
         }
 
         const ySpace = (docRoot.clientHeight - table.clientHeight) / 2
 
         if (event.clientY < ySpace - offPointer) {
-            table.style.top = `${event.clientY + offPointer}px`
-            table.style.bottom = 'auto'
+            table.style.top = 'auto'
+            table.style.bottom = `${offPointer}px`
         } else if (event.clientY < ySpace + offPointer + table.clientHeight) {
             table.style.top = `${ySpace}px`
             table.style.bottom = 'auto'
         } else {
-            table.style.top = 'auto'
-            table.style.bottom = `${docRoot.clientHeight -
-                event.clientY +
-                offPointer}px`
+            table.style.top = `${offPointer}px`
+            table.style.bottom = 'auto'
         }
         event.stopPropagation()
     })
