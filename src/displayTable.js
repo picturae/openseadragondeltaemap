@@ -88,7 +88,6 @@ const edgePlot = (edgeData, table) => {
     const selector = `table.${DISPLAY_CLASSNAME} ${tbodySelector} tr.${rowClassName} td`
     const drawDone = drawPlot(edgeData, selector, subject)
     if (!drawDone) {
-        console.warn('no drawing')
         tbody.removeChild(tbody.lastElementChild)
     }
 }
@@ -173,7 +172,7 @@ const renderData = (event, table, userData) => {
         }
         table.innerHTML += dataBody('validity', userData.validity)
     }
-    if (userData.edgePatches) {
+    if (userData.edgePatches && userData.edgePatches.length) {
         // a targetChart - multiple patches
         const observedEdges = userData.edgePatches.map(patch => patch.observed)
         edgePlot(observedEdges, table)
