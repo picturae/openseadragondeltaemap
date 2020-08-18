@@ -1,4 +1,4 @@
-import { isUsableNumber, hasOwnProperty, roundAtDecimals } from 'my-lib'
+import { isUsableNumber, hasOwnProperty, roundAtDigits } from 'my-lib'
 import { setData } from './storage'
 import { Chart } from './chart'
 import { DisplayTable } from './displayTable'
@@ -18,15 +18,18 @@ const Overlay = function(viewer) {
             imageBounds.getBottomRight(),
         )
 
-        if (!isUsableNumber(leftTop.x, leftTop.y, rightBottom.x, rightBottom.y))
-            return
+        const areGoodData =
+            leftTop &&
+            rightBottom &&
+            isUsableNumber(leftTop.x, leftTop.y, rightBottom.x, rightBottom.y)
+        if (!areGoodData) return
 
-        const precision = 4
+        const roundSize = 5
         const box = {
-            left: roundAtDecimals(leftTop.x, precision),
-            top: roundAtDecimals(leftTop.y, precision),
-            width: roundAtDecimals(rightBottom.x - leftTop.x, precision),
-            height: roundAtDecimals(rightBottom.y - leftTop.y, precision),
+            left: roundAtDigits(leftTop.x, roundSize),
+            top: roundAtDigits(leftTop.y, roundSize),
+            width: roundAtDigits(rightBottom.x - leftTop.x, roundSize),
+            height: roundAtDigits(rightBottom.y - leftTop.y, roundSize),
         }
 
         this.element.style.left = `${box.left}px`

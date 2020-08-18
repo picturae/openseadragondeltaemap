@@ -21,6 +21,13 @@ describe('Overlay is the main object', function () {
         expect(typeof overlayInstance.render).toBe('function')
     })
 
+    test('Overlay lets openSeaDragon listen to multiple view changes ', () => {
+        const spyViewerAddHandler = jest.spyOn(theViewer, 'addHandler')
+        const overlayInstance = new Overlay(theViewer)
+
+        expect(spyViewerAddHandler).toHaveBeenCalledTimes(4)
+    })
+
     test('Overlay.resize sets the position in an absolute fashion', () => {
         const overlayInstance = new Overlay(theViewer)
         overlayInstance.resize()
@@ -34,6 +41,24 @@ describe('Overlay is the main object', function () {
         expect(styleObject.top).toMatch(/px$/)
         expect(styleObject.width).toMatch(/px$/)
         expect(styleObject.height).toMatch(/px$/)
+    })
+
+    test('Overlay.resize fails when there is no tiled tiledImage', () => {
+        theViewer.world.getItemAt = () => null
+        const overlayInstance = new Overlay(theViewer)
+        overlayInstance.resize()
+        const styleObject = overlayInstance.element.style
+
+        expect(styleObject.left).toBe('')
+    })
+
+    test('Overlay.resize fails when the tiled image is not ready', () => {
+        theViewer.viewport.pixelFromPoint = () => null
+        const overlayInstance = new Overlay(theViewer)
+        overlayInstance.resize()
+        const styleObject = overlayInstance.element.style
+
+        expect(styleObject.left).toBe('')
     })
 
     test('Overlay.element is appended to the html', () => {
