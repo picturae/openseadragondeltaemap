@@ -89,7 +89,7 @@ const edgePlot = (edgeData, table) => {
     const drawDone = drawPlot(edgeData, selector, subject)
     if (!drawDone) {
         console.warn('no drawing')
-        tbody.removeChild(row)
+        tbody.removeChild(tbody.lastElementChild)
     }
 }
 
