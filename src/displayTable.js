@@ -108,8 +108,13 @@ const dataBody = (groupName, groupData) => {
             .replace(/(m|M)eanDelta/, '\u03bc\u0394')
             .replace(/^mean(?!$)/, '\u03bc')
             .replace(/(d|D)elta/, '\u0394')
+            .replace(/(s|S)td(d|D)ev/, 'SD')
         label = transformCase(label, {
-            preserve: [/(\u03bc\u0394)\w{1}/g, /(\u03bc)/g, /(\u0394)\w{1}/g],
+            preserve: [
+                /(\u03bc\u0394)\w{1}/g,
+                /(\u03bc)\w+/g,
+                /(\u0394)\w{1}/g,
+            ],
             delimitNumberLetter: false,
         }).humanTitle()
         const className = transformCase(key).paramCase()
