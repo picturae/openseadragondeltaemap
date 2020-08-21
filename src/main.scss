@@ -4,13 +4,18 @@ $tblText: black;
 $boxBow: 6px;
 $boxBlur: 0;
 $boxLine: 4px;
-$cyan: #0cc;
-$blue: #69f;
-$violet: #a5f;
-$red: #c00;
-$green: #0b0;
+// best recognisable; lum 75% 67% 186% of full
+$borderRed: #c00;
+$borderGreen: #0a0;
+$borderBlue: #57f;
+// best readable; lum 73% 53% 100% of full
 $textRed: #b00;
 $textGreen: #080;
+$textBlue: #03c;
+// highest contrast on #ccc; 100% 87% 140% of full
+$graphRed: #f00;
+$graphGreen: #0d0;
+$graphBlue: #24f;
 
 $smallCellWidth: 5.333em;
 $cellSpace: 0.333em;
@@ -19,42 +24,26 @@ $bigCellWidth: (3 * $smallCellWidth) + (2 * $cellSpace);
 $tbdMinWidth: $bigCellWidth + $cellSpace;
 $tbdMaxWidth: 7 * ($smallCellWidth + $cellSpace);
 
-/*
-Exact target-image overlay
-left, top, width, height will be set inline
-*/
-deltaeoverlay {
-    box-shadow: inset 0 0 $boxBlur $boxLine $violet;
-}
-
-/*
-Chart projection
-left, top, width, height will be set inline
-*/
-deltaechart {
-    box-shadow: inset 0 0 $boxBlur $boxLine $blue;
-}
-
-/*
-Patch projection
-left, top, width, height will be set inline
-*/
 deltaepatch {
-    box-shadow: inset 0 0 $boxBlur $boxLine $cyan;
     min-width: 11px;
     min-height: 11px;
 }
 
+/*
+Exact target-image overlay, chart and patch projection
+left, top, width, height will be set inline
+*/
 deltaeoverlay,
 deltaechart,
 deltaepatch {
     position: absolute;
+    box-shadow: inset 0 0 $boxBlur $boxLine $borderBlue;
     border-radius: $boxBow;
     &.valid {
-        box-shadow: inset 0 0 $boxBlur $boxLine $green;
+        box-shadow: inset 0 0 $boxBlur $boxLine $borderGreen;
     }
     &.invalid {
-        box-shadow: inset 0 0 $boxBlur $boxLine $red;
+        box-shadow: inset 0 0 $boxBlur $boxLine $borderRed;
     }
 }
 
@@ -86,10 +75,10 @@ left, top, right, bottom will be set inline
         }
     }
     &.valid caption:after {
-        border-bottom: $boxLine solid $green;
+        border-bottom: $boxLine solid $borderGreen;
     }
     &.invalid caption:after {
-        border-bottom: $boxLine solid $red;
+        border-bottom: $boxLine solid $borderRed;
     }
 
     tbody:before {
@@ -160,6 +149,23 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
     tr > * {
         display: block;
     }
+    path.line {
+        stroke: white;
+        stroke-width: 1.5;
+        fill: none;
+        mix-blend-mode: multiply;
+        opacity: 0.25;
+        &.red {
+            stroke: $graphRed;
+        }
+        &.green {
+            stroke: $graphGreen;
+        }
+        &.blue {
+            stroke: $graphBlue;
+        }
+    }
+
     // exclusions
     tr.rgb,
     tr.valid {

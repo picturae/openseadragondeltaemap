@@ -1,41 +1,25 @@
 @charset "UTF-8";
 /* #ccce; */
-/*
-Exact target-image overlay
-left, top, width, height will be set inline
-*/
-deltaeoverlay {
-  box-shadow: inset 0 0 0 4px #a5f;
-}
-
-/*
-Chart projection
-left, top, width, height will be set inline
-*/
-deltaechart {
-  box-shadow: inset 0 0 0 4px #69f;
-}
-
-/*
-Patch projection
-left, top, width, height will be set inline
-*/
 deltaepatch {
-  box-shadow: inset 0 0 0 4px #0cc;
   min-width: 11px;
   min-height: 11px;
 }
 
+/*
+Exact target-image overlay, chart and patch projection
+left, top, width, height will be set inline
+*/
 deltaeoverlay,
 deltaechart,
 deltaepatch {
   position: absolute;
+  box-shadow: inset 0 0 0 4px #57f;
   border-radius: 6px;
 }
 deltaeoverlay.valid,
 deltaechart.valid,
 deltaepatch.valid {
-  box-shadow: inset 0 0 0 4px #0b0;
+  box-shadow: inset 0 0 0 4px #0a0;
 }
 deltaeoverlay.invalid,
 deltaechart.invalid,
@@ -71,7 +55,7 @@ left, top, right, bottom will be set inline
   top: 0.5em;
 }
 .picturae-deltaemap-display.valid caption:after {
-  border-bottom: 4px solid #0b0;
+  border-bottom: 4px solid #0a0;
 }
 .picturae-deltaemap-display.invalid caption:after {
   border-bottom: 4px solid #c00;
@@ -139,6 +123,22 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
 }
 .picturae-deltaemap-display tr > * {
   display: block;
+}
+.picturae-deltaemap-display path.line {
+  stroke: white;
+  stroke-width: 1.5;
+  fill: none;
+  mix-blend-mode: multiply;
+  opacity: 0.25;
+}
+.picturae-deltaemap-display path.line.red {
+  stroke: #f00;
+}
+.picturae-deltaemap-display path.line.green {
+  stroke: #0d0;
+}
+.picturae-deltaemap-display path.line.blue {
+  stroke: #24f;
 }
 .picturae-deltaemap-display tr.rgb,
 .picturae-deltaemap-display tr.valid {

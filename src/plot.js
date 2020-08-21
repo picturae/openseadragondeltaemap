@@ -48,16 +48,16 @@ const drawPlot = (edgeList, parentQuery, heading) => {
             sfrChannel.name = channel
             switch (channel) {
                 case 'R':
-                    sfrChannel.color = 'Red'
+                    sfrChannel.color = 'red'
                     break
                 case 'G':
-                    sfrChannel.color = 'Green'
+                    sfrChannel.color = 'green'
                     break
                 case 'B':
-                    sfrChannel.color = 'Blue'
+                    sfrChannel.color = 'blue'
                     break
                 case 'Lum':
-                    sfrChannel.color = 'Yellow'
+                    sfrChannel.color = 'white'
                     break
             }
 
@@ -82,8 +82,6 @@ const drawPlot = (edgeList, parentQuery, heading) => {
     const width = 300
     const height = 200
     const margin = 25
-
-    const lineOpacity = '0.25'
 
     /* Scale */
     const xScale = d3
@@ -121,21 +119,12 @@ const drawPlot = (edgeList, parentQuery, heading) => {
     const lines = svg.append('g').attr('class', 'lines')
 
     lines
-        .selectAll('.line-group')
+        .selectAll('path')
         .data(sfrList)
         .enter()
-        .append('g')
-        .attr('class', 'line-group')
         .append('path')
-        .attr('class', 'line')
+        .attr('class', d => 'line ' + d.color)
         .attr('d', d => line(d.values))
-        .style('stroke', d => d.color)
-        .style('stroke-width', 1.5)
-        .attr('stroke-linejoin', 'round')
-        .attr('stroke-linecap', 'round')
-        .style('mix-blend-mode', 'multiply')
-        .style('fill', 'none')
-        .style('opacity', lineOpacity)
 
     /* Add Axis into SVG */
     const xAxis = d3.axisBottom(xScale).ticks(10)
