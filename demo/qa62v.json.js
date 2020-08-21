@@ -1,4 +1,4 @@
-{
+const targetData = {
     "metadata": {
         "Exif": {
             "Image": {

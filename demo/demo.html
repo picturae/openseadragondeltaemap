@@ -2,17 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>OpenSeadragon DeltaEMap</title>
-        <script src="localJsonReader.js"></script>
-        <script src="targetData.json.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4.2/build/openseadragon/openseadragon.min.js"></script>
-        <script src="../dist/openSeadragonDeltaEMap.js"></script>
-        <link rel="stylesheet" type="text/css" href="../dist/openSeadragonDeltaEMap.css" />
-        <link rel="stylesheet" type="text/css" href="demo.css" />
-        <script src="demo.js"></script>
+        <title>OpenSeadragon DeltaEMap Demo</title>
+        <style>
+            body {
+                font: caption;
+            }
+            li {
+                margin: .667em 2em;
+                list-style-position: inside;
+            }
+        </style>
     </head>
     <body>
-        <div id="openseadragon"></div>
-        <input type="file" accept="application/json">
+        <ol>
+            <h2>OpenSeadragon DeltaEMap Demo</h2>
+            <li>
+                <a href="color.html">DeltaE demo with a Digital Colorchecker SG target</a>
+            </li>
+            <li>
+                <a href="edge.html">Spatial Frequency Response demo with a QA-62 target</a>
+            </li>
+        </ol>
     </body>
 </html>

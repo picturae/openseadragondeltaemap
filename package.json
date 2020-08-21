@@ -8,13 +8,13 @@
         "test": "test"
     },
     "scripts": {
-        "prebuild": "cf dist module && prettier '{./{src,test}/*.{js,scss},./demo/*.{json,js}}' --write",
+        "prebuild": "cf dist module && prettier '{./{src,test}/*.{js,scss},./demo/*.js}' --write",
         "build": "rollup --config",
         "coverage": "cf coverage && jest --coverage",
         "once": "npm run test && npm run build",
         "pretest": "eslint {src,test/**}/*.js",
         "test": "jest",
-        "watch": "onchange --initial \"./{src,test/**}/*.{js,scss}\" \"./demo/*.{js,json}\" -- npm run once --silent"
+        "watch": "onchange --initial \"./{src,test/**}/*.{js,scss}\" \"./demo/*.js\" -- npm run once --silent"
     },
     "keywords": [
         "openseadragon",
