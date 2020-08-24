@@ -1,4 +1,3 @@
-
 const tileSource = {
     type: 'legacy-image-pyramid',
     levels: [

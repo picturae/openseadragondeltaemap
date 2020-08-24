@@ -1,586 +1,586 @@
 const targetData = {
-    "metadata": {
-        "Exif": {
-            "Image": {
-                "ImageWidth": "11600",
-                "ImageLength": "8700",
-                "Make": "Phase One A/S",
-                "Model": "IQ3 100MP"
+    metadata: {
+        Exif: {
+            Image: {
+                ImageWidth: '11600',
+                ImageLength: '8700',
+                Make: 'Phase One A/S',
+                Model: 'IQ3 100MP',
             },
-            "Photo": {
-                "ISOSpeedRatings": "",
-                "ShutterSpeedValue": "",
-                "FocalLength": ""
-            }
+            Photo: {
+                ISOSpeedRatings: '',
+                ShutterSpeedValue: '',
+                FocalLength: '',
+            },
         },
-        "Xmp": { "photoshop": { "ICCProfile": "" } }
+        Xmp: { photoshop: { ICCProfile: '' } },
     },
-    "observed": { "ppi": 298.47, "bitdepth": 8, "colorProfile": "eciRGB v2" },
-    "location": { "x": 0, "y": 0, "w": 11600, "h": 8700 },
-    "targets": [
+    observed: { ppi: 298.47, bitdepth: 8, colorProfile: 'eciRGB v2' },
+    location: { x: 0, y: 0, w: 11600, h: 8700 },
+    targets: [
         {
-            "name": "Scan Reference Chart (Standard)",
-            "type": "SCAN_REFERENCE_CHART_STANDARD",
-            "location": { "x": 4680, "y": 290, "w": 2333, "h": 249, "r": 180 },
-            "observed": { "ppi": 299.16 },
-            "colorPatches": [
+            name: 'Scan Reference Chart (Standard)',
+            type: 'SCAN_REFERENCE_CHART_STANDARD',
+            location: { x: 4680, y: 290, w: 2333, h: 249, r: 180 },
+            observed: { ppi: 299.16 },
+            colorPatches: [
                 {
-                    "name": "C1",
-                    "location": { "x": 104, "y": 88, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [191.4, 94.71, 92.83],
-                        "Lab": [54.02, 52.86, 30.27],
-                        "mean": 123.51,
-                        "stddev": 6.71,
-                        "snr": 18.42
+                    name: 'C1',
+                    location: { x: 104, y: 88, w: 34, h: 34 },
+                    observed: {
+                        RGB: [191.4, 94.71, 92.83],
+                        Lab: [54.02, 52.86, 30.27],
+                        mean: 123.51,
+                        stddev: 6.71,
+                        snr: 18.42,
                     },
-                    "assessed": {
-                        "deltaE76": 14.22,
-                        "deltaE94T": 8.66,
-                        "deltaE94G": 8.66,
-                        "deltaE2000": 8.6,
-                        "deltaECMC": 5.56,
-                        "deltaL": 8.02
+                    assessed: {
+                        deltaE76: 14.22,
+                        deltaE94T: 8.66,
+                        deltaE94G: 8.66,
+                        deltaE2000: 8.6,
+                        deltaECMC: 5.56,
+                        deltaL: 8.02,
                     },
-                    "reference": { "Lab": [46, 64, 34] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [46, 64, 34] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "B1",
-                    "location": { "x": 172, "y": 88, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [121.21, 167.18, 94.37],
-                        "Lab": [58.91, -36.24, 31.57],
-                        "mean": 145.38,
-                        "stddev": 3.8,
-                        "snr": 38.27
+                    name: 'B1',
+                    location: { x: 172, y: 88, w: 34, h: 34 },
+                    observed: {
+                        RGB: [121.21, 167.18, 94.37],
+                        Lab: [58.91, -36.24, 31.57],
+                        mean: 145.38,
+                        stddev: 3.8,
+                        snr: 38.27,
                     },
-                    "assessed": {
-                        "deltaE76": 12.37,
-                        "deltaE94T": 6.85,
-                        "deltaE94G": 6.85,
-                        "deltaE2000": 6.38,
-                        "deltaECMC": 4.99,
-                        "deltaL": 5.91
+                    assessed: {
+                        deltaE76: 12.37,
+                        deltaE94T: 6.85,
+                        deltaE94G: 6.85,
+                        deltaE2000: 6.38,
+                        deltaECMC: 4.99,
+                        deltaL: 5.91,
                     },
-                    "reference": { "Lab": [53, -45, 38] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [53, -45, 38] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "A1",
-                    "location": { "x": 240, "y": 89, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [61.29, 51.84, 146.07],
-                        "Lab": [27.09, 19.29, -48.95],
-                        "mean": 65.04,
-                        "stddev": 7.46,
-                        "snr": 8.72
+                    name: 'A1',
+                    location: { x: 240, y: 89, w: 34, h: 34 },
+                    observed: {
+                        RGB: [61.29, 51.84, 146.07],
+                        Lab: [27.09, 19.29, -48.95],
+                        mean: 65.04,
+                        stddev: 7.46,
+                        snr: 8.72,
                     },
-                    "assessed": {
-                        "deltaE76": 15.81,
-                        "deltaE94T": 9.87,
-                        "deltaE94G": 9.87,
-                        "deltaE2000": 7.37,
-                        "deltaECMC": 7.81,
-                        "deltaL": 9.09
+                    assessed: {
+                        deltaE76: 15.81,
+                        deltaE94T: 9.87,
+                        deltaE94G: 9.87,
+                        deltaE2000: 7.37,
+                        deltaECMC: 7.81,
+                        deltaL: 9.09,
                     },
-                    "reference": { "Lab": [18, 24, -61] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [18, 24, -61] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "C2",
-                    "location": { "x": 308, "y": 89, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [65.95, 146.05, 173.62],
-                        "Lab": [51.43, -36.1, -27.37],
-                        "mean": 125.05,
-                        "stddev": 2.26,
-                        "snr": 55.32
+                    name: 'C2',
+                    location: { x: 308, y: 89, w: 34, h: 34 },
+                    observed: {
+                        RGB: [65.95, 146.05, 173.62],
+                        Lab: [51.43, -36.1, -27.37],
+                        mean: 125.05,
+                        stddev: 2.26,
+                        snr: 55.32,
                     },
-                    "assessed": {
-                        "deltaE76": 5.42,
-                        "deltaE94T": 4.23,
-                        "deltaE94G": 4.23,
-                        "deltaE2000": 4.03,
-                        "deltaECMC": 2.91,
-                        "deltaL": 3.43
+                    assessed: {
+                        deltaE76: 5.42,
+                        deltaE94T: 4.23,
+                        deltaE94G: 4.23,
+                        deltaE2000: 4.03,
+                        deltaECMC: 2.91,
+                        deltaL: 3.43,
                     },
-                    "reference": { "Lab": [48, -34, -31] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [48, -34, -31] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "B2",
-                    "location": { "x": 376, "y": 89, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [185.14, 96.18, 156.91],
-                        "Lab": [54.63, 51.58, -9.41],
-                        "mean": 129.55,
-                        "stddev": 2.98,
-                        "snr": 43.5
+                    name: 'B2',
+                    location: { x: 376, y: 89, w: 34, h: 34 },
+                    observed: {
+                        RGB: [185.14, 96.18, 156.91],
+                        Lab: [54.63, 51.58, -9.41],
+                        mean: 129.55,
+                        stddev: 2.98,
+                        snr: 43.5,
                     },
-                    "assessed": {
-                        "deltaE76": 8.5,
-                        "deltaE94T": 6.17,
-                        "deltaE94G": 6.17,
-                        "deltaE2000": 6,
-                        "deltaECMC": 3.65,
-                        "deltaL": 5.63
+                    assessed: {
+                        deltaE76: 8.5,
+                        deltaE94T: 6.17,
+                        deltaE94G: 6.17,
+                        deltaE2000: 6,
+                        deltaECMC: 3.65,
+                        deltaL: 5.63,
                     },
-                    "reference": { "Lab": [49, 56, -14] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [49, 56, -14] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "A2",
-                    "location": { "x": 444, "y": 89, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [241.69, 217.78, 90.49],
-                        "Lab": [86.4, 7.4, 73.91],
-                        "mean": 210.95,
-                        "stddev": 7.01,
-                        "snr": 30.11
+                    name: 'A2',
+                    location: { x: 444, y: 89, w: 34, h: 34 },
+                    observed: {
+                        RGB: [241.69, 217.78, 90.49],
+                        Lab: [86.4, 7.4, 73.91],
+                        mean: 210.95,
+                        stddev: 7.01,
+                        snr: 30.11,
                     },
-                    "assessed": {
-                        "deltaE76": 17.25,
-                        "deltaE94T": 6.26,
-                        "deltaE94G": 6.26,
-                        "deltaE2000": 5.44,
-                        "deltaECMC": 5.91,
-                        "deltaL": 4.4
+                    assessed: {
+                        deltaE76: 17.25,
+                        deltaE94T: 6.26,
+                        deltaE94G: 6.26,
+                        deltaE2000: 5.44,
+                        deltaECMC: 5.91,
+                        deltaL: 4.4,
                     },
-                    "reference": { "Lab": [82, 3, 90] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [82, 3, 90] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "B5",
-                    "location": { "x": 512, "y": 90, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [199.97, 157.23, 131.42],
-                        "Lab": [67.18, 23.74, 25.33],
-                        "mean": 167.21,
-                        "stddev": 2.13,
-                        "snr": 78.54
+                    name: 'B5',
+                    location: { x: 512, y: 90, w: 34, h: 34 },
+                    observed: {
+                        RGB: [199.97, 157.23, 131.42],
+                        Lab: [67.18, 23.74, 25.33],
+                        mean: 167.21,
+                        stddev: 2.13,
+                        snr: 78.54,
                     },
-                    "assessed": {
-                        "deltaE76": 8.01,
-                        "deltaE94T": 4.39,
-                        "deltaE94G": 4.39,
-                        "deltaE2000": 4.18,
-                        "deltaECMC": 3.73,
-                        "deltaL": 3.18
+                    assessed: {
+                        deltaE76: 8.01,
+                        deltaE94T: 4.39,
+                        deltaE94G: 4.39,
+                        deltaE2000: 4.18,
+                        deltaECMC: 3.73,
+                        deltaL: 3.18,
                     },
-                    "reference": { "Lab": [64, 20, 19] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [64, 20, 19] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "A5",
-                    "location": { "x": 580, "y": 90, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [122.44, 87.6, 65.37],
-                        "Lab": [39.01, 19.35, 21.58],
-                        "mean": 95.61,
-                        "stddev": 3.21,
-                        "snr": 29.75
+                    name: 'A5',
+                    location: { x: 580, y: 90, w: 34, h: 34 },
+                    observed: {
+                        RGB: [122.44, 87.6, 65.37],
+                        Lab: [39.01, 19.35, 21.58],
+                        mean: 95.61,
+                        stddev: 3.21,
+                        snr: 29.75,
                     },
-                    "assessed": {
-                        "deltaE76": 13.39,
-                        "deltaE94T": 8.73,
-                        "deltaE94G": 8.73,
-                        "deltaE2000": 7.57,
-                        "deltaECMC": 7.02,
-                        "deltaL": 7.01
+                    assessed: {
+                        deltaE76: 13.39,
+                        deltaE94T: 8.73,
+                        deltaE94G: 8.73,
+                        deltaE2000: 7.57,
+                        deltaECMC: 7.02,
+                        deltaL: 7.01,
                     },
-                    "reference": { "Lab": [32, 24, 32] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [32, 24, 32] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "20",
-                    "location": { "x": 648, "y": 90, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [46.94, 45.15, 45.23],
-                        "Lab": [17.94, 1.07, 0.34],
-                        "mean": 45.69,
-                        "stddev": 6.77,
-                        "snr": 6.75
+                    name: '20',
+                    location: { x: 648, y: 90, w: 34, h: 34 },
+                    observed: {
+                        RGB: [46.94, 45.15, 45.23],
+                        Lab: [17.94, 1.07, 0.34],
+                        mean: 45.69,
+                        stddev: 6.77,
+                        snr: 6.75,
                     },
-                    "assessed": {
-                        "deltaE76": 12.99,
-                        "deltaE94T": 12.98,
-                        "deltaE94G": 12.98,
-                        "deltaE2000": 8.37,
-                        "deltaECMC": 11.7,
-                        "deltaL": 12.94
+                    assessed: {
+                        deltaE76: 12.99,
+                        deltaE94T: 12.98,
+                        deltaE94G: 12.98,
+                        deltaE2000: 8.37,
+                        deltaECMC: 11.7,
+                        deltaL: 12.94,
                     },
-                    "reference": { "Lab": [5, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [5, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "18",
-                    "location": { "x": 716, "y": 90, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [55.72, 55.26, 54.52],
-                        "Lab": [21.71, 0.2, 0.52],
-                        "mean": 55.31,
-                        "stddev": 6.83,
-                        "snr": 8.1
+                    name: '18',
+                    location: { x: 716, y: 90, w: 34, h: 34 },
+                    observed: {
+                        RGB: [55.72, 55.26, 54.52],
+                        Lab: [21.71, 0.2, 0.52],
+                        mean: 55.31,
+                        stddev: 6.83,
+                        snr: 8.1,
                     },
-                    "assessed": {
-                        "deltaE76": 11.72,
-                        "deltaE94T": 11.72,
-                        "deltaE94G": 11.72,
-                        "deltaE2000": 7.79,
-                        "deltaECMC": 9.14,
-                        "deltaL": 11.71
+                    assessed: {
+                        deltaE76: 11.72,
+                        deltaE94T: 11.72,
+                        deltaE94G: 11.72,
+                        deltaE2000: 7.79,
+                        deltaECMC: 9.14,
+                        deltaL: 11.71,
                     },
-                    "reference": { "Lab": [10, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [10, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "17",
-                    "location": { "x": 784, "y": 90, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [63.5, 62.94, 62.42],
-                        "Lab": [24.74, 0.28, 0.41],
-                        "mean": 63.05,
-                        "stddev": 4.41,
-                        "snr": 14.31
+                    name: '17',
+                    location: { x: 784, y: 90, w: 34, h: 34 },
+                    observed: {
+                        RGB: [63.5, 62.94, 62.42],
+                        Lab: [24.74, 0.28, 0.41],
+                        mean: 63.05,
+                        stddev: 4.41,
+                        snr: 14.31,
                     },
-                    "assessed": {
-                        "deltaE76": 9.75,
-                        "deltaE94T": 9.75,
-                        "deltaE94G": 9.75,
-                        "deltaE2000": 6.76,
-                        "deltaECMC": 6.94,
-                        "deltaL": 9.74
+                    assessed: {
+                        deltaE76: 9.75,
+                        deltaE94T: 9.75,
+                        deltaE94G: 9.75,
+                        deltaE2000: 6.76,
+                        deltaECMC: 6.94,
+                        deltaL: 9.74,
                     },
-                    "reference": { "Lab": [15, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [15, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "16",
-                    "location": { "x": 852, "y": 91, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [75.11, 74.02, 73.89],
-                        "Lab": [29.16, 0.64, 0.31],
-                        "mean": 74.33,
-                        "stddev": 3.58,
-                        "snr": 20.75
+                    name: '16',
+                    location: { x: 852, y: 91, w: 34, h: 34 },
+                    observed: {
+                        RGB: [75.11, 74.02, 73.89],
+                        Lab: [29.16, 0.64, 0.31],
+                        mean: 74.33,
+                        stddev: 3.58,
+                        snr: 20.75,
                     },
-                    "assessed": {
-                        "deltaE76": 9.19,
-                        "deltaE94T": 9.19,
-                        "deltaE94G": 9.19,
-                        "deltaE2000": 6.73,
-                        "deltaECMC": 5.9,
-                        "deltaL": 9.16
+                    assessed: {
+                        deltaE76: 9.19,
+                        deltaE94T: 9.19,
+                        deltaE94G: 9.19,
+                        deltaE2000: 6.73,
+                        deltaECMC: 5.9,
+                        deltaL: 9.16,
                     },
-                    "reference": { "Lab": [20, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [20, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "11",
-                    "location": { "x": 920, "y": 91, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [128.49, 127.8, 126.4],
-                        "Lab": [50.16, 0.27, 0.95],
-                        "mean": 127.85,
-                        "stddev": 2.16,
-                        "snr": 59.07
+                    name: '11',
+                    location: { x: 920, y: 91, w: 34, h: 34 },
+                    observed: {
+                        RGB: [128.49, 127.8, 126.4],
+                        Lab: [50.16, 0.27, 0.95],
+                        mean: 127.85,
+                        stddev: 2.16,
+                        snr: 59.07,
                     },
-                    "assessed": {
-                        "deltaE76": 5.25,
-                        "deltaE94T": 5.25,
-                        "deltaE94G": 5.25,
-                        "deltaE2000": 5.17,
-                        "deltaECMC": 2.76,
-                        "deltaL": 5.16
+                    assessed: {
+                        deltaE76: 5.25,
+                        deltaE94T: 5.25,
+                        deltaE94G: 5.25,
+                        deltaE2000: 5.17,
+                        deltaECMC: 2.76,
+                        deltaL: 5.16,
                     },
-                    "reference": { "Lab": [45, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [45, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "10",
-                    "location": { "x": 1366, "y": 92, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [139.78, 138.46, 137.41],
-                        "Lab": [54.43, 0.68, 0.88],
-                        "mean": 138.74,
-                        "stddev": 2,
-                        "snr": 69.53
+                    name: '10',
+                    location: { x: 1366, y: 92, w: 34, h: 34 },
+                    observed: {
+                        RGB: [139.78, 138.46, 137.41],
+                        Lab: [54.43, 0.68, 0.88],
+                        mean: 138.74,
+                        stddev: 2,
+                        snr: 69.53,
                     },
-                    "assessed": {
-                        "deltaE76": 4.57,
-                        "deltaE94T": 4.55,
-                        "deltaE94G": 4.55,
-                        "deltaE2000": 4.56,
-                        "deltaECMC": 2.5,
-                        "deltaL": 4.43
+                    assessed: {
+                        deltaE76: 4.57,
+                        deltaE94T: 4.55,
+                        deltaE94G: 4.55,
+                        deltaE2000: 4.56,
+                        deltaECMC: 2.5,
+                        deltaL: 4.43,
                     },
-                    "reference": { "Lab": [50, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [50, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "09",
-                    "location": { "x": 1434, "y": 92, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [151.11, 150.69, 149],
-                        "Lab": [59.1, 0.07, 1.05],
-                        "mean": 150.63,
-                        "stddev": 1.68,
-                        "snr": 89.5
+                    name: '09',
+                    location: { x: 1434, y: 92, w: 34, h: 34 },
+                    observed: {
+                        RGB: [151.11, 150.69, 149],
+                        Lab: [59.1, 0.07, 1.05],
+                        mean: 150.63,
+                        stddev: 1.68,
+                        snr: 89.5,
                     },
-                    "assessed": {
-                        "deltaE76": 4.23,
-                        "deltaE94T": 4.22,
-                        "deltaE94G": 4.22,
-                        "deltaE2000": 3.9,
-                        "deltaECMC": 2.29,
-                        "deltaL": 4.1
+                    assessed: {
+                        deltaE76: 4.23,
+                        deltaE94T: 4.22,
+                        deltaE94G: 4.22,
+                        deltaE2000: 3.9,
+                        deltaECMC: 2.29,
+                        deltaL: 4.1,
                     },
-                    "reference": { "Lab": [55, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [55, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "03",
-                    "location": { "x": 1502, "y": 93, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [230.37, 228.57, 225.18],
-                        "Lab": [89.76, 0.72, 2.32],
-                        "mean": 228.74,
-                        "stddev": 1.61,
-                        "snr": 142.26
+                    name: '03',
+                    location: { x: 1502, y: 93, w: 34, h: 34 },
+                    observed: {
+                        RGB: [230.37, 228.57, 225.18],
+                        Lab: [89.76, 0.72, 2.32],
+                        mean: 228.74,
+                        stddev: 1.61,
+                        snr: 142.26,
                     },
-                    "assessed": {
-                        "deltaE76": 5.34,
-                        "deltaE94T": null,
-                        "deltaE94G": null,
-                        "deltaE2000": 3.9,
-                        "deltaECMC": null,
-                        "deltaL": 4.76
+                    assessed: {
+                        deltaE76: 5.34,
+                        deltaE94T: null,
+                        deltaE94G: null,
+                        deltaE2000: 3.9,
+                        deltaECMC: null,
+                        deltaL: 4.76,
                     },
-                    "reference": { "Lab": [85, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [85, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "02",
-                    "location": { "x": 1570, "y": 93, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [240.91, 239.67, 232.98],
-                        "Lab": [93.95, 0.05, 4.07],
-                        "mean": 239.31,
-                        "stddev": 1.21,
-                        "snr": 197.38
+                    name: '02',
+                    location: { x: 1570, y: 93, w: 34, h: 34 },
+                    observed: {
+                        RGB: [240.91, 239.67, 232.98],
+                        Lab: [93.95, 0.05, 4.07],
+                        mean: 239.31,
+                        stddev: 1.21,
+                        snr: 197.38,
                     },
-                    "assessed": {
-                        "deltaE76": 5.67,
-                        "deltaE94T": 5.24,
-                        "deltaE94G": 5.24,
-                        "deltaE2000": 4.45,
-                        "deltaECMC": 4.8,
-                        "deltaL": 3.95
+                    assessed: {
+                        deltaE76: 5.67,
+                        deltaE94T: 5.24,
+                        deltaE94G: 5.24,
+                        deltaE2000: 4.45,
+                        deltaECMC: 4.8,
+                        deltaL: 3.95,
                     },
-                    "reference": { "Lab": [90, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [90, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "01",
-                    "location": { "x": 1638, "y": 93, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [247.76, 246.58, 239.95],
-                        "Lab": [96.65, 0.01, 4.02],
-                        "mean": 246.21,
-                        "stddev": 0.98,
-                        "snr": 250.92
+                    name: '01',
+                    location: { x: 1638, y: 93, w: 34, h: 34 },
+                    observed: {
+                        RGB: [247.76, 246.58, 239.95],
+                        Lab: [96.65, 0.01, 4.02],
+                        mean: 246.21,
+                        stddev: 0.98,
+                        snr: 250.92,
                     },
-                    "assessed": {
-                        "deltaE76": 4.35,
-                        "deltaE94T": 3.78,
-                        "deltaE94G": 3.78,
-                        "deltaE2000": 3.81,
-                        "deltaECMC": 4.59,
-                        "deltaL": 1.65
+                    assessed: {
+                        deltaE76: 4.35,
+                        deltaE94T: 3.78,
+                        deltaE94G: 3.78,
+                        deltaE2000: 3.81,
+                        deltaECMC: 4.59,
+                        deltaL: 1.65,
                     },
-                    "reference": { "Lab": [95, 0, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [95, 0, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "C7",
-                    "location": { "x": 1706, "y": 93, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [212.52, 234.99, 226.15],
-                        "Lab": [89.22, -14.52, 0.41],
-                        "mean": 227.28,
-                        "stddev": 1.97,
-                        "snr": 115.57
+                    name: 'C7',
+                    location: { x: 1706, y: 93, w: 34, h: 34 },
+                    observed: {
+                        RGB: [212.52, 234.99, 226.15],
+                        Lab: [89.22, -14.52, 0.41],
+                        mean: 227.28,
+                        stddev: 1.97,
+                        snr: 115.57,
                     },
-                    "assessed": {
-                        "deltaE76": 5.69,
-                        "deltaE94T": 4.36,
-                        "deltaE94G": 4.36,
-                        "deltaE2000": 3.81,
-                        "deltaECMC": 3.74,
-                        "deltaL": 3.22
+                    assessed: {
+                        deltaE76: 5.69,
+                        deltaE94T: 4.36,
+                        deltaE94G: 4.36,
+                        deltaE2000: 3.81,
+                        deltaECMC: 3.74,
+                        deltaL: 3.22,
                     },
-                    "reference": { "Lab": [86, -19, -1] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [86, -19, -1] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "B7",
-                    "location": { "x": 1774, "y": 93, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [238.78, 214.61, 214.13],
-                        "Lab": [87.37, 14.39, 5.84],
-                        "mean": 221.81,
-                        "stddev": 2.69,
-                        "snr": 82.32
+                    name: 'B7',
+                    location: { x: 1774, y: 93, w: 34, h: 34 },
+                    observed: {
+                        RGB: [238.78, 214.61, 214.13],
+                        Lab: [87.37, 14.39, 5.84],
+                        mean: 221.81,
+                        stddev: 2.69,
+                        snr: 82.32,
                     },
-                    "assessed": {
-                        "deltaE76": 6.45,
-                        "deltaE94T": 5.23,
-                        "deltaE94G": 5.23,
-                        "deltaE2000": 4.59,
-                        "deltaECMC": 6.24,
-                        "deltaL": 2.37
+                    assessed: {
+                        deltaE76: 6.45,
+                        deltaE94T: 5.23,
+                        deltaE94G: 5.23,
+                        deltaE2000: 4.59,
+                        deltaECMC: 6.24,
+                        deltaL: 2.37,
                     },
-                    "reference": { "Lab": [85, 13, 0] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [85, 13, 0] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "A7",
-                    "location": { "x": 1842, "y": 94, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [228.58, 228.47, 231.1],
-                        "Lab": [89.69, 0.35, -1.47],
-                        "mean": 228.79,
-                        "stddev": 1.87,
-                        "snr": 122.51
+                    name: 'A7',
+                    location: { x: 1842, y: 94, w: 34, h: 34 },
+                    observed: {
+                        RGB: [228.58, 228.47, 231.1],
+                        Lab: [89.69, 0.35, -1.47],
+                        mean: 228.79,
+                        stddev: 1.87,
+                        snr: 122.51,
                     },
-                    "assessed": {
-                        "deltaE76": 9.18,
-                        "deltaE94T": 8.76,
-                        "deltaE94G": 8.76,
-                        "deltaE2000": 7.42,
-                        "deltaECMC": 10.9,
-                        "deltaL": 4.69
+                    assessed: {
+                        deltaE76: 9.18,
+                        deltaE94T: 8.76,
+                        deltaE94G: 8.76,
+                        deltaE2000: 7.42,
+                        deltaECMC: 10.9,
+                        deltaL: 4.69,
                     },
-                    "reference": { "Lab": [85, -2, -9] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [85, -2, -9] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "C8",
-                    "location": { "x": 1910, "y": 94, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [242.91, 219.41, 194.31],
-                        "Lab": [88.52, 12.02, 19.7],
-                        "mean": 223.7,
-                        "stddev": 1.47,
-                        "snr": 151.68
+                    name: 'C8',
+                    location: { x: 1910, y: 94, w: 34, h: 34 },
+                    observed: {
+                        RGB: [242.91, 219.41, 194.31],
+                        Lab: [88.52, 12.02, 19.7],
+                        mean: 223.7,
+                        stddev: 1.47,
+                        snr: 151.68,
                     },
-                    "assessed": {
-                        "deltaE76": 3.05,
-                        "deltaE94T": 2.06,
-                        "deltaE94G": 2.06,
-                        "deltaE2000": 1.89,
-                        "deltaECMC": 1.66,
-                        "deltaL": 1.52
+                    assessed: {
+                        deltaE76: 3.05,
+                        deltaE94T: 2.06,
+                        deltaE94G: 2.06,
+                        deltaE2000: 1.89,
+                        deltaECMC: 1.66,
+                        deltaL: 1.52,
                     },
-                    "reference": { "Lab": [87, 10, 18] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [87, 10, 18] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "B8",
-                    "location": { "x": 1978, "y": 94, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [224.67, 231.08, 182.71],
-                        "Lab": [88.57, -8.53, 25.92],
-                        "mean": 223.84,
-                        "stddev": 1.64,
-                        "snr": 136.51
+                    name: 'B8',
+                    location: { x: 1978, y: 94, w: 34, h: 34 },
+                    observed: {
+                        RGB: [224.67, 231.08, 182.71],
+                        Lab: [88.57, -8.53, 25.92],
+                        mean: 223.84,
+                        stddev: 1.64,
+                        snr: 136.51,
                     },
-                    "assessed": {
-                        "deltaE76": 4.34,
-                        "deltaE94T": 3.94,
-                        "deltaE94G": 3.94,
-                        "deltaE2000": 2.95,
-                        "deltaECMC": 2.08,
-                        "deltaL": 3.57
+                    assessed: {
+                        deltaE76: 4.34,
+                        deltaE94T: 3.94,
+                        deltaE94G: 3.94,
+                        deltaE2000: 2.95,
+                        deltaECMC: 2.08,
+                        deltaL: 3.57,
                     },
-                    "reference": { "Lab": [85, -11, 26] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [85, -11, 26] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "A8",
-                    "location": { "x": 2046, "y": 94, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [240.17, 215.2, 203.39],
-                        "Lab": [87.41, 13.93, 12.5],
-                        "mean": 221.39,
-                        "stddev": 2.32,
-                        "snr": 95.38
+                    name: 'A8',
+                    location: { x: 2046, y: 94, w: 34, h: 34 },
+                    observed: {
+                        RGB: [240.17, 215.2, 203.39],
+                        Lab: [87.41, 13.93, 12.5],
+                        mean: 221.39,
+                        stddev: 2.32,
+                        snr: 95.38,
                     },
-                    "assessed": {
-                        "deltaE76": 5.75,
-                        "deltaE94T": 4,
-                        "deltaE94G": 4,
-                        "deltaE2000": 3.98,
-                        "deltaECMC": 4.4,
-                        "deltaL": 1.41
+                    assessed: {
+                        deltaE76: 5.75,
+                        deltaE94T: 4,
+                        deltaE94G: 4,
+                        deltaE2000: 3.98,
+                        deltaECMC: 4.4,
+                        deltaL: 1.41,
                     },
-                    "reference": { "Lab": [86, 13, 7] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [86, 13, 7] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "C9",
-                    "location": { "x": 2114, "y": 95, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [215.26, 230.51, 229.25],
-                        "Lab": [88.51, -9.27, -2.47],
-                        "mean": 225.79,
-                        "stddev": 2.34,
-                        "snr": 96.3
+                    name: 'C9',
+                    location: { x: 2114, y: 95, w: 34, h: 34 },
+                    observed: {
+                        RGB: [215.26, 230.51, 229.25],
+                        Lab: [88.51, -9.27, -2.47],
+                        mean: 225.79,
+                        stddev: 2.34,
+                        snr: 96.3,
                     },
-                    "assessed": {
-                        "deltaE76": 8.79,
-                        "deltaE94T": 6.95,
-                        "deltaE94G": 6.95,
-                        "deltaE2000": 6.16,
-                        "deltaECMC": 7.48,
-                        "deltaL": 3.51
+                    assessed: {
+                        deltaE76: 8.79,
+                        deltaE94T: 6.95,
+                        deltaE94G: 6.95,
+                        deltaE2000: 6.16,
+                        deltaECMC: 7.48,
+                        deltaL: 3.51,
                     },
-                    "reference": { "Lab": [85, -14, -9] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [85, -14, -9] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "B9",
-                    "location": { "x": 2182, "y": 95, "w": 34, "h": 34 },
-                    "observed": {
-                        "RGB": [232.77, 226, 227.77],
-                        "Lab": [89.54, 4.23, 0.48],
-                        "mean": 228.22,
-                        "stddev": 1.92,
-                        "snr": 118.59
+                    name: 'B9',
+                    location: { x: 2182, y: 95, w: 34, h: 34 },
+                    observed: {
+                        RGB: [232.77, 226, 227.77],
+                        Lab: [89.54, 4.23, 0.48],
+                        mean: 228.22,
+                        stddev: 1.92,
+                        snr: 118.59,
                     },
-                    "assessed": {
-                        "deltaE76": 7.92,
-                        "deltaE94T": 7.5,
-                        "deltaE94G": 7.5,
-                        "deltaE2000": 6.25,
-                        "deltaECMC": 8.56,
-                        "deltaL": 4.54
+                    assessed: {
+                        deltaE76: 7.92,
+                        deltaE94T: 7.5,
+                        deltaE94G: 7.5,
+                        deltaE2000: 6.25,
+                        deltaECMC: 8.56,
+                        deltaL: 4.54,
                     },
-                    "reference": { "Lab": [85, 4, -6] },
-                    "validity": { "valid": true }
-                }
+                    reference: { Lab: [85, 4, -6] },
+                    validity: { valid: true },
+                },
             ],
-            "edgePatches": [
+            edgePatches: [
                 {
-                    "name": "Vertical",
-                    "location": { "x": 1098, "y": 83, "w": 52, "h": 105 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0787058123,
-                            "MTF50": 0.0264852519,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical',
+                    location: { x: 1098, y: 83, w: 52, h: 105 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0787058123,
+                            MTF50: 0.0264852519,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.6351562142372131],
                                 [0.03999999910593033, 0.36963534355163574],
@@ -630,14 +630,14 @@ const targetData = {
                                 [0.9200000166893005, 0.23555409908294678],
                                 [0.9399999976158142, 0.0765388235449791],
                                 [0.9599999785423279, 0.2585885524749756],
-                                [0.9800000190734863, 0.6949535608291626]
-                            ]
+                                [0.9800000190734863, 0.6949535608291626],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.1372704945,
-                            "MTF50": 0.027778552,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.1372704945,
+                            MTF50: 0.027778552,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.6351562142372131],
                                 [0.03999999910593033, 0.36963534355163574],
@@ -687,14 +687,14 @@ const targetData = {
                                 [0.9200000166893005, 0.23555409908294678],
                                 [0.9399999976158142, 0.0765388235449791],
                                 [0.9599999785423279, 0.2585885524749756],
-                                [0.9800000190734863, 0.6949535608291626]
-                            ]
+                                [0.9800000190734863, 0.6949535608291626],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0768583354,
-                            "MTF50": 0.0301804581,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0768583354,
+                            MTF50: 0.0301804581,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.6351562142372131],
                                 [0.03999999910593033, 0.36963534355163574],
@@ -744,14 +744,14 @@ const targetData = {
                                 [0.9200000166893005, 0.23555409908294678],
                                 [0.9399999976158142, 0.0765388235449791],
                                 [0.9599999785423279, 0.2585885524749756],
-                                [0.9800000190734863, 0.6949535608291626]
-                            ]
+                                [0.9800000190734863, 0.6949535608291626],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.1201984998,
-                            "MTF50": 0.028195821,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.1201984998,
+                            MTF50: 0.028195821,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.6351562142372131],
                                 [0.03999999910593033, 0.36963534355163574],
@@ -801,1918 +801,1918 @@ const targetData = {
                                 [0.9200000166893005, 0.23555409908294678],
                                 [0.9399999976158142, 0.0765388235449791],
                                 [0.9599999785423279, 0.2585885524749756],
-                                [0.9800000190734863, 0.6949535608291626]
-                            ]
-                        }
+                                [0.9800000190734863, 0.6949535608291626],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.12,
-                        "MTF50": 0.03,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.12,
+                        MTF50: 0.03,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
             ],
-            "targetType": "SCAN_REFERENCE_CHART_STANDARD",
-            "validity": { "valid": true, "invalidPatch": 0 },
-            "assessed": {
-                "meanDeltaE76": 8.43,
-                "meanDeltaE94T": 6.59,
-                "meanDeltaE94G": 6.59,
-                "meanDeltaE2000": 5.46,
-                "meanDeltaECMC": 5.49,
-                "meanDeltaL": 5.35,
-                "meanStdDev": 3.19,
-                "SEFF": 0,
-                "MTF10": 0.12,
-                "MTF50": 0.03,
-                "MTFMAX": 1,
-                "MTFHSF": 0,
-                "CMR": 0
-            }
-        },
-        {
-            "name": "KODAK Gray Scale",
-            "type": "Q13",
-            "location": { "x": 4593, "y": 7229, "w": 2351, "h": 693, "r": 0 },
-            "observed": { "ppi": 0 },
-            "colorPatches": [],
-            "edgePatches": [],
-            "targetType": "Q13",
-            "validity": { "valid": true, "invalidPatch": 0 },
-            "assessed": {
-                "meanDeltaE76": null,
-                "meanDeltaE94T": null,
-                "meanDeltaE94G": null,
-                "meanDeltaE2000": null,
-                "meanDeltaECMC": null,
-                "meanDeltaL": null,
-                "meanStdDev": null
-            }
-        },
-        {
-            "name": "Applied Image QA-62",
-            "type": "QA_62",
-            "location": { "x": 10165, "y": 486, "w": 871, "h": 1111, "r": 0 },
-            "observed": { "ppi": 298.47 },
-            "colorPatches": [
-                {
-                    "name": "1",
-                    "location": { "x": 123, "y": 147, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [243.64, 240.67, 237.46],
-                        "Lab": [94.66, 1.45, 2.47],
-                        "mean": 241.21,
-                        "stddev": 1.06,
-                        "snr": 227.25
-                    },
-                    "assessed": {
-                        "deltaE76": 3.29,
-                        "deltaE94T": 3.11,
-                        "deltaE94G": 3.11,
-                        "deltaE2000": 2.98,
-                        "deltaECMC": 3.85,
-                        "deltaL": -1.34
-                    },
-                    "reference": { "Lab": [96, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "2",
-                    "location": { "x": 234, "y": 147, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [229.41, 226.11, 222.89],
-                        "Lab": [88.99, 1.64, 2.55],
-                        "mean": 226.75,
-                        "stddev": 1.21,
-                        "snr": 187.18
-                    },
-                    "assessed": {
-                        "deltaE76": 4.47,
-                        "deltaE94T": 4.32,
-                        "deltaE94G": 4.32,
-                        "deltaE2000": 3.6,
-                        "deltaECMC": 4.09,
-                        "deltaL": -3.21
-                    },
-                    "reference": { "Lab": [92.2, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "3",
-                    "location": { "x": 345, "y": 147, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [218.98, 215.93, 211.77],
-                        "Lab": [84.94, 1.4, 3.03],
-                        "mean": 216.39,
-                        "stddev": 1.23,
-                        "snr": 176.12
-                    },
-                    "assessed": {
-                        "deltaE76": 5.39,
-                        "deltaE94T": 5.21,
-                        "deltaE94G": 5.21,
-                        "deltaE2000": 4.26,
-                        "deltaECMC": 4.64,
-                        "deltaL": -4.06
-                    },
-                    "reference": { "Lab": [89, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "4",
-                    "location": { "x": 456, "y": 147, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [198.63, 194.87, 190.56],
-                        "Lab": [76.77, 1.8, 3.28],
-                        "mean": 195.53,
-                        "stddev": 1.33,
-                        "snr": 146.63
-                    },
-                    "assessed": {
-                        "deltaE76": 6.26,
-                        "deltaE94T": 6.05,
-                        "deltaE94G": 6.05,
-                        "deltaE2000": 5.03,
-                        "deltaECMC": 5.04,
-                        "deltaL": -4.93
-                    },
-                    "reference": { "Lab": [81.7, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "5",
-                    "location": { "x": 567, "y": 147, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [178.19, 174.83, 169.5],
-                        "Lab": [68.83, 1.48, 3.76],
-                        "mean": 175.25,
-                        "stddev": 1.34,
-                        "snr": 130.62
-                    },
-                    "assessed": {
-                        "deltaE76": 5.52,
-                        "deltaE94T": 5.19,
-                        "deltaE94G": 5.19,
-                        "deltaE2000": 4.82,
-                        "deltaECMC": 5.3,
-                        "deltaL": -3.47
-                    },
-                    "reference": { "Lab": [72.3, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "6",
-                    "location": { "x": 678, "y": 147, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [166.26, 163.27, 157.73],
-                        "Lab": [64.24, 1.23, 3.8],
-                        "mean": 163.56,
-                        "stddev": 1.32,
-                        "snr": 124.28
-                    },
-                    "assessed": {
-                        "deltaE76": 4.86,
-                        "deltaE94T": 4.49,
-                        "deltaE94G": 4.49,
-                        "deltaE2000": 4.43,
-                        "deltaECMC": 5.24,
-                        "deltaL": -2.26
-                    },
-                    "reference": { "Lab": [66.5, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "7",
-                    "location": { "x": 678, "y": 258, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [162.17, 159.34, 153.54],
-                        "Lab": [62.68, 1.1, 3.91],
-                        "mean": 159.55,
-                        "stddev": 1.52,
-                        "snr": 104.73
-                    },
-                    "assessed": {
-                        "deltaE76": 4.63,
-                        "deltaE94T": 4.22,
-                        "deltaE94G": 4.22,
-                        "deltaE2000": 4.29,
-                        "deltaECMC": 5.3,
-                        "deltaL": -1.42
-                    },
-                    "reference": { "Lab": [64.1, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "8",
-                    "location": { "x": 678, "y": 369, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [154.67, 151.21, 146.75],
-                        "Lab": [59.61, 1.62, 3.29],
-                        "mean": 151.76,
-                        "stddev": 1.43,
-                        "snr": 105.76
-                    },
-                    "assessed": {
-                        "deltaE76": 3.85,
-                        "deltaE94T": 3.5,
-                        "deltaE94G": 3.5,
-                        "deltaE2000": 3.63,
-                        "deltaECMC": 4.68,
-                        "deltaL": -0.19
-                    },
-                    "reference": { "Lab": [59.8, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "9",
-                    "location": { "x": 678, "y": 480, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [147.46, 145.06, 139.67],
-                        "Lab": [57.03, 0.89, 3.59],
-                        "mean": 145.19,
-                        "stddev": 1.47,
-                        "snr": 99.04
-                    },
-                    "assessed": {
-                        "deltaE76": 4.24,
-                        "deltaE94T": 3.9,
-                        "deltaE94G": 3.9,
-                        "deltaE2000": 4,
-                        "deltaECMC": 5,
-                        "deltaL": 1.13
-                    },
-                    "reference": { "Lab": [55.9, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "10",
-                    "location": { "x": 678, "y": 591, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [141.63, 139.1, 134.99],
-                        "Lab": [54.75, 1.1, 2.89],
-                        "mean": 139.41,
-                        "stddev": 1.62,
-                        "snr": 86.15
-                    },
-                    "assessed": {
-                        "deltaE76": 3.91,
-                        "deltaE94T": 3.71,
-                        "deltaE94G": 3.71,
-                        "deltaE2000": 3.73,
-                        "deltaECMC": 4.34,
-                        "deltaL": 1.95
-                    },
-                    "reference": { "Lab": [52.8, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "11",
-                    "location": { "x": 678, "y": 702, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [131.14, 128.8, 125.22],
-                        "Lab": [50.7, 1.04, 2.54],
-                        "mean": 129.11,
-                        "stddev": 1.6,
-                        "snr": 80.73
-                    },
-                    "assessed": {
-                        "deltaE76": 3.75,
-                        "deltaE94T": 3.61,
-                        "deltaE94G": 3.61,
-                        "deltaE2000": 3.64,
-                        "deltaECMC": 4.02,
-                        "deltaL": 2.2
-                    },
-                    "reference": { "Lab": [48.5, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "12",
-                    "location": { "x": 567, "y": 702, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [117.5, 115.62, 113.06],
-                        "Lab": [45.5, 0.86, 1.86],
-                        "mean": 115.9,
-                        "stddev": 1.96,
-                        "snr": 59.26
-                    },
-                    "assessed": {
-                        "deltaE76": 3.74,
-                        "deltaE94T": 3.69,
-                        "deltaE94G": 3.69,
-                        "deltaE2000": 3.55,
-                        "deltaECMC": 3.45,
-                        "deltaL": 2.9
-                    },
-                    "reference": { "Lab": [42.6, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "13",
-                    "location": { "x": 456, "y": 702, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [111.87, 109.77, 107.71],
-                        "Lab": [43.25, 1.05, 1.63],
-                        "mean": 110.17,
-                        "stddev": 1.7,
-                        "snr": 64.77
-                    },
-                    "assessed": {
-                        "deltaE76": 3.25,
-                        "deltaE94T": 3.2,
-                        "deltaE94G": 3.2,
-                        "deltaE2000": 3.03,
-                        "deltaECMC": 3.12,
-                        "deltaL": 2.45
-                    },
-                    "reference": { "Lab": [40.8, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "14",
-                    "location": { "x": 345, "y": 702, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [105.54, 103.97, 101.12],
-                        "Lab": [40.89, 0.64, 1.96],
-                        "mean": 104.13,
-                        "stddev": 1.88,
-                        "snr": 55.46
-                    },
-                    "assessed": {
-                        "deltaE76": 3.31,
-                        "deltaE94T": 3.24,
-                        "deltaE94G": 3.24,
-                        "deltaE2000": 3.11,
-                        "deltaECMC": 3.5,
-                        "deltaL": 2.19
-                    },
-                    "reference": { "Lab": [38.7, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "15",
-                    "location": { "x": 234, "y": 702, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [102.21, 101.01, 98.48],
-                        "Lab": [39.69, 0.46, 1.7],
-                        "mean": 101.09,
-                        "stddev": 1.9,
-                        "snr": 53.21
-                    },
-                    "assessed": {
-                        "deltaE76": 4.24,
-                        "deltaE94T": 4.21,
-                        "deltaE94G": 4.21,
-                        "deltaE2000": 3.83,
-                        "deltaECMC": 3.61,
-                        "deltaL": 3.59
-                    },
-                    "reference": { "Lab": [36.1, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "16",
-                    "location": { "x": 123, "y": 702, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [100.85, 99.79, 97.41],
-                        "Lab": [39.2, 0.39, 1.58],
-                        "mean": 99.85,
-                        "stddev": 2,
-                        "snr": 49.84
-                    },
-                    "assessed": {
-                        "deltaE76": 5.27,
-                        "deltaE94T": 5.24,
-                        "deltaE94G": 5.24,
-                        "deltaE2000": 4.61,
-                        "deltaECMC": 3.9,
-                        "deltaL": 4.8
-                    },
-                    "reference": { "Lab": [34.4, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "17",
-                    "location": { "x": 123, "y": 591, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [96.71, 95.76, 94.28],
-                        "Lab": [37.63, 0.42, 1.05],
-                        "mean": 95.88,
-                        "stddev": 2.27,
-                        "snr": 42.15
-                    },
-                    "assessed": {
-                        "deltaE76": 4.92,
-                        "deltaE94T": 4.91,
-                        "deltaE94G": 4.91,
-                        "deltaE2000": 4.2,
-                        "deltaECMC": 3.43,
-                        "deltaL": 4.63
-                    },
-                    "reference": { "Lab": [33, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "18",
-                    "location": { "x": 123, "y": 480, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [91.53, 90.65, 89.69],
-                        "Lab": [35.63, 0.42, 0.73],
-                        "mean": 90.81,
-                        "stddev": 2.45,
-                        "snr": 37.02
-                    },
-                    "assessed": {
-                        "deltaE76": 6.38,
-                        "deltaE94T": 6.37,
-                        "deltaE94G": 6.37,
-                        "deltaE2000": 5.18,
-                        "deltaECMC": 4,
-                        "deltaL": 6.23
-                    },
-                    "reference": { "Lab": [29.4, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "19",
-                    "location": { "x": 123, "y": 369, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [82.94, 82.32, 82.37],
-                        "Lab": [32.36, 0.37, 0.11],
-                        "mean": 82.51,
-                        "stddev": 2.59,
-                        "snr": 31.87
-                    },
-                    "assessed": {
-                        "deltaE76": 7.91,
-                        "deltaE94T": 7.91,
-                        "deltaE94G": 7.91,
-                        "deltaE2000": 6.07,
-                        "deltaECMC": 4.84,
-                        "deltaL": 7.86
-                    },
-                    "reference": { "Lab": [24.5, 1, -0.5] },
-                    "validity": { "valid": true }
-                },
-                {
-                    "name": "20",
-                    "location": { "x": 123, "y": 258, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [81.25, 80.78, 81.4],
-                        "Lab": [31.76, 0.34, -0.25],
-                        "mean": 80.99,
-                        "stddev": 2.93,
-                        "snr": 27.68
-                    },
-                    "assessed": {
-                        "deltaE76": 10.48,
-                        "deltaE94T": 10.48,
-                        "deltaE94G": 10.48,
-                        "deltaE2000": 7.83,
-                        "deltaECMC": 6.36,
-                        "deltaL": 10.46
-                    },
-                    "reference": { "Lab": [21.3, 1, -0.5] },
-                    "validity": { "valid": true }
-                }
-            ],
-            "edgePatches": [
-                {
-                    "name": "Vertical_Left",
-                    "location": { "x": 247, "y": 345, "w": 78, "h": 196 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 1.0112500428,
-                            "MTF50": 1.0062500231,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.9999998807907104],
-                                [0.03999999910593033, 0.9999998807907104],
-                                [0.05999999865889549, 0.9999998807907104],
-                                [0.07999999821186066, 0.9999998807907104],
-                                [0.10000000149011612, 0.9999998807907104],
-                                [0.11999999731779099, 0.9999998807907104],
-                                [0.14000000059604645, 0.9999998807907104],
-                                [0.1599999964237213, 0.9999998807907104],
-                                [0.18000000715255737, 0.9999998807907104],
-                                [0.20000000298023224, 0.9999998807907104],
-                                [0.2199999988079071, 0.9999998807907104],
-                                [0.23999999463558197, 0.9999998807907104],
-                                [0.25999999046325684, 0.9999998807907104],
-                                [0.2800000011920929, 0.9999998807907104],
-                                [0.30000001192092896, 0.9999998807907104],
-                                [0.3199999928474426, 0.9999998807907104],
-                                [0.3400000035762787, 0.9999998807907104],
-                                [0.36000001430511475, 0.9999998807907104],
-                                [0.3799999952316284, 0.9999998807907104],
-                                [0.4000000059604645, 0.9999998807907104],
-                                [0.41999998688697815, 0.9999998807907104],
-                                [0.4399999976158142, 0.9999998807907104],
-                                [0.46000000834465027, 0.9999998807907104],
-                                [0.47999998927116394, 0.9999998807907104],
-                                [0.5, 0.9999998807907104],
-                                [0.5199999809265137, 0.9999998807907104],
-                                [0.5400000214576721, 0.9999998807907104],
-                                [0.5600000023841858, 0.9999998807907104],
-                                [0.5799999833106995, 0.9999998807907104],
-                                [0.6000000238418579, 0.9999998807907104],
-                                [0.6200000047683716, 0.9999998807907104],
-                                [0.6399999856948853, 0.9999998807907104],
-                                [0.6600000262260437, 0.9999998807907104],
-                                [0.6800000071525574, 0.9999998807907104],
-                                [0.699999988079071, 0.9999998807907104],
-                                [0.7200000286102295, 0.9999998807907104],
-                                [0.7400000095367432, 0.9999998807907104],
-                                [0.7599999904632568, 0.9999998807907104],
-                                [0.7799999713897705, 0.9999998807907104],
-                                [0.800000011920929, 0.9999998807907104],
-                                [0.8199999928474426, 0.9999998807907104],
-                                [0.8399999737739563, 0.9999998807907104],
-                                [0.8600000143051147, 0.9999998807907104],
-                                [0.8799999952316284, 0.9999998807907104],
-                                [0.8999999761581421, 0.9999998807907104],
-                                [0.9200000166893005, 0.9999998807907104],
-                                [0.9399999976158142, 0.9999998807907104],
-                                [0.9599999785423279, 0.9999998807907104],
-                                [0.9800000190734863, 0.9999998807907104]
-                            ]
-                        },
-                        "G": {
-                            "MTF10": 1.0112500428,
-                            "MTF50": 1.0062500231,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.9999998807907104],
-                                [0.03999999910593033, 0.9999998807907104],
-                                [0.05999999865889549, 0.9999998807907104],
-                                [0.07999999821186066, 0.9999998807907104],
-                                [0.10000000149011612, 0.9999998807907104],
-                                [0.11999999731779099, 0.9999998807907104],
-                                [0.14000000059604645, 0.9999998807907104],
-                                [0.1599999964237213, 0.9999998807907104],
-                                [0.18000000715255737, 0.9999998807907104],
-                                [0.20000000298023224, 0.9999998807907104],
-                                [0.2199999988079071, 0.9999998807907104],
-                                [0.23999999463558197, 0.9999998807907104],
-                                [0.25999999046325684, 0.9999998807907104],
-                                [0.2800000011920929, 0.9999998807907104],
-                                [0.30000001192092896, 0.9999998807907104],
-                                [0.3199999928474426, 0.9999998807907104],
-                                [0.3400000035762787, 0.9999998807907104],
-                                [0.36000001430511475, 0.9999998807907104],
-                                [0.3799999952316284, 0.9999998807907104],
-                                [0.4000000059604645, 0.9999998807907104],
-                                [0.41999998688697815, 0.9999998807907104],
-                                [0.4399999976158142, 0.9999998807907104],
-                                [0.46000000834465027, 0.9999998807907104],
-                                [0.47999998927116394, 0.9999998807907104],
-                                [0.5, 0.9999998807907104],
-                                [0.5199999809265137, 0.9999998807907104],
-                                [0.5400000214576721, 0.9999998807907104],
-                                [0.5600000023841858, 0.9999998807907104],
-                                [0.5799999833106995, 0.9999998807907104],
-                                [0.6000000238418579, 0.9999998807907104],
-                                [0.6200000047683716, 0.9999998807907104],
-                                [0.6399999856948853, 0.9999998807907104],
-                                [0.6600000262260437, 0.9999998807907104],
-                                [0.6800000071525574, 0.9999998807907104],
-                                [0.699999988079071, 0.9999998807907104],
-                                [0.7200000286102295, 0.9999998807907104],
-                                [0.7400000095367432, 0.9999998807907104],
-                                [0.7599999904632568, 0.9999998807907104],
-                                [0.7799999713897705, 0.9999998807907104],
-                                [0.800000011920929, 0.9999998807907104],
-                                [0.8199999928474426, 0.9999998807907104],
-                                [0.8399999737739563, 0.9999998807907104],
-                                [0.8600000143051147, 0.9999998807907104],
-                                [0.8799999952316284, 0.9999998807907104],
-                                [0.8999999761581421, 0.9999998807907104],
-                                [0.9200000166893005, 0.9999998807907104],
-                                [0.9399999976158142, 0.9999998807907104],
-                                [0.9599999785423279, 0.9999998807907104],
-                                [0.9800000190734863, 0.9999998807907104]
-                            ]
-                        },
-                        "B": {
-                            "MTF10": 1.0112500428,
-                            "MTF50": 1.0062500231,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.9999998807907104],
-                                [0.03999999910593033, 0.9999998807907104],
-                                [0.05999999865889549, 0.9999998807907104],
-                                [0.07999999821186066, 0.9999998807907104],
-                                [0.10000000149011612, 0.9999998807907104],
-                                [0.11999999731779099, 0.9999998807907104],
-                                [0.14000000059604645, 0.9999998807907104],
-                                [0.1599999964237213, 0.9999998807907104],
-                                [0.18000000715255737, 0.9999998807907104],
-                                [0.20000000298023224, 0.9999998807907104],
-                                [0.2199999988079071, 0.9999998807907104],
-                                [0.23999999463558197, 0.9999998807907104],
-                                [0.25999999046325684, 0.9999998807907104],
-                                [0.2800000011920929, 0.9999998807907104],
-                                [0.30000001192092896, 0.9999998807907104],
-                                [0.3199999928474426, 0.9999998807907104],
-                                [0.3400000035762787, 0.9999998807907104],
-                                [0.36000001430511475, 0.9999998807907104],
-                                [0.3799999952316284, 0.9999998807907104],
-                                [0.4000000059604645, 0.9999998807907104],
-                                [0.41999998688697815, 0.9999998807907104],
-                                [0.4399999976158142, 0.9999998807907104],
-                                [0.46000000834465027, 0.9999998807907104],
-                                [0.47999998927116394, 0.9999998807907104],
-                                [0.5, 0.9999998807907104],
-                                [0.5199999809265137, 0.9999998807907104],
-                                [0.5400000214576721, 0.9999998807907104],
-                                [0.5600000023841858, 0.9999998807907104],
-                                [0.5799999833106995, 0.9999998807907104],
-                                [0.6000000238418579, 0.9999998807907104],
-                                [0.6200000047683716, 0.9999998807907104],
-                                [0.6399999856948853, 0.9999998807907104],
-                                [0.6600000262260437, 0.9999998807907104],
-                                [0.6800000071525574, 0.9999998807907104],
-                                [0.699999988079071, 0.9999998807907104],
-                                [0.7200000286102295, 0.9999998807907104],
-                                [0.7400000095367432, 0.9999998807907104],
-                                [0.7599999904632568, 0.9999998807907104],
-                                [0.7799999713897705, 0.9999998807907104],
-                                [0.800000011920929, 0.9999998807907104],
-                                [0.8199999928474426, 0.9999998807907104],
-                                [0.8399999737739563, 0.9999998807907104],
-                                [0.8600000143051147, 0.9999998807907104],
-                                [0.8799999952316284, 0.9999998807907104],
-                                [0.8999999761581421, 0.9999998807907104],
-                                [0.9200000166893005, 0.9999998807907104],
-                                [0.9399999976158142, 0.9999998807907104],
-                                [0.9599999785423279, 0.9999998807907104],
-                                [0.9800000190734863, 0.9999998807907104]
-                            ]
-                        },
-                        "Lum": {
-                            "MTF10": 1.0112500428,
-                            "MTF50": 1.0062500231,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.9999998807907104],
-                                [0.03999999910593033, 0.9999998807907104],
-                                [0.05999999865889549, 0.9999998807907104],
-                                [0.07999999821186066, 0.9999998807907104],
-                                [0.10000000149011612, 0.9999998807907104],
-                                [0.11999999731779099, 0.9999998807907104],
-                                [0.14000000059604645, 0.9999998807907104],
-                                [0.1599999964237213, 0.9999998807907104],
-                                [0.18000000715255737, 0.9999998807907104],
-                                [0.20000000298023224, 0.9999998807907104],
-                                [0.2199999988079071, 0.9999998807907104],
-                                [0.23999999463558197, 0.9999998807907104],
-                                [0.25999999046325684, 0.9999998807907104],
-                                [0.2800000011920929, 0.9999998807907104],
-                                [0.30000001192092896, 0.9999998807907104],
-                                [0.3199999928474426, 0.9999998807907104],
-                                [0.3400000035762787, 0.9999998807907104],
-                                [0.36000001430511475, 0.9999998807907104],
-                                [0.3799999952316284, 0.9999998807907104],
-                                [0.4000000059604645, 0.9999998807907104],
-                                [0.41999998688697815, 0.9999998807907104],
-                                [0.4399999976158142, 0.9999998807907104],
-                                [0.46000000834465027, 0.9999998807907104],
-                                [0.47999998927116394, 0.9999998807907104],
-                                [0.5, 0.9999998807907104],
-                                [0.5199999809265137, 0.9999998807907104],
-                                [0.5400000214576721, 0.9999998807907104],
-                                [0.5600000023841858, 0.9999998807907104],
-                                [0.5799999833106995, 0.9999998807907104],
-                                [0.6000000238418579, 0.9999998807907104],
-                                [0.6200000047683716, 0.9999998807907104],
-                                [0.6399999856948853, 0.9999998807907104],
-                                [0.6600000262260437, 0.9999998807907104],
-                                [0.6800000071525574, 0.9999998807907104],
-                                [0.699999988079071, 0.9999998807907104],
-                                [0.7200000286102295, 0.9999998807907104],
-                                [0.7400000095367432, 0.9999998807907104],
-                                [0.7599999904632568, 0.9999998807907104],
-                                [0.7799999713897705, 0.9999998807907104],
-                                [0.800000011920929, 0.9999998807907104],
-                                [0.8199999928474426, 0.9999998807907104],
-                                [0.8399999737739563, 0.9999998807907104],
-                                [0.8600000143051147, 0.9999998807907104],
-                                [0.8799999952316284, 0.9999998807907104],
-                                [0.8999999761581421, 0.9999998807907104],
-                                [0.9200000166893005, 0.9999998807907104],
-                                [0.9399999976158142, 0.9999998807907104],
-                                [0.9599999785423279, 0.9999998807907104],
-                                [0.9800000190734863, 0.9999998807907104]
-                            ]
-                        }
-                    },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 1.78,
-                        "MTF50": 1.04,
-                        "MTFMAX": 4.15,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                },
-                {
-                    "name": "Vertical_Right",
-                    "location": { "x": 543, "y": 345, "w": 78, "h": 196 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0009149271,
-                            "MTF50": 0.000347069,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.010530875064432621],
-                                [0.03999999910593033, 0.04001578316092491],
-                                [0.05999999865889549, 0.028339870274066925],
-                                [0.07999999821186066, 0.02512979507446289],
-                                [0.10000000149011612, 0.03332385793328285],
-                                [0.11999999731779099, 0.028323261067271233],
-                                [0.14000000059604645, 0.04356107860803604],
-                                [0.1599999964237213, 0.05999043583869934],
-                                [0.18000000715255737, 0.046237580478191376],
-                                [0.20000000298023224, 0.08062247186899185],
-                                [0.2199999988079071, 0.0362812839448452],
-                                [0.23999999463558197, 0.026175078004598618],
-                                [0.25999999046325684, 0.033354196697473526],
-                                [0.2800000011920929, 0.027043720707297325],
-                                [0.30000001192092896, 0.07806294411420822],
-                                [0.3199999928474426, 0.02536281757056713],
-                                [0.3400000035762787, 0.024163950234651566],
-                                [0.36000001430511475, 0.016721760854125023],
-                                [0.3799999952316284, 0.07769033312797546],
-                                [0.4000000059604645, 0.05286667123436928],
-                                [0.41999998688697815, 0.06575784832239151],
-                                [0.4399999976158142, 0.06603177636861801],
-                                [0.46000000834465027, 0.08197415620088577],
-                                [0.47999998927116394, 0.04486854374408722],
-                                [0.5, 0.05524429678916931],
-                                [0.5199999809265137, 0.04744104668498039],
-                                [0.5400000214576721, 0.10175042599439621],
-                                [0.5600000023841858, 0.0721864104270935],
-                                [0.5799999833106995, 0.11047439277172089],
-                                [0.6000000238418579, 0.01761901192367077],
-                                [0.6200000047683716, 0.06004142761230469],
-                                [0.6399999856948853, 0.07127534598112106],
-                                [0.6600000262260437, 0.015212701633572578],
-                                [0.6800000071525574, 0.06900572776794434],
-                                [0.699999988079071, 0.06317068636417389],
-                                [0.7200000286102295, 0.10776510089635849],
-                                [0.7400000095367432, 0.06674343347549438],
-                                [0.7599999904632568, 0.025850269943475723],
-                                [0.7799999713897705, 0.050115421414375305],
-                                [0.800000011920929, 0.08976565301418304],
-                                [0.8199999928474426, 0.0905345007777214],
-                                [0.8399999737739563, 0.04347631707787514],
-                                [0.8600000143051147, 0.06093103438615799],
-                                [0.8799999952316284, 0.08523860573768616],
-                                [0.8999999761581421, 0.027226582169532776],
-                                [0.9200000166893005, 0.05976299196481705],
-                                [0.9399999976158142, 0.01508877519518137],
-                                [0.9599999785423279, 0.02011191099882126],
-                                [0.9800000190734863, 0.02590486966073513]
-                            ]
-                        },
-                        "G": {
-                            "MTF10": 0.0008719869,
-                            "MTF50": 0.0003524659,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.010530875064432621],
-                                [0.03999999910593033, 0.04001578316092491],
-                                [0.05999999865889549, 0.028339870274066925],
-                                [0.07999999821186066, 0.02512979507446289],
-                                [0.10000000149011612, 0.03332385793328285],
-                                [0.11999999731779099, 0.028323261067271233],
-                                [0.14000000059604645, 0.04356107860803604],
-                                [0.1599999964237213, 0.05999043583869934],
-                                [0.18000000715255737, 0.046237580478191376],
-                                [0.20000000298023224, 0.08062247186899185],
-                                [0.2199999988079071, 0.0362812839448452],
-                                [0.23999999463558197, 0.026175078004598618],
-                                [0.25999999046325684, 0.033354196697473526],
-                                [0.2800000011920929, 0.027043720707297325],
-                                [0.30000001192092896, 0.07806294411420822],
-                                [0.3199999928474426, 0.02536281757056713],
-                                [0.3400000035762787, 0.024163950234651566],
-                                [0.36000001430511475, 0.016721760854125023],
-                                [0.3799999952316284, 0.07769033312797546],
-                                [0.4000000059604645, 0.05286667123436928],
-                                [0.41999998688697815, 0.06575784832239151],
-                                [0.4399999976158142, 0.06603177636861801],
-                                [0.46000000834465027, 0.08197415620088577],
-                                [0.47999998927116394, 0.04486854374408722],
-                                [0.5, 0.05524429678916931],
-                                [0.5199999809265137, 0.04744104668498039],
-                                [0.5400000214576721, 0.10175042599439621],
-                                [0.5600000023841858, 0.0721864104270935],
-                                [0.5799999833106995, 0.11047439277172089],
-                                [0.6000000238418579, 0.01761901192367077],
-                                [0.6200000047683716, 0.06004142761230469],
-                                [0.6399999856948853, 0.07127534598112106],
-                                [0.6600000262260437, 0.015212701633572578],
-                                [0.6800000071525574, 0.06900572776794434],
-                                [0.699999988079071, 0.06317068636417389],
-                                [0.7200000286102295, 0.10776510089635849],
-                                [0.7400000095367432, 0.06674343347549438],
-                                [0.7599999904632568, 0.025850269943475723],
-                                [0.7799999713897705, 0.050115421414375305],
-                                [0.800000011920929, 0.08976565301418304],
-                                [0.8199999928474426, 0.0905345007777214],
-                                [0.8399999737739563, 0.04347631707787514],
-                                [0.8600000143051147, 0.06093103438615799],
-                                [0.8799999952316284, 0.08523860573768616],
-                                [0.8999999761581421, 0.027226582169532776],
-                                [0.9200000166893005, 0.05976299196481705],
-                                [0.9399999976158142, 0.01508877519518137],
-                                [0.9599999785423279, 0.02011191099882126],
-                                [0.9800000190734863, 0.02590486966073513]
-                            ]
-                        },
-                        "B": {
-                            "MTF10": 0.0008561168,
-                            "MTF50": 0.0003523051,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.010530875064432621],
-                                [0.03999999910593033, 0.04001578316092491],
-                                [0.05999999865889549, 0.028339870274066925],
-                                [0.07999999821186066, 0.02512979507446289],
-                                [0.10000000149011612, 0.03332385793328285],
-                                [0.11999999731779099, 0.028323261067271233],
-                                [0.14000000059604645, 0.04356107860803604],
-                                [0.1599999964237213, 0.05999043583869934],
-                                [0.18000000715255737, 0.046237580478191376],
-                                [0.20000000298023224, 0.08062247186899185],
-                                [0.2199999988079071, 0.0362812839448452],
-                                [0.23999999463558197, 0.026175078004598618],
-                                [0.25999999046325684, 0.033354196697473526],
-                                [0.2800000011920929, 0.027043720707297325],
-                                [0.30000001192092896, 0.07806294411420822],
-                                [0.3199999928474426, 0.02536281757056713],
-                                [0.3400000035762787, 0.024163950234651566],
-                                [0.36000001430511475, 0.016721760854125023],
-                                [0.3799999952316284, 0.07769033312797546],
-                                [0.4000000059604645, 0.05286667123436928],
-                                [0.41999998688697815, 0.06575784832239151],
-                                [0.4399999976158142, 0.06603177636861801],
-                                [0.46000000834465027, 0.08197415620088577],
-                                [0.47999998927116394, 0.04486854374408722],
-                                [0.5, 0.05524429678916931],
-                                [0.5199999809265137, 0.04744104668498039],
-                                [0.5400000214576721, 0.10175042599439621],
-                                [0.5600000023841858, 0.0721864104270935],
-                                [0.5799999833106995, 0.11047439277172089],
-                                [0.6000000238418579, 0.01761901192367077],
-                                [0.6200000047683716, 0.06004142761230469],
-                                [0.6399999856948853, 0.07127534598112106],
-                                [0.6600000262260437, 0.015212701633572578],
-                                [0.6800000071525574, 0.06900572776794434],
-                                [0.699999988079071, 0.06317068636417389],
-                                [0.7200000286102295, 0.10776510089635849],
-                                [0.7400000095367432, 0.06674343347549438],
-                                [0.7599999904632568, 0.025850269943475723],
-                                [0.7799999713897705, 0.050115421414375305],
-                                [0.800000011920929, 0.08976565301418304],
-                                [0.8199999928474426, 0.0905345007777214],
-                                [0.8399999737739563, 0.04347631707787514],
-                                [0.8600000143051147, 0.06093103438615799],
-                                [0.8799999952316284, 0.08523860573768616],
-                                [0.8999999761581421, 0.027226582169532776],
-                                [0.9200000166893005, 0.05976299196481705],
-                                [0.9399999976158142, 0.01508877519518137],
-                                [0.9599999785423279, 0.02011191099882126],
-                                [0.9800000190734863, 0.02590486966073513]
-                            ]
-                        },
-                        "Lum": {
-                            "MTF10": 0.0008717132,
-                            "MTF50": 0.0003520421,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.010530875064432621],
-                                [0.03999999910593033, 0.04001578316092491],
-                                [0.05999999865889549, 0.028339870274066925],
-                                [0.07999999821186066, 0.02512979507446289],
-                                [0.10000000149011612, 0.03332385793328285],
-                                [0.11999999731779099, 0.028323261067271233],
-                                [0.14000000059604645, 0.04356107860803604],
-                                [0.1599999964237213, 0.05999043583869934],
-                                [0.18000000715255737, 0.046237580478191376],
-                                [0.20000000298023224, 0.08062247186899185],
-                                [0.2199999988079071, 0.0362812839448452],
-                                [0.23999999463558197, 0.026175078004598618],
-                                [0.25999999046325684, 0.033354196697473526],
-                                [0.2800000011920929, 0.027043720707297325],
-                                [0.30000001192092896, 0.07806294411420822],
-                                [0.3199999928474426, 0.02536281757056713],
-                                [0.3400000035762787, 0.024163950234651566],
-                                [0.36000001430511475, 0.016721760854125023],
-                                [0.3799999952316284, 0.07769033312797546],
-                                [0.4000000059604645, 0.05286667123436928],
-                                [0.41999998688697815, 0.06575784832239151],
-                                [0.4399999976158142, 0.06603177636861801],
-                                [0.46000000834465027, 0.08197415620088577],
-                                [0.47999998927116394, 0.04486854374408722],
-                                [0.5, 0.05524429678916931],
-                                [0.5199999809265137, 0.04744104668498039],
-                                [0.5400000214576721, 0.10175042599439621],
-                                [0.5600000023841858, 0.0721864104270935],
-                                [0.5799999833106995, 0.11047439277172089],
-                                [0.6000000238418579, 0.01761901192367077],
-                                [0.6200000047683716, 0.06004142761230469],
-                                [0.6399999856948853, 0.07127534598112106],
-                                [0.6600000262260437, 0.015212701633572578],
-                                [0.6800000071525574, 0.06900572776794434],
-                                [0.699999988079071, 0.06317068636417389],
-                                [0.7200000286102295, 0.10776510089635849],
-                                [0.7400000095367432, 0.06674343347549438],
-                                [0.7599999904632568, 0.025850269943475723],
-                                [0.7799999713897705, 0.050115421414375305],
-                                [0.800000011920929, 0.08976565301418304],
-                                [0.8199999928474426, 0.0905345007777214],
-                                [0.8399999737739563, 0.04347631707787514],
-                                [0.8600000143051147, 0.06093103438615799],
-                                [0.8799999952316284, 0.08523860573768616],
-                                [0.8999999761581421, 0.027226582169532776],
-                                [0.9200000166893005, 0.05976299196481705],
-                                [0.9399999976158142, 0.01508877519518137],
-                                [0.9599999785423279, 0.02011191099882126],
-                                [0.9800000190734863, 0.02590486966073513]
-                            ]
-                        }
-                    },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0,
-                        "MTF50": 0,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                },
-                {
-                    "name": "Horizontal_Top",
-                    "location": { "x": 336, "y": 256, "w": 196, "h": 78 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.5133091568,
-                            "MTF50": 0.0352957921,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.036101531237363815],
-                                [0.03999999910593033, 0.02961091697216034],
-                                [0.05999999865889549, 0.020847629755735397],
-                                [0.07999999821186066, 0.043273359537124634],
-                                [0.10000000149011612, 0.022245341911911964],
-                                [0.11999999731779099, 0.035939645022153854],
-                                [0.14000000059604645, 0.036267343908548355],
-                                [0.1599999964237213, 0.029205571860074997],
-                                [0.18000000715255737, 0.047123368829488754],
-                                [0.20000000298023224, 0.05906257405877113],
-                                [0.2199999988079071, 0.03589959815144539],
-                                [0.23999999463558197, 0.052994079887866974],
-                                [0.25999999046325684, 0.08775971829891205],
-                                [0.2800000011920929, 0.07931980490684509],
-                                [0.30000001192092896, 0.09432864934206009],
-                                [0.3199999928474426, 0.09757696092128754],
-                                [0.3400000035762787, 0.04312444478273392],
-                                [0.36000001430511475, 0.08106162399053574],
-                                [0.3799999952316284, 0.03893907740712166],
-                                [0.4000000059604645, 0.04539582133293152],
-                                [0.41999998688697815, 0.047332312911748886],
-                                [0.4399999976158142, 0.08637537807226181],
-                                [0.46000000834465027, 0.03873693570494652],
-                                [0.47999998927116394, 0.024663863703608513],
-                                [0.5, 0.06245888024568558],
-                                [0.5199999809265137, 0.045866142958402634],
-                                [0.5400000214576721, 0.08497225493192673],
-                                [0.5600000023841858, 0.10604982823133469],
-                                [0.5799999833106995, 0.012808435596525669],
-                                [0.6000000238418579, 0.04094456508755684],
-                                [0.6200000047683716, 0.029647221788764],
-                                [0.6399999856948853, 0.08156562596559525],
-                                [0.6600000262260437, 0.030455049127340317],
-                                [0.6800000071525574, 0.057528357952833176],
-                                [0.699999988079071, 0.13820017874240875],
-                                [0.7200000286102295, 0.08078919351100922],
-                                [0.7400000095367432, 0.022999757900834084],
-                                [0.7599999904632568, 0.04380224272608757],
-                                [0.7799999713897705, 0.03755289688706398],
-                                [0.800000011920929, 0.07063831388950348],
-                                [0.8199999928474426, 0.14908255636692047],
-                                [0.8399999737739563, 0.03620906546711922],
-                                [0.8600000143051147, 0.07205435633659363],
-                                [0.8799999952316284, 0.05888192728161812],
-                                [0.8999999761581421, 0.09692823141813278],
-                                [0.9200000166893005, 0.0485064834356308],
-                                [0.9399999976158142, 0.04909706488251686],
-                                [0.9599999785423279, 0.022942103445529938],
-                                [0.9800000190734863, 0.04379364848136902]
-                            ]
-                        },
-                        "G": {
-                            "MTF10": 0.001222205,
-                            "MTF50": 0.0003817657,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.036101531237363815],
-                                [0.03999999910593033, 0.02961091697216034],
-                                [0.05999999865889549, 0.020847629755735397],
-                                [0.07999999821186066, 0.043273359537124634],
-                                [0.10000000149011612, 0.022245341911911964],
-                                [0.11999999731779099, 0.035939645022153854],
-                                [0.14000000059604645, 0.036267343908548355],
-                                [0.1599999964237213, 0.029205571860074997],
-                                [0.18000000715255737, 0.047123368829488754],
-                                [0.20000000298023224, 0.05906257405877113],
-                                [0.2199999988079071, 0.03589959815144539],
-                                [0.23999999463558197, 0.052994079887866974],
-                                [0.25999999046325684, 0.08775971829891205],
-                                [0.2800000011920929, 0.07931980490684509],
-                                [0.30000001192092896, 0.09432864934206009],
-                                [0.3199999928474426, 0.09757696092128754],
-                                [0.3400000035762787, 0.04312444478273392],
-                                [0.36000001430511475, 0.08106162399053574],
-                                [0.3799999952316284, 0.03893907740712166],
-                                [0.4000000059604645, 0.04539582133293152],
-                                [0.41999998688697815, 0.047332312911748886],
-                                [0.4399999976158142, 0.08637537807226181],
-                                [0.46000000834465027, 0.03873693570494652],
-                                [0.47999998927116394, 0.024663863703608513],
-                                [0.5, 0.06245888024568558],
-                                [0.5199999809265137, 0.045866142958402634],
-                                [0.5400000214576721, 0.08497225493192673],
-                                [0.5600000023841858, 0.10604982823133469],
-                                [0.5799999833106995, 0.012808435596525669],
-                                [0.6000000238418579, 0.04094456508755684],
-                                [0.6200000047683716, 0.029647221788764],
-                                [0.6399999856948853, 0.08156562596559525],
-                                [0.6600000262260437, 0.030455049127340317],
-                                [0.6800000071525574, 0.057528357952833176],
-                                [0.699999988079071, 0.13820017874240875],
-                                [0.7200000286102295, 0.08078919351100922],
-                                [0.7400000095367432, 0.022999757900834084],
-                                [0.7599999904632568, 0.04380224272608757],
-                                [0.7799999713897705, 0.03755289688706398],
-                                [0.800000011920929, 0.07063831388950348],
-                                [0.8199999928474426, 0.14908255636692047],
-                                [0.8399999737739563, 0.03620906546711922],
-                                [0.8600000143051147, 0.07205435633659363],
-                                [0.8799999952316284, 0.05888192728161812],
-                                [0.8999999761581421, 0.09692823141813278],
-                                [0.9200000166893005, 0.0485064834356308],
-                                [0.9399999976158142, 0.04909706488251686],
-                                [0.9599999785423279, 0.022942103445529938],
-                                [0.9800000190734863, 0.04379364848136902]
-                            ]
-                        },
-                        "B": {
-                            "MTF10": 0.0012837556,
-                            "MTF50": 0.0003880478,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.036101531237363815],
-                                [0.03999999910593033, 0.02961091697216034],
-                                [0.05999999865889549, 0.020847629755735397],
-                                [0.07999999821186066, 0.043273359537124634],
-                                [0.10000000149011612, 0.022245341911911964],
-                                [0.11999999731779099, 0.035939645022153854],
-                                [0.14000000059604645, 0.036267343908548355],
-                                [0.1599999964237213, 0.029205571860074997],
-                                [0.18000000715255737, 0.047123368829488754],
-                                [0.20000000298023224, 0.05906257405877113],
-                                [0.2199999988079071, 0.03589959815144539],
-                                [0.23999999463558197, 0.052994079887866974],
-                                [0.25999999046325684, 0.08775971829891205],
-                                [0.2800000011920929, 0.07931980490684509],
-                                [0.30000001192092896, 0.09432864934206009],
-                                [0.3199999928474426, 0.09757696092128754],
-                                [0.3400000035762787, 0.04312444478273392],
-                                [0.36000001430511475, 0.08106162399053574],
-                                [0.3799999952316284, 0.03893907740712166],
-                                [0.4000000059604645, 0.04539582133293152],
-                                [0.41999998688697815, 0.047332312911748886],
-                                [0.4399999976158142, 0.08637537807226181],
-                                [0.46000000834465027, 0.03873693570494652],
-                                [0.47999998927116394, 0.024663863703608513],
-                                [0.5, 0.06245888024568558],
-                                [0.5199999809265137, 0.045866142958402634],
-                                [0.5400000214576721, 0.08497225493192673],
-                                [0.5600000023841858, 0.10604982823133469],
-                                [0.5799999833106995, 0.012808435596525669],
-                                [0.6000000238418579, 0.04094456508755684],
-                                [0.6200000047683716, 0.029647221788764],
-                                [0.6399999856948853, 0.08156562596559525],
-                                [0.6600000262260437, 0.030455049127340317],
-                                [0.6800000071525574, 0.057528357952833176],
-                                [0.699999988079071, 0.13820017874240875],
-                                [0.7200000286102295, 0.08078919351100922],
-                                [0.7400000095367432, 0.022999757900834084],
-                                [0.7599999904632568, 0.04380224272608757],
-                                [0.7799999713897705, 0.03755289688706398],
-                                [0.800000011920929, 0.07063831388950348],
-                                [0.8199999928474426, 0.14908255636692047],
-                                [0.8399999737739563, 0.03620906546711922],
-                                [0.8600000143051147, 0.07205435633659363],
-                                [0.8799999952316284, 0.05888192728161812],
-                                [0.8999999761581421, 0.09692823141813278],
-                                [0.9200000166893005, 0.0485064834356308],
-                                [0.9399999976158142, 0.04909706488251686],
-                                [0.9599999785423279, 0.022942103445529938],
-                                [0.9800000190734863, 0.04379364848136902]
-                            ]
-                        },
-                        "Lum": {
-                            "MTF10": 0.0382079687,
-                            "MTF50": 0.002903894,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.036101531237363815],
-                                [0.03999999910593033, 0.02961091697216034],
-                                [0.05999999865889549, 0.020847629755735397],
-                                [0.07999999821186066, 0.043273359537124634],
-                                [0.10000000149011612, 0.022245341911911964],
-                                [0.11999999731779099, 0.035939645022153854],
-                                [0.14000000059604645, 0.036267343908548355],
-                                [0.1599999964237213, 0.029205571860074997],
-                                [0.18000000715255737, 0.047123368829488754],
-                                [0.20000000298023224, 0.05906257405877113],
-                                [0.2199999988079071, 0.03589959815144539],
-                                [0.23999999463558197, 0.052994079887866974],
-                                [0.25999999046325684, 0.08775971829891205],
-                                [0.2800000011920929, 0.07931980490684509],
-                                [0.30000001192092896, 0.09432864934206009],
-                                [0.3199999928474426, 0.09757696092128754],
-                                [0.3400000035762787, 0.04312444478273392],
-                                [0.36000001430511475, 0.08106162399053574],
-                                [0.3799999952316284, 0.03893907740712166],
-                                [0.4000000059604645, 0.04539582133293152],
-                                [0.41999998688697815, 0.047332312911748886],
-                                [0.4399999976158142, 0.08637537807226181],
-                                [0.46000000834465027, 0.03873693570494652],
-                                [0.47999998927116394, 0.024663863703608513],
-                                [0.5, 0.06245888024568558],
-                                [0.5199999809265137, 0.045866142958402634],
-                                [0.5400000214576721, 0.08497225493192673],
-                                [0.5600000023841858, 0.10604982823133469],
-                                [0.5799999833106995, 0.012808435596525669],
-                                [0.6000000238418579, 0.04094456508755684],
-                                [0.6200000047683716, 0.029647221788764],
-                                [0.6399999856948853, 0.08156562596559525],
-                                [0.6600000262260437, 0.030455049127340317],
-                                [0.6800000071525574, 0.057528357952833176],
-                                [0.699999988079071, 0.13820017874240875],
-                                [0.7200000286102295, 0.08078919351100922],
-                                [0.7400000095367432, 0.022999757900834084],
-                                [0.7599999904632568, 0.04380224272608757],
-                                [0.7799999713897705, 0.03755289688706398],
-                                [0.800000011920929, 0.07063831388950348],
-                                [0.8199999928474426, 0.14908255636692047],
-                                [0.8399999737739563, 0.03620906546711922],
-                                [0.8600000143051147, 0.07205435633659363],
-                                [0.8799999952316284, 0.05888192728161812],
-                                [0.8999999761581421, 0.09692823141813278],
-                                [0.9200000166893005, 0.0485064834356308],
-                                [0.9399999976158142, 0.04909706488251686],
-                                [0.9599999785423279, 0.022942103445529938],
-                                [0.9800000190734863, 0.04379364848136902]
-                            ]
-                        }
-                    },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.04,
-                        "MTF50": 0,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                },
-                {
-                    "name": "Horizontal_Bottom",
-                    "location": { "x": 336, "y": 552, "w": 196, "h": 78 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0373787506,
-                            "MTF50": 0.0254517329,
-                            "MTFMAX": 1.1355314255,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.6524565815925598],
-                                [0.03999999910593033, 0.24268120527267456],
-                                [0.05999999865889549, 0.7344776391983032],
-                                [0.07999999821186066, 1.151046633720398],
-                                [0.10000000149011612, 1.2109311819076538],
-                                [0.11999999731779099, 0.6066622138023376],
-                                [0.14000000059604645, 0.4744807183742523],
-                                [0.1599999964237213, 0.9482786059379578],
-                                [0.18000000715255737, 1.0064188241958618],
-                                [0.20000000298023224, 0.8756771087646484],
-                                [0.2199999988079071, 0.45409610867500305],
-                                [0.23999999463558197, 0.24147488176822662],
-                                [0.25999999046325684, 0.11453872919082642],
-                                [0.2800000011920929, 0.47084367275238037],
-                                [0.30000001192092896, 0.8070467114448547],
-                                [0.3199999928474426, 0.6069647669792175],
-                                [0.3400000035762787, 0.3830438256263733],
-                                [0.36000001430511475, 0.3403432369232178],
-                                [0.3799999952316284, 0.5843876600265503],
-                                [0.4000000059604645, 0.32350432872772217],
-                                [0.41999998688697815, 0.27073484659194946],
-                                [0.4399999976158142, 0.35513222217559814],
-                                [0.46000000834465027, 0.32452863454818726],
-                                [0.47999998927116394, 0.6474969387054443],
-                                [0.5, 0.6585527658462524],
-                                [0.5199999809265137, 0.39475879073143005],
-                                [0.5400000214576721, 0.10738809406757355],
-                                [0.5600000023841858, 0.30965667963027954],
-                                [0.5799999833106995, 0.23558145761489868],
-                                [0.6000000238418579, 0.7534486651420593],
-                                [0.6200000047683716, 0.6217094659805298],
-                                [0.6399999856948853, 0.36585310101509094],
-                                [0.6600000262260437, 0.5049942135810852],
-                                [0.6800000071525574, 0.7080144286155701],
-                                [0.699999988079071, 0.6351953148841858],
-                                [0.7200000286102295, 0.17105422914028168],
-                                [0.7400000095367432, 0.27899864315986633],
-                                [0.7599999904632568, 0.2815665602684021],
-                                [0.7799999713897705, 0.6890900731086731],
-                                [0.800000011920929, 0.8754215240478516],
-                                [0.8199999928474426, 0.7409466505050659],
-                                [0.8399999737739563, 0.3489744961261749],
-                                [0.8600000143051147, 0.450695276260376],
-                                [0.8799999952316284, 1.0995607376098633],
-                                [0.8999999761581421, 1.1021534204483032],
-                                [0.9200000166893005, 0.4932698607444763],
-                                [0.9399999976158142, 0.16627119481563568],
-                                [0.9599999785423279, 0.7234772443771362],
-                                [0.9800000190734863, 1.0300438404083252]
-                            ]
-                        },
-                        "G": {
-                            "MTF10": 0.9374929584,
-                            "MTF50": 0.0280583183,
-                            "MTFMAX": 1.124102354,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.6524565815925598],
-                                [0.03999999910593033, 0.24268120527267456],
-                                [0.05999999865889549, 0.7344776391983032],
-                                [0.07999999821186066, 1.151046633720398],
-                                [0.10000000149011612, 1.2109311819076538],
-                                [0.11999999731779099, 0.6066622138023376],
-                                [0.14000000059604645, 0.4744807183742523],
-                                [0.1599999964237213, 0.9482786059379578],
-                                [0.18000000715255737, 1.0064188241958618],
-                                [0.20000000298023224, 0.8756771087646484],
-                                [0.2199999988079071, 0.45409610867500305],
-                                [0.23999999463558197, 0.24147488176822662],
-                                [0.25999999046325684, 0.11453872919082642],
-                                [0.2800000011920929, 0.47084367275238037],
-                                [0.30000001192092896, 0.8070467114448547],
-                                [0.3199999928474426, 0.6069647669792175],
-                                [0.3400000035762787, 0.3830438256263733],
-                                [0.36000001430511475, 0.3403432369232178],
-                                [0.3799999952316284, 0.5843876600265503],
-                                [0.4000000059604645, 0.32350432872772217],
-                                [0.41999998688697815, 0.27073484659194946],
-                                [0.4399999976158142, 0.35513222217559814],
-                                [0.46000000834465027, 0.32452863454818726],
-                                [0.47999998927116394, 0.6474969387054443],
-                                [0.5, 0.6585527658462524],
-                                [0.5199999809265137, 0.39475879073143005],
-                                [0.5400000214576721, 0.10738809406757355],
-                                [0.5600000023841858, 0.30965667963027954],
-                                [0.5799999833106995, 0.23558145761489868],
-                                [0.6000000238418579, 0.7534486651420593],
-                                [0.6200000047683716, 0.6217094659805298],
-                                [0.6399999856948853, 0.36585310101509094],
-                                [0.6600000262260437, 0.5049942135810852],
-                                [0.6800000071525574, 0.7080144286155701],
-                                [0.699999988079071, 0.6351953148841858],
-                                [0.7200000286102295, 0.17105422914028168],
-                                [0.7400000095367432, 0.27899864315986633],
-                                [0.7599999904632568, 0.2815665602684021],
-                                [0.7799999713897705, 0.6890900731086731],
-                                [0.800000011920929, 0.8754215240478516],
-                                [0.8199999928474426, 0.7409466505050659],
-                                [0.8399999737739563, 0.3489744961261749],
-                                [0.8600000143051147, 0.450695276260376],
-                                [0.8799999952316284, 1.0995607376098633],
-                                [0.8999999761581421, 1.1021534204483032],
-                                [0.9200000166893005, 0.4932698607444763],
-                                [0.9399999976158142, 0.16627119481563568],
-                                [0.9599999785423279, 0.7234772443771362],
-                                [0.9800000190734863, 1.0300438404083252]
-                            ]
-                        },
-                        "B": {
-                            "MTF10": 0.2610186847,
-                            "MTF50": 0.0254658925,
-                            "MTFMAX": 1.253357172,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.6524565815925598],
-                                [0.03999999910593033, 0.24268120527267456],
-                                [0.05999999865889549, 0.7344776391983032],
-                                [0.07999999821186066, 1.151046633720398],
-                                [0.10000000149011612, 1.2109311819076538],
-                                [0.11999999731779099, 0.6066622138023376],
-                                [0.14000000059604645, 0.4744807183742523],
-                                [0.1599999964237213, 0.9482786059379578],
-                                [0.18000000715255737, 1.0064188241958618],
-                                [0.20000000298023224, 0.8756771087646484],
-                                [0.2199999988079071, 0.45409610867500305],
-                                [0.23999999463558197, 0.24147488176822662],
-                                [0.25999999046325684, 0.11453872919082642],
-                                [0.2800000011920929, 0.47084367275238037],
-                                [0.30000001192092896, 0.8070467114448547],
-                                [0.3199999928474426, 0.6069647669792175],
-                                [0.3400000035762787, 0.3830438256263733],
-                                [0.36000001430511475, 0.3403432369232178],
-                                [0.3799999952316284, 0.5843876600265503],
-                                [0.4000000059604645, 0.32350432872772217],
-                                [0.41999998688697815, 0.27073484659194946],
-                                [0.4399999976158142, 0.35513222217559814],
-                                [0.46000000834465027, 0.32452863454818726],
-                                [0.47999998927116394, 0.6474969387054443],
-                                [0.5, 0.6585527658462524],
-                                [0.5199999809265137, 0.39475879073143005],
-                                [0.5400000214576721, 0.10738809406757355],
-                                [0.5600000023841858, 0.30965667963027954],
-                                [0.5799999833106995, 0.23558145761489868],
-                                [0.6000000238418579, 0.7534486651420593],
-                                [0.6200000047683716, 0.6217094659805298],
-                                [0.6399999856948853, 0.36585310101509094],
-                                [0.6600000262260437, 0.5049942135810852],
-                                [0.6800000071525574, 0.7080144286155701],
-                                [0.699999988079071, 0.6351953148841858],
-                                [0.7200000286102295, 0.17105422914028168],
-                                [0.7400000095367432, 0.27899864315986633],
-                                [0.7599999904632568, 0.2815665602684021],
-                                [0.7799999713897705, 0.6890900731086731],
-                                [0.800000011920929, 0.8754215240478516],
-                                [0.8199999928474426, 0.7409466505050659],
-                                [0.8399999737739563, 0.3489744961261749],
-                                [0.8600000143051147, 0.450695276260376],
-                                [0.8799999952316284, 1.0995607376098633],
-                                [0.8999999761581421, 1.1021534204483032],
-                                [0.9200000166893005, 0.4932698607444763],
-                                [0.9399999976158142, 0.16627119481563568],
-                                [0.9599999785423279, 0.7234772443771362],
-                                [0.9800000190734863, 1.0300438404083252]
-                            ]
-                        },
-                        "Lum": {
-                            "MTF10": 0.7286862867,
-                            "MTF50": 0.0273189731,
-                            "MTFMAX": 1.1524071064,
-                            "MTF_Curve": [
-                                [0, 1],
-                                [0.019999999552965164, 0.6524565815925598],
-                                [0.03999999910593033, 0.24268120527267456],
-                                [0.05999999865889549, 0.7344776391983032],
-                                [0.07999999821186066, 1.151046633720398],
-                                [0.10000000149011612, 1.2109311819076538],
-                                [0.11999999731779099, 0.6066622138023376],
-                                [0.14000000059604645, 0.4744807183742523],
-                                [0.1599999964237213, 0.9482786059379578],
-                                [0.18000000715255737, 1.0064188241958618],
-                                [0.20000000298023224, 0.8756771087646484],
-                                [0.2199999988079071, 0.45409610867500305],
-                                [0.23999999463558197, 0.24147488176822662],
-                                [0.25999999046325684, 0.11453872919082642],
-                                [0.2800000011920929, 0.47084367275238037],
-                                [0.30000001192092896, 0.8070467114448547],
-                                [0.3199999928474426, 0.6069647669792175],
-                                [0.3400000035762787, 0.3830438256263733],
-                                [0.36000001430511475, 0.3403432369232178],
-                                [0.3799999952316284, 0.5843876600265503],
-                                [0.4000000059604645, 0.32350432872772217],
-                                [0.41999998688697815, 0.27073484659194946],
-                                [0.4399999976158142, 0.35513222217559814],
-                                [0.46000000834465027, 0.32452863454818726],
-                                [0.47999998927116394, 0.6474969387054443],
-                                [0.5, 0.6585527658462524],
-                                [0.5199999809265137, 0.39475879073143005],
-                                [0.5400000214576721, 0.10738809406757355],
-                                [0.5600000023841858, 0.30965667963027954],
-                                [0.5799999833106995, 0.23558145761489868],
-                                [0.6000000238418579, 0.7534486651420593],
-                                [0.6200000047683716, 0.6217094659805298],
-                                [0.6399999856948853, 0.36585310101509094],
-                                [0.6600000262260437, 0.5049942135810852],
-                                [0.6800000071525574, 0.7080144286155701],
-                                [0.699999988079071, 0.6351953148841858],
-                                [0.7200000286102295, 0.17105422914028168],
-                                [0.7400000095367432, 0.27899864315986633],
-                                [0.7599999904632568, 0.2815665602684021],
-                                [0.7799999713897705, 0.6890900731086731],
-                                [0.800000011920929, 0.8754215240478516],
-                                [0.8199999928474426, 0.7409466505050659],
-                                [0.8399999737739563, 0.3489744961261749],
-                                [0.8600000143051147, 0.450695276260376],
-                                [0.8799999952316284, 1.0995607376098633],
-                                [0.8999999761581421, 1.1021534204483032],
-                                [0.9200000166893005, 0.4932698607444763],
-                                [0.9399999976158142, 0.16627119481563568],
-                                [0.9599999785423279, 0.7234772443771362],
-                                [0.9800000190734863, 1.0300438404083252]
-                            ]
-                        }
-                    },
-                    "validity": { "valid": false },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.73,
-                        "MTF50": 0.03,
-                        "MTFMAX": 1.15,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                }
-            ],
-            "targetType": "QA_62",
-            "validity": {
-                "valid": false,
-                "message": ["Contains unsharp features"],
-                "invalidPatch": 0
+            targetType: 'SCAN_REFERENCE_CHART_STANDARD',
+            validity: { valid: true, invalidPatch: 0 },
+            assessed: {
+                meanDeltaE76: 8.43,
+                meanDeltaE94T: 6.59,
+                meanDeltaE94G: 6.59,
+                meanDeltaE2000: 5.46,
+                meanDeltaECMC: 5.49,
+                meanDeltaL: 5.35,
+                meanStdDev: 3.19,
+                SEFF: 0,
+                MTF10: 0.12,
+                MTF50: 0.03,
+                MTFMAX: 1,
+                MTFHSF: 0,
+                CMR: 0,
             },
-            "assessed": {
-                "meanDeltaE76": 4.98,
-                "meanDeltaE94T": 4.83,
-                "meanDeltaE94G": 4.83,
-                "meanDeltaE2000": 4.29,
-                "meanDeltaECMC": 4.39,
-                "meanDeltaL": 1.48,
-                "meanStdDev": 1.74,
-                "SEFF": 0,
-                "MTF10": 0.45,
-                "MTF50": 0.26,
-                "MTFMAX": 1.04,
-                "MTFHSF": 0,
-                "CMR": 0
-            }
         },
         {
-            "name": "Applied Image QA-62",
-            "type": "QA_62",
-            "location": { "x": 569, "y": 6785, "w": 871, "h": 1111, "r": 0 },
-            "observed": { "ppi": 300.37 },
-            "colorPatches": [
+            name: 'KODAK Gray Scale',
+            type: 'Q13',
+            location: { x: 4593, y: 7229, w: 2351, h: 693, r: 0 },
+            observed: { ppi: 0 },
+            colorPatches: [],
+            edgePatches: [],
+            targetType: 'Q13',
+            validity: { valid: true, invalidPatch: 0 },
+            assessed: {
+                meanDeltaE76: null,
+                meanDeltaE94T: null,
+                meanDeltaE94G: null,
+                meanDeltaE2000: null,
+                meanDeltaECMC: null,
+                meanDeltaL: null,
+                meanStdDev: null,
+            },
+        },
+        {
+            name: 'Applied Image QA-62',
+            type: 'QA_62',
+            location: { x: 10165, y: 486, w: 871, h: 1111, r: 0 },
+            observed: { ppi: 298.47 },
+            colorPatches: [
                 {
-                    "name": "1",
-                    "location": { "x": 120, "y": 146, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [245.49, 242.36, 238.63],
-                        "Lab": [95.33, 1.49, 2.8],
-                        "mean": 242.89,
-                        "stddev": 1.25,
-                        "snr": 193.85
+                    name: '1',
+                    location: { x: 123, y: 147, w: 48, h: 48 },
+                    observed: {
+                        RGB: [243.64, 240.67, 237.46],
+                        Lab: [94.66, 1.45, 2.47],
+                        mean: 241.21,
+                        stddev: 1.06,
+                        snr: 227.25,
                     },
-                    "assessed": {
-                        "deltaE76": 3.4,
-                        "deltaE94T": 3.16,
-                        "deltaE94G": 3.16,
-                        "deltaE2000": 3.2,
-                        "deltaECMC": 4.18,
-                        "deltaL": -0.67
+                    assessed: {
+                        deltaE76: 3.29,
+                        deltaE94T: 3.11,
+                        deltaE94G: 3.11,
+                        deltaE2000: 2.98,
+                        deltaECMC: 3.85,
+                        deltaL: -1.34,
                     },
-                    "reference": { "Lab": [96, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [96, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "2",
-                    "location": { "x": 233, "y": 146, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [232.36, 228.64, 225.19],
-                        "Lab": [90.03, 1.87, 2.77],
-                        "mean": 229.38,
-                        "stddev": 1.1,
-                        "snr": 208.85
+                    name: '2',
+                    location: { x: 234, y: 147, w: 48, h: 48 },
+                    observed: {
+                        RGB: [229.41, 226.11, 222.89],
+                        Lab: [88.99, 1.64, 2.55],
+                        mean: 226.75,
+                        stddev: 1.21,
+                        snr: 187.18,
                     },
-                    "assessed": {
-                        "deltaE76": 4.02,
-                        "deltaE94T": 3.79,
-                        "deltaE94G": 3.79,
-                        "deltaE2000": 3.53,
-                        "deltaECMC": 4.26,
-                        "deltaL": -2.17
+                    assessed: {
+                        deltaE76: 4.47,
+                        deltaE94T: 4.32,
+                        deltaE94G: 4.32,
+                        deltaE2000: 3.6,
+                        deltaECMC: 4.09,
+                        deltaL: -3.21,
                     },
-                    "reference": { "Lab": [92.2, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [92.2, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "3",
-                    "location": { "x": 346, "y": 146, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [222.99, 219.02, 215.38],
-                        "Lab": [86.29, 2, 2.94],
-                        "mean": 219.81,
-                        "stddev": 1.06,
-                        "snr": 207.37
+                    name: '3',
+                    location: { x: 345, y: 147, w: 48, h: 48 },
+                    observed: {
+                        RGB: [218.98, 215.93, 211.77],
+                        Lab: [84.94, 1.4, 3.03],
+                        mean: 216.39,
+                        stddev: 1.23,
+                        snr: 176.12,
                     },
-                    "assessed": {
-                        "deltaE76": 4.49,
-                        "deltaE94T": 4.24,
-                        "deltaE94G": 4.24,
-                        "deltaE2000": 3.87,
-                        "deltaECMC": 4.49,
-                        "deltaL": -2.71
+                    assessed: {
+                        deltaE76: 5.39,
+                        deltaE94T: 5.21,
+                        deltaE94G: 5.21,
+                        deltaE2000: 4.26,
+                        deltaECMC: 4.64,
+                        deltaL: -4.06,
                     },
-                    "reference": { "Lab": [89, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [89, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "4",
-                    "location": { "x": 459, "y": 146, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [203.44, 199.02, 193.84],
-                        "Lab": [78.46, 2.12, 3.92],
-                        "mean": 199.78,
-                        "stddev": 1.22,
-                        "snr": 164.32
+                    name: '4',
+                    location: { x: 456, y: 147, w: 48, h: 48 },
+                    observed: {
+                        RGB: [198.63, 194.87, 190.56],
+                        Lab: [76.77, 1.8, 3.28],
+                        mean: 195.53,
+                        stddev: 1.33,
+                        snr: 146.63,
                     },
-                    "assessed": {
-                        "deltaE76": 5.59,
-                        "deltaE94T": 5.17,
-                        "deltaE94G": 5.17,
-                        "deltaE2000": 4.85,
-                        "deltaECMC": 5.47,
-                        "deltaL": -3.24
+                    assessed: {
+                        deltaE76: 6.26,
+                        deltaE94T: 6.05,
+                        deltaE94G: 6.05,
+                        deltaE2000: 5.03,
+                        deltaECMC: 5.04,
+                        deltaL: -4.93,
                     },
-                    "reference": { "Lab": [81.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [81.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "5",
-                    "location": { "x": 572, "y": 146, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [180.68, 176.23, 171.05],
-                        "Lab": [69.52, 2.15, 3.92],
-                        "mean": 176.99,
-                        "stddev": 1.28,
-                        "snr": 138.1
+                    name: '5',
+                    location: { x: 567, y: 147, w: 48, h: 48 },
+                    observed: {
+                        RGB: [178.19, 174.83, 169.5],
+                        Lab: [68.83, 1.48, 3.76],
+                        mean: 175.25,
+                        stddev: 1.34,
+                        snr: 130.62,
                     },
-                    "assessed": {
-                        "deltaE76": 5.35,
-                        "deltaE94T": 4.9,
-                        "deltaE94G": 4.9,
-                        "deltaE2000": 4.8,
-                        "deltaECMC": 5.45,
-                        "deltaL": -2.78
+                    assessed: {
+                        deltaE76: 5.52,
+                        deltaE94T: 5.19,
+                        deltaE94G: 5.19,
+                        deltaE2000: 4.82,
+                        deltaECMC: 5.3,
+                        deltaL: -3.47,
                     },
-                    "reference": { "Lab": [72.3, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [72.3, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "6",
-                    "location": { "x": 685, "y": 146, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [168.95, 164.83, 159.42],
-                        "Lab": [65, 1.93, 3.98],
-                        "mean": 165.47,
-                        "stddev": 1.26,
-                        "snr": 131.23
+                    name: '6',
+                    location: { x: 678, y: 147, w: 48, h: 48 },
+                    observed: {
+                        RGB: [166.26, 163.27, 157.73],
+                        Lab: [64.24, 1.23, 3.8],
+                        mean: 163.56,
+                        stddev: 1.32,
+                        snr: 124.28,
                     },
-                    "assessed": {
-                        "deltaE76": 4.82,
-                        "deltaE94T": 4.32,
-                        "deltaE94G": 4.32,
-                        "deltaE2000": 4.46,
-                        "deltaECMC": 5.4,
-                        "deltaL": -1.5
+                    assessed: {
+                        deltaE76: 4.86,
+                        deltaE94T: 4.49,
+                        deltaE94G: 4.49,
+                        deltaE2000: 4.43,
+                        deltaECMC: 5.24,
+                        deltaL: -2.26,
                     },
-                    "reference": { "Lab": [66.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [66.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "7",
-                    "location": { "x": 685, "y": 259, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [164.69, 161.27, 155.09],
-                        "Lab": [63.5, 1.43, 4.26],
-                        "mean": 161.61,
-                        "stddev": 1.32,
-                        "snr": 122.35
+                    name: '7',
+                    location: { x: 678, y: 258, w: 48, h: 48 },
+                    observed: {
+                        RGB: [162.17, 159.34, 153.54],
+                        Lab: [62.68, 1.1, 3.91],
+                        mean: 159.55,
+                        stddev: 1.52,
+                        snr: 104.73,
                     },
-                    "assessed": {
-                        "deltaE76": 4.82,
-                        "deltaE94T": 4.28,
-                        "deltaE94G": 4.28,
-                        "deltaE2000": 4.46,
-                        "deltaECMC": 5.59,
-                        "deltaL": -0.6
+                    assessed: {
+                        deltaE76: 4.63,
+                        deltaE94T: 4.22,
+                        deltaE94G: 4.22,
+                        deltaE2000: 4.29,
+                        deltaECMC: 5.3,
+                        deltaL: -1.42,
                     },
-                    "reference": { "Lab": [64.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [64.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "8",
-                    "location": { "x": 685, "y": 372, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [156.86, 153.25, 148.2],
-                        "Lab": [60.41, 1.65, 3.66],
-                        "mean": 153.78,
-                        "stddev": 1.42,
-                        "snr": 108.48
+                    name: '8',
+                    location: { x: 678, y: 369, w: 48, h: 48 },
+                    observed: {
+                        RGB: [154.67, 151.21, 146.75],
+                        Lab: [59.61, 1.62, 3.29],
+                        mean: 151.76,
+                        stddev: 1.43,
+                        snr: 105.76,
                     },
-                    "assessed": {
-                        "deltaE76": 4.25,
-                        "deltaE94T": 3.83,
-                        "deltaE94G": 3.83,
-                        "deltaE2000": 3.99,
-                        "deltaECMC": 5.04,
-                        "deltaL": 0.61
+                    assessed: {
+                        deltaE76: 3.85,
+                        deltaE94T: 3.5,
+                        deltaE94G: 3.5,
+                        deltaE2000: 3.63,
+                        deltaECMC: 4.68,
+                        deltaL: -0.19,
                     },
-                    "reference": { "Lab": [59.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [59.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "9",
-                    "location": { "x": 685, "y": 485, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [149, 145.92, 140.33],
-                        "Lab": [57.45, 1.27, 3.85],
-                        "mean": 146.23,
-                        "stddev": 1.5,
-                        "snr": 97.54
+                    name: '9',
+                    location: { x: 678, y: 480, w: 48, h: 48 },
+                    observed: {
+                        RGB: [147.46, 145.06, 139.67],
+                        Lab: [57.03, 0.89, 3.59],
+                        mean: 145.19,
+                        stddev: 1.47,
+                        snr: 99.04,
                     },
-                    "assessed": {
-                        "deltaE76": 4.63,
-                        "deltaE94T": 4.22,
-                        "deltaE94G": 4.22,
-                        "deltaE2000": 4.32,
-                        "deltaECMC": 5.25,
-                        "deltaL": 1.55
+                    assessed: {
+                        deltaE76: 4.24,
+                        deltaE94T: 3.9,
+                        deltaE94G: 3.9,
+                        deltaE2000: 4,
+                        deltaECMC: 5,
+                        deltaL: 1.13,
                     },
-                    "reference": { "Lab": [55.9, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [55.9, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "10",
-                    "location": { "x": 685, "y": 598, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [142.48, 139.35, 134.88],
-                        "Lab": [54.91, 1.42, 3.23],
-                        "mean": 139.8,
-                        "stddev": 1.52,
-                        "snr": 91.92
+                    name: '10',
+                    location: { x: 678, y: 591, w: 48, h: 48 },
+                    observed: {
+                        RGB: [141.63, 139.1, 134.99],
+                        Lab: [54.75, 1.1, 2.89],
+                        mean: 139.41,
+                        stddev: 1.62,
+                        snr: 86.15,
                     },
-                    "assessed": {
-                        "deltaE76": 4.31,
-                        "deltaE94T": 4.03,
-                        "deltaE94G": 4.03,
-                        "deltaE2000": 4.08,
-                        "deltaECMC": 4.7,
-                        "deltaL": 2.11
+                    assessed: {
+                        deltaE76: 3.91,
+                        deltaE94T: 3.71,
+                        deltaE94G: 3.71,
+                        deltaE2000: 3.73,
+                        deltaECMC: 4.34,
+                        deltaL: 1.95,
                     },
-                    "reference": { "Lab": [52.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [52.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "11",
-                    "location": { "x": 685, "y": 711, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [132.86, 129.84, 126.2],
-                        "Lab": [51.2, 1.44, 2.74],
-                        "mean": 130.35,
-                        "stddev": 1.54,
-                        "snr": 84.6
+                    name: '11',
+                    location: { x: 678, y: 702, w: 48, h: 48 },
+                    observed: {
+                        RGB: [131.14, 128.8, 125.22],
+                        Lab: [50.7, 1.04, 2.54],
+                        mean: 129.11,
+                        stddev: 1.6,
+                        snr: 80.73,
                     },
-                    "assessed": {
-                        "deltaE76": 4.24,
-                        "deltaE94T": 4.06,
-                        "deltaE94G": 4.06,
-                        "deltaE2000": 4.12,
-                        "deltaECMC": 4.28,
-                        "deltaL": 2.7
+                    assessed: {
+                        deltaE76: 3.75,
+                        deltaE94T: 3.61,
+                        deltaE94G: 3.61,
+                        deltaE2000: 3.64,
+                        deltaECMC: 4.02,
+                        deltaL: 2.2,
                     },
-                    "reference": { "Lab": [48.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [48.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "12",
-                    "location": { "x": 572, "y": 711, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [118.26, 115.81, 112.89],
-                        "Lab": [45.64, 1.16, 2.2],
-                        "mean": 116.22,
-                        "stddev": 1.91,
-                        "snr": 60.92
+                    name: '12',
+                    location: { x: 567, y: 702, w: 48, h: 48 },
+                    observed: {
+                        RGB: [117.5, 115.62, 113.06],
+                        Lab: [45.5, 0.86, 1.86],
+                        mean: 115.9,
+                        stddev: 1.96,
+                        snr: 59.26,
                     },
-                    "assessed": {
-                        "deltaE76": 4.07,
-                        "deltaE94T": 3.98,
-                        "deltaE94G": 3.98,
-                        "deltaE2000": 3.85,
-                        "deltaECMC": 3.81,
-                        "deltaL": 3.04
+                    assessed: {
+                        deltaE76: 3.74,
+                        deltaE94T: 3.69,
+                        deltaE94G: 3.69,
+                        deltaE2000: 3.55,
+                        deltaECMC: 3.45,
+                        deltaL: 2.9,
                     },
-                    "reference": { "Lab": [42.6, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [42.6, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "13",
-                    "location": { "x": 459, "y": 711, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [113.75, 111.23, 108.77],
-                        "Lab": [43.87, 1.26, 1.94],
-                        "mean": 111.71,
-                        "stddev": 1.86,
-                        "snr": 59.92
+                    name: '13',
+                    location: { x: 456, y: 702, w: 48, h: 48 },
+                    observed: {
+                        RGB: [111.87, 109.77, 107.71],
+                        Lab: [43.25, 1.05, 1.63],
+                        mean: 110.17,
+                        stddev: 1.7,
+                        snr: 64.77,
                     },
-                    "assessed": {
-                        "deltaE76": 3.93,
-                        "deltaE94T": 3.86,
-                        "deltaE94G": 3.86,
-                        "deltaE2000": 3.66,
-                        "deltaECMC": 3.56,
-                        "deltaL": 3.07
+                    assessed: {
+                        deltaE76: 3.25,
+                        deltaE94T: 3.2,
+                        deltaE94G: 3.2,
+                        deltaE2000: 3.03,
+                        deltaECMC: 3.12,
+                        deltaL: 2.45,
                     },
-                    "reference": { "Lab": [40.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [40.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "14",
-                    "location": { "x": 346, "y": 711, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [108.57, 106.56, 104.46],
-                        "Lab": [41.98, 0.98, 1.63],
-                        "mean": 106.93,
-                        "stddev": 1.84,
-                        "snr": 58.17
+                    name: '14',
+                    location: { x: 345, y: 702, w: 48, h: 48 },
+                    observed: {
+                        RGB: [105.54, 103.97, 101.12],
+                        Lab: [40.89, 0.64, 1.96],
+                        mean: 104.13,
+                        stddev: 1.88,
+                        snr: 55.46,
                     },
-                    "assessed": {
-                        "deltaE76": 3.91,
-                        "deltaE94T": 3.87,
-                        "deltaE94G": 3.87,
-                        "deltaE2000": 3.56,
-                        "deltaECMC": 3.32,
-                        "deltaL": 3.28
+                    assessed: {
+                        deltaE76: 3.31,
+                        deltaE94T: 3.24,
+                        deltaE94G: 3.24,
+                        deltaE2000: 3.11,
+                        deltaECMC: 3.5,
+                        deltaL: 2.19,
                     },
-                    "reference": { "Lab": [38.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [38.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "15",
-                    "location": { "x": 233, "y": 711, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [102.93, 101.36, 98.88],
-                        "Lab": [39.87, 0.69, 1.75],
-                        "mean": 101.56,
-                        "stddev": 2.05,
-                        "snr": 49.55
+                    name: '15',
+                    location: { x: 234, y: 702, w: 48, h: 48 },
+                    observed: {
+                        RGB: [102.21, 101.01, 98.48],
+                        Lab: [39.69, 0.46, 1.7],
+                        mean: 101.09,
+                        stddev: 1.9,
+                        snr: 53.21,
                     },
-                    "assessed": {
-                        "deltaE76": 4.4,
-                        "deltaE94T": 4.36,
-                        "deltaE94G": 4.36,
-                        "deltaE2000": 3.92,
-                        "deltaECMC": 3.64,
-                        "deltaL": 3.77
+                    assessed: {
+                        deltaE76: 4.24,
+                        deltaE94T: 4.21,
+                        deltaE94G: 4.21,
+                        deltaE2000: 3.83,
+                        deltaECMC: 3.61,
+                        deltaL: 3.59,
                     },
-                    "reference": { "Lab": [36.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [36.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "16",
-                    "location": { "x": 120, "y": 711, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [99.15, 97.9, 95.29],
-                        "Lab": [38.47, 0.48, 1.76],
-                        "mean": 97.99,
-                        "stddev": 2.02,
-                        "snr": 48.46
+                    name: '16',
+                    location: { x: 123, y: 702, w: 48, h: 48 },
+                    observed: {
+                        RGB: [100.85, 99.79, 97.41],
+                        Lab: [39.2, 0.39, 1.58],
+                        mean: 99.85,
+                        stddev: 2,
+                        snr: 49.84,
                     },
-                    "assessed": {
-                        "deltaE76": 4.68,
-                        "deltaE94T": 4.65,
-                        "deltaE94G": 4.65,
-                        "deltaE2000": 4.13,
-                        "deltaECMC": 3.82,
-                        "deltaL": 4.07
+                    assessed: {
+                        deltaE76: 5.27,
+                        deltaE94T: 5.24,
+                        deltaE94G: 5.24,
+                        deltaE2000: 4.61,
+                        deltaECMC: 3.9,
+                        deltaL: 4.8,
                     },
-                    "reference": { "Lab": [34.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [34.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "17",
-                    "location": { "x": 120, "y": 598, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [94.46, 92.78, 91.34],
-                        "Lab": [36.55, 0.85, 1.18],
-                        "mean": 93.12,
-                        "stddev": 2.33,
-                        "snr": 40.02
+                    name: '17',
+                    location: { x: 123, y: 591, w: 48, h: 48 },
+                    observed: {
+                        RGB: [96.71, 95.76, 94.28],
+                        Lab: [37.63, 0.42, 1.05],
+                        mean: 95.88,
+                        stddev: 2.27,
+                        snr: 42.15,
                     },
-                    "assessed": {
-                        "deltaE76": 3.93,
-                        "deltaE94T": 3.91,
-                        "deltaE94G": 3.91,
-                        "deltaE2000": 3.35,
-                        "deltaECMC": 3.05,
-                        "deltaL": 3.55
+                    assessed: {
+                        deltaE76: 4.92,
+                        deltaE94T: 4.91,
+                        deltaE94G: 4.91,
+                        deltaE2000: 4.2,
+                        deltaECMC: 3.43,
+                        deltaL: 4.63,
                     },
-                    "reference": { "Lab": [33, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [33, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "18",
-                    "location": { "x": 120, "y": 485, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [88.35, 87.15, 85.74],
-                        "Lab": [34.29, 0.57, 1.06],
-                        "mean": 87.35,
-                        "stddev": 2.18,
-                        "snr": 40.06
+                    name: '18',
+                    location: { x: 123, y: 480, w: 48, h: 48 },
+                    observed: {
+                        RGB: [91.53, 90.65, 89.69],
+                        Lab: [35.63, 0.42, 0.73],
+                        mean: 90.81,
+                        stddev: 2.45,
+                        snr: 37.02,
                     },
-                    "assessed": {
-                        "deltaE76": 5.15,
-                        "deltaE94T": 5.14,
-                        "deltaE94G": 5.14,
-                        "deltaE2000": 4.2,
-                        "deltaECMC": 3.61,
-                        "deltaL": 4.89
+                    assessed: {
+                        deltaE76: 6.38,
+                        deltaE94T: 6.37,
+                        deltaE94G: 6.37,
+                        deltaE2000: 5.18,
+                        deltaECMC: 4,
+                        deltaL: 6.23,
                     },
-                    "reference": { "Lab": [29.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [29.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "19",
-                    "location": { "x": 120, "y": 372, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [78.26, 77.52, 77.06],
-                        "Lab": [30.48, 0.39, 0.42],
-                        "mean": 77.69,
-                        "stddev": 2.37,
-                        "snr": 32.76
+                    name: '19',
+                    location: { x: 123, y: 369, w: 48, h: 48 },
+                    observed: {
+                        RGB: [82.94, 82.32, 82.37],
+                        Lab: [32.36, 0.37, 0.11],
+                        mean: 82.51,
+                        stddev: 2.59,
+                        snr: 31.87,
                     },
-                    "assessed": {
-                        "deltaE76": 6.08,
-                        "deltaE94T": 6.08,
-                        "deltaE94G": 6.08,
-                        "deltaE2000": 4.66,
-                        "deltaECMC": 4.03,
-                        "deltaL": 5.98
+                    assessed: {
+                        deltaE76: 7.91,
+                        deltaE94T: 7.91,
+                        deltaE94G: 7.91,
+                        deltaE2000: 6.07,
+                        deltaECMC: 4.84,
+                        deltaL: 7.86,
                     },
-                    "reference": { "Lab": [24.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [24.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "20",
-                    "location": { "x": 120, "y": 259, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [71.12, 70.36, 70.55],
-                        "Lab": [27.69, 0.48, 0.05],
-                        "mean": 70.61,
-                        "stddev": 2.45,
-                        "snr": 28.78
+                    name: '20',
+                    location: { x: 123, y: 258, w: 48, h: 48 },
+                    observed: {
+                        RGB: [81.25, 80.78, 81.4],
+                        Lab: [31.76, 0.34, -0.25],
+                        mean: 80.99,
+                        stddev: 2.93,
+                        snr: 27.68,
                     },
-                    "assessed": {
-                        "deltaE76": 6.43,
-                        "deltaE94T": 6.43,
-                        "deltaE94G": 6.43,
-                        "deltaE2000": 4.73,
-                        "deltaECMC": 4.34,
-                        "deltaL": 6.39
+                    assessed: {
+                        deltaE76: 10.48,
+                        deltaE94T: 10.48,
+                        deltaE94G: 10.48,
+                        deltaE2000: 7.83,
+                        deltaECMC: 6.36,
+                        deltaL: 10.46,
                     },
-                    "reference": { "Lab": [21.3, 1, -0.5] },
-                    "validity": { "valid": true }
-                }
+                    reference: { Lab: [21.3, 1, -0.5] },
+                    validity: { valid: true },
+                },
             ],
-            "edgePatches": [
+            edgePatches: [
                 {
-                    "name": "Vertical_Left",
-                    "location": { "x": 244, "y": 341, "w": 80, "h": 200 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0251600359,
-                            "MTF50": 0.0072686135,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Left',
+                    location: { x: 247, y: 345, w: 78, h: 196 },
+                    observed: {
+                        R: {
+                            MTF10: 1.0112500428,
+                            MTF50: 1.0062500231,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.9999998807907104],
+                                [0.03999999910593033, 0.9999998807907104],
+                                [0.05999999865889549, 0.9999998807907104],
+                                [0.07999999821186066, 0.9999998807907104],
+                                [0.10000000149011612, 0.9999998807907104],
+                                [0.11999999731779099, 0.9999998807907104],
+                                [0.14000000059604645, 0.9999998807907104],
+                                [0.1599999964237213, 0.9999998807907104],
+                                [0.18000000715255737, 0.9999998807907104],
+                                [0.20000000298023224, 0.9999998807907104],
+                                [0.2199999988079071, 0.9999998807907104],
+                                [0.23999999463558197, 0.9999998807907104],
+                                [0.25999999046325684, 0.9999998807907104],
+                                [0.2800000011920929, 0.9999998807907104],
+                                [0.30000001192092896, 0.9999998807907104],
+                                [0.3199999928474426, 0.9999998807907104],
+                                [0.3400000035762787, 0.9999998807907104],
+                                [0.36000001430511475, 0.9999998807907104],
+                                [0.3799999952316284, 0.9999998807907104],
+                                [0.4000000059604645, 0.9999998807907104],
+                                [0.41999998688697815, 0.9999998807907104],
+                                [0.4399999976158142, 0.9999998807907104],
+                                [0.46000000834465027, 0.9999998807907104],
+                                [0.47999998927116394, 0.9999998807907104],
+                                [0.5, 0.9999998807907104],
+                                [0.5199999809265137, 0.9999998807907104],
+                                [0.5400000214576721, 0.9999998807907104],
+                                [0.5600000023841858, 0.9999998807907104],
+                                [0.5799999833106995, 0.9999998807907104],
+                                [0.6000000238418579, 0.9999998807907104],
+                                [0.6200000047683716, 0.9999998807907104],
+                                [0.6399999856948853, 0.9999998807907104],
+                                [0.6600000262260437, 0.9999998807907104],
+                                [0.6800000071525574, 0.9999998807907104],
+                                [0.699999988079071, 0.9999998807907104],
+                                [0.7200000286102295, 0.9999998807907104],
+                                [0.7400000095367432, 0.9999998807907104],
+                                [0.7599999904632568, 0.9999998807907104],
+                                [0.7799999713897705, 0.9999998807907104],
+                                [0.800000011920929, 0.9999998807907104],
+                                [0.8199999928474426, 0.9999998807907104],
+                                [0.8399999737739563, 0.9999998807907104],
+                                [0.8600000143051147, 0.9999998807907104],
+                                [0.8799999952316284, 0.9999998807907104],
+                                [0.8999999761581421, 0.9999998807907104],
+                                [0.9200000166893005, 0.9999998807907104],
+                                [0.9399999976158142, 0.9999998807907104],
+                                [0.9599999785423279, 0.9999998807907104],
+                                [0.9800000190734863, 0.9999998807907104],
+                            ],
+                        },
+                        G: {
+                            MTF10: 1.0112500428,
+                            MTF50: 1.0062500231,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.9999998807907104],
+                                [0.03999999910593033, 0.9999998807907104],
+                                [0.05999999865889549, 0.9999998807907104],
+                                [0.07999999821186066, 0.9999998807907104],
+                                [0.10000000149011612, 0.9999998807907104],
+                                [0.11999999731779099, 0.9999998807907104],
+                                [0.14000000059604645, 0.9999998807907104],
+                                [0.1599999964237213, 0.9999998807907104],
+                                [0.18000000715255737, 0.9999998807907104],
+                                [0.20000000298023224, 0.9999998807907104],
+                                [0.2199999988079071, 0.9999998807907104],
+                                [0.23999999463558197, 0.9999998807907104],
+                                [0.25999999046325684, 0.9999998807907104],
+                                [0.2800000011920929, 0.9999998807907104],
+                                [0.30000001192092896, 0.9999998807907104],
+                                [0.3199999928474426, 0.9999998807907104],
+                                [0.3400000035762787, 0.9999998807907104],
+                                [0.36000001430511475, 0.9999998807907104],
+                                [0.3799999952316284, 0.9999998807907104],
+                                [0.4000000059604645, 0.9999998807907104],
+                                [0.41999998688697815, 0.9999998807907104],
+                                [0.4399999976158142, 0.9999998807907104],
+                                [0.46000000834465027, 0.9999998807907104],
+                                [0.47999998927116394, 0.9999998807907104],
+                                [0.5, 0.9999998807907104],
+                                [0.5199999809265137, 0.9999998807907104],
+                                [0.5400000214576721, 0.9999998807907104],
+                                [0.5600000023841858, 0.9999998807907104],
+                                [0.5799999833106995, 0.9999998807907104],
+                                [0.6000000238418579, 0.9999998807907104],
+                                [0.6200000047683716, 0.9999998807907104],
+                                [0.6399999856948853, 0.9999998807907104],
+                                [0.6600000262260437, 0.9999998807907104],
+                                [0.6800000071525574, 0.9999998807907104],
+                                [0.699999988079071, 0.9999998807907104],
+                                [0.7200000286102295, 0.9999998807907104],
+                                [0.7400000095367432, 0.9999998807907104],
+                                [0.7599999904632568, 0.9999998807907104],
+                                [0.7799999713897705, 0.9999998807907104],
+                                [0.800000011920929, 0.9999998807907104],
+                                [0.8199999928474426, 0.9999998807907104],
+                                [0.8399999737739563, 0.9999998807907104],
+                                [0.8600000143051147, 0.9999998807907104],
+                                [0.8799999952316284, 0.9999998807907104],
+                                [0.8999999761581421, 0.9999998807907104],
+                                [0.9200000166893005, 0.9999998807907104],
+                                [0.9399999976158142, 0.9999998807907104],
+                                [0.9599999785423279, 0.9999998807907104],
+                                [0.9800000190734863, 0.9999998807907104],
+                            ],
+                        },
+                        B: {
+                            MTF10: 1.0112500428,
+                            MTF50: 1.0062500231,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.9999998807907104],
+                                [0.03999999910593033, 0.9999998807907104],
+                                [0.05999999865889549, 0.9999998807907104],
+                                [0.07999999821186066, 0.9999998807907104],
+                                [0.10000000149011612, 0.9999998807907104],
+                                [0.11999999731779099, 0.9999998807907104],
+                                [0.14000000059604645, 0.9999998807907104],
+                                [0.1599999964237213, 0.9999998807907104],
+                                [0.18000000715255737, 0.9999998807907104],
+                                [0.20000000298023224, 0.9999998807907104],
+                                [0.2199999988079071, 0.9999998807907104],
+                                [0.23999999463558197, 0.9999998807907104],
+                                [0.25999999046325684, 0.9999998807907104],
+                                [0.2800000011920929, 0.9999998807907104],
+                                [0.30000001192092896, 0.9999998807907104],
+                                [0.3199999928474426, 0.9999998807907104],
+                                [0.3400000035762787, 0.9999998807907104],
+                                [0.36000001430511475, 0.9999998807907104],
+                                [0.3799999952316284, 0.9999998807907104],
+                                [0.4000000059604645, 0.9999998807907104],
+                                [0.41999998688697815, 0.9999998807907104],
+                                [0.4399999976158142, 0.9999998807907104],
+                                [0.46000000834465027, 0.9999998807907104],
+                                [0.47999998927116394, 0.9999998807907104],
+                                [0.5, 0.9999998807907104],
+                                [0.5199999809265137, 0.9999998807907104],
+                                [0.5400000214576721, 0.9999998807907104],
+                                [0.5600000023841858, 0.9999998807907104],
+                                [0.5799999833106995, 0.9999998807907104],
+                                [0.6000000238418579, 0.9999998807907104],
+                                [0.6200000047683716, 0.9999998807907104],
+                                [0.6399999856948853, 0.9999998807907104],
+                                [0.6600000262260437, 0.9999998807907104],
+                                [0.6800000071525574, 0.9999998807907104],
+                                [0.699999988079071, 0.9999998807907104],
+                                [0.7200000286102295, 0.9999998807907104],
+                                [0.7400000095367432, 0.9999998807907104],
+                                [0.7599999904632568, 0.9999998807907104],
+                                [0.7799999713897705, 0.9999998807907104],
+                                [0.800000011920929, 0.9999998807907104],
+                                [0.8199999928474426, 0.9999998807907104],
+                                [0.8399999737739563, 0.9999998807907104],
+                                [0.8600000143051147, 0.9999998807907104],
+                                [0.8799999952316284, 0.9999998807907104],
+                                [0.8999999761581421, 0.9999998807907104],
+                                [0.9200000166893005, 0.9999998807907104],
+                                [0.9399999976158142, 0.9999998807907104],
+                                [0.9599999785423279, 0.9999998807907104],
+                                [0.9800000190734863, 0.9999998807907104],
+                            ],
+                        },
+                        Lum: {
+                            MTF10: 1.0112500428,
+                            MTF50: 1.0062500231,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.9999998807907104],
+                                [0.03999999910593033, 0.9999998807907104],
+                                [0.05999999865889549, 0.9999998807907104],
+                                [0.07999999821186066, 0.9999998807907104],
+                                [0.10000000149011612, 0.9999998807907104],
+                                [0.11999999731779099, 0.9999998807907104],
+                                [0.14000000059604645, 0.9999998807907104],
+                                [0.1599999964237213, 0.9999998807907104],
+                                [0.18000000715255737, 0.9999998807907104],
+                                [0.20000000298023224, 0.9999998807907104],
+                                [0.2199999988079071, 0.9999998807907104],
+                                [0.23999999463558197, 0.9999998807907104],
+                                [0.25999999046325684, 0.9999998807907104],
+                                [0.2800000011920929, 0.9999998807907104],
+                                [0.30000001192092896, 0.9999998807907104],
+                                [0.3199999928474426, 0.9999998807907104],
+                                [0.3400000035762787, 0.9999998807907104],
+                                [0.36000001430511475, 0.9999998807907104],
+                                [0.3799999952316284, 0.9999998807907104],
+                                [0.4000000059604645, 0.9999998807907104],
+                                [0.41999998688697815, 0.9999998807907104],
+                                [0.4399999976158142, 0.9999998807907104],
+                                [0.46000000834465027, 0.9999998807907104],
+                                [0.47999998927116394, 0.9999998807907104],
+                                [0.5, 0.9999998807907104],
+                                [0.5199999809265137, 0.9999998807907104],
+                                [0.5400000214576721, 0.9999998807907104],
+                                [0.5600000023841858, 0.9999998807907104],
+                                [0.5799999833106995, 0.9999998807907104],
+                                [0.6000000238418579, 0.9999998807907104],
+                                [0.6200000047683716, 0.9999998807907104],
+                                [0.6399999856948853, 0.9999998807907104],
+                                [0.6600000262260437, 0.9999998807907104],
+                                [0.6800000071525574, 0.9999998807907104],
+                                [0.699999988079071, 0.9999998807907104],
+                                [0.7200000286102295, 0.9999998807907104],
+                                [0.7400000095367432, 0.9999998807907104],
+                                [0.7599999904632568, 0.9999998807907104],
+                                [0.7799999713897705, 0.9999998807907104],
+                                [0.800000011920929, 0.9999998807907104],
+                                [0.8199999928474426, 0.9999998807907104],
+                                [0.8399999737739563, 0.9999998807907104],
+                                [0.8600000143051147, 0.9999998807907104],
+                                [0.8799999952316284, 0.9999998807907104],
+                                [0.8999999761581421, 0.9999998807907104],
+                                [0.9200000166893005, 0.9999998807907104],
+                                [0.9399999976158142, 0.9999998807907104],
+                                [0.9599999785423279, 0.9999998807907104],
+                                [0.9800000190734863, 0.9999998807907104],
+                            ],
+                        },
+                    },
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 1.78,
+                        MTF50: 1.04,
+                        MTFMAX: 4.15,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
+                {
+                    name: 'Vertical_Right',
+                    location: { x: 543, y: 345, w: 78, h: 196 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0009149271,
+                            MTF50: 0.000347069,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.010530875064432621],
+                                [0.03999999910593033, 0.04001578316092491],
+                                [0.05999999865889549, 0.028339870274066925],
+                                [0.07999999821186066, 0.02512979507446289],
+                                [0.10000000149011612, 0.03332385793328285],
+                                [0.11999999731779099, 0.028323261067271233],
+                                [0.14000000059604645, 0.04356107860803604],
+                                [0.1599999964237213, 0.05999043583869934],
+                                [0.18000000715255737, 0.046237580478191376],
+                                [0.20000000298023224, 0.08062247186899185],
+                                [0.2199999988079071, 0.0362812839448452],
+                                [0.23999999463558197, 0.026175078004598618],
+                                [0.25999999046325684, 0.033354196697473526],
+                                [0.2800000011920929, 0.027043720707297325],
+                                [0.30000001192092896, 0.07806294411420822],
+                                [0.3199999928474426, 0.02536281757056713],
+                                [0.3400000035762787, 0.024163950234651566],
+                                [0.36000001430511475, 0.016721760854125023],
+                                [0.3799999952316284, 0.07769033312797546],
+                                [0.4000000059604645, 0.05286667123436928],
+                                [0.41999998688697815, 0.06575784832239151],
+                                [0.4399999976158142, 0.06603177636861801],
+                                [0.46000000834465027, 0.08197415620088577],
+                                [0.47999998927116394, 0.04486854374408722],
+                                [0.5, 0.05524429678916931],
+                                [0.5199999809265137, 0.04744104668498039],
+                                [0.5400000214576721, 0.10175042599439621],
+                                [0.5600000023841858, 0.0721864104270935],
+                                [0.5799999833106995, 0.11047439277172089],
+                                [0.6000000238418579, 0.01761901192367077],
+                                [0.6200000047683716, 0.06004142761230469],
+                                [0.6399999856948853, 0.07127534598112106],
+                                [0.6600000262260437, 0.015212701633572578],
+                                [0.6800000071525574, 0.06900572776794434],
+                                [0.699999988079071, 0.06317068636417389],
+                                [0.7200000286102295, 0.10776510089635849],
+                                [0.7400000095367432, 0.06674343347549438],
+                                [0.7599999904632568, 0.025850269943475723],
+                                [0.7799999713897705, 0.050115421414375305],
+                                [0.800000011920929, 0.08976565301418304],
+                                [0.8199999928474426, 0.0905345007777214],
+                                [0.8399999737739563, 0.04347631707787514],
+                                [0.8600000143051147, 0.06093103438615799],
+                                [0.8799999952316284, 0.08523860573768616],
+                                [0.8999999761581421, 0.027226582169532776],
+                                [0.9200000166893005, 0.05976299196481705],
+                                [0.9399999976158142, 0.01508877519518137],
+                                [0.9599999785423279, 0.02011191099882126],
+                                [0.9800000190734863, 0.02590486966073513],
+                            ],
+                        },
+                        G: {
+                            MTF10: 0.0008719869,
+                            MTF50: 0.0003524659,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.010530875064432621],
+                                [0.03999999910593033, 0.04001578316092491],
+                                [0.05999999865889549, 0.028339870274066925],
+                                [0.07999999821186066, 0.02512979507446289],
+                                [0.10000000149011612, 0.03332385793328285],
+                                [0.11999999731779099, 0.028323261067271233],
+                                [0.14000000059604645, 0.04356107860803604],
+                                [0.1599999964237213, 0.05999043583869934],
+                                [0.18000000715255737, 0.046237580478191376],
+                                [0.20000000298023224, 0.08062247186899185],
+                                [0.2199999988079071, 0.0362812839448452],
+                                [0.23999999463558197, 0.026175078004598618],
+                                [0.25999999046325684, 0.033354196697473526],
+                                [0.2800000011920929, 0.027043720707297325],
+                                [0.30000001192092896, 0.07806294411420822],
+                                [0.3199999928474426, 0.02536281757056713],
+                                [0.3400000035762787, 0.024163950234651566],
+                                [0.36000001430511475, 0.016721760854125023],
+                                [0.3799999952316284, 0.07769033312797546],
+                                [0.4000000059604645, 0.05286667123436928],
+                                [0.41999998688697815, 0.06575784832239151],
+                                [0.4399999976158142, 0.06603177636861801],
+                                [0.46000000834465027, 0.08197415620088577],
+                                [0.47999998927116394, 0.04486854374408722],
+                                [0.5, 0.05524429678916931],
+                                [0.5199999809265137, 0.04744104668498039],
+                                [0.5400000214576721, 0.10175042599439621],
+                                [0.5600000023841858, 0.0721864104270935],
+                                [0.5799999833106995, 0.11047439277172089],
+                                [0.6000000238418579, 0.01761901192367077],
+                                [0.6200000047683716, 0.06004142761230469],
+                                [0.6399999856948853, 0.07127534598112106],
+                                [0.6600000262260437, 0.015212701633572578],
+                                [0.6800000071525574, 0.06900572776794434],
+                                [0.699999988079071, 0.06317068636417389],
+                                [0.7200000286102295, 0.10776510089635849],
+                                [0.7400000095367432, 0.06674343347549438],
+                                [0.7599999904632568, 0.025850269943475723],
+                                [0.7799999713897705, 0.050115421414375305],
+                                [0.800000011920929, 0.08976565301418304],
+                                [0.8199999928474426, 0.0905345007777214],
+                                [0.8399999737739563, 0.04347631707787514],
+                                [0.8600000143051147, 0.06093103438615799],
+                                [0.8799999952316284, 0.08523860573768616],
+                                [0.8999999761581421, 0.027226582169532776],
+                                [0.9200000166893005, 0.05976299196481705],
+                                [0.9399999976158142, 0.01508877519518137],
+                                [0.9599999785423279, 0.02011191099882126],
+                                [0.9800000190734863, 0.02590486966073513],
+                            ],
+                        },
+                        B: {
+                            MTF10: 0.0008561168,
+                            MTF50: 0.0003523051,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.010530875064432621],
+                                [0.03999999910593033, 0.04001578316092491],
+                                [0.05999999865889549, 0.028339870274066925],
+                                [0.07999999821186066, 0.02512979507446289],
+                                [0.10000000149011612, 0.03332385793328285],
+                                [0.11999999731779099, 0.028323261067271233],
+                                [0.14000000059604645, 0.04356107860803604],
+                                [0.1599999964237213, 0.05999043583869934],
+                                [0.18000000715255737, 0.046237580478191376],
+                                [0.20000000298023224, 0.08062247186899185],
+                                [0.2199999988079071, 0.0362812839448452],
+                                [0.23999999463558197, 0.026175078004598618],
+                                [0.25999999046325684, 0.033354196697473526],
+                                [0.2800000011920929, 0.027043720707297325],
+                                [0.30000001192092896, 0.07806294411420822],
+                                [0.3199999928474426, 0.02536281757056713],
+                                [0.3400000035762787, 0.024163950234651566],
+                                [0.36000001430511475, 0.016721760854125023],
+                                [0.3799999952316284, 0.07769033312797546],
+                                [0.4000000059604645, 0.05286667123436928],
+                                [0.41999998688697815, 0.06575784832239151],
+                                [0.4399999976158142, 0.06603177636861801],
+                                [0.46000000834465027, 0.08197415620088577],
+                                [0.47999998927116394, 0.04486854374408722],
+                                [0.5, 0.05524429678916931],
+                                [0.5199999809265137, 0.04744104668498039],
+                                [0.5400000214576721, 0.10175042599439621],
+                                [0.5600000023841858, 0.0721864104270935],
+                                [0.5799999833106995, 0.11047439277172089],
+                                [0.6000000238418579, 0.01761901192367077],
+                                [0.6200000047683716, 0.06004142761230469],
+                                [0.6399999856948853, 0.07127534598112106],
+                                [0.6600000262260437, 0.015212701633572578],
+                                [0.6800000071525574, 0.06900572776794434],
+                                [0.699999988079071, 0.06317068636417389],
+                                [0.7200000286102295, 0.10776510089635849],
+                                [0.7400000095367432, 0.06674343347549438],
+                                [0.7599999904632568, 0.025850269943475723],
+                                [0.7799999713897705, 0.050115421414375305],
+                                [0.800000011920929, 0.08976565301418304],
+                                [0.8199999928474426, 0.0905345007777214],
+                                [0.8399999737739563, 0.04347631707787514],
+                                [0.8600000143051147, 0.06093103438615799],
+                                [0.8799999952316284, 0.08523860573768616],
+                                [0.8999999761581421, 0.027226582169532776],
+                                [0.9200000166893005, 0.05976299196481705],
+                                [0.9399999976158142, 0.01508877519518137],
+                                [0.9599999785423279, 0.02011191099882126],
+                                [0.9800000190734863, 0.02590486966073513],
+                            ],
+                        },
+                        Lum: {
+                            MTF10: 0.0008717132,
+                            MTF50: 0.0003520421,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.010530875064432621],
+                                [0.03999999910593033, 0.04001578316092491],
+                                [0.05999999865889549, 0.028339870274066925],
+                                [0.07999999821186066, 0.02512979507446289],
+                                [0.10000000149011612, 0.03332385793328285],
+                                [0.11999999731779099, 0.028323261067271233],
+                                [0.14000000059604645, 0.04356107860803604],
+                                [0.1599999964237213, 0.05999043583869934],
+                                [0.18000000715255737, 0.046237580478191376],
+                                [0.20000000298023224, 0.08062247186899185],
+                                [0.2199999988079071, 0.0362812839448452],
+                                [0.23999999463558197, 0.026175078004598618],
+                                [0.25999999046325684, 0.033354196697473526],
+                                [0.2800000011920929, 0.027043720707297325],
+                                [0.30000001192092896, 0.07806294411420822],
+                                [0.3199999928474426, 0.02536281757056713],
+                                [0.3400000035762787, 0.024163950234651566],
+                                [0.36000001430511475, 0.016721760854125023],
+                                [0.3799999952316284, 0.07769033312797546],
+                                [0.4000000059604645, 0.05286667123436928],
+                                [0.41999998688697815, 0.06575784832239151],
+                                [0.4399999976158142, 0.06603177636861801],
+                                [0.46000000834465027, 0.08197415620088577],
+                                [0.47999998927116394, 0.04486854374408722],
+                                [0.5, 0.05524429678916931],
+                                [0.5199999809265137, 0.04744104668498039],
+                                [0.5400000214576721, 0.10175042599439621],
+                                [0.5600000023841858, 0.0721864104270935],
+                                [0.5799999833106995, 0.11047439277172089],
+                                [0.6000000238418579, 0.01761901192367077],
+                                [0.6200000047683716, 0.06004142761230469],
+                                [0.6399999856948853, 0.07127534598112106],
+                                [0.6600000262260437, 0.015212701633572578],
+                                [0.6800000071525574, 0.06900572776794434],
+                                [0.699999988079071, 0.06317068636417389],
+                                [0.7200000286102295, 0.10776510089635849],
+                                [0.7400000095367432, 0.06674343347549438],
+                                [0.7599999904632568, 0.025850269943475723],
+                                [0.7799999713897705, 0.050115421414375305],
+                                [0.800000011920929, 0.08976565301418304],
+                                [0.8199999928474426, 0.0905345007777214],
+                                [0.8399999737739563, 0.04347631707787514],
+                                [0.8600000143051147, 0.06093103438615799],
+                                [0.8799999952316284, 0.08523860573768616],
+                                [0.8999999761581421, 0.027226582169532776],
+                                [0.9200000166893005, 0.05976299196481705],
+                                [0.9399999976158142, 0.01508877519518137],
+                                [0.9599999785423279, 0.02011191099882126],
+                                [0.9800000190734863, 0.02590486966073513],
+                            ],
+                        },
+                    },
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0,
+                        MTF50: 0,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
+                {
+                    name: 'Horizontal_Top',
+                    location: { x: 336, y: 256, w: 196, h: 78 },
+                    observed: {
+                        R: {
+                            MTF10: 0.5133091568,
+                            MTF50: 0.0352957921,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.036101531237363815],
+                                [0.03999999910593033, 0.02961091697216034],
+                                [0.05999999865889549, 0.020847629755735397],
+                                [0.07999999821186066, 0.043273359537124634],
+                                [0.10000000149011612, 0.022245341911911964],
+                                [0.11999999731779099, 0.035939645022153854],
+                                [0.14000000059604645, 0.036267343908548355],
+                                [0.1599999964237213, 0.029205571860074997],
+                                [0.18000000715255737, 0.047123368829488754],
+                                [0.20000000298023224, 0.05906257405877113],
+                                [0.2199999988079071, 0.03589959815144539],
+                                [0.23999999463558197, 0.052994079887866974],
+                                [0.25999999046325684, 0.08775971829891205],
+                                [0.2800000011920929, 0.07931980490684509],
+                                [0.30000001192092896, 0.09432864934206009],
+                                [0.3199999928474426, 0.09757696092128754],
+                                [0.3400000035762787, 0.04312444478273392],
+                                [0.36000001430511475, 0.08106162399053574],
+                                [0.3799999952316284, 0.03893907740712166],
+                                [0.4000000059604645, 0.04539582133293152],
+                                [0.41999998688697815, 0.047332312911748886],
+                                [0.4399999976158142, 0.08637537807226181],
+                                [0.46000000834465027, 0.03873693570494652],
+                                [0.47999998927116394, 0.024663863703608513],
+                                [0.5, 0.06245888024568558],
+                                [0.5199999809265137, 0.045866142958402634],
+                                [0.5400000214576721, 0.08497225493192673],
+                                [0.5600000023841858, 0.10604982823133469],
+                                [0.5799999833106995, 0.012808435596525669],
+                                [0.6000000238418579, 0.04094456508755684],
+                                [0.6200000047683716, 0.029647221788764],
+                                [0.6399999856948853, 0.08156562596559525],
+                                [0.6600000262260437, 0.030455049127340317],
+                                [0.6800000071525574, 0.057528357952833176],
+                                [0.699999988079071, 0.13820017874240875],
+                                [0.7200000286102295, 0.08078919351100922],
+                                [0.7400000095367432, 0.022999757900834084],
+                                [0.7599999904632568, 0.04380224272608757],
+                                [0.7799999713897705, 0.03755289688706398],
+                                [0.800000011920929, 0.07063831388950348],
+                                [0.8199999928474426, 0.14908255636692047],
+                                [0.8399999737739563, 0.03620906546711922],
+                                [0.8600000143051147, 0.07205435633659363],
+                                [0.8799999952316284, 0.05888192728161812],
+                                [0.8999999761581421, 0.09692823141813278],
+                                [0.9200000166893005, 0.0485064834356308],
+                                [0.9399999976158142, 0.04909706488251686],
+                                [0.9599999785423279, 0.022942103445529938],
+                                [0.9800000190734863, 0.04379364848136902],
+                            ],
+                        },
+                        G: {
+                            MTF10: 0.001222205,
+                            MTF50: 0.0003817657,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.036101531237363815],
+                                [0.03999999910593033, 0.02961091697216034],
+                                [0.05999999865889549, 0.020847629755735397],
+                                [0.07999999821186066, 0.043273359537124634],
+                                [0.10000000149011612, 0.022245341911911964],
+                                [0.11999999731779099, 0.035939645022153854],
+                                [0.14000000059604645, 0.036267343908548355],
+                                [0.1599999964237213, 0.029205571860074997],
+                                [0.18000000715255737, 0.047123368829488754],
+                                [0.20000000298023224, 0.05906257405877113],
+                                [0.2199999988079071, 0.03589959815144539],
+                                [0.23999999463558197, 0.052994079887866974],
+                                [0.25999999046325684, 0.08775971829891205],
+                                [0.2800000011920929, 0.07931980490684509],
+                                [0.30000001192092896, 0.09432864934206009],
+                                [0.3199999928474426, 0.09757696092128754],
+                                [0.3400000035762787, 0.04312444478273392],
+                                [0.36000001430511475, 0.08106162399053574],
+                                [0.3799999952316284, 0.03893907740712166],
+                                [0.4000000059604645, 0.04539582133293152],
+                                [0.41999998688697815, 0.047332312911748886],
+                                [0.4399999976158142, 0.08637537807226181],
+                                [0.46000000834465027, 0.03873693570494652],
+                                [0.47999998927116394, 0.024663863703608513],
+                                [0.5, 0.06245888024568558],
+                                [0.5199999809265137, 0.045866142958402634],
+                                [0.5400000214576721, 0.08497225493192673],
+                                [0.5600000023841858, 0.10604982823133469],
+                                [0.5799999833106995, 0.012808435596525669],
+                                [0.6000000238418579, 0.04094456508755684],
+                                [0.6200000047683716, 0.029647221788764],
+                                [0.6399999856948853, 0.08156562596559525],
+                                [0.6600000262260437, 0.030455049127340317],
+                                [0.6800000071525574, 0.057528357952833176],
+                                [0.699999988079071, 0.13820017874240875],
+                                [0.7200000286102295, 0.08078919351100922],
+                                [0.7400000095367432, 0.022999757900834084],
+                                [0.7599999904632568, 0.04380224272608757],
+                                [0.7799999713897705, 0.03755289688706398],
+                                [0.800000011920929, 0.07063831388950348],
+                                [0.8199999928474426, 0.14908255636692047],
+                                [0.8399999737739563, 0.03620906546711922],
+                                [0.8600000143051147, 0.07205435633659363],
+                                [0.8799999952316284, 0.05888192728161812],
+                                [0.8999999761581421, 0.09692823141813278],
+                                [0.9200000166893005, 0.0485064834356308],
+                                [0.9399999976158142, 0.04909706488251686],
+                                [0.9599999785423279, 0.022942103445529938],
+                                [0.9800000190734863, 0.04379364848136902],
+                            ],
+                        },
+                        B: {
+                            MTF10: 0.0012837556,
+                            MTF50: 0.0003880478,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.036101531237363815],
+                                [0.03999999910593033, 0.02961091697216034],
+                                [0.05999999865889549, 0.020847629755735397],
+                                [0.07999999821186066, 0.043273359537124634],
+                                [0.10000000149011612, 0.022245341911911964],
+                                [0.11999999731779099, 0.035939645022153854],
+                                [0.14000000059604645, 0.036267343908548355],
+                                [0.1599999964237213, 0.029205571860074997],
+                                [0.18000000715255737, 0.047123368829488754],
+                                [0.20000000298023224, 0.05906257405877113],
+                                [0.2199999988079071, 0.03589959815144539],
+                                [0.23999999463558197, 0.052994079887866974],
+                                [0.25999999046325684, 0.08775971829891205],
+                                [0.2800000011920929, 0.07931980490684509],
+                                [0.30000001192092896, 0.09432864934206009],
+                                [0.3199999928474426, 0.09757696092128754],
+                                [0.3400000035762787, 0.04312444478273392],
+                                [0.36000001430511475, 0.08106162399053574],
+                                [0.3799999952316284, 0.03893907740712166],
+                                [0.4000000059604645, 0.04539582133293152],
+                                [0.41999998688697815, 0.047332312911748886],
+                                [0.4399999976158142, 0.08637537807226181],
+                                [0.46000000834465027, 0.03873693570494652],
+                                [0.47999998927116394, 0.024663863703608513],
+                                [0.5, 0.06245888024568558],
+                                [0.5199999809265137, 0.045866142958402634],
+                                [0.5400000214576721, 0.08497225493192673],
+                                [0.5600000023841858, 0.10604982823133469],
+                                [0.5799999833106995, 0.012808435596525669],
+                                [0.6000000238418579, 0.04094456508755684],
+                                [0.6200000047683716, 0.029647221788764],
+                                [0.6399999856948853, 0.08156562596559525],
+                                [0.6600000262260437, 0.030455049127340317],
+                                [0.6800000071525574, 0.057528357952833176],
+                                [0.699999988079071, 0.13820017874240875],
+                                [0.7200000286102295, 0.08078919351100922],
+                                [0.7400000095367432, 0.022999757900834084],
+                                [0.7599999904632568, 0.04380224272608757],
+                                [0.7799999713897705, 0.03755289688706398],
+                                [0.800000011920929, 0.07063831388950348],
+                                [0.8199999928474426, 0.14908255636692047],
+                                [0.8399999737739563, 0.03620906546711922],
+                                [0.8600000143051147, 0.07205435633659363],
+                                [0.8799999952316284, 0.05888192728161812],
+                                [0.8999999761581421, 0.09692823141813278],
+                                [0.9200000166893005, 0.0485064834356308],
+                                [0.9399999976158142, 0.04909706488251686],
+                                [0.9599999785423279, 0.022942103445529938],
+                                [0.9800000190734863, 0.04379364848136902],
+                            ],
+                        },
+                        Lum: {
+                            MTF10: 0.0382079687,
+                            MTF50: 0.002903894,
+                            MTFMAX: 1,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.036101531237363815],
+                                [0.03999999910593033, 0.02961091697216034],
+                                [0.05999999865889549, 0.020847629755735397],
+                                [0.07999999821186066, 0.043273359537124634],
+                                [0.10000000149011612, 0.022245341911911964],
+                                [0.11999999731779099, 0.035939645022153854],
+                                [0.14000000059604645, 0.036267343908548355],
+                                [0.1599999964237213, 0.029205571860074997],
+                                [0.18000000715255737, 0.047123368829488754],
+                                [0.20000000298023224, 0.05906257405877113],
+                                [0.2199999988079071, 0.03589959815144539],
+                                [0.23999999463558197, 0.052994079887866974],
+                                [0.25999999046325684, 0.08775971829891205],
+                                [0.2800000011920929, 0.07931980490684509],
+                                [0.30000001192092896, 0.09432864934206009],
+                                [0.3199999928474426, 0.09757696092128754],
+                                [0.3400000035762787, 0.04312444478273392],
+                                [0.36000001430511475, 0.08106162399053574],
+                                [0.3799999952316284, 0.03893907740712166],
+                                [0.4000000059604645, 0.04539582133293152],
+                                [0.41999998688697815, 0.047332312911748886],
+                                [0.4399999976158142, 0.08637537807226181],
+                                [0.46000000834465027, 0.03873693570494652],
+                                [0.47999998927116394, 0.024663863703608513],
+                                [0.5, 0.06245888024568558],
+                                [0.5199999809265137, 0.045866142958402634],
+                                [0.5400000214576721, 0.08497225493192673],
+                                [0.5600000023841858, 0.10604982823133469],
+                                [0.5799999833106995, 0.012808435596525669],
+                                [0.6000000238418579, 0.04094456508755684],
+                                [0.6200000047683716, 0.029647221788764],
+                                [0.6399999856948853, 0.08156562596559525],
+                                [0.6600000262260437, 0.030455049127340317],
+                                [0.6800000071525574, 0.057528357952833176],
+                                [0.699999988079071, 0.13820017874240875],
+                                [0.7200000286102295, 0.08078919351100922],
+                                [0.7400000095367432, 0.022999757900834084],
+                                [0.7599999904632568, 0.04380224272608757],
+                                [0.7799999713897705, 0.03755289688706398],
+                                [0.800000011920929, 0.07063831388950348],
+                                [0.8199999928474426, 0.14908255636692047],
+                                [0.8399999737739563, 0.03620906546711922],
+                                [0.8600000143051147, 0.07205435633659363],
+                                [0.8799999952316284, 0.05888192728161812],
+                                [0.8999999761581421, 0.09692823141813278],
+                                [0.9200000166893005, 0.0485064834356308],
+                                [0.9399999976158142, 0.04909706488251686],
+                                [0.9599999785423279, 0.022942103445529938],
+                                [0.9800000190734863, 0.04379364848136902],
+                            ],
+                        },
+                    },
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.04,
+                        MTF50: 0,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
+                {
+                    name: 'Horizontal_Bottom',
+                    location: { x: 336, y: 552, w: 196, h: 78 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0373787506,
+                            MTF50: 0.0254517329,
+                            MTFMAX: 1.1355314255,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.6524565815925598],
+                                [0.03999999910593033, 0.24268120527267456],
+                                [0.05999999865889549, 0.7344776391983032],
+                                [0.07999999821186066, 1.151046633720398],
+                                [0.10000000149011612, 1.2109311819076538],
+                                [0.11999999731779099, 0.6066622138023376],
+                                [0.14000000059604645, 0.4744807183742523],
+                                [0.1599999964237213, 0.9482786059379578],
+                                [0.18000000715255737, 1.0064188241958618],
+                                [0.20000000298023224, 0.8756771087646484],
+                                [0.2199999988079071, 0.45409610867500305],
+                                [0.23999999463558197, 0.24147488176822662],
+                                [0.25999999046325684, 0.11453872919082642],
+                                [0.2800000011920929, 0.47084367275238037],
+                                [0.30000001192092896, 0.8070467114448547],
+                                [0.3199999928474426, 0.6069647669792175],
+                                [0.3400000035762787, 0.3830438256263733],
+                                [0.36000001430511475, 0.3403432369232178],
+                                [0.3799999952316284, 0.5843876600265503],
+                                [0.4000000059604645, 0.32350432872772217],
+                                [0.41999998688697815, 0.27073484659194946],
+                                [0.4399999976158142, 0.35513222217559814],
+                                [0.46000000834465027, 0.32452863454818726],
+                                [0.47999998927116394, 0.6474969387054443],
+                                [0.5, 0.6585527658462524],
+                                [0.5199999809265137, 0.39475879073143005],
+                                [0.5400000214576721, 0.10738809406757355],
+                                [0.5600000023841858, 0.30965667963027954],
+                                [0.5799999833106995, 0.23558145761489868],
+                                [0.6000000238418579, 0.7534486651420593],
+                                [0.6200000047683716, 0.6217094659805298],
+                                [0.6399999856948853, 0.36585310101509094],
+                                [0.6600000262260437, 0.5049942135810852],
+                                [0.6800000071525574, 0.7080144286155701],
+                                [0.699999988079071, 0.6351953148841858],
+                                [0.7200000286102295, 0.17105422914028168],
+                                [0.7400000095367432, 0.27899864315986633],
+                                [0.7599999904632568, 0.2815665602684021],
+                                [0.7799999713897705, 0.6890900731086731],
+                                [0.800000011920929, 0.8754215240478516],
+                                [0.8199999928474426, 0.7409466505050659],
+                                [0.8399999737739563, 0.3489744961261749],
+                                [0.8600000143051147, 0.450695276260376],
+                                [0.8799999952316284, 1.0995607376098633],
+                                [0.8999999761581421, 1.1021534204483032],
+                                [0.9200000166893005, 0.4932698607444763],
+                                [0.9399999976158142, 0.16627119481563568],
+                                [0.9599999785423279, 0.7234772443771362],
+                                [0.9800000190734863, 1.0300438404083252],
+                            ],
+                        },
+                        G: {
+                            MTF10: 0.9374929584,
+                            MTF50: 0.0280583183,
+                            MTFMAX: 1.124102354,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.6524565815925598],
+                                [0.03999999910593033, 0.24268120527267456],
+                                [0.05999999865889549, 0.7344776391983032],
+                                [0.07999999821186066, 1.151046633720398],
+                                [0.10000000149011612, 1.2109311819076538],
+                                [0.11999999731779099, 0.6066622138023376],
+                                [0.14000000059604645, 0.4744807183742523],
+                                [0.1599999964237213, 0.9482786059379578],
+                                [0.18000000715255737, 1.0064188241958618],
+                                [0.20000000298023224, 0.8756771087646484],
+                                [0.2199999988079071, 0.45409610867500305],
+                                [0.23999999463558197, 0.24147488176822662],
+                                [0.25999999046325684, 0.11453872919082642],
+                                [0.2800000011920929, 0.47084367275238037],
+                                [0.30000001192092896, 0.8070467114448547],
+                                [0.3199999928474426, 0.6069647669792175],
+                                [0.3400000035762787, 0.3830438256263733],
+                                [0.36000001430511475, 0.3403432369232178],
+                                [0.3799999952316284, 0.5843876600265503],
+                                [0.4000000059604645, 0.32350432872772217],
+                                [0.41999998688697815, 0.27073484659194946],
+                                [0.4399999976158142, 0.35513222217559814],
+                                [0.46000000834465027, 0.32452863454818726],
+                                [0.47999998927116394, 0.6474969387054443],
+                                [0.5, 0.6585527658462524],
+                                [0.5199999809265137, 0.39475879073143005],
+                                [0.5400000214576721, 0.10738809406757355],
+                                [0.5600000023841858, 0.30965667963027954],
+                                [0.5799999833106995, 0.23558145761489868],
+                                [0.6000000238418579, 0.7534486651420593],
+                                [0.6200000047683716, 0.6217094659805298],
+                                [0.6399999856948853, 0.36585310101509094],
+                                [0.6600000262260437, 0.5049942135810852],
+                                [0.6800000071525574, 0.7080144286155701],
+                                [0.699999988079071, 0.6351953148841858],
+                                [0.7200000286102295, 0.17105422914028168],
+                                [0.7400000095367432, 0.27899864315986633],
+                                [0.7599999904632568, 0.2815665602684021],
+                                [0.7799999713897705, 0.6890900731086731],
+                                [0.800000011920929, 0.8754215240478516],
+                                [0.8199999928474426, 0.7409466505050659],
+                                [0.8399999737739563, 0.3489744961261749],
+                                [0.8600000143051147, 0.450695276260376],
+                                [0.8799999952316284, 1.0995607376098633],
+                                [0.8999999761581421, 1.1021534204483032],
+                                [0.9200000166893005, 0.4932698607444763],
+                                [0.9399999976158142, 0.16627119481563568],
+                                [0.9599999785423279, 0.7234772443771362],
+                                [0.9800000190734863, 1.0300438404083252],
+                            ],
+                        },
+                        B: {
+                            MTF10: 0.2610186847,
+                            MTF50: 0.0254658925,
+                            MTFMAX: 1.253357172,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.6524565815925598],
+                                [0.03999999910593033, 0.24268120527267456],
+                                [0.05999999865889549, 0.7344776391983032],
+                                [0.07999999821186066, 1.151046633720398],
+                                [0.10000000149011612, 1.2109311819076538],
+                                [0.11999999731779099, 0.6066622138023376],
+                                [0.14000000059604645, 0.4744807183742523],
+                                [0.1599999964237213, 0.9482786059379578],
+                                [0.18000000715255737, 1.0064188241958618],
+                                [0.20000000298023224, 0.8756771087646484],
+                                [0.2199999988079071, 0.45409610867500305],
+                                [0.23999999463558197, 0.24147488176822662],
+                                [0.25999999046325684, 0.11453872919082642],
+                                [0.2800000011920929, 0.47084367275238037],
+                                [0.30000001192092896, 0.8070467114448547],
+                                [0.3199999928474426, 0.6069647669792175],
+                                [0.3400000035762787, 0.3830438256263733],
+                                [0.36000001430511475, 0.3403432369232178],
+                                [0.3799999952316284, 0.5843876600265503],
+                                [0.4000000059604645, 0.32350432872772217],
+                                [0.41999998688697815, 0.27073484659194946],
+                                [0.4399999976158142, 0.35513222217559814],
+                                [0.46000000834465027, 0.32452863454818726],
+                                [0.47999998927116394, 0.6474969387054443],
+                                [0.5, 0.6585527658462524],
+                                [0.5199999809265137, 0.39475879073143005],
+                                [0.5400000214576721, 0.10738809406757355],
+                                [0.5600000023841858, 0.30965667963027954],
+                                [0.5799999833106995, 0.23558145761489868],
+                                [0.6000000238418579, 0.7534486651420593],
+                                [0.6200000047683716, 0.6217094659805298],
+                                [0.6399999856948853, 0.36585310101509094],
+                                [0.6600000262260437, 0.5049942135810852],
+                                [0.6800000071525574, 0.7080144286155701],
+                                [0.699999988079071, 0.6351953148841858],
+                                [0.7200000286102295, 0.17105422914028168],
+                                [0.7400000095367432, 0.27899864315986633],
+                                [0.7599999904632568, 0.2815665602684021],
+                                [0.7799999713897705, 0.6890900731086731],
+                                [0.800000011920929, 0.8754215240478516],
+                                [0.8199999928474426, 0.7409466505050659],
+                                [0.8399999737739563, 0.3489744961261749],
+                                [0.8600000143051147, 0.450695276260376],
+                                [0.8799999952316284, 1.0995607376098633],
+                                [0.8999999761581421, 1.1021534204483032],
+                                [0.9200000166893005, 0.4932698607444763],
+                                [0.9399999976158142, 0.16627119481563568],
+                                [0.9599999785423279, 0.7234772443771362],
+                                [0.9800000190734863, 1.0300438404083252],
+                            ],
+                        },
+                        Lum: {
+                            MTF10: 0.7286862867,
+                            MTF50: 0.0273189731,
+                            MTFMAX: 1.1524071064,
+                            MTF_Curve: [
+                                [0, 1],
+                                [0.019999999552965164, 0.6524565815925598],
+                                [0.03999999910593033, 0.24268120527267456],
+                                [0.05999999865889549, 0.7344776391983032],
+                                [0.07999999821186066, 1.151046633720398],
+                                [0.10000000149011612, 1.2109311819076538],
+                                [0.11999999731779099, 0.6066622138023376],
+                                [0.14000000059604645, 0.4744807183742523],
+                                [0.1599999964237213, 0.9482786059379578],
+                                [0.18000000715255737, 1.0064188241958618],
+                                [0.20000000298023224, 0.8756771087646484],
+                                [0.2199999988079071, 0.45409610867500305],
+                                [0.23999999463558197, 0.24147488176822662],
+                                [0.25999999046325684, 0.11453872919082642],
+                                [0.2800000011920929, 0.47084367275238037],
+                                [0.30000001192092896, 0.8070467114448547],
+                                [0.3199999928474426, 0.6069647669792175],
+                                [0.3400000035762787, 0.3830438256263733],
+                                [0.36000001430511475, 0.3403432369232178],
+                                [0.3799999952316284, 0.5843876600265503],
+                                [0.4000000059604645, 0.32350432872772217],
+                                [0.41999998688697815, 0.27073484659194946],
+                                [0.4399999976158142, 0.35513222217559814],
+                                [0.46000000834465027, 0.32452863454818726],
+                                [0.47999998927116394, 0.6474969387054443],
+                                [0.5, 0.6585527658462524],
+                                [0.5199999809265137, 0.39475879073143005],
+                                [0.5400000214576721, 0.10738809406757355],
+                                [0.5600000023841858, 0.30965667963027954],
+                                [0.5799999833106995, 0.23558145761489868],
+                                [0.6000000238418579, 0.7534486651420593],
+                                [0.6200000047683716, 0.6217094659805298],
+                                [0.6399999856948853, 0.36585310101509094],
+                                [0.6600000262260437, 0.5049942135810852],
+                                [0.6800000071525574, 0.7080144286155701],
+                                [0.699999988079071, 0.6351953148841858],
+                                [0.7200000286102295, 0.17105422914028168],
+                                [0.7400000095367432, 0.27899864315986633],
+                                [0.7599999904632568, 0.2815665602684021],
+                                [0.7799999713897705, 0.6890900731086731],
+                                [0.800000011920929, 0.8754215240478516],
+                                [0.8199999928474426, 0.7409466505050659],
+                                [0.8399999737739563, 0.3489744961261749],
+                                [0.8600000143051147, 0.450695276260376],
+                                [0.8799999952316284, 1.0995607376098633],
+                                [0.8999999761581421, 1.1021534204483032],
+                                [0.9200000166893005, 0.4932698607444763],
+                                [0.9399999976158142, 0.16627119481563568],
+                                [0.9599999785423279, 0.7234772443771362],
+                                [0.9800000190734863, 1.0300438404083252],
+                            ],
+                        },
+                    },
+                    validity: { valid: false },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.73,
+                        MTF50: 0.03,
+                        MTFMAX: 1.15,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
+            ],
+            targetType: 'QA_62',
+            validity: {
+                valid: false,
+                message: ['Contains unsharp features'],
+                invalidPatch: 0,
+            },
+            assessed: {
+                meanDeltaE76: 4.98,
+                meanDeltaE94T: 4.83,
+                meanDeltaE94G: 4.83,
+                meanDeltaE2000: 4.29,
+                meanDeltaECMC: 4.39,
+                meanDeltaL: 1.48,
+                meanStdDev: 1.74,
+                SEFF: 0,
+                MTF10: 0.45,
+                MTF50: 0.26,
+                MTFMAX: 1.04,
+                MTFHSF: 0,
+                CMR: 0,
+            },
+        },
+        {
+            name: 'Applied Image QA-62',
+            type: 'QA_62',
+            location: { x: 569, y: 6785, w: 871, h: 1111, r: 0 },
+            observed: { ppi: 300.37 },
+            colorPatches: [
+                {
+                    name: '1',
+                    location: { x: 120, y: 146, w: 50, h: 50 },
+                    observed: {
+                        RGB: [245.49, 242.36, 238.63],
+                        Lab: [95.33, 1.49, 2.8],
+                        mean: 242.89,
+                        stddev: 1.25,
+                        snr: 193.85,
+                    },
+                    assessed: {
+                        deltaE76: 3.4,
+                        deltaE94T: 3.16,
+                        deltaE94G: 3.16,
+                        deltaE2000: 3.2,
+                        deltaECMC: 4.18,
+                        deltaL: -0.67,
+                    },
+                    reference: { Lab: [96, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '2',
+                    location: { x: 233, y: 146, w: 50, h: 50 },
+                    observed: {
+                        RGB: [232.36, 228.64, 225.19],
+                        Lab: [90.03, 1.87, 2.77],
+                        mean: 229.38,
+                        stddev: 1.1,
+                        snr: 208.85,
+                    },
+                    assessed: {
+                        deltaE76: 4.02,
+                        deltaE94T: 3.79,
+                        deltaE94G: 3.79,
+                        deltaE2000: 3.53,
+                        deltaECMC: 4.26,
+                        deltaL: -2.17,
+                    },
+                    reference: { Lab: [92.2, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '3',
+                    location: { x: 346, y: 146, w: 50, h: 50 },
+                    observed: {
+                        RGB: [222.99, 219.02, 215.38],
+                        Lab: [86.29, 2, 2.94],
+                        mean: 219.81,
+                        stddev: 1.06,
+                        snr: 207.37,
+                    },
+                    assessed: {
+                        deltaE76: 4.49,
+                        deltaE94T: 4.24,
+                        deltaE94G: 4.24,
+                        deltaE2000: 3.87,
+                        deltaECMC: 4.49,
+                        deltaL: -2.71,
+                    },
+                    reference: { Lab: [89, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '4',
+                    location: { x: 459, y: 146, w: 50, h: 50 },
+                    observed: {
+                        RGB: [203.44, 199.02, 193.84],
+                        Lab: [78.46, 2.12, 3.92],
+                        mean: 199.78,
+                        stddev: 1.22,
+                        snr: 164.32,
+                    },
+                    assessed: {
+                        deltaE76: 5.59,
+                        deltaE94T: 5.17,
+                        deltaE94G: 5.17,
+                        deltaE2000: 4.85,
+                        deltaECMC: 5.47,
+                        deltaL: -3.24,
+                    },
+                    reference: { Lab: [81.7, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '5',
+                    location: { x: 572, y: 146, w: 50, h: 50 },
+                    observed: {
+                        RGB: [180.68, 176.23, 171.05],
+                        Lab: [69.52, 2.15, 3.92],
+                        mean: 176.99,
+                        stddev: 1.28,
+                        snr: 138.1,
+                    },
+                    assessed: {
+                        deltaE76: 5.35,
+                        deltaE94T: 4.9,
+                        deltaE94G: 4.9,
+                        deltaE2000: 4.8,
+                        deltaECMC: 5.45,
+                        deltaL: -2.78,
+                    },
+                    reference: { Lab: [72.3, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '6',
+                    location: { x: 685, y: 146, w: 50, h: 50 },
+                    observed: {
+                        RGB: [168.95, 164.83, 159.42],
+                        Lab: [65, 1.93, 3.98],
+                        mean: 165.47,
+                        stddev: 1.26,
+                        snr: 131.23,
+                    },
+                    assessed: {
+                        deltaE76: 4.82,
+                        deltaE94T: 4.32,
+                        deltaE94G: 4.32,
+                        deltaE2000: 4.46,
+                        deltaECMC: 5.4,
+                        deltaL: -1.5,
+                    },
+                    reference: { Lab: [66.5, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '7',
+                    location: { x: 685, y: 259, w: 50, h: 50 },
+                    observed: {
+                        RGB: [164.69, 161.27, 155.09],
+                        Lab: [63.5, 1.43, 4.26],
+                        mean: 161.61,
+                        stddev: 1.32,
+                        snr: 122.35,
+                    },
+                    assessed: {
+                        deltaE76: 4.82,
+                        deltaE94T: 4.28,
+                        deltaE94G: 4.28,
+                        deltaE2000: 4.46,
+                        deltaECMC: 5.59,
+                        deltaL: -0.6,
+                    },
+                    reference: { Lab: [64.1, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '8',
+                    location: { x: 685, y: 372, w: 50, h: 50 },
+                    observed: {
+                        RGB: [156.86, 153.25, 148.2],
+                        Lab: [60.41, 1.65, 3.66],
+                        mean: 153.78,
+                        stddev: 1.42,
+                        snr: 108.48,
+                    },
+                    assessed: {
+                        deltaE76: 4.25,
+                        deltaE94T: 3.83,
+                        deltaE94G: 3.83,
+                        deltaE2000: 3.99,
+                        deltaECMC: 5.04,
+                        deltaL: 0.61,
+                    },
+                    reference: { Lab: [59.8, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '9',
+                    location: { x: 685, y: 485, w: 50, h: 50 },
+                    observed: {
+                        RGB: [149, 145.92, 140.33],
+                        Lab: [57.45, 1.27, 3.85],
+                        mean: 146.23,
+                        stddev: 1.5,
+                        snr: 97.54,
+                    },
+                    assessed: {
+                        deltaE76: 4.63,
+                        deltaE94T: 4.22,
+                        deltaE94G: 4.22,
+                        deltaE2000: 4.32,
+                        deltaECMC: 5.25,
+                        deltaL: 1.55,
+                    },
+                    reference: { Lab: [55.9, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '10',
+                    location: { x: 685, y: 598, w: 50, h: 50 },
+                    observed: {
+                        RGB: [142.48, 139.35, 134.88],
+                        Lab: [54.91, 1.42, 3.23],
+                        mean: 139.8,
+                        stddev: 1.52,
+                        snr: 91.92,
+                    },
+                    assessed: {
+                        deltaE76: 4.31,
+                        deltaE94T: 4.03,
+                        deltaE94G: 4.03,
+                        deltaE2000: 4.08,
+                        deltaECMC: 4.7,
+                        deltaL: 2.11,
+                    },
+                    reference: { Lab: [52.8, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '11',
+                    location: { x: 685, y: 711, w: 50, h: 50 },
+                    observed: {
+                        RGB: [132.86, 129.84, 126.2],
+                        Lab: [51.2, 1.44, 2.74],
+                        mean: 130.35,
+                        stddev: 1.54,
+                        snr: 84.6,
+                    },
+                    assessed: {
+                        deltaE76: 4.24,
+                        deltaE94T: 4.06,
+                        deltaE94G: 4.06,
+                        deltaE2000: 4.12,
+                        deltaECMC: 4.28,
+                        deltaL: 2.7,
+                    },
+                    reference: { Lab: [48.5, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '12',
+                    location: { x: 572, y: 711, w: 50, h: 50 },
+                    observed: {
+                        RGB: [118.26, 115.81, 112.89],
+                        Lab: [45.64, 1.16, 2.2],
+                        mean: 116.22,
+                        stddev: 1.91,
+                        snr: 60.92,
+                    },
+                    assessed: {
+                        deltaE76: 4.07,
+                        deltaE94T: 3.98,
+                        deltaE94G: 3.98,
+                        deltaE2000: 3.85,
+                        deltaECMC: 3.81,
+                        deltaL: 3.04,
+                    },
+                    reference: { Lab: [42.6, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '13',
+                    location: { x: 459, y: 711, w: 50, h: 50 },
+                    observed: {
+                        RGB: [113.75, 111.23, 108.77],
+                        Lab: [43.87, 1.26, 1.94],
+                        mean: 111.71,
+                        stddev: 1.86,
+                        snr: 59.92,
+                    },
+                    assessed: {
+                        deltaE76: 3.93,
+                        deltaE94T: 3.86,
+                        deltaE94G: 3.86,
+                        deltaE2000: 3.66,
+                        deltaECMC: 3.56,
+                        deltaL: 3.07,
+                    },
+                    reference: { Lab: [40.8, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '14',
+                    location: { x: 346, y: 711, w: 50, h: 50 },
+                    observed: {
+                        RGB: [108.57, 106.56, 104.46],
+                        Lab: [41.98, 0.98, 1.63],
+                        mean: 106.93,
+                        stddev: 1.84,
+                        snr: 58.17,
+                    },
+                    assessed: {
+                        deltaE76: 3.91,
+                        deltaE94T: 3.87,
+                        deltaE94G: 3.87,
+                        deltaE2000: 3.56,
+                        deltaECMC: 3.32,
+                        deltaL: 3.28,
+                    },
+                    reference: { Lab: [38.7, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '15',
+                    location: { x: 233, y: 711, w: 50, h: 50 },
+                    observed: {
+                        RGB: [102.93, 101.36, 98.88],
+                        Lab: [39.87, 0.69, 1.75],
+                        mean: 101.56,
+                        stddev: 2.05,
+                        snr: 49.55,
+                    },
+                    assessed: {
+                        deltaE76: 4.4,
+                        deltaE94T: 4.36,
+                        deltaE94G: 4.36,
+                        deltaE2000: 3.92,
+                        deltaECMC: 3.64,
+                        deltaL: 3.77,
+                    },
+                    reference: { Lab: [36.1, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '16',
+                    location: { x: 120, y: 711, w: 50, h: 50 },
+                    observed: {
+                        RGB: [99.15, 97.9, 95.29],
+                        Lab: [38.47, 0.48, 1.76],
+                        mean: 97.99,
+                        stddev: 2.02,
+                        snr: 48.46,
+                    },
+                    assessed: {
+                        deltaE76: 4.68,
+                        deltaE94T: 4.65,
+                        deltaE94G: 4.65,
+                        deltaE2000: 4.13,
+                        deltaECMC: 3.82,
+                        deltaL: 4.07,
+                    },
+                    reference: { Lab: [34.4, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '17',
+                    location: { x: 120, y: 598, w: 50, h: 50 },
+                    observed: {
+                        RGB: [94.46, 92.78, 91.34],
+                        Lab: [36.55, 0.85, 1.18],
+                        mean: 93.12,
+                        stddev: 2.33,
+                        snr: 40.02,
+                    },
+                    assessed: {
+                        deltaE76: 3.93,
+                        deltaE94T: 3.91,
+                        deltaE94G: 3.91,
+                        deltaE2000: 3.35,
+                        deltaECMC: 3.05,
+                        deltaL: 3.55,
+                    },
+                    reference: { Lab: [33, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '18',
+                    location: { x: 120, y: 485, w: 50, h: 50 },
+                    observed: {
+                        RGB: [88.35, 87.15, 85.74],
+                        Lab: [34.29, 0.57, 1.06],
+                        mean: 87.35,
+                        stddev: 2.18,
+                        snr: 40.06,
+                    },
+                    assessed: {
+                        deltaE76: 5.15,
+                        deltaE94T: 5.14,
+                        deltaE94G: 5.14,
+                        deltaE2000: 4.2,
+                        deltaECMC: 3.61,
+                        deltaL: 4.89,
+                    },
+                    reference: { Lab: [29.4, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '19',
+                    location: { x: 120, y: 372, w: 50, h: 50 },
+                    observed: {
+                        RGB: [78.26, 77.52, 77.06],
+                        Lab: [30.48, 0.39, 0.42],
+                        mean: 77.69,
+                        stddev: 2.37,
+                        snr: 32.76,
+                    },
+                    assessed: {
+                        deltaE76: 6.08,
+                        deltaE94T: 6.08,
+                        deltaE94G: 6.08,
+                        deltaE2000: 4.66,
+                        deltaECMC: 4.03,
+                        deltaL: 5.98,
+                    },
+                    reference: { Lab: [24.5, 1, -0.5] },
+                    validity: { valid: true },
+                },
+                {
+                    name: '20',
+                    location: { x: 120, y: 259, w: 50, h: 50 },
+                    observed: {
+                        RGB: [71.12, 70.36, 70.55],
+                        Lab: [27.69, 0.48, 0.05],
+                        mean: 70.61,
+                        stddev: 2.45,
+                        snr: 28.78,
+                    },
+                    assessed: {
+                        deltaE76: 6.43,
+                        deltaE94T: 6.43,
+                        deltaE94G: 6.43,
+                        deltaE2000: 4.73,
+                        deltaECMC: 4.34,
+                        deltaL: 6.39,
+                    },
+                    reference: { Lab: [21.3, 1, -0.5] },
+                    validity: { valid: true },
+                },
+            ],
+            edgePatches: [
+                {
+                    name: 'Vertical_Left',
+                    location: { x: 244, y: 341, w: 80, h: 200 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0251600359,
+                            MTF50: 0.0072686135,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.07573051750659943],
                                 [0.03999999910593033, 0.03177310526371002],
@@ -2762,14 +2762,14 @@ const targetData = {
                                 [0.9200000166893005, 0.21876752376556396],
                                 [0.9399999976158142, 0.06936653703451157],
                                 [0.9599999785423279, 0.0582958422601223],
-                                [0.9800000190734863, 0.02379279024899006]
-                            ]
+                                [0.9800000190734863, 0.02379279024899006],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0182574759,
-                            "MTF50": 0.0070846397,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0182574759,
+                            MTF50: 0.0070846397,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.07573051750659943],
                                 [0.03999999910593033, 0.03177310526371002],
@@ -2819,14 +2819,14 @@ const targetData = {
                                 [0.9200000166893005, 0.21876752376556396],
                                 [0.9399999976158142, 0.06936653703451157],
                                 [0.9599999785423279, 0.0582958422601223],
-                                [0.9800000190734863, 0.02379279024899006]
-                            ]
+                                [0.9800000190734863, 0.02379279024899006],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0123415866,
-                            "MTF50": 0.006856437,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0123415866,
+                            MTF50: 0.006856437,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.07573051750659943],
                                 [0.03999999910593033, 0.03177310526371002],
@@ -2876,14 +2876,14 @@ const targetData = {
                                 [0.9200000166893005, 0.21876752376556396],
                                 [0.9399999976158142, 0.06936653703451157],
                                 [0.9599999785423279, 0.0582958422601223],
-                                [0.9800000190734863, 0.02379279024899006]
-                            ]
+                                [0.9800000190734863, 0.02379279024899006],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0174981227,
-                            "MTF50": 0.0070494067,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0174981227,
+                            MTF50: 0.0070494067,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.07573051750659943],
                                 [0.03999999910593033, 0.03177310526371002],
@@ -2933,29 +2933,29 @@ const targetData = {
                                 [0.9200000166893005, 0.21876752376556396],
                                 [0.9399999976158142, 0.06936653703451157],
                                 [0.9599999785423279, 0.0582958422601223],
-                                [0.9800000190734863, 0.02379279024899006]
-                            ]
-                        }
+                                [0.9800000190734863, 0.02379279024899006],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.32,
-                        "MTF50": 0.3,
-                        "MTFMAX": 4,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.32,
+                        MTF50: 0.3,
+                        MTFMAX: 4,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Vertical_Right",
-                    "location": { "x": 545, "y": 341, "w": 80, "h": 200 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 1.0112500422,
-                            "MTF50": 1.0062500205,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Right',
+                    location: { x: 545, y: 341, w: 80, h: 200 },
+                    observed: {
+                        R: {
+                            MTF10: 1.0112500422,
+                            MTF50: 1.0062500205,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.999999463558197],
                                 [0.03999999910593033, 0.999999463558197],
@@ -3005,14 +3005,14 @@ const targetData = {
                                 [0.9200000166893005, 0.999999463558197],
                                 [0.9399999976158142, 0.999999463558197],
                                 [0.9599999785423279, 0.999999463558197],
-                                [0.9800000190734863, 0.999999463558197]
-                            ]
+                                [0.9800000190734863, 0.999999463558197],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0010268618,
-                            "MTF50": 0.00034813,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0010268618,
+                            MTF50: 0.00034813,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.999999463558197],
                                 [0.03999999910593033, 0.999999463558197],
@@ -3062,14 +3062,14 @@ const targetData = {
                                 [0.9200000166893005, 0.999999463558197],
                                 [0.9399999976158142, 0.999999463558197],
                                 [0.9599999785423279, 0.999999463558197],
-                                [0.9800000190734863, 0.999999463558197]
-                            ]
+                                [0.9800000190734863, 0.999999463558197],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 1.0112500422,
-                            "MTF50": 1.0062500205,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 1.0112500422,
+                            MTF50: 1.0062500205,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.999999463558197],
                                 [0.03999999910593033, 0.999999463558197],
@@ -3119,14 +3119,14 @@ const targetData = {
                                 [0.9200000166893005, 0.999999463558197],
                                 [0.9399999976158142, 0.999999463558197],
                                 [0.9599999785423279, 0.999999463558197],
-                                [0.9800000190734863, 0.999999463558197]
-                            ]
+                                [0.9800000190734863, 0.999999463558197],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.2887384165,
-                            "MTF50": 0.2868289814,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.2887384165,
+                            MTF50: 0.2868289814,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.999999463558197],
                                 [0.03999999910593033, 0.999999463558197],
@@ -3176,29 +3176,29 @@ const targetData = {
                                 [0.9200000166893005, 0.999999463558197],
                                 [0.9399999976158142, 0.999999463558197],
                                 [0.9599999785423279, 0.999999463558197],
-                                [0.9800000190734863, 0.999999463558197]
-                            ]
-                        }
+                                [0.9800000190734863, 0.999999463558197],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.29,
-                        "MTF50": 0.29,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.29,
+                        MTF50: 0.29,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Top",
-                    "location": { "x": 334, "y": 251, "w": 200, "h": 80 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0011519852,
-                            "MTF50": 0.0003449121,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Top',
+                    location: { x: 334, y: 251, w: 200, h: 80 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0011519852,
+                            MTF50: 0.0003449121,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03440581262111664],
                                 [0.03999999910593033, 0.03675844147801399],
@@ -3248,14 +3248,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04939613118767738],
                                 [0.9399999976158142, 0.09163892269134521],
                                 [0.9599999785423279, 0.0427178293466568],
-                                [0.9800000190734863, 0.036660149693489075]
-                            ]
+                                [0.9800000190734863, 0.036660149693489075],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0012450076,
-                            "MTF50": 0.0003431239,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0012450076,
+                            MTF50: 0.0003431239,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03440581262111664],
                                 [0.03999999910593033, 0.03675844147801399],
@@ -3305,14 +3305,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04939613118767738],
                                 [0.9399999976158142, 0.09163892269134521],
                                 [0.9599999785423279, 0.0427178293466568],
-                                [0.9800000190734863, 0.036660149693489075]
-                            ]
+                                [0.9800000190734863, 0.036660149693489075],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0011519217,
-                            "MTF50": 0.0003468739,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0011519217,
+                            MTF50: 0.0003468739,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03440581262111664],
                                 [0.03999999910593033, 0.03675844147801399],
@@ -3362,14 +3362,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04939613118767738],
                                 [0.9399999976158142, 0.09163892269134521],
                                 [0.9599999785423279, 0.0427178293466568],
-                                [0.9800000190734863, 0.036660149693489075]
-                            ]
+                                [0.9800000190734863, 0.036660149693489075],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0012185013,
-                            "MTF50": 0.0003440502,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0012185013,
+                            MTF50: 0.0003440502,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03440581262111664],
                                 [0.03999999910593033, 0.03675844147801399],
@@ -3419,29 +3419,29 @@ const targetData = {
                                 [0.9200000166893005, 0.04939613118767738],
                                 [0.9399999976158142, 0.09163892269134521],
                                 [0.9599999785423279, 0.0427178293466568],
-                                [0.9800000190734863, 0.036660149693489075]
-                            ]
-                        }
+                                [0.9800000190734863, 0.036660149693489075],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0,
-                        "MTF50": 0,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0,
+                        MTF50: 0,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Bottom",
-                    "location": { "x": 334, "y": 551, "w": 200, "h": 80 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0056249997,
-                            "MTF50": 0.0031249999,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Bottom',
+                    location: { x: 334, y: 551, w: 200, h: 80 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0056249997,
+                            MTF50: 0.0031249999,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, -1.0000001192092896],
                                 [0.03999999910593033, -1.0000001192092896],
@@ -3491,14 +3491,14 @@ const targetData = {
                                 [0.9200000166893005, -1.0000001192092896],
                                 [0.9399999976158142, -1.0000001192092896],
                                 [0.9599999785423279, -1.0000001192092896],
-                                [0.9800000190734863, -1.0000001192092896]
-                            ]
+                                [0.9800000190734863, -1.0000001192092896],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0056249997,
-                            "MTF50": 0.0031249999,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0056249997,
+                            MTF50: 0.0031249999,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, -1.0000001192092896],
                                 [0.03999999910593033, -1.0000001192092896],
@@ -3548,14 +3548,14 @@ const targetData = {
                                 [0.9200000166893005, -1.0000001192092896],
                                 [0.9399999976158142, -1.0000001192092896],
                                 [0.9599999785423279, -1.0000001192092896],
-                                [0.9800000190734863, -1.0000001192092896]
-                            ]
+                                [0.9800000190734863, -1.0000001192092896],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0056249997,
-                            "MTF50": 0.0031249999,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0056249997,
+                            MTF50: 0.0031249999,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, -1.0000001192092896],
                                 [0.03999999910593033, -1.0000001192092896],
@@ -3605,14 +3605,14 @@ const targetData = {
                                 [0.9200000166893005, -1.0000001192092896],
                                 [0.9399999976158142, -1.0000001192092896],
                                 [0.9599999785423279, -1.0000001192092896],
-                                [0.9800000190734863, -1.0000001192092896]
-                            ]
+                                [0.9800000190734863, -1.0000001192092896],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0056249997,
-                            "MTF50": 0.0031249999,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0056249997,
+                            MTF50: 0.0031249999,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, -1.0000001192092896],
                                 [0.03999999910593033, -1.0000001192092896],
@@ -3662,476 +3662,476 @@ const targetData = {
                                 [0.9200000166893005, -1.0000001192092896],
                                 [0.9399999976158142, -1.0000001192092896],
                                 [0.9599999785423279, -1.0000001192092896],
-                                [0.9800000190734863, -1.0000001192092896]
-                            ]
-                        }
+                                [0.9800000190734863, -1.0000001192092896],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.01,
-                        "MTF50": 0,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.01,
+                        MTF50: 0,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
             ],
-            "targetType": "QA_62",
-            "validity": { "valid": true, "invalidPatch": 0 },
-            "assessed": {
-                "meanDeltaE76": 4.63,
-                "meanDeltaE94T": 4.41,
-                "meanDeltaE94G": 4.41,
-                "meanDeltaE2000": 4.09,
-                "meanDeltaECMC": 4.36,
-                "meanDeltaL": 1.57,
-                "meanStdDev": 1.67,
-                "SEFF": 0,
-                "MTF10": 0.08,
-                "MTF50": 0.07,
-                "MTFMAX": 1,
-                "MTFHSF": 0,
-                "CMR": 0
-            }
+            targetType: 'QA_62',
+            validity: { valid: true, invalidPatch: 0 },
+            assessed: {
+                meanDeltaE76: 4.63,
+                meanDeltaE94T: 4.41,
+                meanDeltaE94G: 4.41,
+                meanDeltaE2000: 4.09,
+                meanDeltaECMC: 4.36,
+                meanDeltaL: 1.57,
+                meanStdDev: 1.67,
+                SEFF: 0,
+                MTF10: 0.08,
+                MTF50: 0.07,
+                MTFMAX: 1,
+                MTFHSF: 0,
+                CMR: 0,
+            },
         },
         {
-            "name": "Applied Image QA-62",
-            "type": "QA_62",
-            "location": { "x": 634, "y": 447, "w": 871, "h": 1111, "r": 0 },
-            "observed": { "ppi": 299.61 },
-            "colorPatches": [
+            name: 'Applied Image QA-62',
+            type: 'QA_62',
+            location: { x: 634, y: 447, w: 871, h: 1111, r: 0 },
+            observed: { ppi: 299.61 },
+            colorPatches: [
                 {
-                    "name": "1",
-                    "location": { "x": 115, "y": 149, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [240.79, 237.54, 233.97],
-                        "Lab": [93.46, 1.57, 2.74],
-                        "mean": 238.12,
-                        "stddev": 1.06,
-                        "snr": 224.1
+                    name: '1',
+                    location: { x: 115, y: 149, w: 50, h: 50 },
+                    observed: {
+                        RGB: [240.79, 237.54, 233.97],
+                        Lab: [93.46, 1.57, 2.74],
+                        mean: 238.12,
+                        stddev: 1.06,
+                        snr: 224.1,
                     },
-                    "assessed": {
-                        "deltaE76": 4.16,
-                        "deltaE94T": 3.96,
-                        "deltaE94G": 3.96,
-                        "deltaE2000": 3.49,
-                        "deltaECMC": 4.21,
-                        "deltaL": -2.54
+                    assessed: {
+                        deltaE76: 4.16,
+                        deltaE94T: 3.96,
+                        deltaE94G: 3.96,
+                        deltaE2000: 3.49,
+                        deltaECMC: 4.21,
+                        deltaL: -2.54,
                     },
-                    "reference": { "Lab": [96, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [96, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "2",
-                    "location": { "x": 228, "y": 149, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [228.15, 224.53, 220.61],
-                        "Lab": [88.39, 1.77, 3.02],
-                        "mean": 225.19,
-                        "stddev": 1.25,
-                        "snr": 180.77
+                    name: '2',
+                    location: { x: 228, y: 149, w: 50, h: 50 },
+                    observed: {
+                        RGB: [228.15, 224.53, 220.61],
+                        Lab: [88.39, 1.77, 3.02],
+                        mean: 225.19,
+                        stddev: 1.25,
+                        snr: 180.77,
                     },
-                    "assessed": {
-                        "deltaE76": 5.24,
-                        "deltaE94T": 5.03,
-                        "deltaE94G": 5.03,
-                        "deltaE2000": 4.18,
-                        "deltaECMC": 4.63,
-                        "deltaL": -3.81
+                    assessed: {
+                        deltaE76: 5.24,
+                        deltaE94T: 5.03,
+                        deltaE94G: 5.03,
+                        deltaE2000: 4.18,
+                        deltaECMC: 4.63,
+                        deltaL: -3.81,
                     },
-                    "reference": { "Lab": [92.2, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [92.2, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "3",
-                    "location": { "x": 341, "y": 149, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [218.49, 215.27, 210.36],
-                        "Lab": [84.68, 1.43, 3.49],
-                        "mean": 215.7,
-                        "stddev": 1.31,
-                        "snr": 164.42
+                    name: '3',
+                    location: { x: 341, y: 149, w: 50, h: 50 },
+                    observed: {
+                        RGB: [218.49, 215.27, 210.36],
+                        Lab: [84.68, 1.43, 3.49],
+                        mean: 215.7,
+                        stddev: 1.31,
+                        snr: 164.42,
                     },
-                    "assessed": {
-                        "deltaE76": 5.9,
-                        "deltaE94T": 5.65,
-                        "deltaE94G": 5.65,
-                        "deltaE2000": 4.69,
-                        "deltaECMC": 5.1,
-                        "deltaL": -4.32
+                    assessed: {
+                        deltaE76: 5.9,
+                        deltaE94T: 5.65,
+                        deltaE94G: 5.65,
+                        deltaE2000: 4.69,
+                        deltaECMC: 5.1,
+                        deltaL: -4.32,
                     },
-                    "reference": { "Lab": [89, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [89, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "4",
-                    "location": { "x": 454, "y": 149, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [198.78, 194.89, 190.09],
-                        "Lab": [76.78, 1.84, 3.58],
-                        "mean": 195.53,
-                        "stddev": 1.54,
-                        "snr": 126.76
+                    name: '4',
+                    location: { x: 454, y: 149, w: 50, h: 50 },
+                    observed: {
+                        RGB: [198.78, 194.89, 190.09],
+                        Lab: [76.78, 1.84, 3.58],
+                        mean: 195.53,
+                        stddev: 1.54,
+                        snr: 126.76,
                     },
-                    "assessed": {
-                        "deltaE76": 6.45,
-                        "deltaE94T": 6.18,
-                        "deltaE94G": 6.18,
-                        "deltaE2000": 5.22,
-                        "deltaECMC": 5.31,
-                        "deltaL": -4.92
+                    assessed: {
+                        deltaE76: 6.45,
+                        deltaE94T: 6.18,
+                        deltaE94G: 6.18,
+                        deltaE2000: 5.22,
+                        deltaECMC: 5.31,
+                        deltaL: -4.92,
                     },
-                    "reference": { "Lab": [81.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [81.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "5",
-                    "location": { "x": 567, "y": 149, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [177.17, 173.85, 167.81],
-                        "Lab": [68.42, 1.38, 4.16],
-                        "mean": 174.18,
-                        "stddev": 1.4,
-                        "snr": 124.56
+                    name: '5',
+                    location: { x: 567, y: 149, w: 50, h: 50 },
+                    observed: {
+                        RGB: [177.17, 173.85, 167.81],
+                        Lab: [68.42, 1.38, 4.16],
+                        mean: 174.18,
+                        stddev: 1.4,
+                        snr: 124.56,
                     },
-                    "assessed": {
-                        "deltaE76": 6.08,
-                        "deltaE94T": 5.69,
-                        "deltaE94G": 5.69,
-                        "deltaE2000": 5.27,
-                        "deltaECMC": 5.7,
-                        "deltaL": -3.88
+                    assessed: {
+                        deltaE76: 6.08,
+                        deltaE94T: 5.69,
+                        deltaE94G: 5.69,
+                        deltaE2000: 5.27,
+                        deltaECMC: 5.7,
+                        deltaL: -3.88,
                     },
-                    "reference": { "Lab": [72.3, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [72.3, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "6",
-                    "location": { "x": 680, "y": 149, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [166.84, 163.48, 157.69],
-                        "Lab": [64.37, 1.43, 4.03],
-                        "mean": 163.85,
-                        "stddev": 1.29,
-                        "snr": 127.21
+                    name: '6',
+                    location: { x: 680, y: 149, w: 50, h: 50 },
+                    observed: {
+                        RGB: [166.84, 163.48, 157.69],
+                        Lab: [64.37, 1.43, 4.03],
+                        mean: 163.85,
+                        stddev: 1.29,
+                        snr: 127.21,
                     },
-                    "assessed": {
-                        "deltaE76": 5.02,
-                        "deltaE94T": 4.59,
-                        "deltaE94G": 4.59,
-                        "deltaE2000": 4.58,
-                        "deltaECMC": 5.44,
-                        "deltaL": -2.13
+                    assessed: {
+                        deltaE76: 5.02,
+                        deltaE94T: 4.59,
+                        deltaE94G: 4.59,
+                        deltaE2000: 4.58,
+                        deltaECMC: 5.44,
+                        deltaL: -2.13,
                     },
-                    "reference": { "Lab": [66.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [66.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "7",
-                    "location": { "x": 680, "y": 262, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [163.26, 160.24, 154.1],
-                        "Lab": [63.04, 1.19, 4.15],
-                        "mean": 160.47,
-                        "stddev": 1.38,
-                        "snr": 116.04
+                    name: '7',
+                    location: { x: 680, y: 262, w: 50, h: 50 },
+                    observed: {
+                        RGB: [163.26, 160.24, 154.1],
+                        Lab: [63.04, 1.19, 4.15],
+                        mean: 160.47,
+                        stddev: 1.38,
+                        snr: 116.04,
                     },
-                    "assessed": {
-                        "deltaE76": 4.77,
-                        "deltaE94T": 4.29,
-                        "deltaE94G": 4.29,
-                        "deltaE2000": 4.42,
-                        "deltaECMC": 5.5,
-                        "deltaL": -1.06
+                    assessed: {
+                        deltaE76: 4.77,
+                        deltaE94T: 4.29,
+                        deltaE94G: 4.29,
+                        deltaE2000: 4.42,
+                        deltaECMC: 5.5,
+                        deltaL: -1.06,
                     },
-                    "reference": { "Lab": [64.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [64.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "8",
-                    "location": { "x": 680, "y": 375, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [155.46, 152.26, 147.29],
-                        "Lab": [59.97, 1.42, 3.52],
-                        "mean": 152.67,
-                        "stddev": 1.53,
-                        "snr": 100.05
+                    name: '8',
+                    location: { x: 680, y: 375, w: 50, h: 50 },
+                    observed: {
+                        RGB: [155.46, 152.26, 147.29],
+                        Lab: [59.97, 1.42, 3.52],
+                        mean: 152.67,
+                        stddev: 1.53,
+                        snr: 100.05,
                     },
-                    "assessed": {
-                        "deltaE76": 4.05,
-                        "deltaE94T": 3.67,
-                        "deltaE94G": 3.67,
-                        "deltaE2000": 3.8,
-                        "deltaECMC": 4.89,
-                        "deltaL": 0.17
+                    assessed: {
+                        deltaE76: 4.05,
+                        deltaE94T: 3.67,
+                        deltaE94G: 3.67,
+                        deltaE2000: 3.8,
+                        deltaECMC: 4.89,
+                        deltaL: 0.17,
                     },
-                    "reference": { "Lab": [59.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [59.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "9",
-                    "location": { "x": 680, "y": 488, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [148.97, 146.36, 140.97],
-                        "Lab": [57.57, 1.01, 3.63],
-                        "mean": 146.55,
-                        "stddev": 1.5,
-                        "snr": 97.97
+                    name: '9',
+                    location: { x: 680, y: 488, w: 50, h: 50 },
+                    observed: {
+                        RGB: [148.97, 146.36, 140.97],
+                        Lab: [57.57, 1.01, 3.63],
+                        mean: 146.55,
+                        stddev: 1.5,
+                        snr: 97.97,
                     },
-                    "assessed": {
-                        "deltaE76": 4.45,
-                        "deltaE94T": 4.11,
-                        "deltaE94G": 4.11,
-                        "deltaE2000": 4.18,
-                        "deltaECMC": 5.05,
-                        "deltaL": 1.67
+                    assessed: {
+                        deltaE76: 4.45,
+                        deltaE94T: 4.11,
+                        deltaE94G: 4.11,
+                        deltaE2000: 4.18,
+                        deltaECMC: 5.05,
+                        deltaL: 1.67,
                     },
-                    "reference": { "Lab": [55.9, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [55.9, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "10",
-                    "location": { "x": 680, "y": 601, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [142.69, 140.03, 135.87],
-                        "Lab": [55.13, 1.17, 2.95],
-                        "mean": 140.37,
-                        "stddev": 1.61,
-                        "snr": 87.23
+                    name: '10',
+                    location: { x: 680, y: 601, w: 50, h: 50 },
+                    observed: {
+                        RGB: [142.69, 140.03, 135.87],
+                        Lab: [55.13, 1.17, 2.95],
+                        mean: 140.37,
+                        stddev: 1.61,
+                        snr: 87.23,
                     },
-                    "assessed": {
-                        "deltaE76": 4.17,
-                        "deltaE94T": 3.96,
-                        "deltaE94G": 3.96,
-                        "deltaE2000": 3.97,
-                        "deltaECMC": 4.44,
-                        "deltaL": 2.33
+                    assessed: {
+                        deltaE76: 4.17,
+                        deltaE94T: 3.96,
+                        deltaE94G: 3.96,
+                        deltaE2000: 3.97,
+                        deltaECMC: 4.44,
+                        deltaL: 2.33,
                     },
-                    "reference": { "Lab": [52.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [52.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "11",
-                    "location": { "x": 680, "y": 714, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [132.98, 130.37, 126.73],
-                        "Lab": [51.35, 1.19, 2.65],
-                        "mean": 130.75,
-                        "stddev": 1.66,
-                        "snr": 78.99
+                    name: '11',
+                    location: { x: 680, y: 714, w: 50, h: 50 },
+                    observed: {
+                        RGB: [132.98, 130.37, 126.73],
+                        Lab: [51.35, 1.19, 2.65],
+                        mean: 130.75,
+                        stddev: 1.66,
+                        snr: 78.99,
                     },
-                    "assessed": {
-                        "deltaE76": 4.25,
-                        "deltaE94T": 4.1,
-                        "deltaE94G": 4.1,
-                        "deltaE2000": 4.14,
-                        "deltaECMC": 4.21,
-                        "deltaL": 2.85
+                    assessed: {
+                        deltaE76: 4.25,
+                        deltaE94T: 4.1,
+                        deltaE94G: 4.1,
+                        deltaE2000: 4.14,
+                        deltaECMC: 4.21,
+                        deltaL: 2.85,
                     },
-                    "reference": { "Lab": [48.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [48.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "12",
-                    "location": { "x": 567, "y": 714, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [117.98, 115.83, 112.87],
-                        "Lab": [45.61, 0.99, 2.15],
-                        "mean": 116.15,
-                        "stddev": 1.79,
-                        "snr": 64.95
+                    name: '12',
+                    location: { x: 567, y: 714, w: 50, h: 50 },
+                    observed: {
+                        RGB: [117.98, 115.83, 112.87],
+                        Lab: [45.61, 0.99, 2.15],
+                        mean: 116.15,
+                        stddev: 1.79,
+                        snr: 64.95,
                     },
-                    "assessed": {
-                        "deltaE76": 4.01,
-                        "deltaE94T": 3.93,
-                        "deltaE94G": 3.93,
-                        "deltaE2000": 3.8,
-                        "deltaECMC": 3.76,
-                        "deltaL": 3.01
+                    assessed: {
+                        deltaE76: 4.01,
+                        deltaE94T: 3.93,
+                        deltaE94G: 3.93,
+                        deltaE2000: 3.8,
+                        deltaECMC: 3.76,
+                        deltaL: 3.01,
                     },
-                    "reference": { "Lab": [42.6, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [42.6, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "13",
-                    "location": { "x": 454, "y": 714, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [112.89, 110.68, 108.37],
-                        "Lab": [43.62, 1.09, 1.8],
-                        "mean": 111.09,
-                        "stddev": 1.71,
-                        "snr": 65.02
+                    name: '13',
+                    location: { x: 454, y: 714, w: 50, h: 50 },
+                    observed: {
+                        RGB: [112.89, 110.68, 108.37],
+                        Lab: [43.62, 1.09, 1.8],
+                        mean: 111.09,
+                        stddev: 1.71,
+                        snr: 65.02,
                     },
-                    "assessed": {
-                        "deltaE76": 3.64,
-                        "deltaE94T": 3.58,
-                        "deltaE94G": 3.58,
-                        "deltaE2000": 3.39,
-                        "deltaECMC": 3.37,
-                        "deltaL": 2.82
+                    assessed: {
+                        deltaE76: 3.64,
+                        deltaE94T: 3.58,
+                        deltaE94G: 3.58,
+                        deltaE2000: 3.39,
+                        deltaECMC: 3.37,
+                        deltaL: 2.82,
                     },
-                    "reference": { "Lab": [40.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [40.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "14",
-                    "location": { "x": 341, "y": 714, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [107.46, 105.49, 103.24],
-                        "Lab": [41.55, 0.95, 1.7],
-                        "mean": 105.83,
-                        "stddev": 1.82,
-                        "snr": 58.08
+                    name: '14',
+                    location: { x: 341, y: 714, w: 50, h: 50 },
+                    observed: {
+                        RGB: [107.46, 105.49, 103.24],
+                        Lab: [41.55, 0.95, 1.7],
+                        mean: 105.83,
+                        stddev: 1.82,
+                        snr: 58.08,
                     },
-                    "assessed": {
-                        "deltaE76": 3.6,
-                        "deltaE94T": 3.55,
-                        "deltaE94G": 3.55,
-                        "deltaE2000": 3.29,
-                        "deltaECMC": 3.3,
-                        "deltaL": 2.85
+                    assessed: {
+                        deltaE76: 3.6,
+                        deltaE94T: 3.55,
+                        deltaE94G: 3.55,
+                        deltaE2000: 3.29,
+                        deltaECMC: 3.3,
+                        deltaL: 2.85,
                     },
-                    "reference": { "Lab": [38.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [38.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "15",
-                    "location": { "x": 228, "y": 714, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [101.03, 99.9, 97.29],
-                        "Lab": [39.24, 0.41, 1.73],
-                        "mean": 99.95,
-                        "stddev": 1.8,
-                        "snr": 55.49
+                    name: '15',
+                    location: { x: 228, y: 714, w: 50, h: 50 },
+                    observed: {
+                        RGB: [101.03, 99.9, 97.29],
+                        Lab: [39.24, 0.41, 1.73],
+                        mean: 99.95,
+                        stddev: 1.8,
+                        snr: 55.49,
                     },
-                    "assessed": {
-                        "deltaE76": 3.9,
-                        "deltaE94T": 3.86,
-                        "deltaE94G": 3.86,
-                        "deltaE2000": 3.56,
-                        "deltaECMC": 3.54,
-                        "deltaL": 3.14
+                    assessed: {
+                        deltaE76: 3.9,
+                        deltaE94T: 3.86,
+                        deltaE94G: 3.86,
+                        deltaE2000: 3.56,
+                        deltaECMC: 3.54,
+                        deltaL: 3.14,
                     },
-                    "reference": { "Lab": [36.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [36.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "16",
-                    "location": { "x": 115, "y": 714, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [98.09, 96.93, 94.91],
-                        "Lab": [38.1, 0.48, 1.4],
-                        "mean": 97.06,
-                        "stddev": 2.29,
-                        "snr": 42.43
+                    name: '16',
+                    location: { x: 115, y: 714, w: 50, h: 50 },
+                    observed: {
+                        RGB: [98.09, 96.93, 94.91],
+                        Lab: [38.1, 0.48, 1.4],
+                        mean: 97.06,
+                        stddev: 2.29,
+                        snr: 42.43,
                     },
-                    "assessed": {
-                        "deltaE76": 4.19,
-                        "deltaE94T": 4.17,
-                        "deltaE94G": 4.17,
-                        "deltaE2000": 3.69,
-                        "deltaECMC": 3.37,
-                        "deltaL": 3.7
+                    assessed: {
+                        deltaE76: 4.19,
+                        deltaE94T: 4.17,
+                        deltaE94G: 4.17,
+                        deltaE2000: 3.69,
+                        deltaECMC: 3.37,
+                        deltaL: 3.7,
                     },
-                    "reference": { "Lab": [34.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [34.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "17",
-                    "location": { "x": 115, "y": 601, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [94.66, 93.32, 92.07],
-                        "Lab": [36.73, 0.68, 1],
-                        "mean": 93.58,
-                        "stddev": 2.2,
-                        "snr": 42.56
+                    name: '17',
+                    location: { x: 115, y: 601, w: 50, h: 50 },
+                    observed: {
+                        RGB: [94.66, 93.32, 92.07],
+                        Lab: [36.73, 0.68, 1],
+                        mean: 93.58,
+                        stddev: 2.2,
+                        snr: 42.56,
                     },
-                    "assessed": {
-                        "deltaE76": 4.03,
-                        "deltaE94T": 4.02,
-                        "deltaE94G": 4.02,
-                        "deltaE2000": 3.43,
-                        "deltaECMC": 2.98,
-                        "deltaL": 3.73
+                    assessed: {
+                        deltaE76: 4.03,
+                        deltaE94T: 4.02,
+                        deltaE94G: 4.02,
+                        deltaE2000: 3.43,
+                        deltaECMC: 2.98,
+                        deltaL: 3.73,
                     },
-                    "reference": { "Lab": [33, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [33, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "18",
-                    "location": { "x": 115, "y": 488, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [89.53, 88.43, 87.3],
-                        "Lab": [34.78, 0.55, 0.88],
-                        "mean": 88.63,
-                        "stddev": 2.3,
-                        "snr": 38.46
+                    name: '18',
+                    location: { x: 115, y: 488, w: 50, h: 50 },
+                    observed: {
+                        RGB: [89.53, 88.43, 87.3],
+                        Lab: [34.78, 0.55, 0.88],
+                        mean: 88.63,
+                        stddev: 2.3,
+                        snr: 38.46,
                     },
-                    "assessed": {
-                        "deltaE76": 5.57,
-                        "deltaE94T": 5.57,
-                        "deltaE94G": 5.57,
-                        "deltaE2000": 4.52,
-                        "deltaECMC": 3.69,
-                        "deltaL": 5.38
+                    assessed: {
+                        deltaE76: 5.57,
+                        deltaE94T: 5.57,
+                        deltaE94G: 5.57,
+                        deltaE2000: 4.52,
+                        deltaECMC: 3.69,
+                        deltaL: 5.38,
                     },
-                    "reference": { "Lab": [29.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [29.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "19",
-                    "location": { "x": 115, "y": 375, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [78.77, 78.28, 77.85],
-                        "Lab": [30.75, 0.25, 0.35],
-                        "mean": 78.38,
-                        "stddev": 2.86,
-                        "snr": 27.44
+                    name: '19',
+                    location: { x: 115, y: 375, w: 50, h: 50 },
+                    observed: {
+                        RGB: [78.77, 78.28, 77.85],
+                        Lab: [30.75, 0.25, 0.35],
+                        mean: 78.38,
+                        stddev: 2.86,
+                        snr: 27.44,
                     },
-                    "assessed": {
-                        "deltaE76": 6.35,
-                        "deltaE94T": 6.35,
-                        "deltaE94G": 6.35,
-                        "deltaE2000": 4.9,
-                        "deltaECMC": 4.19,
-                        "deltaL": 6.25
+                    assessed: {
+                        deltaE76: 6.35,
+                        deltaE94T: 6.35,
+                        deltaE94G: 6.35,
+                        deltaE2000: 4.9,
+                        deltaECMC: 4.19,
+                        deltaL: 6.25,
                     },
-                    "reference": { "Lab": [24.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [24.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "20",
-                    "location": { "x": 115, "y": 262, "w": 50, "h": 50 },
-                    "observed": {
-                        "RGB": [74.28, 74.09, 74.58],
-                        "Lab": [29.1, 0.17, -0.23],
-                        "mean": 74.2,
-                        "stddev": 2.94,
-                        "snr": 25.23
+                    name: '20',
+                    location: { x: 115, y: 262, w: 50, h: 50 },
+                    observed: {
+                        RGB: [74.28, 74.09, 74.58],
+                        Lab: [29.1, 0.17, -0.23],
+                        mean: 74.2,
+                        stddev: 2.94,
+                        snr: 25.23,
                     },
-                    "assessed": {
-                        "deltaE76": 7.85,
-                        "deltaE94T": 7.85,
-                        "deltaE94G": 7.85,
-                        "deltaE2000": 5.84,
-                        "deltaECMC": 5.13,
-                        "deltaL": 7.8
+                    assessed: {
+                        deltaE76: 7.85,
+                        deltaE94T: 7.85,
+                        deltaE94G: 7.85,
+                        deltaE2000: 5.84,
+                        deltaECMC: 5.13,
+                        deltaL: 7.8,
                     },
-                    "reference": { "Lab": [21.3, 1, -0.5] },
-                    "validity": { "valid": true }
-                }
+                    reference: { Lab: [21.3, 1, -0.5] },
+                    validity: { valid: true },
+                },
             ],
-            "edgePatches": [
+            edgePatches: [
                 {
-                    "name": "Vertical_Left",
-                    "location": { "x": 241, "y": 342, "w": 80, "h": 200 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0118057975,
-                            "MTF50": 0.0065587764,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Left',
+                    location: { x: 241, y: 342, w: 80, h: 200 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0118057975,
+                            MTF50: 0.0065587764,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999996423721313],
@@ -4181,14 +4181,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 1.0112500423,
-                            "MTF50": 1.0062500209,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 1.0112500423,
+                            MTF50: 1.0062500209,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999996423721313],
@@ -4238,14 +4238,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 1.0112500423,
-                            "MTF50": 1.0062500209,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 1.0112500423,
+                            MTF50: 1.0062500209,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999996423721313],
@@ -4295,14 +4295,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.9390901676,
-                            "MTF50": 0.9340723127,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.9390901676,
+                            MTF50: 0.9340723127,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999996423721313],
@@ -4352,29 +4352,29 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
-                        }
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 2.2199999999999998,
-                        "MTF50": 2.17,
-                        "MTFMAX": 4,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 2.2199999999999998,
+                        MTF50: 2.17,
+                        MTFMAX: 4,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Vertical_Right",
-                    "location": { "x": 541, "y": 342, "w": 80, "h": 200 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 1.0112500423,
-                            "MTF50": 1.0062500209,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Right',
+                    location: { x: 541, y: 342, w: 80, h: 200 },
+                    observed: {
+                        R: {
+                            MTF10: 1.0112500423,
+                            MTF50: 1.0062500209,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -4424,14 +4424,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 1.0112500423,
-                            "MTF50": 1.0062500209,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 1.0112500423,
+                            MTF50: 1.0062500209,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -4481,14 +4481,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 1.0112500423,
-                            "MTF50": 1.0062500209,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 1.0112500423,
+                            MTF50: 1.0062500209,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -4538,14 +4538,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 1.0112500423,
-                            "MTF50": 1.0062500209,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 1.0112500423,
+                            MTF50: 1.0062500209,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -4595,29 +4595,29 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
-                        }
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 1.01,
-                        "MTF50": 1.01,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 1.01,
+                        MTF50: 1.01,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Top",
-                    "location": { "x": 331, "y": 252, "w": 200, "h": 80 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0011990105,
-                            "MTF50": 0.0003143254,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Top',
+                    location: { x: 331, y: 252, w: 200, h: 80 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0011990105,
+                            MTF50: 0.0003143254,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.052727892994880676],
                                 [0.03999999910593033, 0.0348617285490036],
@@ -4667,14 +4667,14 @@ const targetData = {
                                 [0.9200000166893005, 0.049228593707084656],
                                 [0.9399999976158142, 0.07031147181987762],
                                 [0.9599999785423279, 0.051888614892959595],
-                                [0.9800000190734863, 0.08510722219944]
-                            ]
+                                [0.9800000190734863, 0.08510722219944],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0380450847,
-                            "MTF50": 0.0091471386,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0380450847,
+                            MTF50: 0.0091471386,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.052727892994880676],
                                 [0.03999999910593033, 0.0348617285490036],
@@ -4724,14 +4724,14 @@ const targetData = {
                                 [0.9200000166893005, 0.049228593707084656],
                                 [0.9399999976158142, 0.07031147181987762],
                                 [0.9599999785423279, 0.051888614892959595],
-                                [0.9800000190734863, 0.08510722219944]
-                            ]
+                                [0.9800000190734863, 0.08510722219944],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0020220782,
-                            "MTF50": 0.000333131,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0020220782,
+                            MTF50: 0.000333131,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.052727892994880676],
                                 [0.03999999910593033, 0.0348617285490036],
@@ -4781,14 +4781,14 @@ const targetData = {
                                 [0.9200000166893005, 0.049228593707084656],
                                 [0.9399999976158142, 0.07031147181987762],
                                 [0.9599999785423279, 0.051888614892959595],
-                                [0.9800000190734863, 0.08510722219944]
-                            ]
+                                [0.9800000190734863, 0.08510722219944],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0277263072,
-                            "MTF50": 0.0066355516,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0277263072,
+                            MTF50: 0.0066355516,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.052727892994880676],
                                 [0.03999999910593033, 0.0348617285490036],
@@ -4838,29 +4838,29 @@ const targetData = {
                                 [0.9200000166893005, 0.049228593707084656],
                                 [0.9399999976158142, 0.07031147181987762],
                                 [0.9599999785423279, 0.051888614892959595],
-                                [0.9800000190734863, 0.08510722219944]
-                            ]
-                        }
+                                [0.9800000190734863, 0.08510722219944],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.03,
-                        "MTF50": 0.01,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.03,
+                        MTF50: 0.01,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Bottom",
-                    "location": { "x": 331, "y": 552, "w": 200, "h": 80 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0364512327,
-                            "MTF50": 0.0094061251,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Bottom',
+                    location: { x: 331, y: 552, w: 200, h: 80 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0364512327,
+                            MTF50: 0.0094061251,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -4910,14 +4910,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.037645569,
-                            "MTF50": 0.009380907,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.037645569,
+                            MTF50: 0.009380907,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -4967,14 +4967,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 1.0112500423,
-                            "MTF50": 1.0062500209,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 1.0112500423,
+                            MTF50: 1.0062500209,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -5024,14 +5024,14 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.2445476419,
-                            "MTF50": 0.2213170941,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.2445476419,
+                            MTF50: 0.2213170941,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.9999995231628418],
                                 [0.03999999910593033, 0.9999995231628418],
@@ -5081,476 +5081,476 @@ const targetData = {
                                 [0.9200000166893005, 0.9999995231628418],
                                 [0.9399999976158142, 0.9999995231628418],
                                 [0.9599999785423279, 0.9999995231628418],
-                                [0.9800000190734863, 0.9999995231628418]
-                            ]
-                        }
+                                [0.9800000190734863, 0.9999995231628418],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.24,
-                        "MTF50": 0.22,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.24,
+                        MTF50: 0.22,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
             ],
-            "targetType": "QA_62",
-            "validity": { "valid": true, "invalidPatch": 0 },
-            "assessed": {
-                "meanDeltaE76": 4.88,
-                "meanDeltaE94T": 4.71,
-                "meanDeltaE94G": 4.71,
-                "meanDeltaE2000": 4.22,
-                "meanDeltaECMC": 4.39,
-                "meanDeltaL": 1.15,
-                "meanStdDev": 1.76,
-                "SEFF": 0,
-                "MTF10": 0.55,
-                "MTF50": 0.54,
-                "MTFMAX": 1,
-                "MTFHSF": 0,
-                "CMR": 0
-            }
+            targetType: 'QA_62',
+            validity: { valid: true, invalidPatch: 0 },
+            assessed: {
+                meanDeltaE76: 4.88,
+                meanDeltaE94T: 4.71,
+                meanDeltaE94G: 4.71,
+                meanDeltaE2000: 4.22,
+                meanDeltaECMC: 4.39,
+                meanDeltaL: 1.15,
+                meanStdDev: 1.76,
+                SEFF: 0,
+                MTF10: 0.55,
+                MTF50: 0.54,
+                MTFMAX: 1,
+                MTFHSF: 0,
+                CMR: 0,
+            },
         },
         {
-            "name": "Applied Image QA-62",
-            "type": "QA_62",
-            "location": { "x": 10148, "y": 6824, "w": 871, "h": 1111, "r": 0 },
-            "observed": { "ppi": 298.88 },
-            "colorPatches": [
+            name: 'Applied Image QA-62',
+            type: 'QA_62',
+            location: { x: 10148, y: 6824, w: 871, h: 1111, r: 0 },
+            observed: { ppi: 298.88 },
+            colorPatches: [
                 {
-                    "name": "1",
-                    "location": { "x": 128, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [247.69, 244.54, 240.66],
-                        "Lab": [96.18, 1.49, 2.89],
-                        "mean": 245.06,
-                        "stddev": 0.79,
-                        "snr": 309.83
+                    name: '1',
+                    location: { x: 128, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [247.69, 244.54, 240.66],
+                        Lab: [96.18, 1.49, 2.89],
+                        mean: 245.06,
+                        stddev: 0.79,
+                        snr: 309.83,
                     },
-                    "assessed": {
-                        "deltaE76": 3.43,
-                        "deltaE94T": 3.17,
-                        "deltaE94G": 3.17,
-                        "deltaE2000": 3.26,
-                        "deltaECMC": 4.26,
-                        "deltaL": 0.18
+                    assessed: {
+                        deltaE76: 3.43,
+                        deltaE94T: 3.17,
+                        deltaE94G: 3.17,
+                        deltaE2000: 3.26,
+                        deltaECMC: 4.26,
+                        deltaL: 0.18,
                     },
-                    "reference": { "Lab": [96, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [96, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "2",
-                    "location": { "x": 238, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [234.36, 230.5, 226.71],
-                        "Lab": [90.77, 1.92, 3],
-                        "mean": 231.24,
-                        "stddev": 1.09,
-                        "snr": 211.52
+                    name: '2',
+                    location: { x: 238, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [234.36, 230.5, 226.71],
+                        Lab: [90.77, 1.92, 3],
+                        mean: 231.24,
+                        stddev: 1.09,
+                        snr: 211.52,
                     },
-                    "assessed": {
-                        "deltaE76": 3.89,
-                        "deltaE94T": 3.59,
-                        "deltaE94G": 3.59,
-                        "deltaE2000": 3.59,
-                        "deltaECMC": 4.46,
-                        "deltaL": -1.43
+                    assessed: {
+                        deltaE76: 3.89,
+                        deltaE94T: 3.59,
+                        deltaE94G: 3.59,
+                        deltaE2000: 3.59,
+                        deltaECMC: 4.46,
+                        deltaL: -1.43,
                     },
-                    "reference": { "Lab": [92.2, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [92.2, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "3",
-                    "location": { "x": 348, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [224.34, 219.64, 215.48],
-                        "Lab": [86.61, 2.38, 3.39],
-                        "mean": 220.59,
-                        "stddev": 1.14,
-                        "snr": 193.44
+                    name: '3',
+                    location: { x: 348, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [224.34, 219.64, 215.48],
+                        Lab: [86.61, 2.38, 3.39],
+                        mean: 220.59,
+                        stddev: 1.14,
+                        snr: 193.44,
                     },
-                    "assessed": {
-                        "deltaE76": 4.77,
-                        "deltaE94T": 4.38,
-                        "deltaE94G": 4.38,
-                        "deltaE2000": 4.27,
-                        "deltaECMC": 4.98,
-                        "deltaL": -2.39
+                    assessed: {
+                        deltaE76: 4.77,
+                        deltaE94T: 4.38,
+                        deltaE94G: 4.38,
+                        deltaE2000: 4.27,
+                        deltaECMC: 4.98,
+                        deltaL: -2.39,
                     },
-                    "reference": { "Lab": [89, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [89, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "4",
-                    "location": { "x": 458, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [203.79, 199.14, 193.8],
-                        "Lab": [78.53, 2.25, 4.06],
-                        "mean": 199.95,
-                        "stddev": 1.27,
-                        "snr": 157.1
+                    name: '4',
+                    location: { x: 458, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [203.79, 199.14, 193.8],
+                        Lab: [78.53, 2.25, 4.06],
+                        mean: 199.95,
+                        stddev: 1.27,
+                        snr: 157.1,
                     },
-                    "assessed": {
-                        "deltaE76": 5.69,
-                        "deltaE94T": 5.22,
-                        "deltaE94G": 5.22,
-                        "deltaE2000": 4.97,
-                        "deltaECMC": 5.61,
-                        "deltaL": -3.17
+                    assessed: {
+                        deltaE76: 5.69,
+                        deltaE94T: 5.22,
+                        deltaE94G: 5.22,
+                        deltaE2000: 4.97,
+                        deltaECMC: 5.61,
+                        deltaL: -3.17,
                     },
-                    "reference": { "Lab": [81.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [81.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "5",
-                    "location": { "x": 568, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [181.03, 176.62, 171.81],
-                        "Lab": [69.68, 2.16, 3.7],
-                        "mean": 177.42,
-                        "stddev": 1.33,
-                        "snr": 133.49
+                    name: '5',
+                    location: { x: 568, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [181.03, 176.62, 171.81],
+                        Lab: [69.68, 2.16, 3.7],
+                        mean: 177.42,
+                        stddev: 1.33,
+                        snr: 133.49,
                     },
-                    "assessed": {
-                        "deltaE76": 5.08,
-                        "deltaE94T": 4.67,
-                        "deltaE94G": 4.67,
-                        "deltaE2000": 4.6,
-                        "deltaECMC": 5.24,
-                        "deltaL": -2.62
+                    assessed: {
+                        deltaE76: 5.08,
+                        deltaE94T: 4.67,
+                        deltaE94G: 4.67,
+                        deltaE2000: 4.6,
+                        deltaECMC: 5.24,
+                        deltaL: -2.62,
                     },
-                    "reference": { "Lab": [72.3, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [72.3, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "6",
-                    "location": { "x": 678, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [169.24, 165.11, 159.78],
-                        "Lab": [65.12, 1.94, 3.94],
-                        "mean": 165.76,
-                        "stddev": 1.36,
-                        "snr": 121.88
+                    name: '6',
+                    location: { x: 678, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [169.24, 165.11, 159.78],
+                        Lab: [65.12, 1.94, 3.94],
+                        mean: 165.76,
+                        stddev: 1.36,
+                        snr: 121.88,
                     },
-                    "assessed": {
-                        "deltaE76": 4.74,
-                        "deltaE94T": 4.25,
-                        "deltaE94G": 4.25,
-                        "deltaE2000": 4.4,
-                        "deltaECMC": 5.36,
-                        "deltaL": -1.38
+                    assessed: {
+                        deltaE76: 4.74,
+                        deltaE94T: 4.25,
+                        deltaE94G: 4.25,
+                        deltaE2000: 4.4,
+                        deltaECMC: 5.36,
+                        deltaL: -1.38,
                     },
-                    "reference": { "Lab": [66.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [66.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "7",
-                    "location": { "x": 678, "y": 250, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [165.12, 161.46, 155.51],
-                        "Lab": [63.61, 1.59, 4.19],
-                        "mean": 161.9,
-                        "stddev": 1.34,
-                        "snr": 120.78
+                    name: '7',
+                    location: { x: 678, y: 250, w: 48, h: 48 },
+                    observed: {
+                        RGB: [165.12, 161.46, 155.51],
+                        Lab: [63.61, 1.59, 4.19],
+                        mean: 161.9,
+                        stddev: 1.34,
+                        snr: 120.78,
                     },
-                    "assessed": {
-                        "deltaE76": 4.75,
-                        "deltaE94T": 4.21,
-                        "deltaE94G": 4.21,
-                        "deltaE2000": 4.41,
-                        "deltaECMC": 5.53,
-                        "deltaL": -0.49
+                    assessed: {
+                        deltaE76: 4.75,
+                        deltaE94T: 4.21,
+                        deltaE94G: 4.21,
+                        deltaE2000: 4.41,
+                        deltaECMC: 5.53,
+                        deltaL: -0.49,
                     },
-                    "reference": { "Lab": [64.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [64.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "8",
-                    "location": { "x": 678, "y": 360, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [157.23, 153.26, 148.38],
-                        "Lab": [60.46, 1.89, 3.64],
-                        "mean": 153.91,
-                        "stddev": 1.37,
-                        "snr": 112.1
+                    name: '8',
+                    location: { x: 678, y: 360, w: 48, h: 48 },
+                    observed: {
+                        RGB: [157.23, 153.26, 148.38],
+                        Lab: [60.46, 1.89, 3.64],
+                        mean: 153.91,
+                        stddev: 1.37,
+                        snr: 112.1,
                     },
-                    "assessed": {
-                        "deltaE76": 4.29,
-                        "deltaE94T": 3.85,
-                        "deltaE94G": 3.85,
-                        "deltaE2000": 4.04,
-                        "deltaECMC": 5.05,
-                        "deltaL": 0.66
+                    assessed: {
+                        deltaE76: 4.29,
+                        deltaE94T: 3.85,
+                        deltaE94G: 3.85,
+                        deltaE2000: 4.04,
+                        deltaECMC: 5.05,
+                        deltaL: 0.66,
                     },
-                    "reference": { "Lab": [59.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [59.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "9",
-                    "location": { "x": 678, "y": 470, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [149.47, 146.14, 140.78],
-                        "Lab": [57.58, 1.46, 3.78],
-                        "mean": 146.55,
-                        "stddev": 1.48,
-                        "snr": 99.13
+                    name: '9',
+                    location: { x: 678, y: 470, w: 48, h: 48 },
+                    observed: {
+                        RGB: [149.47, 146.14, 140.78],
+                        Lab: [57.58, 1.46, 3.78],
+                        mean: 146.55,
+                        stddev: 1.48,
+                        snr: 99.13,
                     },
-                    "assessed": {
-                        "deltaE76": 4.62,
-                        "deltaE94T": 4.22,
-                        "deltaE94G": 4.22,
-                        "deltaE2000": 4.31,
-                        "deltaECMC": 5.19,
-                        "deltaL": 1.68
+                    assessed: {
+                        deltaE76: 4.62,
+                        deltaE94T: 4.22,
+                        deltaE94G: 4.22,
+                        deltaE2000: 4.31,
+                        deltaECMC: 5.19,
+                        deltaL: 1.68,
                     },
-                    "reference": { "Lab": [55.9, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [55.9, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "10",
-                    "location": { "x": 678, "y": 580, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [142.28, 138.79, 134.82],
-                        "Lab": [54.75, 1.69, 3.02],
-                        "mean": 139.4,
-                        "stddev": 1.63,
-                        "snr": 85.76
+                    name: '10',
+                    location: { x: 678, y: 580, w: 48, h: 48 },
+                    observed: {
+                        RGB: [142.28, 138.79, 134.82],
+                        Lab: [54.75, 1.69, 3.02],
+                        mean: 139.4,
+                        stddev: 1.63,
+                        snr: 85.76,
                     },
-                    "assessed": {
-                        "deltaE76": 4.08,
-                        "deltaE94T": 3.82,
-                        "deltaE94G": 3.82,
-                        "deltaE2000": 3.9,
-                        "deltaECMC": 4.5,
-                        "deltaL": 1.95
+                    assessed: {
+                        deltaE76: 4.08,
+                        deltaE94T: 3.82,
+                        deltaE94G: 3.82,
+                        deltaE2000: 3.9,
+                        deltaECMC: 4.5,
+                        deltaL: 1.95,
                     },
-                    "reference": { "Lab": [52.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [52.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "11",
-                    "location": { "x": 678, "y": 690, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [132.15, 129.15, 125.24],
-                        "Lab": [50.91, 1.4, 2.88],
-                        "mean": 129.62,
-                        "stddev": 1.46,
-                        "snr": 88.97
+                    name: '11',
+                    location: { x: 678, y: 690, w: 48, h: 48 },
+                    observed: {
+                        RGB: [132.15, 129.15, 125.24],
+                        Lab: [50.91, 1.4, 2.88],
+                        mean: 129.62,
+                        stddev: 1.46,
+                        snr: 88.97,
                     },
-                    "assessed": {
-                        "deltaE76": 4.17,
-                        "deltaE94T": 3.96,
-                        "deltaE94G": 3.96,
-                        "deltaE2000": 4.03,
-                        "deltaECMC": 4.39,
-                        "deltaL": 2.41
+                    assessed: {
+                        deltaE76: 4.17,
+                        deltaE94T: 3.96,
+                        deltaE94G: 3.96,
+                        deltaE2000: 4.03,
+                        deltaECMC: 4.39,
+                        deltaL: 2.41,
                     },
-                    "reference": { "Lab": [48.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [48.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "12",
-                    "location": { "x": 568, "y": 690, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [118.77, 116.08, 112.98],
-                        "Lab": [45.77, 1.29, 2.35],
-                        "mean": 116.55,
-                        "stddev": 1.68,
-                        "snr": 69.36
+                    name: '12',
+                    location: { x: 568, y: 690, w: 48, h: 48 },
+                    observed: {
+                        RGB: [118.77, 116.08, 112.98],
+                        Lab: [45.77, 1.29, 2.35],
+                        mean: 116.55,
+                        stddev: 1.68,
+                        snr: 69.36,
                     },
-                    "assessed": {
-                        "deltaE76": 4.27,
-                        "deltaE94T": 4.16,
-                        "deltaE94G": 4.16,
-                        "deltaE2000": 4.04,
-                        "deltaECMC": 3.99,
-                        "deltaL": 3.17
+                    assessed: {
+                        deltaE76: 4.27,
+                        deltaE94T: 4.16,
+                        deltaE94G: 4.16,
+                        deltaE2000: 4.04,
+                        deltaECMC: 3.99,
+                        deltaL: 3.17,
                     },
-                    "reference": { "Lab": [42.6, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [42.6, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "13",
-                    "location": { "x": 458, "y": 690, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [114.64, 111.82, 109.43],
-                        "Lab": [44.14, 1.45, 1.98],
-                        "mean": 112.41,
-                        "stddev": 1.86,
-                        "snr": 60.42
+                    name: '13',
+                    location: { x: 458, y: 690, w: 48, h: 48 },
+                    observed: {
+                        RGB: [114.64, 111.82, 109.43],
+                        Lab: [44.14, 1.45, 1.98],
+                        mean: 112.41,
+                        stddev: 1.86,
+                        snr: 60.42,
                     },
-                    "assessed": {
-                        "deltaE76": 4.18,
-                        "deltaE94T": 4.11,
-                        "deltaE94G": 4.11,
-                        "deltaE2000": 3.9,
-                        "deltaECMC": 3.67,
-                        "deltaL": 3.34
+                    assessed: {
+                        deltaE76: 4.18,
+                        deltaE94T: 4.11,
+                        deltaE94G: 4.11,
+                        deltaE2000: 3.9,
+                        deltaECMC: 3.67,
+                        deltaL: 3.34,
                     },
-                    "reference": { "Lab": [40.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [40.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "14",
-                    "location": { "x": 348, "y": 690, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [108.63, 106.36, 104.37],
-                        "Lab": [41.94, 1.15, 1.62],
-                        "mean": 106.82,
-                        "stddev": 1.91,
-                        "snr": 55.84
+                    name: '14',
+                    location: { x: 348, y: 690, w: 48, h: 48 },
+                    observed: {
+                        RGB: [108.63, 106.36, 104.37],
+                        Lab: [41.94, 1.15, 1.62],
+                        mean: 106.82,
+                        stddev: 1.91,
+                        snr: 55.84,
                     },
-                    "assessed": {
-                        "deltaE76": 3.87,
-                        "deltaE94T": 3.83,
-                        "deltaE94G": 3.83,
-                        "deltaE2000": 3.52,
-                        "deltaECMC": 3.29,
-                        "deltaL": 3.24
+                    assessed: {
+                        deltaE76: 3.87,
+                        deltaE94T: 3.83,
+                        deltaE94G: 3.83,
+                        deltaE2000: 3.52,
+                        deltaECMC: 3.29,
+                        deltaL: 3.24,
                     },
-                    "reference": { "Lab": [38.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [38.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "15",
-                    "location": { "x": 238, "y": 690, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [103.09, 101.44, 99.09],
-                        "Lab": [39.92, 0.74, 1.7],
-                        "mean": 101.68,
-                        "stddev": 1.8,
-                        "snr": 56.59
+                    name: '15',
+                    location: { x: 238, y: 690, w: 48, h: 48 },
+                    observed: {
+                        RGB: [103.09, 101.44, 99.09],
+                        Lab: [39.92, 0.74, 1.7],
+                        mean: 101.68,
+                        stddev: 1.8,
+                        snr: 56.59,
                     },
-                    "assessed": {
-                        "deltaE76": 4.42,
-                        "deltaE94T": 4.38,
-                        "deltaE94G": 4.38,
-                        "deltaE2000": 3.93,
-                        "deltaECMC": 3.6,
-                        "deltaL": 3.82
+                    assessed: {
+                        deltaE76: 4.42,
+                        deltaE94T: 4.38,
+                        deltaE94G: 4.38,
+                        deltaE2000: 3.93,
+                        deltaECMC: 3.6,
+                        deltaL: 3.82,
                     },
-                    "reference": { "Lab": [36.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [36.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "16",
-                    "location": { "x": 128, "y": 690, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [98.5, 97.33, 95.3],
-                        "Lab": [38.25, 0.49, 1.41],
-                        "mean": 97.46,
-                        "stddev": 2.54,
-                        "snr": 38.41
+                    name: '16',
+                    location: { x: 128, y: 690, w: 48, h: 48 },
+                    observed: {
+                        RGB: [98.5, 97.33, 95.3],
+                        Lab: [38.25, 0.49, 1.41],
+                        mean: 97.46,
+                        stddev: 2.54,
+                        snr: 38.41,
                     },
-                    "assessed": {
-                        "deltaE76": 4.33,
-                        "deltaE94T": 4.31,
-                        "deltaE94G": 4.31,
-                        "deltaE2000": 3.8,
-                        "deltaECMC": 3.42,
-                        "deltaL": 3.85
+                    assessed: {
+                        deltaE76: 4.33,
+                        deltaE94T: 4.31,
+                        deltaE94G: 4.31,
+                        deltaE2000: 3.8,
+                        deltaECMC: 3.42,
+                        deltaL: 3.85,
                     },
-                    "reference": { "Lab": [34.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [34.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "17",
-                    "location": { "x": 128, "y": 580, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [95.97, 94.39, 93.02],
-                        "Lab": [37.17, 0.8, 1.12],
-                        "mean": 94.71,
-                        "stddev": 2.12,
-                        "snr": 44.73
+                    name: '17',
+                    location: { x: 128, y: 580, w: 48, h: 48 },
+                    observed: {
+                        RGB: [95.97, 94.39, 93.02],
+                        Lab: [37.17, 0.8, 1.12],
+                        mean: 94.71,
+                        stddev: 2.12,
+                        snr: 44.73,
                     },
-                    "assessed": {
-                        "deltaE76": 4.48,
-                        "deltaE94T": 4.47,
-                        "deltaE94G": 4.47,
-                        "deltaE2000": 3.79,
-                        "deltaECMC": 3.22,
-                        "deltaL": 4.17
+                    assessed: {
+                        deltaE76: 4.48,
+                        deltaE94T: 4.47,
+                        deltaE94G: 4.47,
+                        deltaE2000: 3.79,
+                        deltaECMC: 3.22,
+                        deltaL: 4.17,
                     },
-                    "reference": { "Lab": [33, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [33, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "18",
-                    "location": { "x": 128, "y": 470, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [89.28, 88.15, 86.93],
-                        "Lab": [34.68, 0.55, 0.94],
-                        "mean": 88.36,
-                        "stddev": 2.12,
-                        "snr": 41.74
+                    name: '18',
+                    location: { x: 128, y: 470, w: 48, h: 48 },
+                    observed: {
+                        RGB: [89.28, 88.15, 86.93],
+                        Lab: [34.68, 0.55, 0.94],
+                        mean: 88.36,
+                        stddev: 2.12,
+                        snr: 41.74,
                     },
-                    "assessed": {
-                        "deltaE76": 5.49,
-                        "deltaE94T": 5.48,
-                        "deltaE94G": 5.48,
-                        "deltaE2000": 4.46,
-                        "deltaECMC": 3.69,
-                        "deltaL": 5.28
+                    assessed: {
+                        deltaE76: 5.49,
+                        deltaE94T: 5.48,
+                        deltaE94G: 5.48,
+                        deltaE2000: 4.46,
+                        deltaECMC: 3.69,
+                        deltaL: 5.28,
                     },
-                    "reference": { "Lab": [29.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [29.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "19",
-                    "location": { "x": 128, "y": 360, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [78.18, 77.36, 77.51],
-                        "Lab": [30.44, 0.5, 0.09],
-                        "mean": 77.62,
-                        "stddev": 2.55,
-                        "snr": 30.43
+                    name: '19',
+                    location: { x: 128, y: 360, w: 48, h: 48 },
+                    observed: {
+                        RGB: [78.18, 77.36, 77.51],
+                        Lab: [30.44, 0.5, 0.09],
+                        mean: 77.62,
+                        stddev: 2.55,
+                        snr: 30.43,
                     },
-                    "assessed": {
-                        "deltaE76": 5.99,
-                        "deltaE94T": 5.99,
-                        "deltaE94G": 5.99,
-                        "deltaE2000": 4.55,
-                        "deltaECMC": 3.84,
-                        "deltaL": 5.94
+                    assessed: {
+                        deltaE76: 5.99,
+                        deltaE94T: 5.99,
+                        deltaE94G: 5.99,
+                        deltaE2000: 4.55,
+                        deltaECMC: 3.84,
+                        deltaL: 5.94,
                     },
-                    "reference": { "Lab": [24.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [24.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "20",
-                    "location": { "x": 128, "y": 250, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [71.94, 71.13, 72.08],
-                        "Lab": [28.02, 0.59, -0.37],
-                        "mean": 71.48,
-                        "stddev": 2.8,
-                        "snr": 25.55
+                    name: '20',
+                    location: { x: 128, y: 250, w: 48, h: 48 },
+                    observed: {
+                        RGB: [71.94, 71.13, 72.08],
+                        Lab: [28.02, 0.59, -0.37],
+                        mean: 71.48,
+                        stddev: 2.8,
+                        snr: 25.55,
                     },
-                    "assessed": {
-                        "deltaE76": 6.73,
-                        "deltaE94T": 6.73,
-                        "deltaE94G": 6.73,
-                        "deltaE2000": 4.93,
-                        "deltaECMC": 4.42,
-                        "deltaL": 6.72
+                    assessed: {
+                        deltaE76: 6.73,
+                        deltaE94T: 6.73,
+                        deltaE94G: 6.73,
+                        deltaE2000: 4.93,
+                        deltaECMC: 4.42,
+                        deltaL: 6.72,
                     },
-                    "reference": { "Lab": [21.3, 1, -0.5] },
-                    "validity": { "valid": true }
-                }
+                    reference: { Lab: [21.3, 1, -0.5] },
+                    validity: { valid: true },
+                },
             ],
-            "edgePatches": [
+            edgePatches: [
                 {
-                    "name": "Vertical_Left",
-                    "location": { "x": 250, "y": 345, "w": 78, "h": 196 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0590072225,
-                            "MTF50": 0.0076890571,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Left',
+                    location: { x: 250, y: 345, w: 78, h: 196 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0590072225,
+                            MTF50: 0.0076890571,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3293091952800751],
                                 [0.03999999910593033, 0.2215493768453598],
@@ -5600,14 +5600,14 @@ const targetData = {
                                 [0.9200000166893005, 0.06405744701623917],
                                 [0.9399999976158142, 0.1401408463716507],
                                 [0.9599999785423279, 0.13148842751979828],
-                                [0.9800000190734863, 0.2286210060119629]
-                            ]
+                                [0.9800000190734863, 0.2286210060119629],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0555143395,
-                            "MTF50": 0.0077613488,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0555143395,
+                            MTF50: 0.0077613488,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3293091952800751],
                                 [0.03999999910593033, 0.2215493768453598],
@@ -5657,14 +5657,14 @@ const targetData = {
                                 [0.9200000166893005, 0.06405744701623917],
                                 [0.9399999976158142, 0.1401408463716507],
                                 [0.9599999785423279, 0.13148842751979828],
-                                [0.9800000190734863, 0.2286210060119629]
-                            ]
+                                [0.9800000190734863, 0.2286210060119629],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0585228019,
-                            "MTF50": 0.0075424156,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0585228019,
+                            MTF50: 0.0075424156,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3293091952800751],
                                 [0.03999999910593033, 0.2215493768453598],
@@ -5714,14 +5714,14 @@ const targetData = {
                                 [0.9200000166893005, 0.06405744701623917],
                                 [0.9399999976158142, 0.1401408463716507],
                                 [0.9599999785423279, 0.13148842751979828],
-                                [0.9800000190734863, 0.2286210060119629]
-                            ]
+                                [0.9800000190734863, 0.2286210060119629],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0564061247,
-                            "MTF50": 0.0077095841,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0564061247,
+                            MTF50: 0.0077095841,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3293091952800751],
                                 [0.03999999910593033, 0.2215493768453598],
@@ -5771,29 +5771,29 @@ const targetData = {
                                 [0.9200000166893005, 0.06405744701623917],
                                 [0.9399999976158142, 0.1401408463716507],
                                 [0.9599999785423279, 0.13148842751979828],
-                                [0.9800000190734863, 0.2286210060119629]
-                            ]
-                        }
+                                [0.9800000190734863, 0.2286210060119629],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.12,
-                        "MTF50": 0.02,
-                        "MTFMAX": 4,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.12,
+                        MTF50: 0.02,
+                        MTFMAX: 4,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Vertical_Right",
-                    "location": { "x": 544, "y": 345, "w": 78, "h": 196 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.001772489,
-                            "MTF50": 0.0004319376,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Right',
+                    location: { x: 544, y: 345, w: 78, h: 196 },
+                    observed: {
+                        R: {
+                            MTF10: 0.001772489,
+                            MTF50: 0.0004319376,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03739668428897858],
                                 [0.03999999910593033, 0.013436432927846909],
@@ -5843,14 +5843,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04576078802347183],
                                 [0.9399999976158142, 0.03090972639620304],
                                 [0.9599999785423279, 0.04777098819613457],
-                                [0.9800000190734863, 0.03690479323267937]
-                            ]
+                                [0.9800000190734863, 0.03690479323267937],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0014867516,
-                            "MTF50": 0.0004241295,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0014867516,
+                            MTF50: 0.0004241295,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03739668428897858],
                                 [0.03999999910593033, 0.013436432927846909],
@@ -5900,14 +5900,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04576078802347183],
                                 [0.9399999976158142, 0.03090972639620304],
                                 [0.9599999785423279, 0.04777098819613457],
-                                [0.9800000190734863, 0.03690479323267937]
-                            ]
+                                [0.9800000190734863, 0.03690479323267937],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0014516233,
-                            "MTF50": 0.0004163303,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0014516233,
+                            MTF50: 0.0004163303,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03739668428897858],
                                 [0.03999999910593033, 0.013436432927846909],
@@ -5957,14 +5957,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04576078802347183],
                                 [0.9399999976158142, 0.03090972639620304],
                                 [0.9599999785423279, 0.04777098819613457],
-                                [0.9800000190734863, 0.03690479323267937]
-                            ]
+                                [0.9800000190734863, 0.03690479323267937],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0014999136,
-                            "MTF50": 0.0004230352,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0014999136,
+                            MTF50: 0.0004230352,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.03739668428897858],
                                 [0.03999999910593033, 0.013436432927846909],
@@ -6014,29 +6014,29 @@ const targetData = {
                                 [0.9200000166893005, 0.04576078802347183],
                                 [0.9399999976158142, 0.03090972639620304],
                                 [0.9599999785423279, 0.04777098819613457],
-                                [0.9800000190734863, 0.03690479323267937]
-                            ]
-                        }
+                                [0.9800000190734863, 0.03690479323267937],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0,
-                        "MTF50": 0,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0,
+                        MTF50: 0,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Top",
-                    "location": { "x": 338, "y": 257, "w": 196, "h": 78 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0016429425,
-                            "MTF50": 0.0004209647,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Top',
+                    location: { x: 338, y: 257, w: 196, h: 78 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0016429425,
+                            MTF50: 0.0004209647,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.02066829986870289],
                                 [0.03999999910593033, 0.032850731164216995],
@@ -6086,14 +6086,14 @@ const targetData = {
                                 [0.9200000166893005, 0.11696280539035797],
                                 [0.9399999976158142, 0.019158057868480682],
                                 [0.9599999785423279, 0.03482672944664955],
-                                [0.9800000190734863, 0.038284335285425186]
-                            ]
+                                [0.9800000190734863, 0.038284335285425186],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0015574645,
-                            "MTF50": 0.0004333971,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0015574645,
+                            MTF50: 0.0004333971,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.02066829986870289],
                                 [0.03999999910593033, 0.032850731164216995],
@@ -6143,14 +6143,14 @@ const targetData = {
                                 [0.9200000166893005, 0.11696280539035797],
                                 [0.9399999976158142, 0.019158057868480682],
                                 [0.9599999785423279, 0.03482672944664955],
-                                [0.9800000190734863, 0.038284335285425186]
-                            ]
+                                [0.9800000190734863, 0.038284335285425186],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.001401281,
-                            "MTF50": 0.0004343921,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.001401281,
+                            MTF50: 0.0004343921,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.02066829986870289],
                                 [0.03999999910593033, 0.032850731164216995],
@@ -6200,14 +6200,14 @@ const targetData = {
                                 [0.9200000166893005, 0.11696280539035797],
                                 [0.9399999976158142, 0.019158057868480682],
                                 [0.9599999785423279, 0.03482672944664955],
-                                [0.9800000190734863, 0.038284335285425186]
-                            ]
+                                [0.9800000190734863, 0.038284335285425186],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0015304314,
-                            "MTF50": 0.000432711,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0015304314,
+                            MTF50: 0.000432711,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.02066829986870289],
                                 [0.03999999910593033, 0.032850731164216995],
@@ -6257,29 +6257,29 @@ const targetData = {
                                 [0.9200000166893005, 0.11696280539035797],
                                 [0.9399999976158142, 0.019158057868480682],
                                 [0.9599999785423279, 0.03482672944664955],
-                                [0.9800000190734863, 0.038284335285425186]
-                            ]
-                        }
+                                [0.9800000190734863, 0.038284335285425186],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0,
-                        "MTF50": 0,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0,
+                        MTF50: 0,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Bottom",
-                    "location": { "x": 338, "y": 551, "w": 196, "h": 78 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0595099898,
-                            "MTF50": 0.0076860452,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Bottom',
+                    location: { x: 338, y: 551, w: 196, h: 78 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0595099898,
+                            MTF50: 0.0076860452,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.34011539816856384],
                                 [0.03999999910593033, 0.24366457760334015],
@@ -6329,14 +6329,14 @@ const targetData = {
                                 [0.9200000166893005, 0.06541506201028824],
                                 [0.9399999976158142, 0.11351992189884186],
                                 [0.9599999785423279, 0.14154571294784546],
-                                [0.9800000190734863, 0.21445420384407043]
-                            ]
+                                [0.9800000190734863, 0.21445420384407043],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0549398016,
-                            "MTF50": 0.0076735082,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0549398016,
+                            MTF50: 0.0076735082,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.34011539816856384],
                                 [0.03999999910593033, 0.24366457760334015],
@@ -6386,14 +6386,14 @@ const targetData = {
                                 [0.9200000166893005, 0.06541506201028824],
                                 [0.9399999976158142, 0.11351992189884186],
                                 [0.9599999785423279, 0.14154571294784546],
-                                [0.9800000190734863, 0.21445420384407043]
-                            ]
+                                [0.9800000190734863, 0.21445420384407043],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.054743945,
-                            "MTF50": 0.0077033592,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.054743945,
+                            MTF50: 0.0077033592,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.34011539816856384],
                                 [0.03999999910593033, 0.24366457760334015],
@@ -6443,14 +6443,14 @@ const targetData = {
                                 [0.9200000166893005, 0.06541506201028824],
                                 [0.9399999976158142, 0.11351992189884186],
                                 [0.9599999785423279, 0.14154571294784546],
-                                [0.9800000190734863, 0.21445420384407043]
-                            ]
+                                [0.9800000190734863, 0.21445420384407043],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0552281301,
-                            "MTF50": 0.0076807597,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0552281301,
+                            MTF50: 0.0076807597,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.34011539816856384],
                                 [0.03999999910593033, 0.24366457760334015],
@@ -6500,476 +6500,476 @@ const targetData = {
                                 [0.9200000166893005, 0.06541506201028824],
                                 [0.9399999976158142, 0.11351992189884186],
                                 [0.9599999785423279, 0.14154571294784546],
-                                [0.9800000190734863, 0.21445420384407043]
-                            ]
-                        }
+                                [0.9800000190734863, 0.21445420384407043],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.06,
-                        "MTF50": 0.01,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.06,
+                        MTF50: 0.01,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
             ],
-            "targetType": "QA_62",
-            "validity": { "valid": true, "invalidPatch": 0 },
-            "assessed": {
-                "meanDeltaE76": 4.66,
-                "meanDeltaE94T": 4.44,
-                "meanDeltaE94G": 4.44,
-                "meanDeltaE2000": 4.13,
-                "meanDeltaECMC": 4.39,
-                "meanDeltaL": 1.75,
-                "meanStdDev": 1.68,
-                "SEFF": 0,
-                "MTF10": 0.03,
-                "MTF50": 0.01,
-                "MTFMAX": 1,
-                "MTFHSF": 0,
-                "CMR": 0
-            }
+            targetType: 'QA_62',
+            validity: { valid: true, invalidPatch: 0 },
+            assessed: {
+                meanDeltaE76: 4.66,
+                meanDeltaE94T: 4.44,
+                meanDeltaE94G: 4.44,
+                meanDeltaE2000: 4.13,
+                meanDeltaECMC: 4.39,
+                meanDeltaL: 1.75,
+                meanStdDev: 1.68,
+                SEFF: 0,
+                MTF10: 0.03,
+                MTF50: 0.01,
+                MTFMAX: 1,
+                MTFHSF: 0,
+                CMR: 0,
+            },
         },
         {
-            "name": "Applied Image QA-62",
-            "type": "QA_62",
-            "location": { "x": 5367, "y": 3644, "w": 871, "h": 1111, "r": 0 },
-            "observed": { "ppi": 298.86 },
-            "colorPatches": [
+            name: 'Applied Image QA-62',
+            type: 'QA_62',
+            location: { x: 5367, y: 3644, w: 871, h: 1111, r: 0 },
+            observed: { ppi: 298.86 },
+            colorPatches: [
                 {
-                    "name": "1",
-                    "location": { "x": 122, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [254.76, 253.85, 253.33],
-                        "Lab": [99.65, 0.49, 0.49],
-                        "mean": 254.07,
-                        "stddev": 0.65,
-                        "snr": 390.39
+                    name: '1',
+                    location: { x: 122, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [254.76, 253.85, 253.33],
+                        Lab: [99.65, 0.49, 0.49],
+                        mean: 254.07,
+                        stddev: 0.65,
+                        snr: 390.39,
                     },
-                    "assessed": {
-                        "deltaE76": 3.82,
-                        "deltaE94T": 3.81,
-                        "deltaE94G": 3.81,
-                        "deltaE2000": 2.45,
-                        "deltaECMC": 2.05,
-                        "deltaL": 3.65
+                    assessed: {
+                        deltaE76: 3.82,
+                        deltaE94T: 3.81,
+                        deltaE94G: 3.81,
+                        deltaE2000: 2.45,
+                        deltaECMC: 2.05,
+                        deltaL: 3.65,
                     },
-                    "reference": { "Lab": [96, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [96, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "2",
-                    "location": { "x": 233, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [244.28, 241.29, 237.35],
-                        "Lab": [94.88, 1.38, 2.89],
-                        "mean": 241.75,
-                        "stddev": 1.41,
-                        "snr": 171.88
+                    name: '2',
+                    location: { x: 233, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [244.28, 241.29, 237.35],
+                        Lab: [94.88, 1.38, 2.89],
+                        mean: 241.75,
+                        stddev: 1.41,
+                        snr: 171.88,
                     },
-                    "assessed": {
-                        "deltaE76": 4.34,
-                        "deltaE94T": 4.14,
-                        "deltaE94G": 4.14,
-                        "deltaE2000": 3.62,
-                        "deltaECMC": 4.36,
-                        "deltaL": 2.68
+                    assessed: {
+                        deltaE76: 4.34,
+                        deltaE94T: 4.14,
+                        deltaE94G: 4.14,
+                        deltaE2000: 3.62,
+                        deltaECMC: 4.36,
+                        deltaL: 2.68,
                     },
-                    "reference": { "Lab": [92.2, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [92.2, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "3",
-                    "location": { "x": 344, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [235.11, 231.61, 227.26],
-                        "Lab": [91.14, 1.65, 3.24],
-                        "mean": 232.18,
-                        "stddev": 1.31,
-                        "snr": 177.11
+                    name: '3',
+                    location: { x: 344, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [235.11, 231.61, 227.26],
+                        Lab: [91.14, 1.65, 3.24],
+                        mean: 232.18,
+                        stddev: 1.31,
+                        snr: 177.11,
                     },
-                    "assessed": {
-                        "deltaE76": 4.36,
-                        "deltaE94T": 4.06,
-                        "deltaE94G": 4.06,
-                        "deltaE2000": 3.83,
-                        "deltaECMC": 4.69,
-                        "deltaL": 2.14
+                    assessed: {
+                        deltaE76: 4.36,
+                        deltaE94T: 4.06,
+                        deltaE94G: 4.06,
+                        deltaE2000: 3.83,
+                        deltaECMC: 4.69,
+                        deltaL: 2.14,
                     },
-                    "reference": { "Lab": [89, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [89, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "4",
-                    "location": { "x": 455, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [215.35, 211.43, 205.9],
-                        "Lab": [83.25, 1.78, 4],
-                        "mean": 212,
-                        "stddev": 1.36,
-                        "snr": 156.15
+                    name: '4',
+                    location: { x: 455, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [215.35, 211.43, 205.9],
+                        Lab: [83.25, 1.78, 4],
+                        mean: 212,
+                        stddev: 1.36,
+                        snr: 156.15,
                     },
-                    "assessed": {
-                        "deltaE76": 4.82,
-                        "deltaE94T": 4.34,
-                        "deltaE94G": 4.34,
-                        "deltaE2000": 4.39,
-                        "deltaECMC": 5.4,
-                        "deltaL": 1.55
+                    assessed: {
+                        deltaE76: 4.82,
+                        deltaE94T: 4.34,
+                        deltaE94G: 4.34,
+                        deltaE2000: 4.39,
+                        deltaECMC: 5.4,
+                        deltaL: 1.55,
                     },
-                    "reference": { "Lab": [81.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [81.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "5",
-                    "location": { "x": 566, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [190.91, 187.68, 182.14],
-                        "Lab": [73.85, 1.37, 3.86],
-                        "mean": 188.04,
-                        "stddev": 1.43,
-                        "snr": 131.82
+                    name: '5',
+                    location: { x: 566, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [190.91, 187.68, 182.14],
+                        Lab: [73.85, 1.37, 3.86],
+                        mean: 188.04,
+                        stddev: 1.43,
+                        snr: 131.82,
                     },
-                    "assessed": {
-                        "deltaE76": 4.64,
-                        "deltaE94T": 4.22,
-                        "deltaE94G": 4.22,
-                        "deltaE2000": 4.25,
-                        "deltaECMC": 5.25,
-                        "deltaL": 1.55
+                    assessed: {
+                        deltaE76: 4.64,
+                        deltaE94T: 4.22,
+                        deltaE94G: 4.22,
+                        deltaE2000: 4.25,
+                        deltaECMC: 5.25,
+                        deltaL: 1.55,
                     },
-                    "reference": { "Lab": [72.3, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [72.3, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "6",
-                    "location": { "x": 677, "y": 140, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [177.28, 174.06, 168.14],
-                        "Lab": [68.49, 1.33, 4.07],
-                        "mean": 174.37,
-                        "stddev": 1.35,
-                        "snr": 129.5
+                    name: '6',
+                    location: { x: 677, y: 140, w: 48, h: 48 },
+                    observed: {
+                        RGB: [177.28, 174.06, 168.14],
+                        Lab: [68.49, 1.33, 4.07],
+                        mean: 174.37,
+                        stddev: 1.35,
+                        snr: 129.5,
                     },
-                    "assessed": {
-                        "deltaE76": 5,
-                        "deltaE94T": 4.55,
-                        "deltaE94G": 4.55,
-                        "deltaE2000": 4.55,
-                        "deltaECMC": 5.47,
-                        "deltaL": 1.99
+                    assessed: {
+                        deltaE76: 5,
+                        deltaE94T: 4.55,
+                        deltaE94G: 4.55,
+                        deltaE2000: 4.55,
+                        deltaECMC: 5.47,
+                        deltaL: 1.99,
                     },
-                    "reference": { "Lab": [66.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [66.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "7",
-                    "location": { "x": 677, "y": 251, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [173.42, 170.08, 164.72],
-                        "Lab": [66.96, 1.46, 3.78],
-                        "mean": 170.49,
-                        "stddev": 1.36,
-                        "snr": 125.03
+                    name: '7',
+                    location: { x: 677, y: 251, w: 48, h: 48 },
+                    observed: {
+                        RGB: [173.42, 170.08, 164.72],
+                        Lab: [66.96, 1.46, 3.78],
+                        mean: 170.49,
+                        stddev: 1.36,
+                        snr: 125.03,
                     },
-                    "assessed": {
-                        "deltaE76": 5.17,
-                        "deltaE94T": 4.81,
-                        "deltaE94G": 4.81,
-                        "deltaE2000": 4.65,
-                        "deltaECMC": 5.26,
-                        "deltaL": 2.86
+                    assessed: {
+                        deltaE76: 5.17,
+                        deltaE94T: 4.81,
+                        deltaE94G: 4.81,
+                        deltaE2000: 4.65,
+                        deltaECMC: 5.26,
+                        deltaL: 2.86,
                     },
-                    "reference": { "Lab": [64.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [64.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "8",
-                    "location": { "x": 677, "y": 362, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [164.53, 161.63, 156.39],
-                        "Lab": [63.6, 1.2, 3.61],
-                        "mean": 161.92,
-                        "stddev": 1.44,
-                        "snr": 112.71
+                    name: '8',
+                    location: { x: 677, y: 362, w: 48, h: 48 },
+                    observed: {
+                        RGB: [164.53, 161.63, 156.39],
+                        Lab: [63.6, 1.2, 3.61],
+                        mean: 161.92,
+                        stddev: 1.44,
+                        snr: 112.71,
                     },
-                    "assessed": {
-                        "deltaE76": 5.6,
-                        "deltaE94T": 5.33,
-                        "deltaE94G": 5.33,
-                        "deltaE2000": 5.06,
-                        "deltaECMC": 5.21,
-                        "deltaL": 3.8
+                    assessed: {
+                        deltaE76: 5.6,
+                        deltaE94T: 5.33,
+                        deltaE94G: 5.33,
+                        deltaE2000: 5.06,
+                        deltaECMC: 5.21,
+                        deltaL: 3.8,
                     },
-                    "reference": { "Lab": [59.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [59.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "9",
-                    "location": { "x": 677, "y": 473, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [156.14, 152.9, 148.62],
-                        "Lab": [60.25, 1.5, 3.14],
-                        "mean": 153.4,
-                        "stddev": 1.48,
-                        "snr": 103.45
+                    name: '9',
+                    location: { x: 677, y: 473, w: 48, h: 48 },
+                    observed: {
+                        RGB: [156.14, 152.9, 148.62],
+                        Lab: [60.25, 1.5, 3.14],
+                        mean: 153.4,
+                        stddev: 1.48,
+                        snr: 103.45,
                     },
-                    "assessed": {
-                        "deltaE76": 5.69,
-                        "deltaE94T": 5.5,
-                        "deltaE94G": 5.5,
-                        "deltaE2000": 5.25,
-                        "deltaECMC": 4.87,
-                        "deltaL": 4.35
+                    assessed: {
+                        deltaE76: 5.69,
+                        deltaE94T: 5.5,
+                        deltaE94G: 5.5,
+                        deltaE2000: 5.25,
+                        deltaECMC: 4.87,
+                        deltaL: 4.35,
                     },
-                    "reference": { "Lab": [55.9, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [55.9, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "10",
-                    "location": { "x": 677, "y": 584, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [149.56, 146.95, 142.02],
-                        "Lab": [57.81, 1.06, 3.37],
-                        "mean": 147.19,
-                        "stddev": 1.6,
-                        "snr": 92.08
+                    name: '10',
+                    location: { x: 677, y: 584, w: 48, h: 48 },
+                    observed: {
+                        RGB: [149.56, 146.95, 142.02],
+                        Lab: [57.81, 1.06, 3.37],
+                        mean: 147.19,
+                        stddev: 1.6,
+                        snr: 92.08,
                     },
-                    "assessed": {
-                        "deltaE76": 6.33,
-                        "deltaE94T": 6.14,
-                        "deltaE94G": 6.14,
-                        "deltaE2000": 5.97,
-                        "deltaECMC": 5.21,
-                        "deltaL": 5.01
+                    assessed: {
+                        deltaE76: 6.33,
+                        deltaE94T: 6.14,
+                        deltaE94G: 6.14,
+                        deltaE2000: 5.97,
+                        deltaECMC: 5.21,
+                        deltaL: 5.01,
                     },
-                    "reference": { "Lab": [52.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [52.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "11",
-                    "location": { "x": 677, "y": 695, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [138.23, 135.48, 132.16],
-                        "Lab": [53.38, 1.31, 2.48],
-                        "mean": 135.94,
-                        "stddev": 1.54,
-                        "snr": 88.48
+                    name: '11',
+                    location: { x: 677, y: 695, w: 48, h: 48 },
+                    observed: {
+                        RGB: [138.23, 135.48, 132.16],
+                        Lab: [53.38, 1.31, 2.48],
+                        mean: 135.94,
+                        stddev: 1.54,
+                        snr: 88.48,
                     },
-                    "assessed": {
-                        "deltaE76": 5.73,
-                        "deltaE94T": 5.63,
-                        "deltaE94G": 5.63,
-                        "deltaE2000": 5.64,
-                        "deltaECMC": 4.4,
-                        "deltaL": 4.88
+                    assessed: {
+                        deltaE76: 5.73,
+                        deltaE94T: 5.63,
+                        deltaE94G: 5.63,
+                        deltaE2000: 5.64,
+                        deltaECMC: 4.4,
+                        deltaL: 4.88,
                     },
-                    "reference": { "Lab": [48.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [48.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "12",
-                    "location": { "x": 566, "y": 695, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [123.22, 121.11, 118.01],
-                        "Lab": [47.67, 0.94, 2.22],
-                        "mean": 121.4,
-                        "stddev": 1.52,
-                        "snr": 79.91
+                    name: '12',
+                    location: { x: 566, y: 695, w: 48, h: 48 },
+                    observed: {
+                        RGB: [123.22, 121.11, 118.01],
+                        Lab: [47.67, 0.94, 2.22],
+                        mean: 121.4,
+                        stddev: 1.52,
+                        snr: 79.91,
                     },
-                    "assessed": {
-                        "deltaE76": 5.75,
-                        "deltaE94T": 5.69,
-                        "deltaE94G": 5.69,
-                        "deltaE2000": 5.48,
-                        "deltaECMC": 4.28,
-                        "deltaL": 5.07
+                    assessed: {
+                        deltaE76: 5.75,
+                        deltaE94T: 5.69,
+                        deltaE94G: 5.69,
+                        deltaE2000: 5.48,
+                        deltaECMC: 4.28,
+                        deltaL: 5.07,
                     },
-                    "reference": { "Lab": [42.6, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [42.6, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "13",
-                    "location": { "x": 455, "y": 695, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [116.59, 114.38, 111.84],
-                        "Lab": [45.06, 1.07, 1.92],
-                        "mean": 114.76,
-                        "stddev": 1.69,
-                        "snr": 67.72
+                    name: '13',
+                    location: { x: 455, y: 695, w: 48, h: 48 },
+                    observed: {
+                        RGB: [116.59, 114.38, 111.84],
+                        Lab: [45.06, 1.07, 1.92],
+                        mean: 114.76,
+                        stddev: 1.69,
+                        snr: 67.72,
                     },
-                    "assessed": {
-                        "deltaE76": 4.9,
-                        "deltaE94T": 4.85,
-                        "deltaE94G": 4.85,
-                        "deltaE2000": 4.55,
-                        "deltaECMC": 3.82,
-                        "deltaL": 4.26
+                    assessed: {
+                        deltaE76: 4.9,
+                        deltaE94T: 4.85,
+                        deltaE94G: 4.85,
+                        deltaE2000: 4.55,
+                        deltaECMC: 3.82,
+                        deltaL: 4.26,
                     },
-                    "reference": { "Lab": [40.8, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [40.8, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "14",
-                    "location": { "x": 344, "y": 695, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [111.77, 109.43, 107.81],
-                        "Lab": [43.16, 1.23, 1.43],
-                        "mean": 109.95,
-                        "stddev": 1.74,
-                        "snr": 63.26
+                    name: '14',
+                    location: { x: 344, y: 695, w: 48, h: 48 },
+                    observed: {
+                        RGB: [111.77, 109.43, 107.81],
+                        Lab: [43.16, 1.23, 1.43],
+                        mean: 109.95,
+                        stddev: 1.74,
+                        snr: 63.26,
                     },
-                    "assessed": {
-                        "deltaE76": 4.87,
-                        "deltaE94T": 4.84,
-                        "deltaE94G": 4.84,
-                        "deltaE2000": 4.4,
-                        "deltaECMC": 3.44,
-                        "deltaL": 4.46
+                    assessed: {
+                        deltaE76: 4.87,
+                        deltaE94T: 4.84,
+                        deltaE94G: 4.84,
+                        deltaE2000: 4.4,
+                        deltaECMC: 3.44,
+                        deltaL: 4.46,
                     },
-                    "reference": { "Lab": [38.7, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [38.7, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "15",
-                    "location": { "x": 233, "y": 695, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [105.44, 103.54, 101.37],
-                        "Lab": [40.78, 0.92, 1.65],
-                        "mean": 103.87,
-                        "stddev": 1.76,
-                        "snr": 58.88
+                    name: '15',
+                    location: { x: 233, y: 695, w: 48, h: 48 },
+                    observed: {
+                        RGB: [105.44, 103.54, 101.37],
+                        Lab: [40.78, 0.92, 1.65],
+                        mean: 103.87,
+                        stddev: 1.76,
+                        snr: 58.88,
                     },
-                    "assessed": {
-                        "deltaE76": 5.15,
-                        "deltaE94T": 5.12,
-                        "deltaE94G": 5.12,
-                        "deltaE2000": 4.54,
-                        "deltaECMC": 3.77,
-                        "deltaL": 4.68
+                    assessed: {
+                        deltaE76: 5.15,
+                        deltaE94T: 5.12,
+                        deltaE94G: 5.12,
+                        deltaE2000: 4.54,
+                        deltaECMC: 3.77,
+                        deltaL: 4.68,
                     },
-                    "reference": { "Lab": [36.1, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [36.1, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "16",
-                    "location": { "x": 122, "y": 695, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [102.29, 100.72, 98.64],
-                        "Lab": [39.63, 0.72, 1.52],
-                        "mean": 100.96,
-                        "stddev": 1.75,
-                        "snr": 57.78
+                    name: '16',
+                    location: { x: 122, y: 695, w: 48, h: 48 },
+                    observed: {
+                        RGB: [102.29, 100.72, 98.64],
+                        Lab: [39.63, 0.72, 1.52],
+                        mean: 100.96,
+                        stddev: 1.75,
+                        snr: 57.78,
                     },
-                    "assessed": {
-                        "deltaE76": 5.61,
-                        "deltaE94T": 5.59,
-                        "deltaE94G": 5.59,
-                        "deltaE2000": 4.85,
-                        "deltaECMC": 3.91,
-                        "deltaL": 5.23
+                    assessed: {
+                        deltaE76: 5.61,
+                        deltaE94T: 5.59,
+                        deltaE94G: 5.59,
+                        deltaE2000: 4.85,
+                        deltaECMC: 3.91,
+                        deltaL: 5.23,
                     },
-                    "reference": { "Lab": [34.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [34.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "17",
-                    "location": { "x": 122, "y": 584, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [97.64, 96.14, 94.61],
-                        "Lab": [37.85, 0.74, 1.19],
-                        "mean": 96.42,
-                        "stddev": 2.1,
-                        "snr": 46.01
+                    name: '17',
+                    location: { x: 122, y: 584, w: 48, h: 48 },
+                    observed: {
+                        RGB: [97.64, 96.14, 94.61],
+                        Lab: [37.85, 0.74, 1.19],
+                        mean: 96.42,
+                        stddev: 2.1,
+                        snr: 46.01,
                     },
-                    "assessed": {
-                        "deltaE76": 5.14,
-                        "deltaE94T": 5.13,
-                        "deltaE94G": 5.13,
-                        "deltaE2000": 4.35,
-                        "deltaECMC": 3.53,
-                        "deltaL": 4.85
+                    assessed: {
+                        deltaE76: 5.14,
+                        deltaE94T: 5.13,
+                        deltaE94G: 5.13,
+                        deltaE2000: 4.35,
+                        deltaECMC: 3.53,
+                        deltaL: 4.85,
                     },
-                    "reference": { "Lab": [33, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [33, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "18",
-                    "location": { "x": 122, "y": 473, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [90.12, 88.46, 87.5],
-                        "Lab": [34.87, 0.89, 0.91],
-                        "mean": 88.86,
-                        "stddev": 2.1,
-                        "snr": 42.29
+                    name: '18',
+                    location: { x: 122, y: 473, w: 48, h: 48 },
+                    observed: {
+                        RGB: [90.12, 88.46, 87.5],
+                        Lab: [34.87, 0.89, 0.91],
+                        mean: 88.86,
+                        stddev: 2.1,
+                        snr: 42.29,
                     },
-                    "assessed": {
-                        "deltaE76": 5.65,
-                        "deltaE94T": 5.64,
-                        "deltaE94G": 5.64,
-                        "deltaE2000": 4.56,
-                        "deltaECMC": 3.68,
-                        "deltaL": 5.47
+                    assessed: {
+                        deltaE76: 5.65,
+                        deltaE94T: 5.64,
+                        deltaE94G: 5.64,
+                        deltaE2000: 4.56,
+                        deltaECMC: 3.68,
+                        deltaL: 5.47,
                     },
-                    "reference": { "Lab": [29.4, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [29.4, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "19",
-                    "location": { "x": 122, "y": 362, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [77.19, 75.98, 75.73],
-                        "Lab": [29.94, 0.71, 0.4],
-                        "mean": 76.32,
-                        "stddev": 2.18,
-                        "snr": 34.93
+                    name: '19',
+                    location: { x: 122, y: 362, w: 48, h: 48 },
+                    observed: {
+                        RGB: [77.19, 75.98, 75.73],
+                        Lab: [29.94, 0.71, 0.4],
+                        mean: 76.32,
+                        stddev: 2.18,
+                        snr: 34.93,
                     },
-                    "assessed": {
-                        "deltaE76": 5.52,
-                        "deltaE94T": 5.52,
-                        "deltaE94G": 5.52,
-                        "deltaE2000": 4.19,
-                        "deltaECMC": 3.66,
-                        "deltaL": 5.44
+                    assessed: {
+                        deltaE76: 5.52,
+                        deltaE94T: 5.52,
+                        deltaE94G: 5.52,
+                        deltaE2000: 4.19,
+                        deltaECMC: 3.66,
+                        deltaL: 5.44,
                     },
-                    "reference": { "Lab": [24.5, 1, -0.5] },
-                    "validity": { "valid": true }
+                    reference: { Lab: [24.5, 1, -0.5] },
+                    validity: { valid: true },
                 },
                 {
-                    "name": "20",
-                    "location": { "x": 122, "y": 251, "w": 48, "h": 48 },
-                    "observed": {
-                        "RGB": [67.81, 66.41, 66.66],
-                        "Lab": [26.23, 0.87, 0.16],
-                        "mean": 66.86,
-                        "stddev": 2.43,
-                        "snr": 27.48
+                    name: '20',
+                    location: { x: 122, y: 251, w: 48, h: 48 },
+                    observed: {
+                        RGB: [67.81, 66.41, 66.66],
+                        Lab: [26.23, 0.87, 0.16],
+                        mean: 66.86,
+                        stddev: 2.43,
+                        snr: 27.48,
                     },
-                    "assessed": {
-                        "deltaE76": 4.98,
-                        "deltaE94T": 4.97,
-                        "deltaE94G": 4.97,
-                        "deltaE2000": 3.61,
-                        "deltaECMC": 3.49,
-                        "deltaL": 4.93
+                    assessed: {
+                        deltaE76: 4.98,
+                        deltaE94T: 4.97,
+                        deltaE94G: 4.97,
+                        deltaE2000: 3.61,
+                        deltaECMC: 3.49,
+                        deltaL: 4.93,
                     },
-                    "reference": { "Lab": [21.3, 1, -0.5] },
-                    "validity": { "valid": true }
-                }
+                    reference: { Lab: [21.3, 1, -0.5] },
+                    validity: { valid: true },
+                },
             ],
-            "edgePatches": [
+            edgePatches: [
                 {
-                    "name": "Vertical_Left",
-                    "location": { "x": 245, "y": 340, "w": 78, "h": 196 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0476217688,
-                            "MTF50": 0.0075294905,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Left',
+                    location: { x: 245, y: 340, w: 78, h: 196 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0476217688,
+                            MTF50: 0.0075294905,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.30106034874916077],
                                 [0.03999999910593033, 0.18666009604930878],
@@ -7019,14 +7019,14 @@ const targetData = {
                                 [0.9200000166893005, 0.10042408108711243],
                                 [0.9399999976158142, 0.08632177859544754],
                                 [0.9599999785423279, 0.19663743674755096],
-                                [0.9800000190734863, 0.2573099136352539]
-                            ]
+                                [0.9800000190734863, 0.2573099136352539],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0486172751,
-                            "MTF50": 0.0074515449,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0486172751,
+                            MTF50: 0.0074515449,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.30106034874916077],
                                 [0.03999999910593033, 0.18666009604930878],
@@ -7076,14 +7076,14 @@ const targetData = {
                                 [0.9200000166893005, 0.10042408108711243],
                                 [0.9399999976158142, 0.08632177859544754],
                                 [0.9599999785423279, 0.19663743674755096],
-                                [0.9800000190734863, 0.2573099136352539]
-                            ]
+                                [0.9800000190734863, 0.2573099136352539],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0472642497,
-                            "MTF50": 0.0072913909,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0472642497,
+                            MTF50: 0.0072913909,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.30106034874916077],
                                 [0.03999999910593033, 0.18666009604930878],
@@ -7133,14 +7133,14 @@ const targetData = {
                                 [0.9200000166893005, 0.10042408108711243],
                                 [0.9399999976158142, 0.08632177859544754],
                                 [0.9599999785423279, 0.19663743674755096],
-                                [0.9800000190734863, 0.2573099136352539]
-                            ]
+                                [0.9800000190734863, 0.2573099136352539],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0482577464,
-                            "MTF50": 0.0074231238,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0482577464,
+                            MTF50: 0.0074231238,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.30106034874916077],
                                 [0.03999999910593033, 0.18666009604930878],
@@ -7190,29 +7190,29 @@ const targetData = {
                                 [0.9200000166893005, 0.10042408108711243],
                                 [0.9399999976158142, 0.08632177859544754],
                                 [0.9599999785423279, 0.19663743674755096],
-                                [0.9800000190734863, 0.2573099136352539]
-                            ]
-                        }
+                                [0.9800000190734863, 0.2573099136352539],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.14,
-                        "MTF50": 0.03,
-                        "MTFMAX": 4,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.14,
+                        MTF50: 0.03,
+                        MTFMAX: 4,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Vertical_Right",
-                    "location": { "x": 541, "y": 340, "w": 78, "h": 196 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0011787175,
-                            "MTF50": 0.0003677042,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Vertical_Right',
+                    location: { x: 541, y: 340, w: 78, h: 196 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0011787175,
+                            MTF50: 0.0003677042,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.025893084704875946],
                                 [0.03999999910593033, 0.016015511006116867],
@@ -7262,14 +7262,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04638393223285675],
                                 [0.9399999976158142, 0.07340327650308609],
                                 [0.9599999785423279, 0.046353574842214584],
-                                [0.9800000190734863, 0.005709965247660875]
-                            ]
+                                [0.9800000190734863, 0.005709965247660875],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0493981184,
-                            "MTF50": 0.0075352876,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0493981184,
+                            MTF50: 0.0075352876,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.025893084704875946],
                                 [0.03999999910593033, 0.016015511006116867],
@@ -7319,14 +7319,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04638393223285675],
                                 [0.9399999976158142, 0.07340327650308609],
                                 [0.9599999785423279, 0.046353574842214584],
-                                [0.9800000190734863, 0.005709965247660875]
-                            ]
+                                [0.9800000190734863, 0.005709965247660875],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0012284047,
-                            "MTF50": 0.0003608301,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0012284047,
+                            MTF50: 0.0003608301,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.025893084704875946],
                                 [0.03999999910593033, 0.016015511006116867],
@@ -7376,14 +7376,14 @@ const targetData = {
                                 [0.9200000166893005, 0.04638393223285675],
                                 [0.9399999976158142, 0.07340327650308609],
                                 [0.9599999785423279, 0.046353574842214584],
-                                [0.9800000190734863, 0.005709965247660875]
-                            ]
+                                [0.9800000190734863, 0.005709965247660875],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0356757968,
-                            "MTF50": 0.0054924985,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0356757968,
+                            MTF50: 0.0054924985,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.025893084704875946],
                                 [0.03999999910593033, 0.016015511006116867],
@@ -7433,29 +7433,29 @@ const targetData = {
                                 [0.9200000166893005, 0.04638393223285675],
                                 [0.9399999976158142, 0.07340327650308609],
                                 [0.9599999785423279, 0.046353574842214584],
-                                [0.9800000190734863, 0.005709965247660875]
-                            ]
-                        }
+                                [0.9800000190734863, 0.005709965247660875],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.04,
-                        "MTF50": 0.01,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.04,
+                        MTF50: 0.01,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Top",
-                    "location": { "x": 334, "y": 251, "w": 196, "h": 78 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0012383588,
-                            "MTF50": 0.0003734349,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Top',
+                    location: { x: 334, y: 251, w: 196, h: 78 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0012383588,
+                            MTF50: 0.0003734349,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.05914583429694176],
                                 [0.03999999910593033, 0.02365534007549286],
@@ -7505,14 +7505,14 @@ const targetData = {
                                 [0.9200000166893005, 0.023693572729825974],
                                 [0.9399999976158142, 0.11090622842311859],
                                 [0.9599999785423279, 0.03152277320623398],
-                                [0.9800000190734863, 0.02416718564927578]
-                            ]
+                                [0.9800000190734863, 0.02416718564927578],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0015908173,
-                            "MTF50": 0.0003685477,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0015908173,
+                            MTF50: 0.0003685477,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.05914583429694176],
                                 [0.03999999910593033, 0.02365534007549286],
@@ -7562,14 +7562,14 @@ const targetData = {
                                 [0.9200000166893005, 0.023693572729825974],
                                 [0.9399999976158142, 0.11090622842311859],
                                 [0.9599999785423279, 0.03152277320623398],
-                                [0.9800000190734863, 0.02416718564927578]
-                            ]
+                                [0.9800000190734863, 0.02416718564927578],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0013966223,
-                            "MTF50": 0.0003729185,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0013966223,
+                            MTF50: 0.0003729185,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.05914583429694176],
                                 [0.03999999910593033, 0.02365534007549286],
@@ -7619,14 +7619,14 @@ const targetData = {
                                 [0.9200000166893005, 0.023693572729825974],
                                 [0.9399999976158142, 0.11090622842311859],
                                 [0.9599999785423279, 0.03152277320623398],
-                                [0.9800000190734863, 0.02416718564927578]
-                            ]
+                                [0.9800000190734863, 0.02416718564927578],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.001524084,
-                            "MTF50": 0.0003698298,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.001524084,
+                            MTF50: 0.0003698298,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.05914583429694176],
                                 [0.03999999910593033, 0.02365534007549286],
@@ -7676,29 +7676,29 @@ const targetData = {
                                 [0.9200000166893005, 0.023693572729825974],
                                 [0.9399999976158142, 0.11090622842311859],
                                 [0.9599999785423279, 0.03152277320623398],
-                                [0.9800000190734863, 0.02416718564927578]
-                            ]
-                        }
+                                [0.9800000190734863, 0.02416718564927578],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0,
-                        "MTF50": 0,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0,
+                        MTF50: 0,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
                 },
                 {
-                    "name": "Horizontal_Bottom",
-                    "location": { "x": 334, "y": 547, "w": 196, "h": 78 },
-                    "observed": {
-                        "R": {
-                            "MTF10": 0.0510819794,
-                            "MTF50": 0.007620064,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                    name: 'Horizontal_Bottom',
+                    location: { x: 334, y: 547, w: 196, h: 78 },
+                    observed: {
+                        R: {
+                            MTF10: 0.0510819794,
+                            MTF50: 0.007620064,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3107236921787262],
                                 [0.03999999910593033, 0.19192121922969818],
@@ -7748,14 +7748,14 @@ const targetData = {
                                 [0.9200000166893005, 0.07326209545135498],
                                 [0.9399999976158142, 0.12403487414121628],
                                 [0.9599999785423279, 0.13109777867794037],
-                                [0.9800000190734863, 0.22068269550800323]
-                            ]
+                                [0.9800000190734863, 0.22068269550800323],
+                            ],
                         },
-                        "G": {
-                            "MTF10": 0.0488033291,
-                            "MTF50": 0.0074597629,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        G: {
+                            MTF10: 0.0488033291,
+                            MTF50: 0.0074597629,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3107236921787262],
                                 [0.03999999910593033, 0.19192121922969818],
@@ -7805,14 +7805,14 @@ const targetData = {
                                 [0.9200000166893005, 0.07326209545135498],
                                 [0.9399999976158142, 0.12403487414121628],
                                 [0.9599999785423279, 0.13109777867794037],
-                                [0.9800000190734863, 0.22068269550800323]
-                            ]
+                                [0.9800000190734863, 0.22068269550800323],
+                            ],
                         },
-                        "B": {
-                            "MTF10": 0.0484795887,
-                            "MTF50": 0.007423002,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        B: {
+                            MTF10: 0.0484795887,
+                            MTF50: 0.007423002,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3107236921787262],
                                 [0.03999999910593033, 0.19192121922969818],
@@ -7862,14 +7862,14 @@ const targetData = {
                                 [0.9200000166893005, 0.07326209545135498],
                                 [0.9399999976158142, 0.12403487414121628],
                                 [0.9599999785423279, 0.13109777867794037],
-                                [0.9800000190734863, 0.22068269550800323]
-                            ]
+                                [0.9800000190734863, 0.22068269550800323],
+                            ],
                         },
-                        "Lum": {
-                            "MTF10": 0.0488990205,
-                            "MTF50": 0.0074635213,
-                            "MTFMAX": 1,
-                            "MTF_Curve": [
+                        Lum: {
+                            MTF10: 0.0488990205,
+                            MTF50: 0.0074635213,
+                            MTFMAX: 1,
+                            MTF_Curve: [
                                 [0, 1],
                                 [0.019999999552965164, 0.3107236921787262],
                                 [0.03999999910593033, 0.19192121922969818],
@@ -7919,72 +7919,72 @@ const targetData = {
                                 [0.9200000166893005, 0.07326209545135498],
                                 [0.9399999976158142, 0.12403487414121628],
                                 [0.9599999785423279, 0.13109777867794037],
-                                [0.9800000190734863, 0.22068269550800323]
-                            ]
-                        }
+                                [0.9800000190734863, 0.22068269550800323],
+                            ],
+                        },
                     },
-                    "validity": { "valid": true },
-                    "assessed": {
-                        "SEFF": 0,
-                        "MTF10": 0.05,
-                        "MTF50": 0.01,
-                        "MTFMAX": 1,
-                        "MTFHSF": 0,
-                        "CMR": 0
-                    }
-                }
+                    validity: { valid: true },
+                    assessed: {
+                        SEFF: 0,
+                        MTF10: 0.05,
+                        MTF50: 0.01,
+                        MTFMAX: 1,
+                        MTFHSF: 0,
+                        CMR: 0,
+                    },
+                },
             ],
-            "targetType": "QA_62",
-            "validity": { "valid": true, "invalidPatch": 0 },
-            "assessed": {
-                "meanDeltaE76": 5.15,
-                "meanDeltaE94T": 4.99,
-                "meanDeltaE94G": 4.99,
-                "meanDeltaE2000": 4.51,
-                "meanDeltaECMC": 4.29,
-                "meanDeltaL": 3.94,
-                "meanStdDev": 1.61,
-                "SEFF": 0,
-                "MTF10": 0.04,
-                "MTF50": 0.01,
-                "MTFMAX": 1,
-                "MTFHSF": 0,
-                "CMR": 0
-            }
-        }
+            targetType: 'QA_62',
+            validity: { valid: true, invalidPatch: 0 },
+            assessed: {
+                meanDeltaE76: 5.15,
+                meanDeltaE94T: 4.99,
+                meanDeltaE94G: 4.99,
+                meanDeltaE2000: 4.51,
+                meanDeltaECMC: 4.29,
+                meanDeltaL: 3.94,
+                meanStdDev: 1.61,
+                SEFF: 0,
+                MTF10: 0.04,
+                MTF50: 0.01,
+                MTFMAX: 1,
+                MTFHSF: 0,
+                CMR: 0,
+            },
+        },
     ],
-    "color": "color",
-    "validity": {
-        "valid": false,
-        "message": ["Target(s) did not pass all guidelines"],
-        "hasInvalidPatch": false,
-        "warning": []
+    color: 'color',
+    validity: {
+        valid: false,
+        message: ['Target(s) did not pass all guidelines'],
+        hasInvalidPatch: false,
+        warning: [],
     },
-    "assessed": {
-        "SEFF": 0,
-        "MTF10": 0.21,
-        "MTF50": 0.15,
-        "MTFMAX": 1.01,
-        "MTFHSF": 0,
-        "CMR": 0,
-        "meanDeltaE76": 8.43,
-        "meanDeltaE94T": 6.59,
-        "meanDeltaE94G": 6.59,
-        "meanDeltaE2000": 5.46,
-        "meanDeltaECMC": 5.49,
-        "meanDeltaL": 5.35,
-        "meanStdDev": 3.19,
-        "colorAccuracy": {
-            "Color Encoding Error (∆E1976)": false,
-            "Individual Patch Error (∆E1976)": true,
-            "Total Noise": true,
-            "Illuminance Uniformity": true
+    assessed: {
+        SEFF: 0,
+        MTF10: 0.21,
+        MTF50: 0.15,
+        MTFMAX: 1.01,
+        MTFHSF: 0,
+        CMR: 0,
+        meanDeltaE76: 8.43,
+        meanDeltaE94T: 6.59,
+        meanDeltaE94G: 6.59,
+        meanDeltaE2000: 5.46,
+        meanDeltaECMC: 5.49,
+        meanDeltaL: 5.35,
+        meanStdDev: 3.19,
+        colorAccuracy: {
+            'Color Encoding Error (∆E1976)': false,
+            'Individual Patch Error (∆E1976)': true,
+            'Total Noise': true,
+            'Illuminance Uniformity': true,
         },
-        "spatialAccuracy": {
-            "SFR High Frequency": null,
-            "SFR Mid Frequency": false,
-            "Oversharpening": true,
-            "Color Channel Misregistration": null
-        }
-    }
+        spatialAccuracy: {
+            'SFR High Frequency': null,
+            'SFR Mid Frequency': false,
+            Oversharpening: true,
+            'Color Channel Misregistration': null,
+        },
+    },
 }
