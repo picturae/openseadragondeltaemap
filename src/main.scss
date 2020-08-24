@@ -72,6 +72,7 @@ left, top, right, bottom will be set inline
             display: block;
             position: relative;
             top: $tblSpace;
+            border-bottom: $boxLine solid $borderBlue;
         }
     }
     &.valid caption:after {
@@ -123,12 +124,14 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
     tr.g,
     tr.b,
     tr.lum,
+    tr.rgb,
     tr.lab,
     tr.color-profile,
     tr.invalid-patch,
     tr.has-invalid-patch {
         width: $meanCellWidth;
     }
+    tr.rmsnoisergby,
     tr.color-accuracy,
     tr.spatial-accuracy,
     tr.message {
