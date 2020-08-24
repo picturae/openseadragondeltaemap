@@ -146,7 +146,14 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
         td {
             text-align: center;
         }
+        &[rowspan] {
+            th,
+            td {
+                display: table-cell;
+            }
+        }
         svg {
+            max-width: 100%;
         }
     }
     tr > * {

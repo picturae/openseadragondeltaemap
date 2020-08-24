@@ -5,12 +5,9 @@ import {
     roundAtDigits,
 } from 'my-lib'
 import transformCase from 'transform-case'
+import { BREAK, INAPT, DISPLAY_CLASSNAME } from './constants'
 import { getData } from './storage'
-import { drawPlot } from './plot'
-
-const BREAK = '<br/>'
-const INAPT = content => ['', null, undefined].includes(content)
-const DISPLAY_CLASSNAME = 'picturae-deltaemap-display'
+import { buildGraph } from './edgeGraph'
 
 /**
  * Serialise the values
@@ -69,26 +66,6 @@ const readableValue = value => {
             if (line) fragment += line
         }
         return fragment
-    }
-}
-
-/**
- * Attach plot of edgeData to observed data
- * @param {object} edgeData - array of R,G,B,Lum objects
- * @param {object} table - html elememt to attach plot to
- */
-const edgePlot = (edgeData, table) => {
-    const tbodySelector = 'tbody.deltaemap-observed'
-    const tbody = table.querySelector(tbodySelector)
-    const subject = 'Spatial Frequency Response' // reflected in stylesheet
-    const rowClassName = transformCase(subject).paramCase()
-    const row = `<tr class="${rowClassName}"><th>${subject}</th><td></td></tr>`
-    tbody.innerHTML += row
-
-    const selector = `table.${DISPLAY_CLASSNAME} ${tbodySelector} tr.${rowClassName} td`
-    const drawDone = drawPlot(edgeData, selector, subject)
-    if (!drawDone) {
-        tbody.removeChild(tbody.lastElementChild)
     }
 }
 
@@ -179,12 +156,11 @@ const renderData = (event, table, userData) => {
     }
     if (userData.edgePatches && userData.edgePatches.length) {
         // a targetChart - multiple patches
-        const observedEdges = userData.edgePatches.map(patch => patch.observed)
-        edgePlot(observedEdges, table)
+        buildGraph(userData.edgePatches, table, DISPLAY_CLASSNAME)
     }
     if (userData.observed.Lum && userData.observed.Lum.MTF_Curve) {
         // targetPatch - one patch
-        edgePlot([userData.observed], table)
+        buildGraph([userData], table, DISPLAY_CLASSNAME)
     }
 }
 

@@ -36,13 +36,15 @@ const d3 = {
  * @param {object} edgeList - array of objects with R, G, B and Lum properties
  * @param {string} parentQuery - css selector for parentNode
  * @param {string} heading - heading
- * @return {boolean} succes
+ * @return {boolean || undefined} succes
  */
 const drawPlot = (edgeList, parentQuery, heading) => {
     const body = d3.select(parentQuery)
     const sfrList = []
 
     edgeList.forEach(edgeData => {
+        if (typeof edgeData !== 'object') return
+
         Object.keys(edgeData).forEach(channel => {
             const sfrChannel = {}
             sfrChannel.name = channel
@@ -82,25 +84,31 @@ const drawPlot = (edgeList, parentQuery, heading) => {
     const width = 300
     const height = 200
     const margin = 25
+    const graphWidth = width - margin
+    const graphHeight = height - margin
+    const docWidth = width + margin
+    const docHeight = height + margin
 
     /* Scale */
     const xScale = d3
         .scaleLinear()
         .domain(d3.extent(sfrList[0].values, d => d.x))
-        .range([0, width - margin])
+        .range([0, graphWidth])
 
     const yScale = d3
         .scaleLinear()
         .domain([0, d3.max(sfrList[0].values, d => d.y)])
-        .range([height - margin, 0])
+        .range([graphHeight, 0])
 
     /* Add SVG */
     const svg = body
         .append('svg')
         .attr('xmlns', 'http://www.w3.org/2000/svg')
         .attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
-        .attr('width', width + margin + 'px')
-        .attr('height', height + margin + 'px')
+        .attr('width', docWidth + 'px')
+        .attr('height', docHeight + 'px')
+        .attr('viewBox', `0 0 ${docWidth} ${docHeight}`)
+        .attr('preserveAspectRatio', 'xMidYMid meet')
         .append('g')
         .attr('transform', `translate(${margin}, ${margin})`)
 
@@ -132,7 +140,7 @@ const drawPlot = (edgeList, parentQuery, heading) => {
 
     svg.append('g')
         .attr('class', 'x axis')
-        .attr('transform', `translate(0, ${height - margin})`)
+        .attr('transform', `translate(0, ${graphHeight})`)
         .call(xAxis)
 
     svg.append('g')

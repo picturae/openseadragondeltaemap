@@ -124,6 +124,13 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
 .picturae-deltaemap-display tr.spatial-frequency-response td {
   text-align: center;
 }
+.picturae-deltaemap-display tr.spatial-frequency-response[rowspan] th,
+.picturae-deltaemap-display tr.spatial-frequency-response[rowspan] td {
+  display: table-cell;
+}
+.picturae-deltaemap-display tr.spatial-frequency-response svg {
+  max-width: 100%;
+}
 .picturae-deltaemap-display tr > * {
   display: block;
 }
