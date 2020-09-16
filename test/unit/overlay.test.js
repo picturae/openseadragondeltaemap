@@ -8,10 +8,12 @@ console.error = jest.fn()
 
 describe('Overlay is the main object', function () {
     let theViewer
+    let overlayData
 
     beforeEach(() => {
         // make viewer manipulable
         theViewer = deepClone(viewer)
+        overlayData = JSON.parse(JSON.stringify(targetData))
     })
 
     test('Overlay has public methods', () => {
@@ -70,8 +72,8 @@ describe('Overlay is the main object', function () {
 
     test('Overlay renders a dataset with a default name when there is none', () => {
         const overlayInstance = new Overlay(theViewer)
-        delete targetData.name
-        overlayInstance.render(targetData)
+        delete overlayData.name
+        overlayInstance.render(overlayData)
         const ourDataset = getData(overlayInstance.element)
 
         expect(ourDataset).toHaveProperty('location')
@@ -79,27 +81,36 @@ describe('Overlay is the main object', function () {
     })
 
     test('Overlay renders a className "valid" when the validity flag is positive', () => {
+        overlayData.validity = {valid: true}
         const overlayInstance = new Overlay(theViewer)
-        targetData.validity.valid = true
-        overlayInstance.render(targetData)
-        const classList = overlayInstance.element.classList
+        overlayInstance.render(overlayData)
 
-        expect(classList).toContain('valid');
+        expect(overlayInstance.element.classList).toContain('valid');
+        expect(overlayInstance.element.classList).not.toContain('invalid');
     })
 
     test('Overlay renders a className "invalid" when the validity flag is negative', () => {
+        overlayData.validity = {valid: false}
         const overlayInstance = new Overlay(theViewer)
-        targetData.validity.valid = false
-        overlayInstance.render(targetData)
-        const classList = overlayInstance.element.classList
+        overlayInstance.render(overlayData)
 
-        expect(classList).toContain('invalid');
+        expect(overlayInstance.element.classList).not.toContain('valid');
+        expect(overlayInstance.element.classList).toContain('invalid');
+    })
+
+    test('Overlay renders no dedicated className when the validity flag is missing', () => {
+        delete overlayData.validity
+        const overlayInstance = new Overlay(theViewer)
+        overlayInstance.render(overlayData)
+
+        expect(overlayInstance.element.classList).not.toContain('valid');
+        expect(overlayInstance.element.classList).not.toContain('invalid');
     })
 
     test('Overlay renders at least one new target chart', () => {
         const overlayInstance = new Overlay(theViewer)
         const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
-        overlayInstance.render(targetData)
+        overlayInstance.render(overlayData)
 
         expect(spyElementAppend).toHaveBeenCalled()
     })

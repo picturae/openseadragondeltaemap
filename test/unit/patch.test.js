@@ -52,26 +52,42 @@ test('Patch renders a dataset', () => {
 })
 
 test('Patch renders a className "valid" when the validity flag is positive', () => {
-    const patchValidData = patchData
-    patchValidData.validity.valid = true
+    const patchValidData = JSON.parse(JSON.stringify(patchData))
+    patchValidData.validity = {valid: true}
     const patchInstance = new Patch(
         patchValidData,
         htmlElement,
         contentSize,
     )
+
     expect(patchInstance.element.classList).toContain('valid');
+    expect(patchInstance.element.classList).not.toContain('invalid');
 })
 
 test('Patch renders a className "invalid" when the validity flag is negative', () => {
-    const patchInvalidData = patchData
-    patchInvalidData.validity.valid = false
+    const patchInvalidData = JSON.parse(JSON.stringify(patchData))
+    patchInvalidData.validity = {valid: false}
     const patchInstance = new Patch(
         patchInvalidData,
         htmlElement,
         contentSize,
     )
 
+    expect(patchInstance.element.classList).not.toContain('valid');
     expect(patchInstance.element.classList).toContain('invalid');
+})
+
+test('Patch renders no dedicated className when the validity flag is missing', () => {
+    const patchNoValidationData = JSON.parse(JSON.stringify(patchData))
+    delete patchNoValidationData.validity
+    const patchInstance = new Patch(
+        patchNoValidationData,
+        htmlElement,
+        contentSize,
+    )
+
+    expect(patchInstance.element.classList).not.toContain('valid');
+    expect(patchInstance.element.classList).not.toContain('invalid');
 })
 
 test('Patch does not render when data are missing', () => {

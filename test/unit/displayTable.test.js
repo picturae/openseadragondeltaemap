@@ -56,10 +56,13 @@ describe('renderData function', function () {
         const table = document.querySelector('table')
 
         const event = {target: deltaemap}
+        // console.log('userData overlay', (userData))
         renderData(event, table, userData)
         // console.log('overlay', table.outerHTML)
 
+        // overlay has validity.valid === false
         expect(table.classList).toContain('deltaemap-overlay')
+        expect(table.classList).not.toContain('valid')
         expect(table.classList).toContain('invalid')
         expect(table.querySelector('caption').textContent).toContain('Test Target Scan')
     })
@@ -70,11 +73,14 @@ describe('renderData function', function () {
         const table = document.querySelector('table')
 
         const event = {target: deltaemap}
+        // console.log('userData chart', userData)
         renderData(event, table, userData)
         // console.log('chart', table.outerHTML)
 
+        // chart has validity.valid === true
         expect(table.classList).toContain('deltaemap-chart')
         expect(table.classList).toContain('valid')
+        expect(table.classList).not.toContain('invalid')
         expect(table.querySelector('caption').textContent).toContain('Scan Test Color Chart')
     })
 
@@ -84,10 +90,13 @@ describe('renderData function', function () {
         const table = document.querySelector('table')
 
         const event = {target: deltaemap}
+        // console.log('userData patch', userData)
         renderData(event, table, userData)
 
+        // patch has empty validity object
         expect(table.classList).toContain('deltaemap-patch')
-        expect(table.classList).toContain('invalid')
+        expect(table.classList).not.toContain('valid')
+        expect(table.classList).not.toContain('invalid')
         expect(table.querySelector('caption').textContent).toContain('C1')
         expect(table.querySelector('caption').innerHTML).toContain('background: rgb(')
     })

@@ -50,26 +50,42 @@ test('Chart renders stored data', () => {
 })
 
 test('Chart renders a className "valid" when the validity flag is positive', () => {
-    const chartValidData = chartData
-    chartValidData.validity.valid = true
+    const chartValidData = JSON.parse(JSON.stringify(chartData))
+    chartValidData.validity = {valid: true}
     const chartInstance = new Chart(
         chartValidData,
         htmlElement,
         contentSize,
     )
+
     expect(chartInstance.element.classList).toContain('valid');
+    expect(chartInstance.element.classList).not.toContain('invalid');
 })
 
 test('Chart renders a className "invalid" when the validity flag is negative', () => {
-    const chartInvalidData = chartData
-    chartInvalidData.validity.valid = false
+    const chartInvalidData = JSON.parse(JSON.stringify(chartData))
+    chartInvalidData.validity = {valid: false}
     const chartInstance = new Chart(
         chartInvalidData,
         htmlElement,
         contentSize,
     )
 
+    expect(chartInstance.element.classList).not.toContain('valid');
     expect(chartInstance.element.classList).toContain('invalid');
+})
+
+test('Chart renders no dedicated className when the validity flag is missing', () => {
+    const chartNoValidationData = JSON.parse(JSON.stringify(chartData))
+    delete chartNoValidationData.validity
+    const chartInstance = new Chart(
+        chartNoValidationData,
+        htmlElement,
+        contentSize,
+    )
+
+    expect(chartInstance.element.classList).not.toContain('valid');
+    expect(chartInstance.element.classList).not.toContain('invalid');
 })
 
 test('Chart renders at least one new target patch', () => {

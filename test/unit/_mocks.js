@@ -82,11 +82,7 @@ const targetData = {
                         deltaL: 2.41
                     },
                     reference: { Lab: [46, 64, 34] },
-                    validity: {
-                        valid: false,
-                        message: ["∆E1976 13.38 above 10"],
-                        invalidPatch: true
-                    }
+
                 },
             ],
             edgePatches: [

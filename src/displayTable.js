@@ -147,11 +147,16 @@ const renderData = (event, table, userData) => {
     if (userData.reference) {
         table.innerHTML += dataBody('reference', userData.reference)
     }
+    // clear validity no matter what
+    table.classList.remove('valid', 'invalid')
     if (userData.validity) {
         if (hasOwnProperty(userData.validity, 'valid')) {
-            const isValid = userData.validity.valid
-            table.classList.remove('valid', 'invalid')
-            table.classList.add(isValid ? 'valid' : 'invalid')
+            if (userData.validity.valid === true) {
+                table.classList.add('valid')
+            }
+            if (userData.validity.valid === false) {
+                table.classList.add('invalid')
+            }
         }
         table.innerHTML += dataBody('validity', userData.validity)
     }
