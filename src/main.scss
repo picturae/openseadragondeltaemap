@@ -207,6 +207,8 @@ color set according to boolean state
 deltaeboolean {
     display: inline-block;
     font-weight: bold;
+    width: 0.8em;
+    text-align: center;
     &.valid:before {
         content: '\2713';
         color: $textGreen;
