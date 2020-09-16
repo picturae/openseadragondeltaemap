@@ -128,8 +128,9 @@ const renderData = (event, table, userData) => {
 
     // process element data
     let colorSquare = ''
-    if (userData.observed && userData.observed.RGB) {
-        let color = `rgb(${userData.observed.RGB.join()})`
+    const rgbSource = userData.observed.RGB || userData.observed.RGBY
+    if (userData.observed && rgbSource) {
+        const color = `rgb(${rgbSource[0]},${rgbSource[1]},${rgbSource[2]})`
         colorSquare = `<deltaecolor style="background: ${color};"></deltaecolor>`
     }
     table.innerHTML += `<caption>
