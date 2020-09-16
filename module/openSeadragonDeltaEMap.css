@@ -33,6 +33,7 @@ left, top, right, bottom will be set inline
 */
 .picturae-deltaemap-display {
   font: caption;
+  font-size: 14px;
   position: fixed;
   background: rgba(204, 204, 204, 0.93);
   border-radius: 0 0 0.5em 0.5em;
@@ -71,6 +72,41 @@ left, top, right, bottom will be set inline
 .picturae-deltaemap-display td {
   font-size: inherit;
   vertical-align: top;
+  min-width: 5.333em;
+}
+.picturae-deltaemap-display tr.spatial-frequency-response th {
+  font-size: 0;
+  color: transparent;
+}
+.picturae-deltaemap-display tr.spatial-frequency-response td {
+  margin-left: -5.333em;
+  display: block;
+}
+.picturae-deltaemap-display tr.spatial-frequency-response svg {
+  max-width: 100%;
+}
+.picturae-deltaemap-display path.line {
+  stroke: white;
+  stroke-width: 1.5;
+  fill: none;
+  mix-blend-mode: multiply;
+  opacity: 0.25;
+}
+.picturae-deltaemap-display path.line.red {
+  stroke: #f00;
+}
+.picturae-deltaemap-display path.line.green {
+  stroke: #0d0;
+}
+.picturae-deltaemap-display path.line.blue {
+  stroke: #24f;
+}
+.picturae-deltaemap-display tr.rgb,
+.picturae-deltaemap-display tr.valid {
+  display: none;
+}
+.picturae-deltaemap-display.valid .deltaemap-validity {
+  display: none;
 }
 
 /* voorbeeld tabel
@@ -78,9 +114,6 @@ tabel: 391.50 px * 631.46 px = 241.344,09  px2
 flex3: 410.25 px * 616.46 px = 252.902,715 px2
 flex4: 546.50 px * 533.96 px = 291.809,14  px2
 */
-.picturae-deltaemap-display {
-  font-size: 14px;
-}
 .picturae-deltaemap-display tbody {
   padding-top: 1.5em;
   display: flex;
@@ -117,45 +150,12 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
 .picturae-deltaemap-display tr.spatial-frequency-response {
   width: 100%;
 }
-.picturae-deltaemap-display tr.spatial-frequency-response th {
-  font-size: 0;
-  color: transparent;
-}
-.picturae-deltaemap-display tr.spatial-frequency-response td {
-  text-align: center;
-}
 .picturae-deltaemap-display tr.spatial-frequency-response[rowspan] th,
 .picturae-deltaemap-display tr.spatial-frequency-response[rowspan] td {
   display: table-cell;
 }
-.picturae-deltaemap-display tr.spatial-frequency-response svg {
-  max-width: 100%;
-}
 .picturae-deltaemap-display tr > * {
   display: block;
-}
-.picturae-deltaemap-display path.line {
-  stroke: white;
-  stroke-width: 1.5;
-  fill: none;
-  mix-blend-mode: multiply;
-  opacity: 0.25;
-}
-.picturae-deltaemap-display path.line.red {
-  stroke: #f00;
-}
-.picturae-deltaemap-display path.line.green {
-  stroke: #0d0;
-}
-.picturae-deltaemap-display path.line.blue {
-  stroke: #24f;
-}
-.picturae-deltaemap-display tr.rgb,
-.picturae-deltaemap-display tr.valid {
-  display: none;
-}
-.picturae-deltaemap-display.valid .deltaemap-validity {
-  display: none;
 }
 
 /*
