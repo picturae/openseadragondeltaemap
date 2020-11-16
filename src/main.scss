@@ -94,18 +94,12 @@ left, top, right, bottom will be set inline
     td {
         font-size: inherit;
         vertical-align: top;
-        min-width: $smallCellWidth; // specifc for table
     }
 
     tr.spatial-frequency-response {
         th {
             font-size: 0;
             color: transparent;
-        }
-        td {
-            // specifc for table
-            margin-left: -$smallCellWidth;
-            display: block;
         }
         svg {
             max-width: 100%;
@@ -141,15 +135,33 @@ left, top, right, bottom will be set inline
     }
 }
 
+.tabular.picturae-deltaemap-display {
+    th,
+    td {
+        min-width: $smallCellWidth;
+    }
+
+    tr.spatial-frequency-response {
+        td {
+            margin-left: -$smallCellWidth;
+            display: block;
+        }
+    }
+    tr.spatial-frequency-response[rowspan] {
+        display: none; // it would mean two svg's vertical
+    }
+}
+
 /* voorbeeld tabel
 tabel: 391.50 px * 631.46 px = 241.344,09  px2
 flex3: 410.25 px * 616.46 px = 252.902,715 px2
 flex4: 546.50 px * 533.96 px = 291.809,14  px2
 */
 
-.picturae-deltaemap-display {
+.flexible.picturae-deltaemap-display {
     tbody {
         padding-top: 1.5em;
+        padding-bottom: 0.25em;
         display: flex;
         flex-wrap: wrap;
         min-width: $tbdMinWidth;

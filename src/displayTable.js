@@ -170,14 +170,18 @@ const renderData = (event, table, userData) => {
     }
 }
 
-const DisplayTable = function(mainElement) {
+const DisplayTable = function(mainElement, options) {
     this.name = 'DisplayTable'
     const eventRoot = document.body
     const docRoot = document.documentElement
     const displayRoot = mainElement.parentNode
     const table = document.createElement('table')
     this.element = table
-    table.className = DISPLAY_CLASSNAME
+    const tableOptions = Object.assign({ layout: 'tabular' }, options)
+    table.classList.add(
+        DISPLAY_CLASSNAME,
+        tableOptions.layout === 'flexible' ? 'flexible' : 'tabular',
+    )
 
     /**
      * Update the table with new data

@@ -72,15 +72,10 @@ left, top, right, bottom will be set inline
 .picturae-deltaemap-display td {
   font-size: inherit;
   vertical-align: top;
-  min-width: 5.333em;
 }
 .picturae-deltaemap-display tr.spatial-frequency-response th {
   font-size: 0;
   color: transparent;
-}
-.picturae-deltaemap-display tr.spatial-frequency-response td {
-  margin-left: -5.333em;
-  display: block;
 }
 .picturae-deltaemap-display tr.spatial-frequency-response svg {
   max-width: 100%;
@@ -109,52 +104,65 @@ left, top, right, bottom will be set inline
   display: none;
 }
 
+.tabular.picturae-deltaemap-display th,
+.tabular.picturae-deltaemap-display td {
+  min-width: 5.333em;
+}
+.tabular.picturae-deltaemap-display tr.spatial-frequency-response td {
+  margin-left: -5.333em;
+  display: block;
+}
+.tabular.picturae-deltaemap-display tr.spatial-frequency-response[rowspan] {
+  display: none;
+}
+
 /* voorbeeld tabel
 tabel: 391.50 px * 631.46 px = 241.344,09  px2
 flex3: 410.25 px * 616.46 px = 252.902,715 px2
 flex4: 546.50 px * 533.96 px = 291.809,14  px2
 */
-.picturae-deltaemap-display tbody {
+.flexible.picturae-deltaemap-display tbody {
   padding-top: 1.5em;
+  padding-bottom: 0.25em;
   display: flex;
   flex-wrap: wrap;
   min-width: 16.998em;
   max-width: 39.662em;
 }
-.picturae-deltaemap-display tbody:before {
+.flexible.picturae-deltaemap-display tbody:before {
   position: absolute;
   margin-top: -1.333em;
   width: 100%;
 }
-.picturae-deltaemap-display tr {
+.flexible.picturae-deltaemap-display tr {
   margin: 0 0.333em 0 0;
   width: 5.333em;
 }
-.picturae-deltaemap-display tr.r,
-.picturae-deltaemap-display tr.g,
-.picturae-deltaemap-display tr.b,
-.picturae-deltaemap-display tr.lum,
-.picturae-deltaemap-display tr.rgb,
-.picturae-deltaemap-display tr.lab,
-.picturae-deltaemap-display tr.color-profile,
-.picturae-deltaemap-display tr.invalid-patch,
-.picturae-deltaemap-display tr.has-invalid-patch {
+.flexible.picturae-deltaemap-display tr.r,
+.flexible.picturae-deltaemap-display tr.g,
+.flexible.picturae-deltaemap-display tr.b,
+.flexible.picturae-deltaemap-display tr.lum,
+.flexible.picturae-deltaemap-display tr.rgb,
+.flexible.picturae-deltaemap-display tr.lab,
+.flexible.picturae-deltaemap-display tr.color-profile,
+.flexible.picturae-deltaemap-display tr.invalid-patch,
+.flexible.picturae-deltaemap-display tr.has-invalid-patch {
   width: 10.999em;
 }
-.picturae-deltaemap-display tr.rmsnoisergby,
-.picturae-deltaemap-display tr.color-accuracy,
-.picturae-deltaemap-display tr.spatial-accuracy,
-.picturae-deltaemap-display tr.message {
+.flexible.picturae-deltaemap-display tr.rmsnoisergby,
+.flexible.picturae-deltaemap-display tr.color-accuracy,
+.flexible.picturae-deltaemap-display tr.spatial-accuracy,
+.flexible.picturae-deltaemap-display tr.message {
   width: 16.665em;
 }
-.picturae-deltaemap-display tr.spatial-frequency-response {
+.flexible.picturae-deltaemap-display tr.spatial-frequency-response {
   width: 100%;
 }
-.picturae-deltaemap-display tr.spatial-frequency-response[rowspan] th,
-.picturae-deltaemap-display tr.spatial-frequency-response[rowspan] td {
+.flexible.picturae-deltaemap-display tr.spatial-frequency-response[rowspan] th,
+.flexible.picturae-deltaemap-display tr.spatial-frequency-response[rowspan] td {
   display: table-cell;
 }
-.picturae-deltaemap-display tr > * {
+.flexible.picturae-deltaemap-display tr > * {
   display: block;
 }
 

@@ -3,7 +3,7 @@ import { setData } from './storage'
 import { Chart } from './chart'
 import { DisplayTable } from './displayTable'
 
-const Overlay = function(viewer) {
+const Overlay = function(viewer, options) {
     this.name = 'Overlay'
     this.element = document.createElement('deltaeoverlay')
 
@@ -94,7 +94,7 @@ const Overlay = function(viewer) {
             )
         })
     }
-    new DisplayTable(this.element)
+    new DisplayTable(this.element, options)
 }
 
 export { Overlay }
