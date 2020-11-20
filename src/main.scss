@@ -228,6 +228,10 @@ deltaeboolean {
     font-weight: bold;
     width: 0.8em;
     text-align: center;
+    &:before {
+        content: '?';
+        color: $textBlue;
+    }
     &.valid:before {
         content: '\2713';
         color: $textGreen;

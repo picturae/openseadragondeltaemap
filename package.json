@@ -41,18 +41,18 @@
         "openseadragon": "^2.1.0"
     },
     "dependencies": {
-        "d3-array": "^2.5.0",
+        "d3-array": "^2.8.0",
         "d3-axis": "^1.0.12",
-        "d3-scale": "^3.2.1",
+        "d3-scale": "^3.2.3",
         "d3-selection": "^1.4.2",
         "d3-shape": "^1.3.7",
-        "my-lib": "^1.4.1",
+        "my-lib": "^1.6.1",
         "openseadragon": "^2.4.2",
         "transform-case": "^0.2.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.11.1",
-        "@babel/preset-env": "^7.11.0",
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
         "@rollup/plugin-commonjs": "^11.1.0",
         "@rollup/plugin-node-resolve": "^7.1.3",
         "clear-folder": "^2.0.0",
@@ -63,9 +63,9 @@
         "jest": "^25.5.4",
         "onchange": "^6.1.1",
         "prettier": "^1.18.2",
-        "rollup": "^2.23.1",
+        "rollup": "^2.33.3",
         "rollup-plugin-babel": "^4.4.0",
         "rollup-plugin-sass": "^1.2.2",
-        "rollup-plugin-terser": "^7.0.0"
+        "rollup-plugin-terser": "^7.0.2"
     }
 }
