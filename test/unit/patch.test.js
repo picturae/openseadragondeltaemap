@@ -2,7 +2,7 @@ import { getData } from '../../src/storage'
 import { contentSize, targetData, badPatchData } from './_mocks'
 import { Patch } from '../../src/patch'
 
-// suppress alarming messages in output
+// suppress alarming messages in output and make call to function testable
 console.warn = jest.fn()
 
 // target-patch part of jsonData
@@ -99,6 +99,8 @@ test('Patch does not render when data are missing', () => {
         contentSize,
     )
 
-    expect(spyConsoleWarn).toHaveBeenCalled()
+    expect(spyConsoleWarn).toHaveBeenCalledWith(
+        'Bad DeltaE Patch data', expect.any(String), expect.any(Object)
+    )
     expect(spyElementAppend).not.toHaveBeenCalledWith(patchInstance.element)
 })

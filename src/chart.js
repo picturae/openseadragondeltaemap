@@ -9,7 +9,8 @@ const Chart = function(chartData, parentNode, containerSize) {
     if (!chartData.name) chartData.name = 'unnamed targetchart'
     if (!chartData || !chartData.location || !chartData.observed) {
         console.warn(
-            `Bad DeltaE Targetchart data, for ${chartData.name}`,
+            'Bad DeltaE Targetchart data',
+            `for ${chartData.name}`,
             chartData,
         )
         return

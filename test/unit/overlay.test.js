@@ -3,8 +3,9 @@ import { getData } from '../../src/storage'
 import { viewer, targetData, badOverlayData } from './_mocks'
 import { Overlay } from '../../src/overlay'
 
-// suppress alarming error messages in output
+// suppress alarming messages in output and make call to function testable
 console.error = jest.fn()
+console.warn = jest.fn()
 
 describe('Overlay is the main object', function () {
     let theViewer
@@ -121,7 +122,20 @@ describe('Overlay is the main object', function () {
         const spyElementAppend = jest.spyOn(overlayInstance.element, 'appendChild')
         overlayInstance.render(badOverlayData)
 
-        expect(spyConsoleError).toHaveBeenCalled()
+        expect(spyConsoleError).toHaveBeenCalledWith(
+            'Bad DeltaE Targetscan data', expect.any(String), expect.any(Object)
+        )
         expect(spyElementAppend).not.toHaveBeenCalled()
+    })
+
+    test('Overlay warns when the served image might not be the recorded image', () => {
+        const overlayInstance = new Overlay(theViewer)
+        const spyConsoleWarn = jest.spyOn(console, 'warn')
+        overlayInstance.render(badOverlayData)
+
+        expect(spyConsoleWarn).toHaveBeenCalledWith(
+            'Aspectratio served image differs from DeltaE measurements',
+            expect.any(String)
+        )
     })
 })

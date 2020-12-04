@@ -2,7 +2,7 @@ import { getData } from '../../src/storage'
 import { contentSize, targetData, badChartData } from './_mocks'
 import { Chart } from '../../src/chart'
 
-// suppress alarming messages in output
+// suppress alarming messages in output and make call to function testable
 console.warn = jest.fn()
 
 // target-chart part of jsonData
@@ -108,7 +108,9 @@ test('Chart does not render when data are missing', () => {
         contentSize,
     )
 
-    expect(spyConsoleWarn).toHaveBeenCalled()
+    expect(spyConsoleWarn).toHaveBeenCalledWith(
+        'Bad DeltaE Targetchart data', expect.any(String), expect.any(Object)
+    )
     expect(spyElementAppend).not.toHaveBeenCalledWith(chartInstance.element)
 })
 

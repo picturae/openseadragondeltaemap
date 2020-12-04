@@ -65,7 +65,8 @@ const Overlay = function(viewer, options) {
             !jsonData.observed
         ) {
             console.error(
-                `Bad DeltaE Targetscan data, for ${jsonData.name}`,
+                'Bad DeltaE Targetscan data',
+                `for ${jsonData.name}`,
                 jsonData,
             )
             return
@@ -78,15 +79,18 @@ const Overlay = function(viewer, options) {
             this.element.classList.add(isValid ? 'valid' : 'invalid')
         }
 
-        // const contentSize = this.tiledImage.contentSize()
-        // if (
-        //     contentSize.x !== jsonData.location.w ||
-        //     contentSize.y !== jsonData.location.h
-        // ) {
-        //     console.warn(
-        //         'DeltaE Mapping: Size loaded image differs from report',
-        //     )
-        // }
+        const contentSize = this.tiledImage.getContentSize()
+        const servedAspect = roundAtDigits(contentSize.x / contentSize.y, 5)
+        const measuredAspect = roundAtDigits(
+            jsonData.location.w / jsonData.location.h,
+            5,
+        )
+        if (servedAspect !== measuredAspect) {
+            console.warn(
+                'Aspectratio served image differs from DeltaE measurements',
+                `(served: ${contentSize}, measured: ${jsonData.location})`,
+            )
+        }
 
         jsonData.targets.forEach(chartData => {
             this.charts.push(

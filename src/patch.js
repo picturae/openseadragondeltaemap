@@ -9,7 +9,8 @@ const Patch = function(patchData, parentNode, containerSize) {
 
     if (!patchData || !patchData.location || !patchData.observed) {
         console.warn(
-            `Bad DeltaE Patch data, for ${patchData.name} of ${patchData.targetName}`,
+            'Bad DeltaE Patch data',
+            `for ${patchData.name} of ${patchData.targetName}`,
             patchData,
         )
         return
