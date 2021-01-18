@@ -175,7 +175,7 @@ const drawPlot = (edgeList, parentQuery, heading) => {
     svg.append('text')
         .attr(
             'transform',
-            `translate(${xScale(halfSampling - 0.5)}, ${yScale(0.06)})`,
+            `translate(${xScale(halfSampling - 0.1)}, ${yScale(0.06)})`,
         )
         .text('half-sampling')
 
