@@ -136,7 +136,7 @@ const drawPlot = (edgeList, parentQuery, heading) => {
         .attr('d', d => line(d.values))
 
     /* Add Axis into SVG */
-    const xAxis = d3.axisBottom(xScale).ticks(8)
+    const xAxis = d3.axisBottom(xScale).ticks(7)
     const yAxis = d3.axisLeft(yScale).ticks(10)
 
     svg.append('g')
