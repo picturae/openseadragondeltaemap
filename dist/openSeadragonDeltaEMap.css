@@ -96,6 +96,9 @@ left, top, right, bottom will be set inline
 .picturae-deltaemap-display path.line.blue {
   stroke: #24f;
 }
+.picturae-deltaemap-display path.line.black {
+  stroke: #000;
+}
 .picturae-deltaemap-display tr.rgb,
 .picturae-deltaemap-display tr.valid {
   display: none;

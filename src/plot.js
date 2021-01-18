@@ -166,7 +166,6 @@ const drawPlot = (edgeList, parentQuery, heading) => {
 
     svg.append('path')
         .datum(data2)
-        .attr('stroke', 'black')
         .attr('class', 'line black')
         .attr('d', line)
 
