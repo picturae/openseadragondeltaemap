@@ -152,6 +152,33 @@ const drawPlot = (edgeList, parentQuery, heading) => {
         .attr('transform', 'rotate(-90)')
         .attr('fill', '#000')
 
+    const halfSampling = 0.5
+    const data2 = [
+        {
+            x: halfSampling,
+            y: 0,
+        },
+        {
+            x: halfSampling,
+            y: 0.05,
+        },
+    ]
+
+    svg.append('path')
+        .datum(data2)
+        .attr('fill', 'none')
+        .attr('stroke-width', 0.3)
+        .attr('stroke', 'black')
+        .attr('class', 'line')
+        .attr('d', line)
+
+    svg.append('text')
+        .attr(
+            'transform',
+            `translate(${xScale(halfSampling - 0.5)}, ${yScale(0.06)})`,
+        )
+        .text('half-sampling')
+
     return true
 }
 
