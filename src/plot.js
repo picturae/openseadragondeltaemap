@@ -92,7 +92,8 @@ const drawPlot = (edgeList, parentQuery, heading) => {
     /* Scale */
     const xScale = d3
         .scaleLinear()
-        .domain(d3.extent(sfrList[0].values, d => d.x))
+        .domain([0, 0.7])
+        .clamp(true)
         .range([0, graphWidth])
 
     const yScale = d3
