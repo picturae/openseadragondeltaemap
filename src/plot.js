@@ -41,10 +41,16 @@ const d3 = {
 const drawPlot = (edgeList, parentQuery, heading) => {
     const body = d3.select(parentQuery)
     const sfrList = []
-
+    let halfSampling = 0.5
+    let cutoff_frequency = 0.8
     edgeList.forEach(edgeData => {
         if (typeof edgeData !== 'object') return
-
+        if (edgeData.cutoff_frequency) {
+            cutoff_frequency = edgeData.cutoff_frequency
+        }
+        if (edgeData.hsf) {
+            halfSampling = edgeData.hsf
+        }
         Object.keys(edgeData).forEach(channel => {
             const sfrChannel = {}
             sfrChannel.name = channel
@@ -92,7 +98,8 @@ const drawPlot = (edgeList, parentQuery, heading) => {
     /* Scale */
     const xScale = d3
         .scaleLinear()
-        .domain([0, 0.7])
+        .domain([0, cutoff_frequency])
+        //.domain([0, d3.max(sfrList[0].values, d => d.x)])
         .clamp(true)
         .range([0, graphWidth])
 
