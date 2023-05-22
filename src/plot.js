@@ -87,9 +87,9 @@ const drawPlot = (edgeList, parentQuery, heading) => {
 
     if (!sfrList.length) return false
 
-    const width = 300
+    const width = 400
     const height = 200
-    const margin = 25
+    const margin = 40
     const graphWidth = width - margin
     const graphHeight = height - margin
     const docWidth = width + margin
