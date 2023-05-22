@@ -65,7 +65,7 @@ const drawPlot = (edgeList, parentQuery, heading) => {
                     sfrChannel.color = 'blue'
                     break
                 case 'Lum':
-                    sfrChannel.color = 'white'
+                    sfrChannel.color = 'black'
                     break
             }
 
@@ -143,13 +143,30 @@ const drawPlot = (edgeList, parentQuery, heading) => {
         .attr('d', d => line(d.values))
 
     /* Add Axis into SVG */
-    const xAxis = d3.axisBottom(xScale).ticks(7)
+    const xAxis = d3.axisBottom(xScale).ticks(10)
     const yAxis = d3.axisLeft(yScale).ticks(10)
 
     svg.append('g')
         .attr('class', 'x axis')
         .attr('transform', `translate(0, ${graphHeight})`)
         .call(xAxis)
+
+    // text label for the x axis
+    svg.append('text')
+        .attr('transform', `translate(0, ${height - margin})`)
+        .attr('x', width / 2 - 10)
+        .attr('y', margin - 10) // Relative to the x axis.
+        .style('text-anchor', 'middle')
+        .text('Frequency, cy/mm')
+
+    // text label for the y axis
+    svg.append('text')
+        .attr('transform', 'rotate(-90)')
+        .attr('y', 0 - margin)
+        .attr('x', 0 - height / 2 + 10)
+        .attr('dy', '1em')
+        .style('text-anchor', 'middle')
+        .text('SFR')
 
     svg.append('g')
         .attr('class', 'y axis')
@@ -177,11 +194,19 @@ const drawPlot = (edgeList, parentQuery, heading) => {
         .attr('d', line)
 
     svg.append('text')
+        .attr('text-anchor', 'end')
         .attr(
             'transform',
-            `translate(${xScale(halfSampling - 0.1)}, ${yScale(0.06)})`,
+            `translate(${xScale(halfSampling * 0.95)}, ${yScale(0.05)})`,
         )
-        .text('half-sampling')
+        .text('Half-sampling')
+
+    svg.append('line')
+        .style('stroke', 'black')
+        .attr('x1', xScale(halfSampling))
+        .attr('y1', yScale(0))
+        .attr('x2', xScale(halfSampling))
+        .attr('y2', yScale(0.1))
 
     return true
 }
