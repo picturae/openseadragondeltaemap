@@ -30,7 +30,7 @@ const readableValue = value => {
         // preserve zero's, NaN's but not empty strings
         if (value === 0) value = '0'
         if (typeof value === 'number') {
-            value = roundAtDigits(value, 5)
+            value = roundAtDigits(value, 2)
         }
         return String(value)
     }
@@ -62,8 +62,11 @@ const readableValue = value => {
                 line = `${readableCnt} ${humanTitle}${BREAK}`
             } else if (!INAPT(readableCnt)) {
                 line = `${humanTitle}: ${readableCnt}${BREAK}`
+            } else if (!readableCnt) {
+                line = `${humanTitle}: N/A${BREAK}`
             }
-            if (line) fragment += line
+            if (line && !['MTF_Curve', 'MTFHNYQ', 'MTFNYQ'].includes(property))
+                fragment += line
         }
         return fragment
     }
@@ -164,7 +167,13 @@ const renderData = (event, table, userData) => {
     }
     if (userData.edgePatches && userData.edgePatches.length) {
         // a targetChart - multiple patches
-        buildGraph(userData.edgePatches, table, DISPLAY_CLASSNAME)
+        buildGraph(
+            userData.edgePatches,
+            table,
+            DISPLAY_CLASSNAME,
+            userData.horizontalData,
+            userData.verticalData,
+        )
     }
     if (userData.observed.Lum && userData.observed.Lum.MTF_Curve) {
         // targetPatch - one patch

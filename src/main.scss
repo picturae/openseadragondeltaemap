@@ -83,12 +83,12 @@ left, top, right, bottom will be set inline
         border-bottom: $boxLine solid $borderRed;
     }
 
-    tbody:before {
-        content: attr(data-name);
-        display: block;
-        font: small-caption;
-        font-size: inherit;
-    }
+    // tbody:before {
+    //     content: attr(data-name);
+    //     display: block;
+    //     font: small-caption;
+    //     font-size: inherit;
+    // }
 
     th,
     td {
@@ -160,7 +160,7 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
 
 .flexible.picturae-deltaemap-display {
     tbody {
-        padding-top: 1.5em;
+        padding-top: 0.5em;
         padding-bottom: 0.25em;
         display: flex;
         flex-wrap: wrap;

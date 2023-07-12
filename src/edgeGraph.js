@@ -7,7 +7,13 @@ import { drawPlot } from './plot'
  * @param {object} edgePatches - array of patchData
  * @param {object} table - html elememt to attach plot to
  */
-const buildGraph = (edgePatches, table, DISPLAY_CLASSNAME) => {
+const buildGraph = (
+    edgePatches,
+    table,
+    DISPLAY_CLASSNAME,
+    horizontalData,
+    verticalData,
+) => {
     const tbodySelector = 'tbody.deltaemap-observed'
     const tbody = table.querySelector(tbodySelector)
     const subject = 'Spatial Frequency Response' // reflected in stylesheet
@@ -37,7 +43,10 @@ const buildGraph = (edgePatches, table, DISPLAY_CLASSNAME) => {
         }
     }
 
-    if (edgePatches.length > 1) {
+    if (horizontalData || verticalData) {
+        edgeGraph([horizontalData], 'horizontal-sfr', 'Horizontal SFR')
+        edgeGraph([verticalData], 'vertical-sfr', 'Vertical SFR')
+    } else if (edgePatches.length > 1) {
         // the edgepatches of a targetChart
 
         let verticalEdges = edgePatches.map(patch => {

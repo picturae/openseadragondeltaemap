@@ -62,12 +62,6 @@ left, top, right, bottom will be set inline
 .picturae-deltaemap-display.invalid caption:after {
   border-bottom: 4px solid #c00;
 }
-.picturae-deltaemap-display tbody:before {
-  content: attr(data-name);
-  display: block;
-  font: small-caption;
-  font-size: inherit;
-}
 .picturae-deltaemap-display th,
 .picturae-deltaemap-display td {
   font-size: inherit;
@@ -96,9 +90,6 @@ left, top, right, bottom will be set inline
 .picturae-deltaemap-display path.line.blue {
   stroke: #24f;
 }
-.picturae-deltaemap-display path.line.black {
-  stroke: #000;
-}
 .picturae-deltaemap-display tr.rgb,
 .picturae-deltaemap-display tr.valid {
   display: none;
@@ -125,7 +116,7 @@ flex3: 410.25 px * 616.46 px = 252.902,715 px2
 flex4: 546.50 px * 533.96 px = 291.809,14  px2
 */
 .flexible.picturae-deltaemap-display tbody {
-  padding-top: 1.5em;
+  padding-top: 0.5em;
   padding-bottom: 0.25em;
   display: flex;
   flex-wrap: wrap;
@@ -175,7 +166,7 @@ background will be set inline
 */
 deltaecolor {
   display: inline-block;
-  box-shadow: 2px 2px 1px 0 #3339;
+  box-shadow: 2px 2px 1px 0 rgba(51, 51, 51, 0.6);
   width: 1.2em;
   height: 1.2em;
   vertical-align: bottom;
