@@ -1,8 +1,9 @@
 import { hasOwnProperty, isUsableNumber } from 'my-lib'
 import { setData } from './storage'
 import { Patch } from '../src/patch'
+import HystModal from 'HystModal'
 
-const Chart = function(chartData, parentNode, containerSize) {
+const Chart = function(chartData, parentNode, containerSize, index) {
     this.name = 'Chart'
     this.element = document.createElement('deltaechart')
 
@@ -29,6 +30,17 @@ const Chart = function(chartData, parentNode, containerSize) {
         const rotate = `rotate(${chartData.location.r}deg)`
         this.element.style.transform = rotate
     }
+
+    const myModal = new HystModal({
+        linkAttributeName: 'data-hystmodal',
+    })
+    myModal.init()
+
+    this.element.onclick = function() {
+        console.log('Open modal target')
+        myModal.open(`target-image-${index}`)
+    }
+
     parentNode.appendChild(this.element)
 
     setData(this.element, chartData)
@@ -37,6 +49,21 @@ const Chart = function(chartData, parentNode, containerSize) {
         const isValid = chartData.validity.valid
         this.element.classList.add(isValid ? 'valid' : 'invalid')
     }
+
+    // Add modal html for target
+    parentNode.insertAdjacentHTML(
+        'afterend',
+        `<div class="hystmodal" id="target-modal-${index}" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">X</button>
+                <img src='${chartData.image}' id='target-image-${index}' />
+            </div>
+        </div>
+    </div>`,
+    )
+
+    this.element = document.getElementById(`target-image-${index}`)
 
     this.patches = []
     const contentSize = {

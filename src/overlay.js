@@ -92,9 +92,9 @@ const Overlay = function(viewer, options) {
             )
         }
 
-        jsonData.targets.forEach(chartData => {
+        jsonData.targets.forEach((chartData, index) => {
             this.charts.push(
-                new Chart(chartData, this.element, jsonData.location),
+                new Chart(chartData, this.element, jsonData.location, index),
             )
         })
     }

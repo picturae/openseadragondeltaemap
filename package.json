@@ -46,9 +46,13 @@
         "d3-scale": "^3.2.3",
         "d3-selection": "^1.4.2",
         "d3-shape": "^1.3.7",
+        "hystmodal": "^1.0.0-beta.4",
         "my-lib": "^1.6.1",
         "openseadragon": "^2.4.2",
-        "transform-case": "^0.2.0"
+        "rollup-plugin-import-css": "^3.3.1",
+        "transform-case": "^0.2.0",
+        "via": "^0.0.1",
+        "yarn": "^1.22.19"
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",
