@@ -51,6 +51,22 @@ const Overlay = function(viewer, options) {
         this.resize()
     })
 
+    viewer.addHandler('canvas-click', event => {
+        if (
+            !['DELTAEPATCH', 'DELTAECHART'].includes(
+                event.originalEvent.target.nodeName,
+            )
+        ) {
+            const targets = document.getElementsByTagName('DELTAECHART')
+            for (const target of targets) {
+                target.classList.remove('active-target')
+            }
+            viewer.viewport.goHome()
+        }
+    })
+
+    viewer.gestureSettingsMouse.clickToZoom = false
+
     this.resize()
 
     this.charts = []
@@ -94,7 +110,13 @@ const Overlay = function(viewer, options) {
 
         jsonData.targets.forEach((chartData, index) => {
             this.charts.push(
-                new Chart(chartData, this.element, jsonData.location, index),
+                new Chart(
+                    chartData,
+                    this.element,
+                    jsonData.location,
+                    index,
+                    viewer,
+                ),
             )
         })
     }

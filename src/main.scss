@@ -27,6 +27,7 @@ $tbdMaxWidth: 7 * ($smallCellWidth + $cellSpace);
 deltaepatch {
     min-width: 11px;
     min-height: 11px;
+    display: none;
 }
 
 /*
@@ -44,6 +45,22 @@ deltaepatch {
     }
     &.invalid {
         box-shadow: inset 0 0 $boxBlur $boxLine $borderRed;
+    }
+}
+
+deltaechart {
+    &.valid {
+        background-color: rgba(0, 170, 0, 0.4);
+    }
+    &.invalid {
+        background-color: rgba(204, 0, 0, 0.4);
+    }
+}
+
+deltaechart.active-target {
+    background-color: transparent;
+    deltaepatch {
+        display: block;
     }
 }
 

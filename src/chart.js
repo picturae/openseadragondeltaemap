@@ -1,11 +1,12 @@
 import { hasOwnProperty, isUsableNumber } from 'my-lib'
 import { setData } from './storage'
 import { Patch } from '../src/patch'
-import HystModal from 'HystModal'
 
-const Chart = function(chartData, parentNode, containerSize, index) {
+const Chart = function(chartData, parentNode, containerSize, index, viewer) {
     this.name = 'Chart'
     this.element = document.createElement('deltaechart')
+    this.element.classList.remove('active-target')
+    const targetElement = this.element
 
     if (!chartData.name) chartData.name = 'unnamed targetchart'
     if (!chartData || !chartData.location || !chartData.observed) {
@@ -31,14 +32,28 @@ const Chart = function(chartData, parentNode, containerSize, index) {
         this.element.style.transform = rotate
     }
 
-    const myModal = new HystModal({
-        linkAttributeName: 'data-hystmodal',
-    })
-    myModal.init()
-
     this.element.onclick = function() {
-        console.log('Open modal target')
-        myModal.open(`target-image-${index}`)
+        targetElement.classList.add('active-target')
+
+        const rect = viewer.viewport.imageToViewportRectangle(
+            chartData.location.x,
+            chartData.location.y,
+            chartData.location.w,
+            chartData.location.h,
+        )
+        const largestSide = rect.width > rect.height ? rect.width : rect.height
+        const zoomLevel = 1 / (largestSide + 0.13)
+
+        // Convert that to viewport coordinates, the lingua franca of OpenSeadragon coordinates.
+        var viewportPoint = viewer.viewport.imageToViewportCoordinates(
+            chartData.location.x + chartData.location.w / 2,
+            chartData.location.y + chartData.location.h / 2,
+        )
+
+        if (viewer.viewport.getZoom() < 2.5) {
+            viewer.viewport.panTo(viewportPoint)
+            viewer.viewport.zoomTo(zoomLevel)
+        }
     }
 
     parentNode.appendChild(this.element)
@@ -49,21 +64,6 @@ const Chart = function(chartData, parentNode, containerSize, index) {
         const isValid = chartData.validity.valid
         this.element.classList.add(isValid ? 'valid' : 'invalid')
     }
-
-    // Add modal html for target
-    parentNode.insertAdjacentHTML(
-        'afterend',
-        `<div class="hystmodal" id="target-modal-${index}" aria-hidden="true">
-        <div class="hystmodal__wrap">
-            <div class="hystmodal__window" role="dialog" aria-modal="true">
-                <button data-hystclose class="hystmodal__close">X</button>
-                <img src='${chartData.image}' id='target-image-${index}' />
-            </div>
-        </div>
-    </div>`,
-    )
-
-    this.element = document.getElementById(`target-image-${index}`)
 
     this.patches = []
     const contentSize = {
