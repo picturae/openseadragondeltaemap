@@ -65,6 +65,32 @@ const Overlay = function(viewer, options) {
         }
     })
 
+    // keyboard pressing 'p' and 'n' key
+    document.onkeydown = event => {
+        viewer.viewport.goHome(true)
+        const targets = document.getElementsByTagName('DELTAECHART')
+        let targetIndex = 0
+        for (const target of targets) {
+            if (target.classList.contains('active-target')) {
+                target.classList.remove('active-target')
+                break
+            }
+
+            if (targetIndex < targets.length - 1) targetIndex += 1
+            else targetIndex = 0
+        }
+
+        if (event.key === 'p') {
+            if (targetIndex === 0) targetIndex = targets.length - 1
+            else targetIndex -= 1
+            targets[targetIndex].click()
+        } else if (event.key === 'n') {
+            if (targetIndex < targets.length - 1) targetIndex += 1
+            else targetIndex = 0
+            targets[targetIndex].click()
+        }
+    }
+
     viewer.gestureSettingsMouse.clickToZoom = false
 
     this.resize()

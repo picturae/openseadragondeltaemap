@@ -33,6 +33,7 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
     }
 
     this.element.onclick = function() {
+        viewer.viewport.goHome(true)
         targetElement.classList.add('active-target')
 
         const rect = viewer.viewport.imageToViewportRectangle(
@@ -42,7 +43,13 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
             chartData.location.h,
         )
         const largestSide = rect.width > rect.height ? rect.width : rect.height
-        const zoomLevel = 1 / (largestSide + 0.13)
+        let zoomLevel = 1 / (largestSide + 0.23)
+
+        if (largestSide >= 0.115 && largestSide <= 0.135) {
+            zoomLevel = 3.6
+        } else if (largestSide > 1.135 && largestSide <= 0.45) {
+            zoomLevel = 2.9
+        }
 
         // Convert that to viewport coordinates, the lingua franca of OpenSeadragon coordinates.
         var viewportPoint = viewer.viewport.imageToViewportCoordinates(
