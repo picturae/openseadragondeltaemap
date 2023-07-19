@@ -230,26 +230,28 @@ const DisplayTable = function(mainElement, options) {
     const targetHover = function(event) {
         const offPointer = 16
 
-        if (event.clientX / docRoot.clientWidth < 0.5) {
-            table.style.left = 'auto'
-            table.style.right = `${offPointer}px`
+        table.style.right = 'auto'
+        table.style.bottom = 'auto'
+        if (
+            event.clientX + table.clientWidth + offPointer <
+            docRoot.clientWidth
+        ) {
+            table.style.left = `${event.clientX + offPointer}px`
         } else {
-            table.style.left = `${offPointer}px`
-            table.style.right = 'auto'
+            table.style.left = `${event.clientX - table.clientWidth / 2}px`
         }
 
-        const ySpace = (docRoot.clientHeight - table.clientHeight) / 2
-
-        if (event.clientY < ySpace - offPointer) {
-            table.style.top = 'auto'
-            table.style.bottom = `${offPointer}px`
-        } else if (event.clientY < ySpace + offPointer + table.clientHeight) {
-            table.style.top = `${ySpace}px`
-            table.style.bottom = 'auto'
+        if (
+            event.clientY + table.clientHeight + offPointer <
+            docRoot.clientHeight
+        ) {
+            table.style.top = `${event.clientY + offPointer + 10}px`
         } else {
-            table.style.top = `${offPointer}px`
-            table.style.bottom = 'auto'
+            table.style.top = `${event.clientY -
+                table.clientHeight -
+                offPointer}px`
         }
+
         event.stopPropagation()
     }
 
