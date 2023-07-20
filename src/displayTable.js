@@ -247,9 +247,9 @@ const DisplayTable = function(mainElement, options) {
         ) {
             table.style.top = `${event.clientY + offPointer + 10}px`
         } else {
-            table.style.top = `${event.clientY -
-                table.clientHeight -
-                offPointer}px`
+            let top = event.clientY - table.clientHeight - offPointer
+            if (top < 0) top = 0
+            table.style.top = `${top}px`
         }
 
         event.stopPropagation()
