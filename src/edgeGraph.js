@@ -30,22 +30,25 @@ const buildGraph = (
      * @param {object} edgeData - array of R,G,B,Lum objects
      * @param {object} table - html elememt to attach plot to
      */
-    const edgeGraph = (edgeData, cellClass, subject) => {
+    const edgeGraph = (edgeData, cellClass, subject, tableRow) => {
         const cell = document.createElement('td')
         cell.className = cellClass
-        tr.appendChild(cell)
+        tableRow.appendChild(cell)
         const cellSelector = `${rowSelector} td.${cellClass}`
         const drawDone = drawPlot(edgeData, cellSelector, subject)
 
         if (!drawDone) {
             // d3 needs to work 'live' in the DOM
-            tr.removeChild(cell)
+            tableRow.removeChild(cell)
         }
     }
 
     if (horizontalData || verticalData) {
-        edgeGraph([horizontalData], 'horizontal-sfr', 'Horizontal SFR')
-        edgeGraph([verticalData], 'vertical-sfr', 'Vertical SFR')
+        edgeGraph([horizontalData], 'horizontal-sfr', 'Horizontal SFR', tr)
+        const row2 = `<tr class="${rowClassName}"><th>${subject}</th></tr>`
+        tbody.innerHTML += row2
+        const tr2 = tbody.lastElementChild
+        edgeGraph([verticalData], 'vertical-sfr', 'Vertical SFR', tr2)
     } else if (edgePatches.length > 1) {
         // the edgepatches of a targetChart
 
@@ -59,16 +62,16 @@ const buildGraph = (
         })
 
         if (horizontalEdges.length && verticalEdges.length) {
-            edgeGraph(verticalEdges, 'vertical-sfr', 'Vertical SFR')
-            edgeGraph(horizontalEdges, 'horizontal-sfr', 'Horizontal SFR')
+            edgeGraph(verticalEdges, 'vertical-sfr', 'Vertical SFR', tr)
+            edgeGraph(horizontalEdges, 'horizontal-sfr', 'Horizontal SFR', tr)
         } else {
             const observations = edgePatches.map(patch => patch.observed)
-            edgeGraph(observations, 'combined-sfr', 'Combined SFR')
+            edgeGraph(observations, 'combined-sfr', 'Combined SFR', tr)
         }
     } else {
         // a single edgepatch
         const observed = edgePatches[0].observed
-        edgeGraph([observed], 'observed-sfr', subject)
+        edgeGraph([observed], 'observed-sfr', subject, tr)
     }
 
     const drawDone = tr.querySelectorAll('td')

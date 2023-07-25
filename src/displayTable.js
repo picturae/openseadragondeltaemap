@@ -81,7 +81,7 @@ const readableValue = value => {
 const dataBody = (groupName, groupData) => {
     let body = `<tbody class="deltaemap-${groupName}" data-name="${groupName}">`
     for (let [key, value] of Object.entries(groupData)) {
-        if (!['cutoff_frequency', 'hsf'].includes(key)) {
+        if (!['cutoff_frequency', 'hsf'].includes(key) && value != null) {
             let row = ''
             // '\u0394' === '&Delta;' === '&#916;'
             // '\u03bc' === '&mu;' === '&#956;'
@@ -103,6 +103,19 @@ const dataBody = (groupName, groupData) => {
             if (!INAPT(formattedValue)) {
                 // leave out unapplicable properties
                 row = `<tr class="${className}"><th>${label}</th><td>${formattedValue}</td></tr>`
+            }
+            if (groupName === 'Fadgi remarks') {
+                let star = `<meter class="average-rating average-rating-zero" min="0" max="4" value="0" title="0 out of 4 stars"></meter>`
+                if (value === 4) {
+                    star = `<meter class="average-rating average-rating-four" min="0" max="4" value="4" title="4 out of 4 stars"></meter>`
+                } else if (value === 3) {
+                    star = `<meter class="average-rating average-rating-three" min="0" max="4" value="3" title="3 out of 4 stars"></meter>`
+                } else if (value === 2) {
+                    star = `<meter class="average-rating average-rating-two" min="0" max="4" value="2" title="2 out of 4 stars"></meter>`
+                } else if (value === 1) {
+                    star = `<meter class="average-rating average-rating-one" min="0" max="4" value="1" title="1 out of 54 stars"></meter>`
+                }
+                row = `<tr class="${className}"><th>${label}</th><td>${star}</td></tr>`
             }
             if (row) body += row
         }
@@ -151,6 +164,18 @@ const renderData = (event, table, userData) => {
     }
     if (userData.reference) {
         table.innerHTML += dataBody('reference', userData.reference)
+    }
+    if (userData.fadgiStarsForColor) {
+        table.innerHTML += dataBody(
+            'Fadgi remarks',
+            userData.fadgiStarsForColor,
+        )
+    }
+    if (userData.fadgiStarsForSpatial) {
+        table.innerHTML += dataBody(
+            'Fadgi remarks',
+            userData.fadgiStarsForSpatial,
+        )
     }
     // clear validity no matter what
     table.classList.remove('valid', 'invalid')
