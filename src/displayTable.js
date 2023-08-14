@@ -155,10 +155,19 @@ const renderData = (event, table, userData) => {
         ${userData.name} ${colorSquare}
     </caption>`
 
+    console.log('userData.guideline')
+    console.log(userData.guideline)
+    if (userData.guideline) {
+        table.innerHTML += `<p>
+            <span class='bold'>Guideline</span> - ${userData.guideline}
+        </p>`
+    }
+
     // display the following data in the following order
     if (userData.assessed) {
         table.innerHTML += dataBody('assessed', userData.assessed)
     }
+
     if (userData.observed) {
         table.innerHTML += dataBody('observed', userData.observed)
     }

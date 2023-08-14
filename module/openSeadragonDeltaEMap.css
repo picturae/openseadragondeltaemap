@@ -116,6 +116,13 @@ left, top, right, bottom will be set inline
 .picturae-deltaemap-display.valid .deltaemap-validity {
   display: none;
 }
+.picturae-deltaemap-display p {
+  padding: 0.25rem 0.5rem;
+}
+.picturae-deltaemap-display span.bold {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 .tabular.picturae-deltaemap-display th,
 .tabular.picturae-deltaemap-display td {
