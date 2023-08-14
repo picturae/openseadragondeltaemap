@@ -3,6 +3,7 @@
 deltaepatch {
   min-width: 11px;
   min-height: 11px;
+  display: none;
 }
 
 /*
@@ -25,6 +26,20 @@ deltaeoverlay.invalid,
 deltaechart.invalid,
 deltaepatch.invalid {
   box-shadow: inset 0 0 0 4px #c00;
+}
+
+deltaechart.valid {
+  background-color: rgba(0, 170, 0, 0.4);
+}
+deltaechart.invalid {
+  background-color: rgba(204, 0, 0, 0.4);
+}
+
+deltaechart.active-target {
+  background-color: transparent;
+}
+deltaechart.active-target deltaepatch {
+  display: block;
 }
 
 /*
@@ -66,13 +81,17 @@ left, top, right, bottom will be set inline
 .picturae-deltaemap-display td {
   font-size: inherit;
   vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
 }
 .picturae-deltaemap-display tr.spatial-frequency-response th {
   font-size: 0;
   color: transparent;
 }
 .picturae-deltaemap-display tr.spatial-frequency-response svg {
-  max-width: 100%;
+  max-width: 400px;
+  max-height: 260px;
 }
 .picturae-deltaemap-display path.line {
   stroke: white;
@@ -96,6 +115,13 @@ left, top, right, bottom will be set inline
 }
 .picturae-deltaemap-display.valid .deltaemap-validity {
   display: none;
+}
+.picturae-deltaemap-display p {
+  padding: 0.25rem 0.5rem;
+}
+.picturae-deltaemap-display span.bold {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .tabular.picturae-deltaemap-display th,
@@ -130,7 +156,7 @@ flex4: 546.50 px * 533.96 px = 291.809,14  px2
 }
 .flexible.picturae-deltaemap-display tr {
   margin: 0 0.333em 0 0;
-  width: 5.333em;
+  min-width: 5.333em;
 }
 .flexible.picturae-deltaemap-display tr.r,
 .flexible.picturae-deltaemap-display tr.g,
@@ -193,4 +219,73 @@ deltaeboolean.valid:before {
 deltaeboolean.invalid:before {
   content: "✗";
   color: #b00;
+}
+
+.average-rating {
+  position: relative;
+  appearance: none;
+  color: transparent;
+  width: auto;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.average-rating-zero::before {
+  --percent: calc(0 / 4 * 100%);
+  content: "★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.average-rating-one::before {
+  --percent: calc(1 / 4 * 100%);
+  content: "★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.average-rating-two::before {
+  --percent: calc(2 / 4 * 100%);
+  content: "★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.average-rating-three::before {
+  --percent: calc(3 / 4 * 100%);
+  content: "★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.average-rating-four::before {
+  --percent: calc(4 / 4 * 100%);
+  content: "★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

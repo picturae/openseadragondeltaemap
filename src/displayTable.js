@@ -81,7 +81,7 @@ const readableValue = value => {
 const dataBody = (groupName, groupData) => {
     let body = `<tbody class="deltaemap-${groupName}" data-name="${groupName}">`
     for (let [key, value] of Object.entries(groupData)) {
-        if (!['cutoff_frequency', 'hsf'].includes(key)) {
+        if (!['cutoff_frequency', 'hsf'].includes(key) && value != null) {
             let row = ''
             // '\u0394' === '&Delta;' === '&#916;'
             // '\u03bc' === '&mu;' === '&#956;'
@@ -103,6 +103,19 @@ const dataBody = (groupName, groupData) => {
             if (!INAPT(formattedValue)) {
                 // leave out unapplicable properties
                 row = `<tr class="${className}"><th>${label}</th><td>${formattedValue}</td></tr>`
+            }
+            if (groupName === 'Fadgi remarks') {
+                let star = `<meter class="average-rating average-rating-zero" min="0" max="4" value="0" title="0 out of 4 stars"></meter>`
+                if (value === 4) {
+                    star = `<meter class="average-rating average-rating-four" min="0" max="4" value="4" title="4 out of 4 stars"></meter>`
+                } else if (value === 3) {
+                    star = `<meter class="average-rating average-rating-three" min="0" max="4" value="3" title="3 out of 4 stars"></meter>`
+                } else if (value === 2) {
+                    star = `<meter class="average-rating average-rating-two" min="0" max="4" value="2" title="2 out of 4 stars"></meter>`
+                } else if (value === 1) {
+                    star = `<meter class="average-rating average-rating-one" min="0" max="4" value="1" title="1 out of 54 stars"></meter>`
+                }
+                row = `<tr class="${className}"><th>${label}</th><td>${star}</td></tr>`
             }
             if (row) body += row
         }
@@ -142,15 +155,36 @@ const renderData = (event, table, userData) => {
         ${userData.name} ${colorSquare}
     </caption>`
 
+    console.log('userData.guideline')
+    console.log(userData.guideline)
+    if (userData.guideline) {
+        table.innerHTML += `<p>
+            <span class='bold'>Guideline</span> - ${userData.guideline}
+        </p>`
+    }
+
     // display the following data in the following order
     if (userData.assessed) {
         table.innerHTML += dataBody('assessed', userData.assessed)
     }
+
     if (userData.observed) {
         table.innerHTML += dataBody('observed', userData.observed)
     }
     if (userData.reference) {
         table.innerHTML += dataBody('reference', userData.reference)
+    }
+    if (userData.fadgiStarsForColor) {
+        table.innerHTML += dataBody(
+            'Fadgi remarks',
+            userData.fadgiStarsForColor,
+        )
+    }
+    if (userData.fadgiStarsForSpatial) {
+        table.innerHTML += dataBody(
+            'Fadgi remarks',
+            userData.fadgiStarsForSpatial,
+        )
     }
     // clear validity no matter what
     table.classList.remove('valid', 'invalid')
@@ -230,26 +264,28 @@ const DisplayTable = function(mainElement, options) {
     const targetHover = function(event) {
         const offPointer = 16
 
-        if (event.clientX / docRoot.clientWidth < 0.5) {
-            table.style.left = 'auto'
-            table.style.right = `${offPointer}px`
+        table.style.right = 'auto'
+        table.style.bottom = 'auto'
+        if (
+            event.clientX + table.clientWidth + offPointer <
+            docRoot.clientWidth
+        ) {
+            table.style.left = `${event.clientX + offPointer}px`
         } else {
-            table.style.left = `${offPointer}px`
-            table.style.right = 'auto'
+            table.style.left = `${event.clientX - table.clientWidth / 2}px`
         }
 
-        const ySpace = (docRoot.clientHeight - table.clientHeight) / 2
-
-        if (event.clientY < ySpace - offPointer) {
-            table.style.top = 'auto'
-            table.style.bottom = `${offPointer}px`
-        } else if (event.clientY < ySpace + offPointer + table.clientHeight) {
-            table.style.top = `${ySpace}px`
-            table.style.bottom = 'auto'
+        if (
+            event.clientY + table.clientHeight + offPointer <
+            docRoot.clientHeight
+        ) {
+            table.style.top = `${event.clientY + offPointer + 10}px`
         } else {
-            table.style.top = `${offPointer}px`
-            table.style.bottom = 'auto'
+            let top = event.clientY - table.clientHeight - offPointer
+            if (top < 0) top = 0
+            table.style.top = `${top}px`
         }
+
         event.stopPropagation()
     }
 
