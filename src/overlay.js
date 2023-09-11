@@ -52,11 +52,7 @@ const Overlay = function(viewer, options) {
     })
 
     viewer.addHandler('canvas-click', event => {
-        if (
-            !['DELTAEPATCH', 'DELTAECHART'].includes(
-                event.originalEvent.target.nodeName,
-            )
-        ) {
+        if (['DELTAEOVERLAY'].includes(event.originalEvent.target.nodeName)) {
             const targets = document.getElementsByTagName('DELTAECHART')
             for (const target of targets) {
                 target.classList.remove('active-target')

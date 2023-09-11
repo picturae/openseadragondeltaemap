@@ -33,33 +33,36 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
     }
 
     this.element.onclick = function() {
-        viewer.viewport.goHome(true)
-        targetElement.classList.add('active-target')
+        if (!targetElement.classList.contains('active-target')) {
+            viewer.viewport.goHome(true)
+            targetElement.classList.add('active-target')
 
-        const rect = viewer.viewport.imageToViewportRectangle(
-            chartData.location.x,
-            chartData.location.y,
-            chartData.location.w,
-            chartData.location.h,
-        )
-        const largestSide = rect.width > rect.height ? rect.width : rect.height
-        let zoomLevel = 1 / (largestSide + 0.23)
+            const rect = viewer.viewport.imageToViewportRectangle(
+                chartData.location.x,
+                chartData.location.y,
+                chartData.location.w,
+                chartData.location.h,
+            )
+            const largestSide =
+                rect.width > rect.height ? rect.width : rect.height
+            let zoomLevel = 1 / (largestSide + 1.3)
 
-        if (largestSide >= 0.115 && largestSide <= 0.135) {
-            zoomLevel = 3.6
-        } else if (largestSide > 1.135 && largestSide <= 0.45) {
-            zoomLevel = 2.9
-        }
+            if (largestSide >= 0.115 && largestSide <= 0.135) {
+                zoomLevel = 3.6
+            } else if (largestSide > 0.135 && largestSide <= 0.45) {
+                zoomLevel = 2.9
+            }
 
-        // Convert that to viewport coordinates, the lingua franca of OpenSeadragon coordinates.
-        var viewportPoint = viewer.viewport.imageToViewportCoordinates(
-            chartData.location.x + chartData.location.w / 2,
-            chartData.location.y + chartData.location.h / 2,
-        )
+            // Convert that to viewport coordinates, the lingua franca of OpenSeadragon coordinates.
+            var viewportPoint = viewer.viewport.imageToViewportCoordinates(
+                chartData.location.x + chartData.location.w / 2,
+                chartData.location.y + chartData.location.h / 2,
+            )
 
-        if (viewer.viewport.getZoom() < 2.5) {
-            viewer.viewport.panTo(viewportPoint)
-            viewer.viewport.zoomTo(zoomLevel)
+            if (viewer.viewport.getZoom() < 2.5) {
+                viewer.viewport.panTo(viewportPoint)
+                viewer.viewport.zoomTo(zoomLevel)
+            }
         }
     }
 
