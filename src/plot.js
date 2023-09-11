@@ -48,8 +48,8 @@ const drawPlot = (edgeList, parentQuery, heading) => {
         if (edgeData.cutoff_frequency) {
             cutoff_frequency = edgeData.cutoff_frequency
         }
-        if (edgeData.Lum.MTFHNYQ) {
-            halfSampling = edgeData.Lum.MTFHNYQ
+        if (edgeData.hsf) {
+            halfSampling = edgeData.hsf
         }
         Object.keys(edgeData).forEach(channel => {
             const sfrChannel = {}
@@ -198,7 +198,7 @@ const drawPlot = (edgeList, parentQuery, heading) => {
             'transform',
             `translate(${xScale(halfSampling * 0.95)}, ${yScale(0.05)})`,
         )
-    // .text('Half-sampling')
+        .text('Half-sampling')
 
     svg.append('line')
         .style('stroke', 'black')
