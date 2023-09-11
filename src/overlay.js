@@ -61,7 +61,7 @@ const Overlay = function(viewer, options) {
             for (const target of targets) {
                 target.classList.remove('active-target')
             }
-            viewer.viewport.goHome()
+            // viewer.viewport.goHome()
         }
     })
 
