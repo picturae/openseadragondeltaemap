@@ -1,6 +1,6 @@
 {
   "name": "@picturae/openseadragondeltaemap",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Draws overlay over a targetscan, and shows calibration info according to deltaE standards",
   "main": "dist/openSeadragonDeltaEMap.js",
   "module": "module/openSeadragonDeltaEMap.js",
