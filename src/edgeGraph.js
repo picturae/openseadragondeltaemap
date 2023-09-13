@@ -43,6 +43,28 @@ const buildGraph = (
         }
     }
 
+    const mergeEdgeData = edgeData => {
+        const count = edgeData.length
+        let keys = Object.keys(edgeData[0])
+        let merdedData = edgeData.pop()
+
+        edgeData.forEach(edge => {
+            if (edge) {
+                for (const key of keys) {
+                    if (!isNaN(edge[key])) {
+                        merdedData[key] += edge[key]
+                    }
+                }
+            }
+        })
+        for (const key of keys) {
+            if (!isNaN(merdedData[key])) {
+                merdedData[key] = merdedData[key] / count
+            }
+        }
+        return merdedData
+    }
+
     if (horizontalData || verticalData) {
         edgeGraph([horizontalData], 'horizontal-sfr', 'Horizontal SFR', tr)
         const row2 = `<tr class="${rowClassName}"><th>${subject}</th></tr>`
@@ -56,14 +78,23 @@ const buildGraph = (
             const isVertical = patch.name.toLowerCase().includes('vertical')
             if (isVertical) return patch.observed
         })
+        verticalEdges = verticalEdges.filter(edge => edge)
         let horizontalEdges = edgePatches.map(patch => {
             const isHorizontal = patch.name.toLowerCase().includes('horizontal')
             if (isHorizontal) return patch.observed
         })
+        horizontalEdges = horizontalEdges.filter(edge => edge)
 
         if (horizontalEdges.length && verticalEdges.length) {
-            edgeGraph(verticalEdges, 'vertical-sfr', 'Vertical SFR', tr)
-            edgeGraph(horizontalEdges, 'horizontal-sfr', 'Horizontal SFR', tr)
+            const mergedVerticalEdge = mergeEdgeData(verticalEdges)
+            const mergedHorizontalEdges = mergeEdgeData(horizontalEdges)
+            edgeGraph([mergedVerticalEdge], 'vertical-sfr', 'Vertical SFR', tr)
+            edgeGraph(
+                [mergedHorizontalEdges],
+                'horizontal-sfr',
+                'Horizontal SFR',
+                tr,
+            )
         } else {
             const observations = edgePatches.map(patch => patch.observed)
             edgeGraph(observations, 'combined-sfr', 'Combined SFR', tr)

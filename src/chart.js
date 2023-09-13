@@ -45,12 +45,12 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
             )
             const largestSide =
                 rect.width > rect.height ? rect.width : rect.height
-            let zoomLevel = 1 / (largestSide + 1.3)
+            let zoomLevel = 0
 
             if (largestSide >= 0.115 && largestSide <= 0.135) {
                 zoomLevel = 3.6
             } else if (largestSide > 0.135 && largestSide <= 0.45) {
-                zoomLevel = 2.9
+                zoomLevel = 1.4
             }
 
             // Convert that to viewport coordinates, the lingua franca of OpenSeadragon coordinates.
