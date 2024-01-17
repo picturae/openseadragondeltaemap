@@ -69,8 +69,15 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
         patchContainer.style.width = `100%`
         patchContainer.style.height = `100%`
         patchContainer.style.transformOrigin = 'center center'
-        const rotate = `rotate(${90 + chartData.location.r}deg)`
-        patchContainer.style.transform = rotate
+
+        let transform = `rotate(${chartData.location.r}deg)`
+        if (chartData.location.r === 90) {
+            transform = `rotate(${90 + chartData.location.r}deg)`
+        } else if (chartData.location.r === 270) {
+            transform = 'scaleX(-1)'
+        }
+
+        patchContainer.style.transform = transform
         this.element.appendChild(patchContainer)
         parentElementForPatches = patchContainer
     }

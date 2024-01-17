@@ -16,7 +16,7 @@ const Patch = function(patchData, parentNode, containerSize, rotation = null) {
         return
     }
 
-    if (rotation && [90, 270].includes(rotation)) {
+    if (rotation && [90, 270, -90, -270].includes(rotation)) {
         this.element.style.left = `${(patchData.location.y * 100) /
             containerSize.w}%`
         this.element.style.top = `${(patchData.location.x * 100) /
