@@ -26,11 +26,6 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
         containerSize.w}%`
     this.element.style.height = `${(chartData.location.h * 100) /
         containerSize.h}%`
-    if (chartData.location.r && isUsableNumber(chartData.location.r)) {
-        this.element.style.transformOrigin = 'center center'
-        const rotate = `rotate(${chartData.location.r}deg)`
-        this.element.style.transform = rotate
-    }
 
     this.element.onclick = function() {
         if (!targetElement.classList.contains('active-target')) {
@@ -68,6 +63,18 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
 
     parentNode.appendChild(this.element)
 
+    let parentElementForPatches = this.element
+    if (chartData.location.r && isUsableNumber(chartData.location.r)) {
+        let patchContainer = document.createElement('div')
+        patchContainer.style.width = `100%`
+        patchContainer.style.height = `100%`
+        patchContainer.style.transformOrigin = 'center center'
+        const rotate = `rotate(${90 + chartData.location.r}deg)`
+        patchContainer.style.transform = rotate
+        this.element.appendChild(patchContainer)
+        parentElementForPatches = patchContainer
+    }
+
     setData(this.element, chartData)
 
     if (chartData.validity && hasOwnProperty(chartData.validity, 'valid')) {
@@ -84,14 +91,28 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
         chartData.colorPatches.forEach(patchData => {
             patchData.patchType = 'colorPatch'
             patchData.targetName = chartData.targetName
-            this.patches.push(new Patch(patchData, this.element, contentSize))
+            this.patches.push(
+                new Patch(
+                    patchData,
+                    parentElementForPatches,
+                    contentSize,
+                    chartData.location.r,
+                ),
+            )
         })
     }
     if (chartData.edgePatches) {
         chartData.edgePatches.forEach(patchData => {
             patchData.patchType = 'edgePatch'
             patchData.targetName = chartData.targetName
-            this.patches.push(new Patch(patchData, this.element, contentSize))
+            this.patches.push(
+                new Patch(
+                    patchData,
+                    parentElementForPatches,
+                    contentSize,
+                    chartData.location.r,
+                ),
+            )
         })
     }
 }

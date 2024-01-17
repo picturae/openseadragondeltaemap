@@ -1,7 +1,7 @@
 import { hasOwnProperty } from 'my-lib'
 import { setData } from './storage'
 
-const Patch = function(patchData, parentNode, containerSize) {
+const Patch = function(patchData, parentNode, containerSize, rotation = null) {
     this.name = 'Patch'
     this.element = document.createElement('deltaepatch')
 
@@ -16,10 +16,17 @@ const Patch = function(patchData, parentNode, containerSize) {
         return
     }
 
-    this.element.style.left = `${(patchData.location.x * 100) /
-        containerSize.w}%`
-    this.element.style.top = `${(patchData.location.y * 100) /
-        containerSize.h}%`
+    if (rotation && [90, 270].includes(rotation)) {
+        this.element.style.left = `${(patchData.location.y * 100) /
+            containerSize.w}%`
+        this.element.style.top = `${(patchData.location.x * 100) /
+            containerSize.h}%`
+    } else {
+        this.element.style.left = `${(patchData.location.x * 100) /
+            containerSize.w}%`
+        this.element.style.top = `${(patchData.location.y * 100) /
+            containerSize.h}%`
+    }
     this.element.style.width = `${(patchData.location.w * 100) /
         containerSize.w}%`
     this.element.style.height = `${(patchData.location.h * 100) /
