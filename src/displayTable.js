@@ -161,6 +161,17 @@ const renderData = (event, table, userData) => {
         </p>`
     }
 
+    if (userData.barcode) {
+        table.innerHTML += `<tbody class="deltaemap-barcode" data-name="barcode">
+            <tr>
+              <th>Barcode</th> <td>${userData.barcode}</td> 
+            </tr>
+            <tr>
+              <th>Matched</th> <td>${userData.barcodeFound ? 'Yes' : 'No'}</td>
+            </tr>
+        </tbody>`
+    }
+
     // display the following data in the following order
     if (userData.assessed) {
         table.innerHTML += dataBody('assessed', userData.assessed)
