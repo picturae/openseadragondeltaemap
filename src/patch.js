@@ -26,14 +26,6 @@ const Patch = function(patchData, parentNode, containerSize, rotation = null) {
             containerSize.w}%`
         this.element.style.height = `${(patchData.location.w * 100) /
             containerSize.h}%`
-
-        // because of rotation of 180 degree, width is in left instead of right
-        if (rotation === 90) {
-            this.element.style.left = `${((patchData.location.y -
-                patchData.location.h / 2) *
-                100) /
-                containerSize.w}%`
-        }
     } else {
         this.element.style.left = `${(patchData.location.x * 100) /
             containerSize.w}%`

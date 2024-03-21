@@ -72,7 +72,7 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
 
         let transform = `rotate(${chartData.location.r}deg)`
         if (chartData.location.r === 90) {
-            transform = `rotate(${90 + chartData.location.r}deg)`
+            transform = 'scaleY(-1)'
         } else if (chartData.location.r === 270) {
             transform = 'scaleX(-1)'
         }
