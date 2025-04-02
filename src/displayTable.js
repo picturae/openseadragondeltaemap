@@ -305,7 +305,7 @@ const DisplayTable = function(mainElement, options) {
         }
         targetChangeTimeout = setTimeout(function() {
             targetChange(event)
-        }, 150)
+        }, 0)
     })
 
     eventRoot.addEventListener('mousemove', targetHover)
