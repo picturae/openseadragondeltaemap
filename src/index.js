@@ -1,8 +1,12 @@
+/**
+ * @typedef DeltaEOptions
+ * @property {"tabular" | "flexible"} [layout="tabular"] The layout of the floating infobox.
+ */
+
 import { Overlay } from './overlay'
 import './main.scss'
-
-var index = (function() {
-    var $ = window.OpenSeadragon
+;(function() {
+    let $ = window.OpenSeadragon
 
     if (!$) {
         $ = require('openseadragon')
@@ -11,6 +15,13 @@ var index = (function() {
         }
     }
 
+    /**
+     * @name deltaEMap
+     * @memberof OpenSeadragon.Viewer
+     * @param {OpenSeadragon.Viewer} viewer
+     * @param {DeltaEOptions} options
+     * @returns {Overlay}
+     */
     $.Viewer.prototype.deltaEMap = function(viewer, options) {
         if (!this._deltaEMap) {
             this._deltaEMap = new Overlay(viewer, options)
@@ -19,5 +30,3 @@ var index = (function() {
         return this._deltaEMap
     }
 })()
-
-export default index

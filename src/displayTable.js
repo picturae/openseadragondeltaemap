@@ -224,6 +224,12 @@ const renderData = (event, table, userData) => {
     }
 }
 
+/**
+ * Code for handling the infobox showing information about the location the mouse is correctly pointing at.
+ * @param mainElement {HTMLElement} The main DeltaE overlay element.
+ * @param options {DeltaEOptions} Configuration options.
+ * @constructor
+ */
 const DisplayTable = function(mainElement, options) {
     this.name = 'DisplayTable'
     const eventRoot = document.body
@@ -239,7 +245,7 @@ const DisplayTable = function(mainElement, options) {
 
     /**
      * Update the table with new data
-     * @param {object} event
+     * @param {MouseEvent} event Mouse event from the event handler.
      */
     const targetEnter = function(event) {
         const targetData = getData(event.target)
@@ -256,6 +262,10 @@ const DisplayTable = function(mainElement, options) {
         if (isAttachedToDom(table)) displayRoot.removeChild(table)
     }
 
+    /**
+     * Handles changing the target the mouse is currently pointing at.
+     * @param {MouseEvent} event Mouse event from the event handler.
+     */
     const targetChange = function(event) {
         const enter = event.target
         if (
@@ -270,6 +280,10 @@ const DisplayTable = function(mainElement, options) {
         event.stopPropagation()
     }
 
+    /**
+     * Handles moving the infobox to where the mouse is pointing.
+     * @param {MouseEvent} event Mouse event from the event handler.
+     */
     const targetHover = function(event) {
         const offPointer = 16
 

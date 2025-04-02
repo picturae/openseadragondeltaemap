@@ -19,8 +19,15 @@ window.onload = function() {
     |*| http://jsbin.com/hikekaroxa/1/edit?html,js,output
     \*/
 
-    const deltaEMap = this.viewer.deltaEMap(this.viewer)
-    viewer.addHandler('open', function() {
+    /**
+     * @type {DeltaEOptions}
+     */
+    const options = {
+        layout: 'flexible',
+    }
+
+    const deltaEMap = this.viewer.deltaEMap(this.viewer, options)
+    this.viewer.addHandler('open', function() {
         deltaEMap.render(targetData)
     })
 
