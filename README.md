@@ -3,25 +3,28 @@
 
 # OpenSeadragonDeltaEMap
 
-This plugin helps evaluating a targetscan using DeltaE criteria.
-For input it takes a DeltaE-compliant JSON holding
+This plugin helps to evaluate a targetscan using DeltaE criteria.
+For input, it takes a DeltaE-compliant JSON holding
 the target coordinates, size,
 expected and measured colour data
 etcetera.
 The observed and assessed data are projected
-in an overlay tied to the mouse-postion.
+in an overlay tied to the mouse-position.
 
 ## Install
 
 Install the package as npm package. Provided are
-a umd-formatted file in the dist folder to require or just read
+an umd-formatted file in the dist folder to require or just read
 and an es-module in the module folder to import.
 In both folders there is a stylesheet.
+
+As of version 2.0.0, this package is manually tested to work with OpenSeadragon 5.0.1. It might work with earlier
+versions (notably 3.0.0 and up), but that is not guaranteed.
 
 ## Usage
 
 When installed as node module,
-and openSeadragon is opened,
+and OpenSeadragon is opened,
 this plugin is available in the viewer as 'deltaEMap'.
 
 With the traditional view settings OpenSeadragon,
@@ -62,5 +65,5 @@ the plugin will warn or error in the console.
 
 ## Demo
 
-.../openseadragondeltaemap/demo/demo.html
-JSON with SFR data available through fileselector hidden under navigations icons
+You can view a demo by cloning this repository and serving the root of the project using an HTTP server. After that you
+can navigate to '/demo/demo.html' to view two examples.
