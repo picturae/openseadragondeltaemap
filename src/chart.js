@@ -68,25 +68,6 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
                     containerSize.h) *
                     bounds.height,
             )
-            // console.log(viewer.viewport.imageToViewportCoordinates())
-
-            // var viewportPoint = viewer.viewport.imageToViewportCoordinates(
-            //     chartData.location.x + chartData.location.w / 2,
-            //     chartData.location.y + chartData.location.h / 2,
-            // )
-
-            console.log({
-                viewportPoint,
-                rect,
-                'chartData.location.x': chartData.location.x,
-                'chartData.location.y': chartData.location.y,
-                'chartData.location.w': chartData.location.w,
-                'chartData.location.h': chartData.location.h,
-                'chartData.location.w / 2': chartData.location.w / 2,
-                'chartData.location.h / 2': chartData.location.h / 2,
-                'containerSize.w': containerSize.w,
-                'containerSize.h': containerSize.h,
-            })
 
             if (viewer.viewport.getZoom(true) < 2.5) {
                 viewer.viewport.panTo(viewportPoint)
