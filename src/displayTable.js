@@ -164,7 +164,7 @@ const renderData = (event, table, userData) => {
     if (userData.barcode) {
         table.innerHTML += `<tbody class="deltaemap-barcode" data-name="barcode">
             <tr>
-              <th>Barcode</th> <td>${userData.barcode}</td> 
+              <th>Barcode</th> <td>${userData.barcode}</td>
             </tr>
             <tr>
               <th>Matched</th> <td>${userData.barcodeFound ? 'Yes' : 'No'}</td>
