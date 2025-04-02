@@ -4053,10 +4053,10 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-openseadragon@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/openseadragon/-/openseadragon-2.4.2.tgz#f25d833d0ab9941599d65a3e2b44bec546c9f15c"
-  integrity sha512-398KbZwRtOYA6OmeWRY4Q0737NTacQ9Q6whmr9Lp1MNQO3p0eBz5LIASRne+4gwequcSM1vcHcjfy3dIndQziw==
+openseadragon@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/openseadragon/-/openseadragon-5.0.1.tgz#ad3aaccc6c0f733c3153131e9af05bc2e17a1952"
+  integrity sha512-a/hjouW9i3UfWxRADVYN2MyRhXMGnE7x9VVL7/4jXCcDLFyO4UM5o4RStYtqa5BfaHw/wMNAaD2WbxQF8f1pJg==
 
 optionator@^0.8.3:
   version "0.8.3"

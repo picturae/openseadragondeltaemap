@@ -27,7 +27,17 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
     this.element.style.height = `${(chartData.location.h * 100) /
         containerSize.h}%`
 
-    this.element.onclick = function() {
+    viewer.addHandler('canvas-click', event => {
+        let node = event.originalTarget
+
+        while (node !== this.element) {
+            if (node === null) {
+                return
+            }
+
+            node = node.parentNode
+        }
+
         if (!targetElement.classList.contains('active-target')) {
             viewer.viewport.goHome(true)
             targetElement.classList.add('active-target')
@@ -49,17 +59,22 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
             }
 
             // Convert that to viewport coordinates, the lingua franca of OpenSeadragon coordinates.
-            var viewportPoint = viewer.viewport.imageToViewportCoordinates(
-                chartData.location.x + chartData.location.w / 2,
-                chartData.location.y + chartData.location.h / 2,
+            const bounds = viewer.world.getHomeBounds()
+            const viewportPoint = new OpenSeadragon.Point(
+                ((chartData.location.x + chartData.location.w / 2) /
+                    containerSize.w) *
+                    bounds.width,
+                ((chartData.location.y + chartData.location.h / 2) /
+                    containerSize.h) *
+                    bounds.height,
             )
 
-            if (viewer.viewport.getZoom() < 2.5) {
+            if (viewer.viewport.getZoom(true) < 2.5) {
                 viewer.viewport.panTo(viewportPoint)
                 viewer.viewport.zoomTo(zoomLevel)
             }
         }
-    }
+    })
 
     parentNode.appendChild(this.element)
 

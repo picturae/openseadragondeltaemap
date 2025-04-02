@@ -1,6 +1,6 @@
 {
   "name": "@picturae/openseadragondeltaemap",
-  "version": "1.4.8",
+  "version": "2.0.0",
   "description": "Draws overlay over a targetscan, and shows calibration info according to deltaE standards",
   "main": "dist/openSeadragonDeltaEMap.js",
   "module": "module/openSeadragonDeltaEMap.js",
@@ -14,7 +14,8 @@
     "once": "npm run test && npm run build",
     "pretest": "eslint {src,test/**}/*.js",
     "test": "jest",
-    "watch": "onchange --initial \"./{src,test/**}/*.{js,scss}\" \"./demo/*.js\" -- npm run once --silent"
+    "watch": "onchange --initial \"./{src,test/**}/*.{js,scss}\" \"./demo/*.js\" -- npm run once --silent",
+    "dev": "onchange --initial \"./{src,test/**}/*.{js,scss}\" \"./demo/*.js\" -- npm run build"
   },
   "keywords": [
     "openseadragon",
@@ -48,7 +49,7 @@
     "d3-shape": "^1.3.7",
     "hystmodal": "^1.0.0-beta.4",
     "my-lib": "^1.6.1",
-    "openseadragon": "^2.4.2",
+    "openseadragon": "^5.0.1",
     "rollup-plugin-import-css": "^3.3.1",
     "transform-case": "^0.2.0",
     "via": "^0.0.1",

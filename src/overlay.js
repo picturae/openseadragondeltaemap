@@ -3,6 +3,12 @@ import { setData } from './storage'
 import { Chart } from './chart'
 import { DisplayTable } from './displayTable'
 
+/**
+ * Main overlay logic.
+ * @param viewer {OpenSeadragon.Viewer} Target viewer to add the overlay to.
+ * @param options {DeltaEOptions} Configuration options.
+ * @constructor
+ */
 const Overlay = function(viewer, options) {
     this.name = 'Overlay'
     this.element = document.createElement('deltaeoverlay')
@@ -92,6 +98,7 @@ const Overlay = function(viewer, options) {
     this.resize()
 
     this.charts = []
+
     this.render = jsonData => {
         this.element.innerHTML = ''
         if (!jsonData.name) jsonData.name = 'Target Scan'
