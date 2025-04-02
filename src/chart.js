@@ -27,7 +27,17 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
     this.element.style.height = `${(chartData.location.h * 100) /
         containerSize.h}%`
 
-    this.element.onclick = function() {
+    viewer.addHandler('canvas-click', event => {
+        let node = event.originalTarget
+
+        while (node !== this.element) {
+            if (node === null) {
+                return
+            }
+
+            node = node.parentNode
+        }
+
         if (!targetElement.classList.contains('active-target')) {
             viewer.viewport.goHome(true)
             targetElement.classList.add('active-target')
@@ -59,7 +69,7 @@ const Chart = function(chartData, parentNode, containerSize, index, viewer) {
                 viewer.viewport.zoomTo(zoomLevel)
             }
         }
-    }
+    })
 
     parentNode.appendChild(this.element)
 
