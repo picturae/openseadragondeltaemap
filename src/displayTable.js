@@ -231,13 +231,16 @@ const renderData = (event, table, userData) => {
  * @constructor
  */
 const DisplayTable = function(mainElement, options) {
-    this.name = 'DisplayTable'
     const eventRoot = document.body
     const docRoot = document.documentElement
     const displayRoot = mainElement.parentNode
     const table = document.createElement('table')
+
+    this.name = 'DisplayTable'
     this.element = table
+
     const tableOptions = Object.assign({ layout: 'tabular' }, options)
+
     table.classList.add(
         DISPLAY_CLASSNAME,
         tableOptions.layout === 'flexible' ? 'flexible' : 'tabular',
@@ -247,27 +250,35 @@ const DisplayTable = function(mainElement, options) {
      * Update the table with new data
      * @param {MouseEvent} event Mouse event from the event handler.
      */
-    const targetEnter = function(event) {
+    const targetEnter = event => {
         const targetData = getData(event.target)
+
         if (targetData) {
             renderData(event, table, targetData)
-            if (!isAttachedToDom(table)) displayRoot.appendChild(table)
+
+            if (!isAttachedToDom(table)) {
+                displayRoot.appendChild(table)
+            }
         }
     }
 
     /**
      * Remove table from DOM when needed
      */
-    const targetLeave = function() {
-        if (isAttachedToDom(table)) displayRoot.removeChild(table)
+    const targetLeave = () => {
+        if (isAttachedToDom(table)) {
+            displayRoot.removeChild(table)
+        }
     }
 
     /**
      * Handles changing the target the mouse is currently pointing at.
      * @param {MouseEvent} event Mouse event from the event handler.
      */
-    const targetChange = function(event) {
+    const targetChange = event => {
+        event.stopPropagation()
         const enter = event.target
+
         if (
             enter.tagName === 'DELTAEOVERLAY' ||
             enter.tagName === 'DELTAECHART' ||
@@ -277,14 +288,14 @@ const DisplayTable = function(mainElement, options) {
         } else if (!table.contains(enter)) {
             targetLeave(event)
         }
-        event.stopPropagation()
     }
 
     /**
      * Handles moving the infobox to where the mouse is pointing.
      * @param {MouseEvent} event Mouse event from the event handler.
      */
-    const targetHover = function(event) {
+    const targetHover = event => {
+        event.stopPropagation()
         const offPointer = 16
 
         table.style.right = 'auto'
@@ -308,20 +319,9 @@ const DisplayTable = function(mainElement, options) {
             if (top < 0) top = 0
             table.style.top = `${top}px`
         }
-
-        event.stopPropagation()
     }
 
-    let targetChangeTimeout
-    eventRoot.addEventListener('mouseover', function(event) {
-        if (targetChangeTimeout) {
-            clearTimeout(targetChangeTimeout)
-        }
-        targetChangeTimeout = setTimeout(function() {
-            targetChange(event)
-        }, 0)
-    })
-
+    eventRoot.addEventListener('mouseover', targetChange)
     eventRoot.addEventListener('mousemove', targetHover)
 }
 
